@@ -329,7 +329,7 @@ if __name__ == '__main__':
     
     # Start the Flask application
     if args.sample:
-        print("Starting with sample data. Access the application at http://localhost:8080")
+        print("Starting with sample data. Access the application at http://localhost:8082")
         
         # Load sample data directly
         @app.before_request
@@ -365,6 +365,6 @@ if __name__ == '__main__':
             except Exception as e:
                 print(f"Error loading sample data: {str(e)}")
     else:
-        print("Starting Finance Analyzer. Access the application at http://localhost:8080")
+        print("Starting Finance Analyzer. Access the application at http://localhost:8082")
     
-    app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(debug=True, host='0.0.0.0', port=8082)
