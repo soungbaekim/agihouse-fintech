@@ -1,0 +1,22 @@
+{
+  "housing": ["rent", "mortgage", "property tax", "hoa", "maintenance", "repair", "apartment", "condo", "landlord"],
+  "utilities": ["electric", "water", "gas", "internet", "phone", "cable", "utility", "power", "energy", "bill", "at&t", "verizon", "comcast", "xfinity"],
+  "groceries": ["grocery", "supermarket", "food", "market", "trader joe", "whole foods", "safeway", "kroger", "publix", "aldi", "walmart grocery", "target grocery"],
+  "dining": ["restaurant", "cafe", "coffee", "bar", "grubhub", "doordash", "ubereats", "dining", "mcdonald", "starbucks", "chipotle", "panera", "subway", "pizza"],
+  "transportation": ["gas", "fuel", "uber", "lyft", "taxi", "transit", "parking", "toll", "car", "auto", "vehicle", "train", "bus", "metro", "subway", "commute"],
+  "entertainment": ["movie", "theatre", "concert", "netflix", "hulu", "spotify", "disney", "subscription", "game", "ticket", "event", "show", "theater", "cinema", "amusement", "streaming"],
+  "shopping": ["amazon", "walmart", "target", "costco", "shop", "store", "retail", "clothing", "electronics", "purchase", "buy", "ebay", "etsy", "online purchase"],
+  "health": ["doctor", "hospital", "medical", "pharmacy", "health", "fitness", "gym", "insurance", "dental", "vision", "prescription", "medicine", "clinic", "therapy", "cvs", "walgreens"],
+  "education": ["tuition", "school", "college", "university", "course", "book", "education", "student", "loan", "class", "degree", "training", "workshop"],
+  "travel": ["hotel", "flight", "airline", "airbnb", "vacation", "travel", "trip", "booking", "resort", "airfare", "lodging", "cruise", "expedia", "travelocity"],
+  "personal": ["haircut", "salon", "spa", "beauty", "personal", "care", "grooming", "cosmetics", "barber", "stylist", "massage", "nail"],
+  "income": ["salary", "deposit", "paycheck", "payment received", "direct deposit", "income", "wage", "bonus", "commission", "refund", "reimbursement", "dividend", "interest"],
+  "investments": ["investment", "dividend", "interest", "stock", "bond", "etf", "mutual fund", "brokerage", "retirement", "ira", "401k", "roth", "portfolio"],
+  "debt": ["credit card", "loan", "debt", "interest payment", "mortgage payment", "student loan", "car loan", "finance charge", "minimum payment"],
+  "insurance": ["insurance", "premium", "policy", "coverage", "life insurance", "auto insurance", "home insurance", "renters insurance", "health insurance"],
+  "taxes": ["tax", "irs", "state tax", "property tax", "income tax", "tax payment", "tax preparation", "tax return", "accountant"],
+  "gifts_donations": ["gift", "donation", "charity", "nonprofit", "present", "birthday", "holiday", "wedding", "charitable", "contribution", "goodwill", "salvation army"],
+  "business": ["business", "office", "professional", "service", "consulting", "freelance", "contractor", "client", "vendor", "supplier", "expense", "business travel"],
+  "subscriptions": ["subscription", "membership", "monthly", "recurring", "netflix", "hulu", "spotify", "apple music", "disney+", "hbo", "amazon prime", "youtube premium", "gym membership"],
+  "other": []
+}

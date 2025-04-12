@@ -1,0 +1,66 @@
+# Python bytecode and cache
+**/__pycache__/**
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Generated files
+finance_report.html
+*.png
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Database files
+*.db
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Personal financial data
+# Uncomment the lines below if you don't want to commit your own financial data
+# data/*.csv
+# data/*.xlsx
+# data/*.pdf
+# !data/sample_statement.csv
