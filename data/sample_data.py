@@ -7,7 +7,7 @@ import random
 from typing import List, Dict, Any
 
 
-def generate_sample_transactions(num_transactions: int = 350) -> List[Dict[str, Any]]:
+def generate_sample_transactions(num_transactions: int = 350, income_range: tuple = (1000, 8000), category_frequencies: Dict[str, float] = None, months: int = 12, savings_rate: float = None) -> List[Dict[str, Any]]:
     """
     Generate sample transaction data for demonstration purposes
     
@@ -17,8 +17,8 @@ def generate_sample_transactions(num_transactions: int = 350) -> List[Dict[str, 
     Returns:
         List of transaction dictionaries
     """
-    # Categories with sample merchants and amount ranges
-    categories = {
+    # Define default categories with sample merchants and amount ranges
+    default_categories = {
         'Groceries': {
             'merchants': ['Whole Foods', 'Trader Joe\'s', 'Safeway', 'Kroger', 'Costco', 'Aldi', 'Publix', 'Wegmans', 
                          'Sprouts', 'H-E-B', 'Food Lion', 'Save-A-Lot', 'Albertsons', 'ShopRite', 'Meijer'],
@@ -108,12 +108,56 @@ def generate_sample_transactions(num_transactions: int = 350) -> List[Dict[str, 
                          'Royalty Payment', 'Profit Share', 'Rebate', 'Cash Back', 'Gift'],
             'amount_range': (1000, 8000),
             'frequency': 0.06
+        },
+        'Debt Payments': {
+            'merchants': ['Credit Card Payment', 'Student Loan Payment', 'Car Loan Payment', 'Personal Loan Payment',
+                         'Debt Consolidation', 'Mortgage Payment', 'Line of Credit Payment', 'Medical Debt Payment',
+                         'Bank of America', 'Chase', 'Wells Fargo', 'Citibank', 'Capital One', 'Discover', 'Navient',
+                         'Great Lakes', 'FedLoan Servicing', 'Nelnet'],
+            'amount_range': (100, 1000),
+            'frequency': 0.05
+        },
+        'Investments': {
+            'merchants': ['Vanguard', 'Fidelity', 'Charles Schwab', 'TD Ameritrade', 'E*TRADE', 'Robinhood',
+                         'Wealthfront', 'Betterment', 'Acorns', 'Coinbase', 'Merrill Lynch', 'Morgan Stanley',
+                         'Investment Contribution', 'Stock Purchase', 'Bond Purchase', 'Mutual Fund', 'ETF Purchase',
+                         'Retirement Contribution', 'IRA Contribution', '401(k) Contribution'],
+            'amount_range': (100, 2000),
+            'frequency': 0.04
         }
     }
     
-    # Generate random dates within the last 12 months
+    # Use provided category frequencies or default ones
+    categories = {}
+    if category_frequencies:
+        # Start with default categories
+        for category, info in default_categories.items():
+            if category in category_frequencies:
+                # Use the category with custom frequency
+                categories[category] = info.copy()
+                categories[category]['frequency'] = category_frequencies[category]
+            elif category == 'Income':
+                # Always include Income category
+                categories[category] = info.copy()
+                # Default income frequency if not specified
+                categories[category]['frequency'] = 0.06
+        
+        # Add any missing categories from the default set
+        for category in category_frequencies:
+            if category not in categories and category in default_categories:
+                categories[category] = default_categories[category].copy()
+                categories[category]['frequency'] = category_frequencies[category]
+    else:
+        # Use default categories
+        categories = default_categories.copy()
+    
+    # Update income range if provided
+    if income_range and 'Income' in categories:
+        categories['Income']['amount_range'] = income_range
+    
+    # Generate random dates within the specified number of months
     end_date = datetime.datetime.now().date()
-    start_date = end_date - datetime.timedelta(days=365)
+    start_date = end_date - datetime.timedelta(days=30 * months)
     
     transactions = []
     
@@ -209,20 +253,83 @@ def generate_sample_transactions(num_transactions: int = 350) -> List[Dict[str, 
                 
                 transactions.append(transaction)
     
-    # Sort by date
+    # Sort transactions by date
     transactions.sort(key=lambda x: x['date'])
+    
+    # Apply savings rate if specified
+    if savings_rate is not None:
+        # Find total income
+        total_income = sum(t['amount'] for t in transactions if t['amount'] > 0)
+        # Calculate target savings amount
+        target_savings = total_income * savings_rate
+        # Add savings transactions
+        savings_date = end_date - datetime.timedelta(days=random.randint(1, 30))
+        transactions.append({
+            'date': savings_date,
+            'description': 'Transfer to Savings',
+            'amount': -round(target_savings, 2),
+            'category': 'Savings'
+        })
     
     return transactions
 
 
-def get_sample_data() -> Dict[str, Any]:
+def get_sample_data(profile_type=None):
     """
     Get a complete sample dataset for the Finance Analyzer
     
+    Args:
+        profile_type: Optional profile type to generate specific financial scenarios
+        
     Returns:
         Dictionary with transactions and analysis data
     """
-    transactions = generate_sample_transactions()
+    # Generate sample transactions based on profile type or default
+    if profile_type == 'young_professional':
+        transactions = generate_sample_transactions(
+            num_transactions=300,
+            income_range=(3500, 5500),
+            months=12,
+            savings_rate=0.15
+        )
+    elif profile_type == 'family_budget':
+        transactions = generate_sample_transactions(
+            num_transactions=400,
+            income_range=(6000, 9000),
+            months=12,
+            savings_rate=0.10
+        )
+    elif profile_type == 'student_finances':
+        transactions = generate_sample_transactions(
+            num_transactions=250,
+            income_range=(800, 2000),
+            months=12,
+            savings_rate=0.05
+        )
+    elif profile_type == 'retirement_planning':
+        transactions = generate_sample_transactions(
+            num_transactions=350,
+            income_range=(4000, 6000),
+            months=12,
+            savings_rate=0.25
+        )
+    elif profile_type == 'high_income':
+        transactions = generate_sample_transactions(
+            num_transactions=450,
+            income_range=(12000, 18000),
+            months=12,
+            savings_rate=0.20
+        )
+    elif profile_type == 'debt_reduction':
+        transactions = generate_sample_transactions(
+            num_transactions=350,
+            income_range=(4000, 6000),
+            months=12,
+            savings_rate=0.05
+        )
+    else:
+        # Default generic profile
+        transactions = generate_sample_transactions()
     
     # Calculate basic metrics
     income = sum(t['amount'] for t in transactions if t['amount'] > 0)

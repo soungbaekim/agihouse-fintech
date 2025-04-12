@@ -6,6 +6,7 @@ A Flask web app that provides an interactive frontend for the Finance Analyzer.
 
 import os
 import json
+import csv
 import datetime
 import argparse
 from pathlib import Path
@@ -44,7 +45,14 @@ def allowed_file(filename):
 @app.route('/')
 def index():
     """Render the home page"""
-    return render_template('index.html')
+    # Get profile information if available
+    profile_names = get_profile_names() if SAMPLE_PROFILES_AVAILABLE else []
+    profile_descriptions = get_profile_descriptions() if SAMPLE_PROFILES_AVAILABLE else {}
+    
+    return render_template('index.html', 
+                           profiles_available=SAMPLE_PROFILES_AVAILABLE,
+                           profile_names=profile_names,
+                           profile_descriptions=profile_descriptions)
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
@@ -281,16 +289,25 @@ def generate_report():
         'message': f'{report_type.capitalize()} report generated in {report_format.upper()} format'
     })
 
-# Import sample data module
+# Import sample data modules
 try:
     from data.sample_data import get_sample_data
+    from data.sample_profiles import get_profile_names, get_profile_descriptions, get_sample_profile
+    SAMPLE_PROFILES_AVAILABLE = True
 except ImportError:
     def get_sample_data():
         return None
+    def get_profile_names():
+        return []
+    def get_profile_descriptions():
+        return {}
+    def get_sample_profile(profile_name):
+        return None
+    SAMPLE_PROFILES_AVAILABLE = False
 
 @app.route('/load_sample_data')
 def load_sample_data_route():
-    """Use sample data for demonstration"""
+    """Load generic sample transaction data"""
     try:
         sample_data = get_sample_data()
         if sample_data:
@@ -321,14 +338,124 @@ def load_sample_data_route():
         flash(f'Error loading sample data: {str(e)}')
         return redirect(url_for('index'))
 
+@app.route('/use_sample_profile/<profile_name>')
+def use_sample_profile(profile_name):
+    """Load sample transaction data for a specific financial profile"""
+    if not SAMPLE_PROFILES_AVAILABLE:
+        flash('Sample profiles are not available', 'warning')
+        return redirect(url_for('index'))
+        
+    profile_data = get_sample_profile(profile_name)
+    if not profile_data:
+        flash(f'Profile {profile_name} not found', 'warning')
+        return redirect(url_for('index'))
+        
+    # Store profile data in session
+    session['transactions'] = [
+        {
+            'date': t['date'].isoformat(),
+            'description': t['description'],
+            'amount': float(t['amount']),
+            'category': t.get('category', 'Uncategorized')
+        }
+        for t in profile_data['transactions']
+    ]
+    session['analysis_data'] = profile_data['analysis']
+    session['chart_data'] = {
+        'spending_by_category': profile_data['analysis']['spending_by_category'],
+        'monthly_spending': profile_data['analysis']['monthly_spending'],
+        'top_merchants': profile_data['analysis']['top_merchants']
+    }
+    session['recommendations'] = profile_data['recommendations']
+    session['active_profile'] = profile_name
+    
+    # Flash a message about the selected profile
+    profile_descriptions = get_profile_descriptions()
+    if profile_name in profile_descriptions:
+        flash(f'Loaded "{profile_name.replace("_", " ").title()}" profile: {profile_descriptions[profile_name]}', 'info')
+    
+    return redirect(url_for('analyze'))
+
+def load_profile_from_file(profile_name):
+    """Load profile data from CSV and JSON files"""
+    profile_dir = os.path.join('data', 'sample_profiles')
+    csv_path = os.path.join(profile_dir, f"{profile_name}.csv")
+    json_path = os.path.join(profile_dir, f"{profile_name}_analysis.json")
+    
+    if not os.path.exists(csv_path) or not os.path.exists(json_path):
+        return None
+    
+    # Load transactions from CSV
+    transactions = []
+    with open(csv_path, 'r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            # Convert string amount to float
+            row['amount'] = float(row['amount'])
+            transactions.append(row)
+    
+    # Load analysis and recommendations from JSON
+    with open(json_path, 'r') as jsonfile:
+        data = json.load(jsonfile)
+    
+    # Combine data
+    return {
+        'transactions': transactions,
+        'analysis': data['analysis'],
+        'recommendations': data['recommendations']
+    }
+
 if __name__ == '__main__':
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Finance Analyzer Web Application')
     parser.add_argument('--sample', action='store_true', help='Load sample data on startup')
+    parser.add_argument('--profile', type=str, help='Load specific financial profile on startup')
     args = parser.parse_args()
     
     # Start the Flask application
-    if args.sample:
+    if args.profile:
+        print(f"Starting with {args.profile} profile. Access the application at http://localhost:8082")
+        
+        # Load profile data directly
+        @app.before_request
+        def load_profile_data_before_request():
+            # Only load profile data once and only for the root route
+            if request.endpoint != 'index' or 'sample_data_loaded' in session:
+                return None
+            
+            try:
+                # First try to load from file
+                profile_data = load_profile_from_file(args.profile)
+                
+                # If file not found, try to generate dynamically
+                if not profile_data and SAMPLE_PROFILES_AVAILABLE:
+                    profile_data = get_sample_profile(args.profile)
+                
+                if profile_data:
+                    # Store profile data in session
+                    session['transactions'] = [
+                        {
+                            'date': t['date'] if isinstance(t['date'], str) else t['date'].isoformat(),
+                            'description': t['description'],
+                            'amount': float(t['amount']),
+                            'category': t.get('category', 'Uncategorized')
+                        }
+                        for t in profile_data['transactions']
+                    ]
+                    session['analysis_data'] = profile_data['analysis']
+                    session['chart_data'] = {
+                        'spending_by_category': profile_data['analysis']['spending_by_category'],
+                        'monthly_spending': profile_data['analysis']['monthly_spending'],
+                        'top_merchants': profile_data['analysis']['top_merchants']
+                    }
+                    session['recommendations'] = profile_data['recommendations']
+                    session['active_profile'] = args.profile
+                    session['sample_data_loaded'] = True
+                    
+                    flash(f'{args.profile.replace("_", " ").title()} profile loaded automatically')
+            except Exception as e:
+                print(f"Error loading profile data: {str(e)}")
+    elif args.sample:
         print("Starting with sample data. Access the application at http://localhost:8082")
         
         # Load sample data directly
@@ -360,8 +487,7 @@ if __name__ == '__main__':
                     session['recommendations'] = sample_data['recommendations']
                     session['sample_data_loaded'] = True
                     
-                    # Don't redirect, just mark as loaded
-                    print("Sample data loaded successfully")
+                    flash('Sample data loaded automatically')
             except Exception as e:
                 print(f"Error loading sample data: {str(e)}")
     else:

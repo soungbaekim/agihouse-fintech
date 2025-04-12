@@ -16,17 +16,21 @@ help:
 	@echo "Finance Analyzer Makefile"
 	@echo ""
 	@echo "Available targets:"
-	@echo "  setup           - Create virtual environment and install dependencies"
-	@echo "  run-sample      - Run with sample data"
-	@echo "  run-interactive - Run in interactive mode"
-	@echo "  run-custom      - Run with custom statement file (set STATEMENT=path/to/file)"
-	@echo "  run-categories  - Run with custom categories (set STATEMENT=path/to/file)"
-	@echo "  clean           - Remove generated files and __pycache__ directories"
-	@echo "  clean-all       - Remove generated files, __pycache__ directories, and virtual environment"
+	@echo "  setup                - Create virtual environment and install dependencies"
+	@echo "  run-sample           - Run with sample data"
+	@echo "  run-interactive      - Run in interactive mode"
+	@echo "  run-custom           - Run with custom statement file (set STATEMENT=path/to/file)"
+	@echo "  run-categories       - Run with custom categories (set STATEMENT=path/to/file)"
+	@echo "  generate-profiles    - Generate sample financial profile data files in data/sample_profiles/"
+	@echo "  run-profile          - Run with a specific financial profile (set PROFILE=profile_name)"
+	@echo "  clean                - Remove generated files and __pycache__ directories"
+	@echo "  clean-all            - Remove generated files, __pycache__ directories, and virtual environment"
 	@echo ""
 	@echo "Examples:"
 	@echo "  make run-custom STATEMENT=my_bank_statement.csv"
 	@echo "  make run-categories STATEMENT=my_bank_statement.csv"
+	@echo "  make generate-profiles"
+	@echo "  make run-profile PROFILE=young_professional"
 
 # Setup virtual environment and install dependencies
 .PHONY: setup
@@ -97,6 +101,32 @@ run-web:
 run-web-sample:
 	@echo "Starting Finance Analyzer web application with sample data on http://localhost:5000"
 	$(VENV_PYTHON) app.py --sample
+
+# Generate sample financial profile data files
+.PHONY: generate-profiles
+generate-profiles:
+	@echo "Generating sample financial profile data files..."
+	@echo "This will create CSV and JSON files for different financial profiles in data/sample_profiles/"
+	$(VENV_PYTHON) data/generate_profile_files.py
+	@echo "Sample profile files generated successfully in data/sample_profiles/"
+	@echo "Available profiles:"
+	@echo "  - young_professional: A young professional with steady income and moderate expenses"
+	@echo "  - family_budget: A family with multiple income sources and higher expenses"
+	@echo "  - student_finances: A student with limited income and education expenses"
+	@echo "  - retirement_planning: An older individual focused on retirement planning"
+	@echo "  - high_income: A high-income individual with significant discretionary spending"
+	@echo "  - debt_reduction: An individual focusing on paying down significant debt"
+	@echo "Use 'make run-profile PROFILE=profile_name' to run with a specific profile"
+
+# Run the web application with a specific financial profile
+.PHONY: run-profile
+run-profile:
+	@if [ -z "$(PROFILE)" ]; then \
+		echo "Error: PROFILE parameter is required. Example: make run-profile PROFILE=young_professional"; \
+		exit 1; \
+	fi
+	@echo "Starting Finance Analyzer with $(PROFILE) profile..."
+	$(VENV_PYTHON) app.py --profile $(PROFILE)
 
 # Clean generated files and __pycache__ directories
 .PHONY: clean
