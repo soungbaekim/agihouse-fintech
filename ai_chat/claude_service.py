@@ -35,16 +35,28 @@ class ClaudeChatService:
         Your role is to provide personalized financial insights, recommendations, and answer questions 
         based on the user's financial data. Be helpful, clear, and concise in your responses.
         
-        The user's financial data will be provided to you in each conversation. Use this data to provide 
-        specific and actionable advice. Always base your recommendations on the actual numbers and patterns 
-        in their data.
+        The user's financial data will be provided to you in each conversation. This includes:
+        1. Summary financial metrics (income, expenses, cash flow)
+        2. Detailed spending by category
+        3. Top merchants where money is spent
+        4. Current savings and investment recommendations
+        5. Specific transaction data with dates, descriptions, amounts, and categories
+        
+        When analyzing the user's financial situation, refer to specific transactions and patterns in their data.
+        For example, instead of saying "You spend a lot on dining", say "I notice you spent $X at Restaurant Y on [date]"
+        or "Your largest dining expense was $X at Restaurant Y". Use this specific information to make your advice 
+        more relevant and actionable.
         
         Key areas to focus on:
-        1. Spending patterns and anomalies
-        2. Savings opportunities
-        3. Budget optimization
-        4. Debt management strategies
-        5. Investment suggestions based on their financial situation
+        1. Spending patterns and anomalies (identify specific high-value transactions)
+        2. Savings opportunities (suggest specific areas where spending could be reduced based on transaction data)
+        3. Budget optimization (analyze spending frequency and timing from transaction dates)
+        4. Debt management strategies (identify recurring payments and suggest optimization)
+        5. Investment suggestions based on their financial situation (consider cash flow patterns)
+        
+        The user is viewing the Finance Analyzer dashboard, which shows their financial data visualizations.
+        They might be on different pages (transactions, recommendations, category details), and your response
+        should be tailored to what they're currently viewing.
         
         Keep your responses focused on financial matters and avoid giving advice outside your expertise.
         """
@@ -75,6 +87,9 @@ class ClaudeChatService:
         savings_recommendations = financial_data.get('recommendations', {}).get('savings', [])
         investment_recommendations = financial_data.get('recommendations', {}).get('investments', [])
         
+        # Get transactions data
+        transactions = financial_data.get('transactions', [])
+        
         # Get page context if available
         page_context = financial_data.get('page_context', {})
         current_page = page_context.get('page', '')
@@ -102,6 +117,32 @@ class ClaudeChatService:
         Investment Suggestions:
         {json.dumps(investment_recommendations, indent=2)}
         """
+        
+        # Add transactions data (limited to most relevant ones for better context)
+        transaction_sample_size = 15  # Limit to prevent token overflow
+        
+        # Get transactions by category if user is viewing a specific category
+        if current_category:
+            category_transactions = [t for t in transactions if t.get('category') == current_category]
+            if category_transactions:
+                # Sort by amount (descending) and take top transactions
+                sorted_transactions = sorted(category_transactions, key=lambda t: float(t.get('amount', 0)), reverse=True)
+                transaction_sample = sorted_transactions[:transaction_sample_size]
+                context += f"""
+                
+                TRANSACTIONS IN CATEGORY '{current_category.upper()}':
+                {json.dumps(transaction_sample, indent=2)}
+                """
+        # Otherwise, just include the most significant transactions overall
+        elif transactions:
+            # Sort by amount (descending) and take top transactions
+            sorted_transactions = sorted(transactions, key=lambda t: abs(float(t.get('amount', 0))), reverse=True)
+            transaction_sample = sorted_transactions[:transaction_sample_size]
+            context += f"""
+            
+            SIGNIFICANT TRANSACTIONS:
+            {json.dumps(transaction_sample, indent=2)}
+            """
         
         # Add context-specific information based on current view
         if current_view == 'transactions' or 'transactions' in current_page:

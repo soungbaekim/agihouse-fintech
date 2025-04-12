@@ -5,10 +5,10 @@ A Flask web app that provides an interactive frontend for the Finance Analyzer.
 """
 
 import os
-import json
 import csv
-import datetime
+import json
 import argparse
+import datetime
 from pathlib import Path
 from flask import Flask, render_template, request, redirect, url_for, jsonify, flash, session
 from werkzeug.utils import secure_filename
@@ -96,18 +96,45 @@ def upload_file():
 @app.route('/analyze')
 def analyze():
     """Analyze the uploaded file and display results"""
-    if 'file_path' not in session:
-        flash('Please upload a file first')
+    print("Analyze route called")
+    print(f"Session keys: {list(session.keys())}")
+    
+    # First, check if we have a sample profile loaded
+    if 'active_profile' in session and 'transactions' in session:
+        print(f"Using active profile: {session['active_profile']} with {len(session['transactions'])} transactions")
+        
+        # Make sure we have all the data we need
+        if all(key in session for key in ['analysis_data', 'chart_data', 'recommendations']):
+            print("Using pre-computed analysis data from session")
+            
+            # Render the analysis template with the pre-computed data
+            return render_template('analysis.html',
+                                   transactions=session['transactions'],
+                                   analysis=session['analysis_data'],
+                                   chart_data=session['chart_data'],
+                                   recommendations=session['recommendations'])
+    
+    # Next, check if we have a file to analyze
+    elif 'file_path' in session:
+        print(f"Parsing file: {session['file_path']}")
+        try:
+            file_path = session['file_path']
+            statement_parser = parser_factory.get_parser(file_path)
+            transactions = statement_parser.parse(file_path)
+        except Exception as e:
+            print(f"Error parsing file: {str(e)}")
+            flash(f'Error parsing file: {str(e)}')
+            return redirect(url_for('index'))
+    
+    # If we don't have a profile or a file, redirect to the index
+    else:
+        print("No profile or file found in session")
+        flash('Please upload a file or select a sample profile first')
         return redirect(url_for('index'))
     
-    file_path = session['file_path']
-    
     try:
-        # Parse the statement
-        statement_parser = parser_factory.get_parser(file_path)
-        transactions = statement_parser.parse(file_path)
-        
         # Analyze spending
+        print(f"Analyzing {len(transactions)} transactions")
         spending_analysis = analyzer.analyze(transactions)
         
         # Generate recommendations
@@ -309,6 +336,11 @@ except ImportError:
         return None
     SAMPLE_PROFILES_AVAILABLE = False
 
+# Force sample profiles to be available if the directory exists
+import os
+if os.path.exists(os.path.join(os.path.dirname(__file__), 'data', 'sample_profiles')):
+    SAMPLE_PROFILES_AVAILABLE = True
+
 @app.route('/load_sample_data')
 def load_sample_data_route():
     """Load generic sample transaction data"""
@@ -345,33 +377,96 @@ def load_sample_data_route():
 @app.route('/use_sample_profile/<profile_name>')
 def use_sample_profile(profile_name):
     """Load sample transaction data for a specific financial profile"""
+    print(f"Loading sample profile: {profile_name}")
+    
+    # Clean up the profile name to ensure it's valid
+    profile_name = profile_name.strip().lower()
+    
+    # Define the valid profiles
+    valid_profiles = [
+        "young_professional", "family_budget", "student_finances", 
+        "retirement_planning", "high_income", "debt_reduction"
+    ]
+    
+    if profile_name not in valid_profiles:
+        flash(f'Invalid profile name: {profile_name}', 'warning')
+        return redirect(url_for('index'))
+    
+    # Force SAMPLE_PROFILES_AVAILABLE to be true if the directory exists
+    global SAMPLE_PROFILES_AVAILABLE
+    sample_dir = os.path.join(os.path.dirname(__file__), 'data', 'sample_profiles')
+    if os.path.exists(sample_dir):
+        SAMPLE_PROFILES_AVAILABLE = True
+        print(f"Sample profiles directory found: {sample_dir}")
+    
     if not SAMPLE_PROFILES_AVAILABLE:
         flash('Sample profiles are not available', 'warning')
         return redirect(url_for('index'))
+    
+    # Try to load from files first
+    profile_data = load_profile_from_file(profile_name)
+    print(f"Profile data loaded for {profile_name}: {profile_data is not None}")
+    
+    # If file loading fails, try to generate profile data
+    if not profile_data:
+        print(f"Attempting to generate {profile_name} profile data dynamically")
+        profile_data = get_sample_profile(profile_name)
         
-    profile_data = get_sample_profile(profile_name)
     if not profile_data:
         flash(f'Profile {profile_name} not found', 'warning')
         return redirect(url_for('index'))
-        
+    
+    # Clear any existing session data
+    session.pop('file_path', None)
+    
     # Store profile data in session
-    session['transactions'] = [
-        {
-            'date': t['date'].isoformat(),
-            'description': t['description'],
-            'amount': float(t['amount']),
-            'category': t.get('category', 'Uncategorized')
+    try:
+        # Ensure we have a proper list of transactions
+        if not isinstance(profile_data.get('transactions', []), list):
+            print("Error: transactions is not a list")
+            flash('Error processing profile data', 'danger')
+            return redirect(url_for('index'))
+            
+        session['transactions'] = []
+        for t in profile_data['transactions']:
+            trans = {
+                'description': t.get('description', 'Unknown transaction'),
+                'amount': float(t.get('amount', 0)),
+                'category': t.get('category', 'Uncategorized')
+            }
+            
+            # Handle date carefully
+            if 'date' in t:
+                if hasattr(t['date'], 'isoformat'):
+                    trans['date'] = t['date'].isoformat()
+                else:
+                    trans['date'] = str(t['date'])
+            else:
+                trans['date'] = datetime.datetime.now().strftime('%Y-%m-%d')
+                
+            session['transactions'].append(trans)
+            
+        # Store analysis data
+        session['analysis_data'] = profile_data['analysis']
+        
+        # Prepare chart data
+        session['chart_data'] = {
+            'spending_by_category': profile_data['analysis']['spending_by_category'],
+            'monthly_spending': profile_data['analysis']['monthly_spending'],
+            'top_merchants': profile_data['analysis']['top_merchants']
         }
-        for t in profile_data['transactions']
-    ]
-    session['analysis_data'] = profile_data['analysis']
-    session['chart_data'] = {
-        'spending_by_category': profile_data['analysis']['spending_by_category'],
-        'monthly_spending': profile_data['analysis']['monthly_spending'],
-        'top_merchants': profile_data['analysis']['top_merchants']
-    }
-    session['recommendations'] = profile_data['recommendations']
-    session['active_profile'] = profile_name
+        
+        # Store recommendations
+        session['recommendations'] = profile_data['recommendations']
+        
+        # Mark this as an active profile
+        session['active_profile'] = profile_name
+        
+        print(f"Successfully stored profile data in session. Transactions: {len(session['transactions'])}")
+    except Exception as e:
+        print(f"Error storing profile data in session: {str(e)}")
+        flash(f'Error processing profile: {str(e)}', 'danger')
+        return redirect(url_for('index'))
     
     # Flash a message about the selected profile
     profile_descriptions = get_profile_descriptions()
@@ -382,25 +477,74 @@ def use_sample_profile(profile_name):
 
 def load_profile_from_file(profile_name):
     """Load profile data from CSV and JSON files"""
+    # Ensure we're using the correct profile name without any unexpected parameters
+    profile_name = profile_name.strip().lower()
+    print(f"Loading profile: {profile_name}")
+    
+    # Define the specific profiles we support
+    valid_profiles = [
+        "young_professional", "family_budget", "student_finances", 
+        "retirement_planning", "high_income", "debt_reduction"
+    ]
+    
+    # Make sure we have a valid profile name
+    if profile_name not in valid_profiles:
+        print(f"Error: Invalid profile name: {profile_name}")
+        return None
+    
     profile_dir = os.path.join('data', 'sample_profiles')
     csv_path = os.path.join(profile_dir, f"{profile_name}.csv")
     json_path = os.path.join(profile_dir, f"{profile_name}_analysis.json")
     
+    print(f"Loading profile from {csv_path} and {json_path}")
+    
+    # Check that the files exist
     if not os.path.exists(csv_path) or not os.path.exists(json_path):
+        print(f"Error: One or both profile files do not exist:\n  CSV: {csv_path}\n  JSON: {json_path}")
         return None
     
     # Load transactions from CSV
     transactions = []
-    with open(csv_path, 'r') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            # Convert string amount to float
-            row['amount'] = float(row['amount'])
-            transactions.append(row)
+    try:
+        with open(csv_path, 'r') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                # Convert string amount to float
+                try:
+                    row['amount'] = float(row['amount'])
+                except (ValueError, KeyError):
+                    # Handle missing or invalid amount
+                    row['amount'] = 0.0
+                    
+                # Ensure date is properly handled
+                if 'date' not in row:
+                    row['date'] = datetime.datetime.now().strftime("%Y-%m-%d")
+                elif isinstance(row['date'], str):
+                    try:
+                        # Try to parse the date, but keep as string
+                        parsed_date = datetime.datetime.strptime(row['date'], "%Y-%m-%d")
+                        row['date'] = parsed_date.strftime("%Y-%m-%d")
+                    except ValueError:
+                        # If parsing fails, use current date
+                        row['date'] = datetime.datetime.now().strftime("%Y-%m-%d")
+                        
+                # Ensure category exists
+                if 'category' not in row:
+                    row['category'] = "Uncategorized"
+                    
+                transactions.append(row)
+                
+    except Exception as e:
+        print(f"Error loading CSV: {str(e)}")
+        return None
     
     # Load analysis and recommendations from JSON
-    with open(json_path, 'r') as jsonfile:
-        data = json.load(jsonfile)
+    try:
+        with open(json_path, 'r') as jsonfile:
+            data = json.load(jsonfile)
+    except Exception as e:
+        print(f"Error loading JSON: {str(e)}")
+        return None
     
     # Combine data
     return {
@@ -530,7 +674,8 @@ if __name__ == '__main__':
         financial_data = {
             'analysis_data': session.get('analysis_data', {}),
             'chart_data': session.get('chart_data', {}),
-            'recommendations': session.get('recommendations', {})
+            'recommendations': session.get('recommendations', {}),
+            'transactions': session.get('transactions', [])
         }
         
         # Add page context to financial data
@@ -610,7 +755,8 @@ if __name__ == '__main__':
         financial_data = {
             'analysis_data': session.get('analysis_data', {}),
             'chart_data': session.get('chart_data', {}),
-            'recommendations': session.get('recommendations', {})
+            'recommendations': session.get('recommendations', {}),
+            'transactions': session.get('transactions', [])
         }
         
         # Get conversation history from session
