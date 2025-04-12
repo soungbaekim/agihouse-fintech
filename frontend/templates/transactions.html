@@ -1,0 +1,437 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - Transactions{% endblock %}
+
+{% block head_extra %}
+<style>
+    .transaction-row {
+        transition: background-color 0.2s ease;
+    }
+    .transaction-row:hover {
+        background-color: rgba(0, 123, 255, 0.05);
+    }
+    .expense {
+        color: #e74a3b;
+    }
+    .income {
+        color: #1cc88a;
+    }
+    .filter-card {
+        position: sticky;
+        top: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-5 mb-3">Transactions</h1>
+        <p class="lead">
+            Viewing {{ transactions|length }} transactions
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Filters -->
+    <div class="col-lg-3 mb-4">
+        <div class="card shadow-sm filter-card">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Filters</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="categoryFilter" class="form-label">Category</label>
+                    <select class="form-select" id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        {% set categories = [] %}
+                        {% for t in transactions %}
+                            {% if t.category not in categories %}
+                                {% set _ = categories.append(t.category) %}
+                                <option value="{{ t.category }}">{{ t.category|title }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="typeFilter" class="form-label">Transaction Type</label>
+                    <select class="form-select" id="typeFilter">
+                        <option value="all">All Types</option>
+                        <option value="expense">Expenses</option>
+                        <option value="income">Income</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="amountMin" class="form-label">Amount Range</label>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" id="amountMin" placeholder="Min">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" id="amountMax" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="dateStart" class="form-label">Date Range</label>
+                    <input type="date" class="form-control mb-2" id="dateStart">
+                    <input type="date" class="form-control" id="dateEnd">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="searchInput" class="form-label">Search</label>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search descriptions...">
+                </div>
+                
+                <button id="applyFilters" class="btn btn-primary w-100">Apply Filters</button>
+                <button id="resetFilters" class="btn btn-outline-secondary w-100 mt-2">Reset Filters</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Transactions Table -->
+    <div class="col-lg-9">
+        <div class="card shadow-sm">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Transaction List</h5>
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-outline-secondary" id="sortDate">
+                        <i class="fas fa-calendar-alt me-1"></i>Date
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" id="sortAmount">
+                        <i class="fas fa-dollar-sign me-1"></i>Amount
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" id="sortCategory">
+                        <i class="fas fa-tags me-1"></i>Category
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0" id="transactionsTable">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for t in transactions %}
+                            <tr class="transaction-row" data-category="{{ t.category }}" data-amount="{{ t.amount }}" data-date="{{ t.date }}">
+                                <td>{{ t.date }}</td>
+                                <td>{{ t.description }}</td>
+                                <td>
+                                    <span class="badge bg-{{ loop.index0 % 6 + 1 }}">{{ t.category|title }}</span>
+                                </td>
+                                <td class="{% if t.amount < 0 %}expense{% else %}income{% endif %}">
+                                    ${{ "%.2f"|format(t.amount|abs) }}
+                                    {% if t.amount < 0 %}
+                                    <i class="fas fa-arrow-down text-danger"></i>
+                                    {% else %}
+                                    <i class="fas fa-arrow-up text-success"></i>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary transaction-details" 
+                                            data-transaction-id="{{ loop.index0 }}"
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#detailModal">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span id="filteredCount">Showing {{ transactions|length }} transactions</span>
+                    <div>
+                        <button class="btn btn-sm btn-outline-secondary" id="exportCSV">
+                            <i class="fas fa-file-csv me-1"></i>Export CSV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Store all transactions for filtering
+    const allTransactions = {{ transactions|tojson }};
+    
+    // Transaction detail modal
+    document.querySelectorAll('.transaction-details').forEach(button => {
+        button.addEventListener('click', function() {
+            const transactionId = this.getAttribute('data-transaction-id');
+            const transaction = allTransactions[transactionId];
+            
+            // Set modal title
+            document.getElementById('modalTitle').textContent = 'Transaction Details';
+            
+            // Build modal content
+            let modalContent = `
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <h6 class="text-muted">Date</h6>
+                                <p class="mb-0">${transaction.date}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-muted">Amount</h6>
+                                <p class="mb-0 ${transaction.amount < 0 ? 'text-danger' : 'text-success'}">
+                                    $${Math.abs(transaction.amount).toFixed(2)}
+                                    ${transaction.amount < 0 ? '(Expense)' : '(Income)'}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted">Description</h6>
+                            <p class="mb-0">${transaction.description}</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted">Category</h6>
+                            <p class="mb-0">
+                                <span class="badge bg-primary">${transaction.category}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Add similar transactions if available
+            const similarTransactions = allTransactions.filter(t => 
+                t.category === transaction.category && 
+                t !== transaction
+            ).slice(0, 3);
+            
+            if (similarTransactions.length > 0) {
+                modalContent += `
+                    <div class="mt-4">
+                        <h6>Similar Transactions</h6>
+                        <div class="list-group mt-2">
+                `;
+                
+                similarTransactions.forEach(t => {
+                    modalContent += `
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">${t.description}</h6>
+                                <small class="${t.amount < 0 ? 'text-danger' : 'text-success'}">
+                                    $${Math.abs(t.amount).toFixed(2)}
+                                </small>
+                            </div>
+                            <small class="text-muted">${t.date}</small>
+                        </div>
+                    `;
+                });
+                
+                modalContent += `
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Set modal body content
+            document.getElementById('modalBody').innerHTML = modalContent;
+        });
+    });
+    
+    // Filtering functionality
+    document.getElementById('applyFilters').addEventListener('click', function() {
+        filterTransactions();
+    });
+    
+    document.getElementById('resetFilters').addEventListener('click', function() {
+        // Reset all filter inputs
+        document.getElementById('categoryFilter').value = 'all';
+        document.getElementById('typeFilter').value = 'all';
+        document.getElementById('amountMin').value = '';
+        document.getElementById('amountMax').value = '';
+        document.getElementById('dateStart').value = '';
+        document.getElementById('dateEnd').value = '';
+        document.getElementById('searchInput').value = '';
+        
+        // Show all transactions
+        filterTransactions();
+    });
+    
+    function filterTransactions() {
+        const categoryFilter = document.getElementById('categoryFilter').value;
+        const typeFilter = document.getElementById('typeFilter').value;
+        const amountMin = document.getElementById('amountMin').value ? parseFloat(document.getElementById('amountMin').value) : null;
+        const amountMax = document.getElementById('amountMax').value ? parseFloat(document.getElementById('amountMax').value) : null;
+        const dateStart = document.getElementById('dateStart').value;
+        const dateEnd = document.getElementById('dateEnd').value;
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        
+        // Get all transaction rows
+        const rows = document.querySelectorAll('#transactionsTable tbody tr');
+        
+        let visibleCount = 0;
+        
+        // Filter rows
+        rows.forEach((row, index) => {
+            const transaction = allTransactions[index];
+            
+            // Check category
+            const categoryMatch = categoryFilter === 'all' || transaction.category === categoryFilter;
+            
+            // Check type
+            const typeMatch = typeFilter === 'all' || 
+                             (typeFilter === 'expense' && transaction.amount < 0) ||
+                             (typeFilter === 'income' && transaction.amount > 0);
+            
+            // Check amount
+            const amountMatch = (amountMin === null || Math.abs(transaction.amount) >= amountMin) &&
+                               (amountMax === null || Math.abs(transaction.amount) <= amountMax);
+            
+            // Check date
+            const transactionDate = new Date(transaction.date);
+            const dateStartObj = dateStart ? new Date(dateStart) : null;
+            const dateEndObj = dateEnd ? new Date(dateEnd) : null;
+            
+            const dateMatch = (dateStartObj === null || transactionDate >= dateStartObj) &&
+                             (dateEndObj === null || transactionDate <= dateEndObj);
+            
+            // Check search term
+            const searchMatch = searchTerm === '' || 
+                               transaction.description.toLowerCase().includes(searchTerm) ||
+                               transaction.category.toLowerCase().includes(searchTerm);
+            
+            // Show/hide row
+            if (categoryMatch && typeMatch && amountMatch && dateMatch && searchMatch) {
+                row.style.display = '';
+                visibleCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+        
+        // Update filtered count
+        document.getElementById('filteredCount').textContent = `Showing ${visibleCount} of ${allTransactions.length} transactions`;
+    }
+    
+    // Sorting functionality
+    let dateSort = 'desc';
+    document.getElementById('sortDate').addEventListener('click', function() {
+        sortTable(0, dateSort === 'desc' ? 'asc' : 'desc');
+        dateSort = dateSort === 'desc' ? 'asc' : 'desc';
+        updateSortButtons(this, dateSort);
+    });
+    
+    let amountSort = 'desc';
+    document.getElementById('sortAmount').addEventListener('click', function() {
+        sortTableByAmount(amountSort === 'desc' ? 'asc' : 'desc');
+        amountSort = amountSort === 'desc' ? 'asc' : 'desc';
+        updateSortButtons(this, amountSort);
+    });
+    
+    let categorySort = 'asc';
+    document.getElementById('sortCategory').addEventListener('click', function() {
+        sortTable(2, categorySort === 'asc' ? 'desc' : 'asc');
+        categorySort = categorySort === 'asc' ? 'desc' : 'asc';
+        updateSortButtons(this, categorySort);
+    });
+    
+    function sortTable(columnIndex, direction) {
+        const table = document.getElementById('transactionsTable');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        
+        // Sort rows
+        rows.sort((a, b) => {
+            const aValue = a.cells[columnIndex].textContent.trim();
+            const bValue = b.cells[columnIndex].textContent.trim();
+            
+            if (direction === 'asc') {
+                return aValue.localeCompare(bValue);
+            } else {
+                return bValue.localeCompare(aValue);
+            }
+        });
+        
+        // Reorder rows
+        rows.forEach(row => tbody.appendChild(row));
+    }
+    
+    function sortTableByAmount(direction) {
+        const table = document.getElementById('transactionsTable');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        
+        // Sort rows by amount
+        rows.sort((a, b) => {
+            const aAmount = parseFloat(a.getAttribute('data-amount'));
+            const bAmount = parseFloat(b.getAttribute('data-amount'));
+            
+            if (direction === 'asc') {
+                return aAmount - bAmount;
+            } else {
+                return bAmount - aAmount;
+            }
+        });
+        
+        // Reorder rows
+        rows.forEach(row => tbody.appendChild(row));
+    }
+    
+    function updateSortButtons(activeButton, direction) {
+        // Remove all icons
+        document.querySelectorAll('.btn-group .btn i.fa-sort-up, .btn-group .btn i.fa-sort-down').forEach(icon => {
+            icon.remove();
+        });
+        
+        // Add icon to active button
+        const icon = document.createElement('i');
+        icon.className = `fas fa-sort-${direction === 'asc' ? 'up' : 'down'} ms-1`;
+        activeButton.appendChild(icon);
+    }
+    
+    // Export to CSV
+    document.getElementById('exportCSV').addEventListener('click', function() {
+        // Get visible rows
+        const visibleRows = Array.from(document.querySelectorAll('#transactionsTable tbody tr'))
+            .filter(row => row.style.display !== 'none');
+        
+        // Create CSV content
+        let csvContent = 'Date,Description,Category,Amount\n';
+        
+        visibleRows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            const date = cells[0].textContent.trim();
+            const description = `"${cells[1].textContent.trim().replace(/"/g, '""')}"`;
+            const category = cells[2].textContent.trim();
+            const amount = cells[3].textContent.trim().replace('$', '').replace(/[^\d.-]/g, '');
+            
+            csvContent += `${date},${description},${category},${amount}\n`;
+        });
+        
+        // Create download link
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'transactions.csv');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+    
+    // Initialize with all transactions visible
+    document.getElementById('filteredCount').textContent = `Showing ${allTransactions.length} transactions`;
+</script>
+{% endblock %}

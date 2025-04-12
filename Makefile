@@ -86,6 +86,18 @@ open-report:
 	@echo "Opening report: $(OUTPUT_REPORT)"
 	open $(OUTPUT_REPORT)
 
+# Run the web application on localhost
+.PHONY: run-web
+run-web:
+	@echo "Starting Finance Analyzer web application on http://localhost:5000"
+	$(VENV_PYTHON) app.py
+
+# Run the web application with sample data
+.PHONY: run-web-sample
+run-web-sample:
+	@echo "Starting Finance Analyzer web application with sample data on http://localhost:5000"
+	$(VENV_PYTHON) app.py --sample
+
 # Clean generated files and __pycache__ directories
 .PHONY: clean
 clean:

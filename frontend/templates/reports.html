@@ -1,0 +1,627 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - Reports{% endblock %}
+
+{% block head_extra %}
+<style>
+    .report-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .report-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .report-option {
+        border-left: 4px solid transparent;
+        transition: background-color 0.2s ease;
+    }
+    .report-option:hover {
+        background-color: rgba(78, 115, 223, 0.05);
+    }
+    .report-option.selected {
+        border-left-color: #4e73df;
+        background-color: rgba(78, 115, 223, 0.1);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-5 mb-3">Financial Reports</h1>
+        <p class="lead">
+            Generate comprehensive reports to track your financial progress
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Report Builder -->
+    <div class="col-lg-8 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Report Builder</h5>
+            </div>
+            <div class="card-body">
+                <form id="reportBuilderForm">
+                    <!-- Report Type -->
+                    <div class="mb-4">
+                        <label class="form-label">Report Type</label>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card report-option selected" data-report-type="monthly">
+                                    <div class="card-body p-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportType" id="monthlyReport" value="monthly" checked>
+                                            <label class="form-check-label" for="monthlyReport">
+                                                <h6 class="mb-1">Monthly Report</h6>
+                                                <small class="text-muted">Detailed analysis of a single month</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card report-option" data-report-type="quarterly">
+                                    <div class="card-body p-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportType" id="quarterlyReport" value="quarterly">
+                                            <label class="form-check-label" for="quarterlyReport">
+                                                <h6 class="mb-1">Quarterly Report</h6>
+                                                <small class="text-muted">Three-month financial summary</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card report-option" data-report-type="annual">
+                                    <div class="card-body p-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportType" id="annualReport" value="annual">
+                                            <label class="form-check-label" for="annualReport">
+                                                <h6 class="mb-1">Annual Report</h6>
+                                                <small class="text-muted">Comprehensive yearly overview</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Date Range -->
+                    <div class="mb-4">
+                        <label class="form-label">Date Range</label>
+                        <div id="dateRangeContainer">
+                            <!-- Monthly date selector (default) -->
+                            <div id="monthlyDateSelector">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select class="form-select" id="monthSelect">
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-select" id="yearSelect">
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quarterly date selector (hidden by default) -->
+                            <div id="quarterlyDateSelector" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select class="form-select" id="quarterSelect">
+                                            <option value="1">Q1 (Jan-Mar)</option>
+                                            <option value="2">Q2 (Apr-Jun)</option>
+                                            <option value="3">Q3 (Jul-Sep)</option>
+                                            <option value="4">Q4 (Oct-Dec)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-select" id="quarterYearSelect">
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Annual date selector (hidden by default) -->
+                            <div id="annualDateSelector" style="display: none;">
+                                <select class="form-select" id="annualYearSelect">
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Report Sections -->
+                    <div class="mb-4">
+                        <label class="form-label">Report Sections</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeOverview" checked>
+                                    <label class="form-check-label" for="includeOverview">
+                                        Financial Overview
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeIncome" checked>
+                                    <label class="form-check-label" for="includeIncome">
+                                        Income Analysis
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeExpenses" checked>
+                                    <label class="form-check-label" for="includeExpenses">
+                                        Expense Breakdown
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeCategories" checked>
+                                    <label class="form-check-label" for="includeCategories">
+                                        Category Analysis
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeTrends" checked>
+                                    <label class="form-check-label" for="includeTrends">
+                                        Spending Trends
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeSavings" checked>
+                                    <label class="form-check-label" for="includeSavings">
+                                        Savings Opportunities
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeTransactions">
+                                    <label class="form-check-label" for="includeTransactions">
+                                        Transaction List
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="includeRecommendations" checked>
+                                    <label class="form-check-label" for="includeRecommendations">
+                                        Recommendations
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Report Format -->
+                    <div class="mb-4">
+                        <label class="form-label">Report Format</label>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="card report-option selected" data-format="pdf">
+                                    <div class="card-body p-3 text-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportFormat" id="pdfFormat" value="pdf" checked>
+                                            <label class="form-check-label" for="pdfFormat">
+                                                <i class="fas fa-file-pdf fa-2x mb-2 text-danger"></i>
+                                                <h6 class="mb-0">PDF</h6>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card report-option" data-format="excel">
+                                    <div class="card-body p-3 text-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportFormat" id="excelFormat" value="excel">
+                                            <label class="form-check-label" for="excelFormat">
+                                                <i class="fas fa-file-excel fa-2x mb-2 text-success"></i>
+                                                <h6 class="mb-0">Excel</h6>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card report-option" data-format="csv">
+                                    <div class="card-body p-3 text-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportFormat" id="csvFormat" value="csv">
+                                            <label class="form-check-label" for="csvFormat">
+                                                <i class="fas fa-file-csv fa-2x mb-2 text-primary"></i>
+                                                <h6 class="mb-0">CSV</h6>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card report-option" data-format="html">
+                                    <div class="card-body p-3 text-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reportFormat" id="htmlFormat" value="html">
+                                            <label class="form-check-label" for="htmlFormat">
+                                                <i class="fas fa-file-code fa-2x mb-2 text-warning"></i>
+                                                <h6 class="mb-0">HTML</h6>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Generate Report Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-file-alt me-2"></i>Generate Report
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Report Templates -->
+    <div class="col-lg-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Report Templates</h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">Quick-start with pre-configured report templates</p>
+                
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action report-template" data-template="monthly-summary">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Monthly Summary</h6>
+                            <small><i class="fas fa-star text-warning"></i></small>
+                        </div>
+                        <p class="mb-1 small">Comprehensive overview of monthly finances</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action report-template" data-template="expense-analysis">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Expense Analysis</h6>
+                            <small><i class="fas fa-star text-warning"></i></small>
+                        </div>
+                        <p class="mb-1 small">Detailed breakdown of spending by category</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action report-template" data-template="savings-opportunities">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Savings Opportunities</h6>
+                            <small></small>
+                        </div>
+                        <p class="mb-1 small">Identify potential areas to reduce expenses</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action report-template" data-template="annual-review">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Annual Review</h6>
+                            <small></small>
+                        </div>
+                        <p class="mb-1 small">Year-end financial performance summary</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action report-template" data-template="budget-comparison">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Budget Comparison</h6>
+                            <small></small>
+                        </div>
+                        <p class="mb-1 small">Compare actual spending to budget targets</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recent Reports -->
+        <div class="card shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Recent Reports</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">December 2023 Summary</h6>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1 small">Monthly financial report (PDF)</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Q4 2023 Analysis</h6>
+                            <small class="text-muted">1 week ago</small>
+                        </div>
+                        <p class="mb-1 small">Quarterly financial report (PDF)</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">November 2023 Summary</h6>
+                            <small class="text-muted">1 month ago</small>
+                        </div>
+                        <p class="mb-1 small">Monthly financial report (PDF)</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Handle report type selection
+    document.querySelectorAll('.report-option[data-report-type]').forEach(option => {
+        option.addEventListener('click', function() {
+            // Update radio button
+            const radioInput = this.querySelector('input[type="radio"]');
+            radioInput.checked = true;
+            
+            // Update UI
+            document.querySelectorAll('.report-option[data-report-type]').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            this.classList.add('selected');
+            
+            // Show appropriate date selector
+            const reportType = this.getAttribute('data-report-type');
+            updateDateSelector(reportType);
+        });
+    });
+    
+    // Handle report format selection
+    document.querySelectorAll('.report-option[data-format]').forEach(option => {
+        option.addEventListener('click', function() {
+            // Update radio button
+            const radioInput = this.querySelector('input[type="radio"]');
+            radioInput.checked = true;
+            
+            // Update UI
+            document.querySelectorAll('.report-option[data-format]').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            this.classList.add('selected');
+        });
+    });
+    
+    // Update date selector based on report type
+    function updateDateSelector(reportType) {
+        // Hide all date selectors
+        document.getElementById('monthlyDateSelector').style.display = 'none';
+        document.getElementById('quarterlyDateSelector').style.display = 'none';
+        document.getElementById('annualDateSelector').style.display = 'none';
+        
+        // Show appropriate date selector
+        if (reportType === 'monthly') {
+            document.getElementById('monthlyDateSelector').style.display = 'block';
+        } else if (reportType === 'quarterly') {
+            document.getElementById('quarterlyDateSelector').style.display = 'block';
+        } else if (reportType === 'annual') {
+            document.getElementById('annualDateSelector').style.display = 'block';
+        }
+    }
+    
+    // Handle report template selection
+    document.querySelectorAll('.report-template').forEach(template => {
+        template.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const templateType = this.getAttribute('data-template');
+            applyReportTemplate(templateType);
+        });
+    });
+    
+    // Apply report template settings
+    function applyReportTemplate(templateType) {
+        // Reset all checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        
+        // Apply template-specific settings
+        switch(templateType) {
+            case 'monthly-summary':
+                // Select monthly report type
+                document.getElementById('monthlyReport').checked = true;
+                updateReportTypeUI('monthly');
+                
+                // Select sections
+                document.getElementById('includeOverview').checked = true;
+                document.getElementById('includeIncome').checked = true;
+                document.getElementById('includeExpenses').checked = true;
+                document.getElementById('includeCategories').checked = true;
+                document.getElementById('includeTrends').checked = true;
+                document.getElementById('includeSavings').checked = true;
+                document.getElementById('includeRecommendations').checked = true;
+                
+                // Select PDF format
+                document.getElementById('pdfFormat').checked = true;
+                updateFormatUI('pdf');
+                break;
+                
+            case 'expense-analysis':
+                // Select monthly report type
+                document.getElementById('monthlyReport').checked = true;
+                updateReportTypeUI('monthly');
+                
+                // Select sections
+                document.getElementById('includeExpenses').checked = true;
+                document.getElementById('includeCategories').checked = true;
+                document.getElementById('includeTrends').checked = true;
+                document.getElementById('includeTransactions').checked = true;
+                
+                // Select PDF format
+                document.getElementById('pdfFormat').checked = true;
+                updateFormatUI('pdf');
+                break;
+                
+            case 'savings-opportunities':
+                // Select monthly report type
+                document.getElementById('monthlyReport').checked = true;
+                updateReportTypeUI('monthly');
+                
+                // Select sections
+                document.getElementById('includeExpenses').checked = true;
+                document.getElementById('includeSavings').checked = true;
+                document.getElementById('includeRecommendations').checked = true;
+                
+                // Select PDF format
+                document.getElementById('pdfFormat').checked = true;
+                updateFormatUI('pdf');
+                break;
+                
+            case 'annual-review':
+                // Select annual report type
+                document.getElementById('annualReport').checked = true;
+                updateReportTypeUI('annual');
+                
+                // Select sections
+                document.getElementById('includeOverview').checked = true;
+                document.getElementById('includeIncome').checked = true;
+                document.getElementById('includeExpenses').checked = true;
+                document.getElementById('includeCategories').checked = true;
+                document.getElementById('includeTrends').checked = true;
+                document.getElementById('includeSavings').checked = true;
+                document.getElementById('includeRecommendations').checked = true;
+                
+                // Select PDF format
+                document.getElementById('pdfFormat').checked = true;
+                updateFormatUI('pdf');
+                break;
+                
+            case 'budget-comparison':
+                // Select monthly report type
+                document.getElementById('monthlyReport').checked = true;
+                updateReportTypeUI('monthly');
+                
+                // Select sections
+                document.getElementById('includeOverview').checked = true;
+                document.getElementById('includeExpenses').checked = true;
+                document.getElementById('includeCategories').checked = true;
+                
+                // Select Excel format
+                document.getElementById('excelFormat').checked = true;
+                updateFormatUI('excel');
+                break;
+        }
+    }
+    
+    // Update report type UI
+    function updateReportTypeUI(reportType) {
+        // Update UI
+        document.querySelectorAll('.report-option[data-report-type]').forEach(opt => {
+            opt.classList.remove('selected');
+        });
+        document.querySelector(`.report-option[data-report-type="${reportType}"]`).classList.add('selected');
+        
+        // Update date selector
+        updateDateSelector(reportType);
+    }
+    
+    // Update format UI
+    function updateFormatUI(format) {
+        // Update UI
+        document.querySelectorAll('.report-option[data-format]').forEach(opt => {
+            opt.classList.remove('selected');
+        });
+        document.querySelector(`.report-option[data-format="${format}"]`).classList.add('selected');
+    }
+    
+    // Handle form submission
+    document.getElementById('reportBuilderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get report type
+        let reportType;
+        if (document.getElementById('monthlyReport').checked) {
+            reportType = 'monthly';
+        } else if (document.getElementById('quarterlyReport').checked) {
+            reportType = 'quarterly';
+        } else if (document.getElementById('annualReport').checked) {
+            reportType = 'annual';
+        }
+        
+        // Get date range
+        let dateRange;
+        if (reportType === 'monthly') {
+            const month = document.getElementById('monthSelect').value;
+            const year = document.getElementById('yearSelect').value;
+            dateRange = `${month}/${year}`;
+        } else if (reportType === 'quarterly') {
+            const quarter = document.getElementById('quarterSelect').value;
+            const year = document.getElementById('quarterYearSelect').value;
+            dateRange = `Q${quarter}/${year}`;
+        } else if (reportType === 'annual') {
+            const year = document.getElementById('annualYearSelect').value;
+            dateRange = year;
+        }
+        
+        // Get selected sections
+        const sections = [];
+        if (document.getElementById('includeOverview').checked) sections.push('overview');
+        if (document.getElementById('includeIncome').checked) sections.push('income');
+        if (document.getElementById('includeExpenses').checked) sections.push('expenses');
+        if (document.getElementById('includeCategories').checked) sections.push('categories');
+        if (document.getElementById('includeTrends').checked) sections.push('trends');
+        if (document.getElementById('includeSavings').checked) sections.push('savings');
+        if (document.getElementById('includeTransactions').checked) sections.push('transactions');
+        if (document.getElementById('includeRecommendations').checked) sections.push('recommendations');
+        
+        // Get report format
+        let format;
+        if (document.getElementById('pdfFormat').checked) format = 'pdf';
+        else if (document.getElementById('excelFormat').checked) format = 'excel';
+        else if (document.getElementById('csvFormat').checked) format = 'csv';
+        else if (document.getElementById('htmlFormat').checked) format = 'html';
+        
+        // Log report configuration (would be sent to server in real implementation)
+        console.log('Report Configuration:', {
+            type: reportType,
+            dateRange: dateRange,
+            sections: sections,
+            format: format
+        });
+        
+        // Show success message (would generate actual report in real implementation)
+        alert(`Your ${reportType} report for ${dateRange} will be generated in ${format.toUpperCase()} format. This feature will be fully implemented in a future update.`);
+    });
+    
+    // Initialize date selectors with current month/year
+    document.addEventListener('DOMContentLoaded', function() {
+        const now = new Date();
+        const currentMonth = now.getMonth() + 1; // JavaScript months are 0-indexed
+        const currentYear = now.getFullYear();
+        
+        // Set current month and year
+        document.getElementById('monthSelect').value = currentMonth;
+        document.getElementById('yearSelect').value = currentYear;
+        document.getElementById('quarterYearSelect').value = currentYear;
+        document.getElementById('annualYearSelect').value = currentYear;
+        
+        // Set current quarter
+        const currentQuarter = Math.floor((currentMonth - 1) / 3) + 1;
+        document.getElementById('quarterSelect').value = currentQuarter;
+    });
+</script>
+{% endblock %}

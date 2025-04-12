@@ -1,0 +1,365 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - Dashboard{% endblock %}
+
+{% block head_extra %}
+<style>
+    .stat-card {
+        transition: transform 0.3s ease;
+    }
+    .stat-card:hover {
+        transform: translateY(-5px);
+    }
+    .chart-container {
+        min-height: 400px;
+    }
+    .category-pill {
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .category-pill:hover {
+        transform: scale(1.05);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-5 mb-4">Financial Dashboard</h1>
+        <p class="lead">
+            Analysis of {{ analysis.transaction_count }} transactions
+        </p>
+    </div>
+</div>
+
+<!-- Key Financial Metrics -->
+<div class="row mb-5">
+    <div class="col-md-3">
+        <div class="card stat-card h-100 border-primary">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Total Income</h6>
+                <h2 class="display-6">${{ "%.2f"|format(analysis.income) }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card h-100 border-danger">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Total Expenses</h6>
+                <h2 class="display-6">${{ "%.2f"|format(analysis.expenses) }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card h-100 {% if analysis.net_cash_flow >= 0 %}border-success{% else %}border-danger{% endif %}">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Net Cash Flow</h6>
+                <h2 class="display-6 {% if analysis.net_cash_flow >= 0 %}text-success{% else %}text-danger{% endif %}">
+                    ${{ "%.2f"|format(analysis.net_cash_flow) }}
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card h-100 {% if analysis.savings_rate >= 0.2 %}border-success{% else %}border-warning{% endif %}">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Savings Rate</h6>
+                <h2 class="display-6 {% if analysis.savings_rate >= 0.2 %}text-success{% else %}text-warning{% endif %}">
+                    {{ "%.1f"|format(analysis.savings_rate * 100) }}%
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Spending by Category Chart -->
+<div class="row mb-5">
+    <div class="col-lg-7">
+        <div class="card shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Spending by Category</h5>
+            </div>
+            <div class="card-body">
+                <div id="categoryChart" class="chart-container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Top Spending Categories</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group">
+                    {% for category in analysis.top_categories %}
+                    <a href="{{ url_for('category_details', category=category.category) }}" 
+                       class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="category-badge bg-{{ loop.index0 % 6 + 1 }}"></span>
+                            {{ category.category|title }}
+                        </div>
+                        <span class="badge bg-primary rounded-pill">${{ "%.2f"|format(category.amount) }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+                
+                <div class="mt-4">
+                    <h6>Category Breakdown</h6>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        {% for category, amount in chart_data.spending_by_category.items() %}
+                        <span class="badge rounded-pill bg-{{ loop.index0 % 6 + 1 }} category-pill" 
+                              onclick="window.location.href='{{ url_for('category_details', category=category) }}'">
+                            {{ category|title }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Monthly Spending & Top Merchants -->
+<div class="row mb-5">
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Monthly Spending Trends</h5>
+            </div>
+            <div class="card-body">
+                <div id="monthlyChart" class="chart-container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Top Merchants</h5>
+            </div>
+            <div class="card-body">
+                <div id="merchantChart" class="chart-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Savings Potential -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Savings Potential</h5>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <div class="display-1 text-success">${{ "%.2f"|format(analysis.total_potential_savings) }}</div>
+                        <p class="lead">Potential Monthly Savings</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Based on your spending patterns, we've identified opportunities to save up to <strong>${{ "%.2f"|format(analysis.total_potential_savings) }}</strong> per month.</p>
+                        <p>This could amount to <strong>${{ "%.2f"|format(analysis.total_potential_savings * 12) }}</strong> per year in savings!</p>
+                        <a href="{{ url_for('recommendations') }}" class="btn btn-primary mt-3">
+                            <i class="fas fa-lightbulb me-2"></i>View Detailed Recommendations
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Action Buttons -->
+<div class="row">
+    <div class="col-md-4">
+        <a href="{{ url_for('transactions') }}" class="btn btn-outline-primary w-100 p-3">
+            <i class="fas fa-list me-2"></i>View All Transactions
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ url_for('recommendations') }}" class="btn btn-outline-success w-100 p-3">
+            <i class="fas fa-lightbulb me-2"></i>View Recommendations
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ url_for('clear_session') }}" class="btn btn-outline-secondary w-100 p-3">
+            <i class="fas fa-redo me-2"></i>Start New Analysis
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Prepare data for charts
+    const categoryData = {{ chart_data.spending_by_category|tojson }};
+    const monthlyData = {{ chart_data.monthly_spending|tojson }};
+    const merchantData = {{ chart_data.top_merchants|tojson }};
+    
+    // Create color palette
+    const colorPalette = [
+        '#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b', '#6f42c1',
+        '#5a5c69', '#858796', '#2e59d9', '#17a673', '#2c9faf', '#f8f9fc'
+    ];
+    
+    // Spending by Category Pie Chart
+    function createCategoryChart() {
+        const categories = Object.keys(categoryData);
+        const values = Object.values(categoryData);
+        
+        const data = [{
+            type: 'pie',
+            labels: categories.map(cat => cat.charAt(0).toUpperCase() + cat.slice(1)),
+            values: values,
+            textinfo: 'label+percent',
+            textposition: 'outside',
+            automargin: true,
+            marker: {
+                colors: colorPalette.slice(0, categories.length)
+            },
+            hoverinfo: 'label+value+percent',
+            hoverlabel: {
+                bgcolor: '#FFF',
+                bordercolor: '#333',
+                font: {
+                    size: 14
+                }
+            }
+        }];
+        
+        const layout = {
+            showlegend: false,
+            margin: {t: 0, b: 0, l: 0, r: 0},
+            height: 400
+        };
+        
+        Plotly.newPlot('categoryChart', data, layout, {responsive: true});
+        
+        // Add click event to show category details
+        document.getElementById('categoryChart').on('plotly_click', function(data) {
+            const category = data.points[0].label.toLowerCase();
+            window.location.href = `/category/${category}`;
+        });
+    }
+    
+    // Monthly Spending Trends Chart
+    function createMonthlyChart() {
+        const months = Object.keys(monthlyData);
+        const allCategories = new Set();
+        
+        // Get all unique categories
+        months.forEach(month => {
+            Object.keys(monthlyData[month]).forEach(category => {
+                allCategories.add(category);
+            });
+        });
+        
+        // Create traces for each category
+        const traces = Array.from(allCategories).map((category, index) => {
+            const trace = {
+                x: months,
+                y: months.map(month => monthlyData[month][category] || 0),
+                type: 'scatter',
+                mode: 'lines+markers',
+                name: category.charAt(0).toUpperCase() + category.slice(1),
+                line: {
+                    width: 3,
+                    color: colorPalette[index % colorPalette.length]
+                },
+                marker: {
+                    size: 8,
+                    color: colorPalette[index % colorPalette.length]
+                }
+            };
+            return trace;
+        });
+        
+        const layout = {
+            margin: {t: 10, r: 10},
+            height: 400,
+            legend: {
+                orientation: 'h',
+                y: -0.2
+            },
+            xaxis: {
+                title: 'Month'
+            },
+            yaxis: {
+                title: 'Amount ($)'
+            }
+        };
+        
+        Plotly.newPlot('monthlyChart', traces, layout, {responsive: true});
+    }
+    
+    // Top Merchants Bar Chart
+    function createMerchantChart() {
+        // Sort merchants by amount
+        const sortedMerchants = [...merchantData].sort((a, b) => a.amount - b.amount);
+        
+        const data = [{
+            x: sortedMerchants.map(m => m.amount),
+            y: sortedMerchants.map(m => m.merchant),
+            type: 'bar',
+            orientation: 'h',
+            marker: {
+                color: colorPalette[3]
+            },
+            text: sortedMerchants.map(m => `$${m.amount.toFixed(2)}`),
+            textposition: 'auto',
+            hoverinfo: 'x+y'
+        }];
+        
+        const layout = {
+            margin: {t: 10, r: 10, l: 120},
+            height: 400,
+            xaxis: {
+                title: 'Amount ($)'
+            },
+            yaxis: {
+                automargin: true
+            }
+        };
+        
+        Plotly.newPlot('merchantChart', data, layout, {responsive: true});
+    }
+    
+    // Initialize charts when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        createCategoryChart();
+        createMonthlyChart();
+        createMerchantChart();
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        Plotly.relayout('categoryChart', {
+            'height': document.getElementById('categoryChart').offsetHeight
+        });
+        Plotly.relayout('monthlyChart', {
+            'height': document.getElementById('monthlyChart').offsetHeight
+        });
+        Plotly.relayout('merchantChart', {
+            'height': document.getElementById('merchantChart').offsetHeight
+        });
+    });
+</script>
+
+<style>
+    /* Category badge colors */
+    .category-badge {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+    .bg-1 { background-color: #4e73df; }
+    .bg-2 { background-color: #1cc88a; }
+    .bg-3 { background-color: #36b9cc; }
+    .bg-4 { background-color: #f6c23e; }
+    .bg-5 { background-color: #e74a3b; }
+    .bg-6 { background-color: #6f42c1; }
+</style>
+{% endblock %}

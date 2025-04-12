@@ -1,0 +1,438 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - Recommendations{% endblock %}
+
+{% block head_extra %}
+<style>
+    .recommendation-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .recommendation-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .savings-value {
+        color: #1cc88a;
+        font-weight: bold;
+    }
+    .nav-pills .nav-link.active {
+        background-color: #4e73df;
+    }
+    .nav-pills .nav-link {
+        color: #5a5c69;
+    }
+    .nav-pills .nav-link.active {
+        color: white;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-5 mb-3">Financial Recommendations</h1>
+        <p class="lead">
+            Personalized recommendations to improve your financial health
+        </p>
+    </div>
+</div>
+
+<!-- Recommendation Tabs -->
+<div class="row mb-4">
+    <div class="col-12">
+        <ul class="nav nav-pills nav-fill" id="recommendationTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="savings-tab" data-bs-toggle="pill" data-bs-target="#savings" type="button" role="tab" aria-controls="savings" aria-selected="true">
+                    <i class="fas fa-piggy-bank me-2"></i>Savings Recommendations
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="investment-tab" data-bs-toggle="pill" data-bs-target="#investment" type="button" role="tab" aria-controls="investment" aria-selected="false">
+                    <i class="fas fa-chart-line me-2"></i>Investment Recommendations
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Tab Content -->
+<div class="tab-content" id="recommendationTabsContent">
+    <!-- Savings Recommendations -->
+    <div class="tab-pane fade show active" id="savings" role="tabpanel" aria-labelledby="savings-tab">
+        <!-- Savings Summary -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <div class="display-4 text-success">${{ "%.2f"|format(analysis.total_potential_savings) }}</div>
+                                <p class="lead">Potential Monthly Savings</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Your Savings Potential</h4>
+                                <p>Based on your spending patterns, we've identified opportunities to save up to <strong>${{ "%.2f"|format(analysis.total_potential_savings) }}</strong> per month.</p>
+                                <p>This could amount to <strong>${{ "%.2f"|format(analysis.total_potential_savings * 12) }}</strong> per year in savings!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Savings Recommendations -->
+        <div class="row">
+            {% for recommendation in recommendations.savings %}
+            <div class="col-lg-6 mb-4">
+                <div class="card recommendation-card h-100" data-bs-toggle="modal" data-bs-target="#detailModal" data-recommendation-id="savings-{{ loop.index0 }}">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">{{ recommendation.category|title }}</h5>
+                        <span class="badge bg-success">Save ${{ "%.2f"|format(recommendation.potential_savings) }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>{{ recommendation.description }}</p>
+                    </div>
+                    <div class="card-footer bg-transparent text-end">
+                        <small class="text-muted">Click for more details</small>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Investment Recommendations -->
+    <div class="tab-pane fade" id="investment" role="tabpanel" aria-labelledby="investment-tab">
+        <!-- Investment Summary -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4>Investment Opportunities</h4>
+                                <p>Based on your financial situation, we've identified potential investment strategies that could help grow your wealth over time.</p>
+                                <p>Remember that all investments carry some level of risk, and past performance is not indicative of future results.</p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="display-4">
+                                    <i class="fas fa-chart-line text-primary"></i>
+                                </div>
+                                <p class="lead">Personalized Investment Advice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Investment Recommendations -->
+        <div class="row">
+            {% for recommendation in recommendations.investment %}
+            <div class="col-lg-6 mb-4">
+                <div class="card recommendation-card h-100" data-bs-toggle="modal" data-bs-target="#detailModal" data-recommendation-id="investment-{{ loop.index0 }}">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">{{ recommendation.title }}</h5>
+                        {% if recommendation.potential_return %}
+                        <span class="badge bg-primary">{{ recommendation.potential_return }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        <p>{{ recommendation.description }}</p>
+                    </div>
+                    <div class="card-footer bg-transparent text-end">
+                        <small class="text-muted">Click for more details</small>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Action Buttons -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <a href="{{ url_for('analyze') }}" class="btn btn-outline-primary w-100 p-3">
+            <i class="fas fa-chart-pie me-2"></i>Back to Dashboard
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a href="{{ url_for('clear_session') }}" class="btn btn-outline-secondary w-100 p-3">
+            <i class="fas fa-redo me-2"></i>Start New Analysis
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Store recommendations data
+    const savingsRecommendations = {{ recommendations.savings|tojson }};
+    const investmentRecommendations = {{ recommendations.investment|tojson }};
+    
+    // Handle recommendation card clicks
+    document.querySelectorAll('.recommendation-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const recommendationId = this.getAttribute('data-recommendation-id');
+            const [type, index] = recommendationId.split('-');
+            
+            let recommendation;
+            if (type === 'savings') {
+                recommendation = savingsRecommendations[index];
+                showSavingsRecommendationDetails(recommendation);
+            } else {
+                recommendation = investmentRecommendations[index];
+                showInvestmentRecommendationDetails(recommendation);
+            }
+        });
+    });
+    
+    function showSavingsRecommendationDetails(recommendation) {
+        // Set modal title
+        document.getElementById('modalTitle').textContent = `${recommendation.category.charAt(0).toUpperCase() + recommendation.category.slice(1)} Savings`;
+        
+        // Build modal content
+        let modalContent = `
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="mb-4 text-center">
+                        <div class="display-4 text-success">$${recommendation.potential_savings.toFixed(2)}</div>
+                        <p class="lead">Potential Monthly Savings</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Recommendation</h5>
+                        <p>${recommendation.description}</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Implementation Steps</h5>
+                        <ol class="list-group list-group-numbered">
+        `;
+        
+        // Generate implementation steps based on category
+        const steps = generateImplementationSteps(recommendation.category);
+        steps.forEach(step => {
+            modalContent += `<li class="list-group-item">${step}</li>`;
+        });
+        
+        modalContent += `
+                        </ol>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Annual Impact</h5>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        <h6>Monthly Savings</h6>
+                                        <div class="text-success fw-bold">$${recommendation.potential_savings.toFixed(2)}</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>Annual Savings</h6>
+                                        <div class="text-success fw-bold">$${(recommendation.potential_savings * 12).toFixed(2)}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Set modal body content
+        document.getElementById('modalBody').innerHTML = modalContent;
+    }
+    
+    function showInvestmentRecommendationDetails(recommendation) {
+        // Set modal title
+        document.getElementById('modalTitle').textContent = recommendation.title;
+        
+        // Build modal content
+        let modalContent = `
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h5>Investment Strategy</h5>
+                        <p>${recommendation.description}</p>
+                    </div>
+        `;
+        
+        if (recommendation.potential_return) {
+            modalContent += `
+                <div class="mb-4">
+                    <h5>Potential Return</h5>
+                    <div class="alert alert-primary">
+                        ${recommendation.potential_return}
+                    </div>
+                    <small class="text-muted">Note: Past performance is not indicative of future results. All investments involve risk.</small>
+                </div>
+            `;
+        }
+        
+        if (recommendation.priority) {
+            modalContent += `
+                <div class="mb-4">
+                    <h5>Priority</h5>
+                    <div class="badge bg-${recommendation.priority === 'High' ? 'danger' : recommendation.priority === 'Medium' ? 'warning' : 'info'} p-2">
+                        ${recommendation.priority} Priority
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Add risk level if available
+        if (recommendation.risk_level) {
+            modalContent += `
+                <div class="mb-4">
+                    <h5>Risk Level</h5>
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar ${getRiskLevelClass(recommendation.risk_level)}" 
+                             role="progressbar" 
+                             style="width: ${getRiskLevelPercentage(recommendation.risk_level)}%" 
+                             aria-valuenow="${getRiskLevelPercentage(recommendation.risk_level)}" 
+                             aria-valuemin="0" 
+                             aria-valuemax="100">
+                            ${recommendation.risk_level}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Add considerations
+        modalContent += `
+            <div class="mb-4">
+                <h5>Considerations</h5>
+                <ul class="list-group">
+                    <li class="list-group-item">Consider consulting with a financial advisor before making investment decisions.</li>
+                    <li class="list-group-item">Ensure you have an emergency fund before investing.</li>
+                    <li class="list-group-item">Diversify your investments to manage risk.</li>
+                    <li class="list-group-item">Consider your investment time horizon and risk tolerance.</li>
+                </ul>
+            </div>
+        `;
+        
+        modalContent += `
+                </div>
+            </div>
+        `;
+        
+        // Set modal body content
+        document.getElementById('modalBody').innerHTML = modalContent;
+    }
+    
+    function generateImplementationSteps(category) {
+        // Return category-specific implementation steps
+        const steps = {
+            'dining': [
+                'Review your dining expenses and identify frequent restaurant visits',
+                'Plan meals for the week and create a grocery shopping list',
+                'Prepare lunch at home to bring to work instead of eating out',
+                'Limit restaurant dining to special occasions',
+                'Look for restaurant deals and happy hour specials when dining out'
+            ],
+            'entertainment': [
+                'Review your current entertainment subscriptions',
+                'Cancel unused or rarely used subscription services',
+                'Consider sharing subscription costs with family or friends',
+                'Look for free or low-cost entertainment options in your community',
+                'Use your local library for books, movies, and other media'
+            ],
+            'shopping': [
+                'Create a shopping list before making purchases and stick to it',
+                'Implement a 24-hour rule before making non-essential purchases',
+                'Look for sales, discounts, and use cashback apps',
+                'Consider buying used items when appropriate',
+                'Unsubscribe from retailer email lists to avoid impulse purchases'
+            ],
+            'utilities': [
+                'Install energy-efficient light bulbs and appliances',
+                'Adjust your thermostat to save on heating and cooling costs',
+                'Unplug electronics when not in use to reduce phantom power usage',
+                'Compare service providers for better rates',
+                'Consider bundling services for discounts'
+            ],
+            'transportation': [
+                'Plan your routes to minimize fuel consumption',
+                'Consider carpooling, public transportation, or biking when possible',
+                'Maintain your vehicle properly to improve fuel efficiency',
+                'Compare gas prices using apps to find the best deals',
+                'Evaluate if you can reduce the number of vehicles in your household'
+            ],
+            'subscriptions': [
+                'List all your current subscription services',
+                'Identify overlapping or rarely used subscriptions',
+                'Cancel subscriptions you don't regularly use',
+                'Look for annual payment options to save money',
+                'Consider rotating subscriptions instead of maintaining multiple simultaneously'
+            ],
+            'groceries': [
+                'Plan meals based on sales and seasonal items',
+                'Use a grocery list and avoid shopping when hungry',
+                'Buy store brands instead of name brands when possible',
+                'Purchase non-perishable items in bulk when on sale',
+                'Use cashback and coupon apps for additional savings'
+            ],
+            'housing': [
+                'Review your mortgage or rent to see if refinancing or negotiating is possible',
+                'Evaluate your insurance policies for better rates',
+                'Implement energy-saving measures to reduce utility costs',
+                'Consider if downsizing or relocating could reduce housing costs',
+                'Explore renting out extra space if applicable'
+            ],
+            'debt': [
+                'List all your debts with interest rates and minimum payments',
+                'Focus on paying off high-interest debt first',
+                'Consider debt consolidation for better interest rates',
+                'Contact creditors to negotiate lower interest rates',
+                'Set up automatic payments to avoid late fees'
+            ]
+        };
+        
+        // Return steps for the category or default steps
+        return steps[category] || [
+            'Review your spending in this category',
+            'Identify specific expenses that can be reduced',
+            'Research alternatives or better deals',
+            'Create a budget for this category',
+            'Track your progress and adjust as needed'
+        ];
+    }
+    
+    function getRiskLevelClass(riskLevel) {
+        switch(riskLevel.toLowerCase()) {
+            case 'very low':
+                return 'bg-success';
+            case 'low':
+                return 'bg-info';
+            case 'medium':
+                return 'bg-warning';
+            case 'high':
+                return 'bg-danger';
+            default:
+                return 'bg-primary';
+        }
+    }
+    
+    function getRiskLevelPercentage(riskLevel) {
+        switch(riskLevel.toLowerCase()) {
+            case 'very low':
+                return 20;
+            case 'low':
+                return 40;
+            case 'medium':
+                return 60;
+            case 'high':
+                return 80;
+            case 'very high':
+                return 100;
+            default:
+                return 50;
+        }
+    }
+</script>
+{% endblock %}

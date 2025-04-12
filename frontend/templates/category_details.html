@@ -1,0 +1,468 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - {{ category|title }} Category{% endblock %}
+
+{% block head_extra %}
+<style>
+    .transaction-row {
+        transition: background-color 0.2s ease;
+    }
+    .transaction-row:hover {
+        background-color: rgba(0, 123, 255, 0.05);
+    }
+    .expense {
+        color: #e74a3b;
+    }
+    .income {
+        color: #1cc88a;
+    }
+    .chart-container {
+        min-height: 300px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('analyze') }}">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ category|title }}</li>
+            </ol>
+        </nav>
+        <h1 class="display-5 mb-3">{{ category|title }} Spending</h1>
+        <p class="lead">
+            Detailed analysis of your {{ category|lower }} expenses
+        </p>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Category Summary -->
+    <div class="col-lg-4 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Summary</h5>
+            </div>
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <div class="display-4">${{ "%.2f"|format(total) }}</div>
+                    <p class="lead">Total Spending</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h6>Percentage of Total Expenses</h6>
+                    <div class="progress" style="height: 25px;">
+                        {% set percentage = (total / analysis.expenses * 100)|round|int %}
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ percentage }}%;" aria-valuenow="{{ percentage }}" aria-valuemin="0" aria-valuemax="100">{{ percentage }}%</div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <h6>Transaction Count</h6>
+                    <p class="mb-0">{{ transactions|length }} transactions</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h6>Average Transaction</h6>
+                    <p class="mb-0">${{ "%.2f"|format(total / transactions|length) if transactions|length > 0 else 0 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Category Trend -->
+    <div class="col-lg-8 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Spending Trend</h5>
+            </div>
+            <div class="card-body">
+                <div id="trendChart" class="chart-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Merchant Breakdown -->
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Top Merchants</h5>
+            </div>
+            <div class="card-body">
+                <div id="merchantChart" class="chart-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Savings Opportunities -->
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Savings Opportunities</h5>
+            </div>
+            <div class="card-body">
+                <div id="savingsOpportunities">
+                    <!-- Dynamically generated content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Transactions Table -->
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">{{ category|title }} Transactions</h5>
+                <div class="input-group" style="max-width: 300px;">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search transactions...">
+                    <button class="btn btn-outline-secondary" type="button" id="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0" id="transactionsTable">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for t in transactions %}
+                            <tr class="transaction-row">
+                                <td>{{ t.date }}</td>
+                                <td>{{ t.description }}</td>
+                                <td class="expense">${{ "%.2f"|format(t.amount|abs) }}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary transaction-details" 
+                                            data-transaction-id="{{ loop.index0 }}"
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#detailModal">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Store transactions data
+    const transactions = {{ transactions|tojson }};
+    const category = "{{ category }}";
+    
+    // Transaction detail modal
+    document.querySelectorAll('.transaction-details').forEach(button => {
+        button.addEventListener('click', function() {
+            const transactionId = this.getAttribute('data-transaction-id');
+            const transaction = transactions[transactionId];
+            
+            // Set modal title
+            document.getElementById('modalTitle').textContent = 'Transaction Details';
+            
+            // Build modal content
+            let modalContent = `
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <h6 class="text-muted">Date</h6>
+                                <p class="mb-0">${transaction.date}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-muted">Amount</h6>
+                                <p class="mb-0 text-danger">$${Math.abs(transaction.amount).toFixed(2)}</p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted">Description</h6>
+                            <p class="mb-0">${transaction.description}</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted">Category</h6>
+                            <p class="mb-0">
+                                <span class="badge bg-primary">${transaction.category}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Add similar transactions if available
+            const similarTransactions = transactions.filter(t => 
+                t.description.toLowerCase().includes(transaction.description.toLowerCase().substring(0, 5)) && 
+                t !== transaction
+            ).slice(0, 3);
+            
+            if (similarTransactions.length > 0) {
+                modalContent += `
+                    <div class="mt-4">
+                        <h6>Similar Transactions</h6>
+                        <div class="list-group mt-2">
+                `;
+                
+                similarTransactions.forEach(t => {
+                    modalContent += `
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">${t.description}</h6>
+                                <small class="text-danger">$${Math.abs(t.amount).toFixed(2)}</small>
+                            </div>
+                            <small class="text-muted">${t.date}</small>
+                        </div>
+                    `;
+                });
+                
+                modalContent += `
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Set modal body content
+            document.getElementById('modalBody').innerHTML = modalContent;
+        });
+    });
+    
+    // Search functionality
+    document.getElementById('searchButton').addEventListener('click', function() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        filterTransactions(searchTerm);
+    });
+    
+    document.getElementById('searchInput').addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filterTransactions(searchTerm);
+        }
+    });
+    
+    function filterTransactions(searchTerm) {
+        const rows = document.querySelectorAll('#transactionsTable tbody tr');
+        
+        rows.forEach(row => {
+            const description = row.cells[1].textContent.toLowerCase();
+            
+            if (description.includes(searchTerm) || searchTerm === '') {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+    
+    // Create spending trend chart
+    function createTrendChart() {
+        // Group transactions by date
+        const dateGroups = {};
+        
+        transactions.forEach(transaction => {
+            const date = transaction.date.substring(0, 7); // YYYY-MM format
+            if (!dateGroups[date]) {
+                dateGroups[date] = 0;
+            }
+            dateGroups[date] += Math.abs(transaction.amount);
+        });
+        
+        // Sort dates
+        const sortedDates = Object.keys(dateGroups).sort();
+        
+        // Create chart data
+        const data = [{
+            x: sortedDates,
+            y: sortedDates.map(date => dateGroups[date]),
+            type: 'scatter',
+            mode: 'lines+markers',
+            line: {
+                color: '#4e73df',
+                width: 3
+            },
+            marker: {
+                size: 8,
+                color: '#4e73df'
+            },
+            hovertemplate: '%{x}: $%{y:.2f}<extra></extra>'
+        }];
+        
+        const layout = {
+            margin: {t: 10, r: 10, b: 40, l: 60},
+            height: 300,
+            xaxis: {
+                title: 'Month'
+            },
+            yaxis: {
+                title: 'Amount ($)'
+            }
+        };
+        
+        Plotly.newPlot('trendChart', data, layout, {responsive: true});
+    }
+    
+    // Create merchant breakdown chart
+    function createMerchantChart() {
+        // Group transactions by merchant
+        const merchantGroups = {};
+        
+        transactions.forEach(transaction => {
+            // Extract merchant name (simplified approach)
+            const words = transaction.description.split(' ');
+            const merchant = words.length > 2 ? words.slice(0, 2).join(' ') : transaction.description;
+            
+            if (!merchantGroups[merchant]) {
+                merchantGroups[merchant] = 0;
+            }
+            merchantGroups[merchant] += Math.abs(transaction.amount);
+        });
+        
+        // Sort merchants by amount
+        const sortedMerchants = Object.entries(merchantGroups)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5); // Top 5 merchants
+        
+        // Create chart data
+        const data = [{
+            labels: sortedMerchants.map(m => m[0]),
+            values: sortedMerchants.map(m => m[1]),
+            type: 'pie',
+            textinfo: 'label+percent',
+            textposition: 'outside',
+            automargin: true,
+            marker: {
+                colors: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b']
+            },
+            hoverinfo: 'label+value+percent',
+            hoverlabel: {
+                bgcolor: '#FFF',
+                bordercolor: '#333',
+                font: {
+                    size: 14
+                }
+            }
+        }];
+        
+        const layout = {
+            showlegend: false,
+            margin: {t: 10, b: 10, l: 10, r: 10},
+            height: 300
+        };
+        
+        Plotly.newPlot('merchantChart', data, layout, {responsive: true});
+    }
+    
+    // Generate savings opportunities based on category
+    function generateSavingsOpportunities() {
+        const savingsContainer = document.getElementById('savingsOpportunities');
+        
+        // Category-specific savings tips
+        const tips = {
+            'dining': [
+                'Cook meals at home instead of eating out',
+                'Bring lunch to work instead of buying',
+                'Look for restaurant deals and happy hours',
+                'Limit food delivery services which add fees',
+                'Use restaurant loyalty programs'
+            ],
+            'entertainment': [
+                'Share streaming subscriptions with family',
+                'Use free entertainment options like libraries',
+                'Look for free community events',
+                'Cancel unused subscription services',
+                'Take advantage of free trial periods'
+            ],
+            'shopping': [
+                'Make a shopping list and stick to it',
+                'Wait 24 hours before making non-essential purchases',
+                'Use cashback and coupon apps',
+                'Buy used items when appropriate',
+                'Look for sales and seasonal discounts'
+            ],
+            'utilities': [
+                'Install energy-efficient light bulbs',
+                'Unplug electronics when not in use',
+                'Adjust thermostat settings',
+                'Compare service providers for better rates',
+                'Consider bundling services for discounts'
+            ],
+            'transportation': [
+                'Use public transportation when possible',
+                'Carpool to save on gas and parking',
+                'Maintain your vehicle for better fuel efficiency',
+                'Compare gas prices using apps',
+                'Consider biking or walking for short trips'
+            ],
+            'groceries': [
+                'Plan meals based on sales',
+                'Buy store brands instead of name brands',
+                'Use a grocery list and avoid shopping hungry',
+                'Buy non-perishables in bulk when on sale',
+                'Join store loyalty programs'
+            ]
+        };
+        
+        // Get tips for this category or use generic tips
+        const categoryTips = tips[category.toLowerCase()] || [
+            'Track your spending in this category',
+            'Look for less expensive alternatives',
+            'Set a budget for this category',
+            'Compare prices before making purchases',
+            'Look for deals and discounts'
+        ];
+        
+        // Create HTML content
+        let html = '<div class="list-group">';
+        
+        categoryTips.forEach((tip, index) => {
+            html += `
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1">Tip #${index + 1}</h6>
+                        <small class="text-primary">
+                            <i class="fas fa-lightbulb"></i>
+                        </small>
+                    </div>
+                    <p class="mb-1">${tip}</p>
+                </div>
+            `;
+        });
+        
+        html += '</div>';
+        
+        // Set container content
+        savingsContainer.innerHTML = html;
+    }
+    
+    // Initialize charts and content when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        createTrendChart();
+        createMerchantChart();
+        generateSavingsOpportunities();
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        Plotly.relayout('trendChart', {
+            'height': document.getElementById('trendChart').offsetHeight
+        });
+        Plotly.relayout('merchantChart', {
+            'height': document.getElementById('merchantChart').offsetHeight
+        });
+    });
+</script>
+{% endblock %}
