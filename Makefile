@@ -23,6 +23,8 @@ help:
 	@echo "  run-categories       - Run with custom categories (set STATEMENT=path/to/file)"
 	@echo "  generate-profiles    - Generate sample financial profile data files in data/sample_profiles/"
 	@echo "  run-profile          - Run with a specific financial profile (set PROFILE=profile_name)"
+	@echo "  run-webapp           - Run the web application"
+	@echo "  restart-webapp       - Kill any running instance and restart the web application"
 	@echo "  clean                - Remove generated files and __pycache__ directories"
 	@echo "  clean-all            - Remove generated files, __pycache__ directories, and virtual environment"
 	@echo ""
@@ -31,6 +33,7 @@ help:
 	@echo "  make run-categories STATEMENT=my_bank_statement.csv"
 	@echo "  make generate-profiles"
 	@echo "  make run-profile PROFILE=young_professional"
+	@echo "  make restart-webapp"
 
 # Setup virtual environment and install dependencies
 .PHONY: setup
@@ -148,4 +151,18 @@ clean:
 clean-all: clean
 	@echo "Removing virtual environment..."
 	rm -rf $(VENV)
-	@echo "Clean all complete!"
+	@echo "Cleanup complete!"
+
+# Run the web application
+.PHONY: run-webapp
+run-webapp:
+	@echo "Starting Finance Analyzer web application..."
+	$(VENV_PYTHON) app.py
+
+# Kill any running instance and restart the web application
+.PHONY: restart-webapp
+restart-webapp:
+	@echo "Stopping any running instances of the web application..."
+	-lsof -i :8080 -i :8081 | grep LISTEN | awk '{print $$2}' | xargs kill -9 2>/dev/null || true
+	@echo "Starting Finance Analyzer web application..."
+	$(VENV_PYTHON) app.py

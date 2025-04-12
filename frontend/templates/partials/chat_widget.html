@@ -1,0 +1,465 @@
+<!-- AI Chat Widget -->
+<div id="chat-widget" class="chat-widget">
+    <div class="chat-header" id="chat-header">
+        <h5><i class="fas fa-robot me-2"></i>AI Assistant</h5>
+        <div class="chat-controls">
+            <button id="chat-resize" class="btn btn-sm btn-outline-secondary me-1">
+                <i class="fas fa-expand-arrows-alt"></i>
+            </button>
+            <button id="chat-minimize" class="btn btn-sm btn-outline-secondary">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+    </div>
+    <div class="chat-body">
+        <div id="chat-messages" class="chat-messages">
+            <div class="message assistant">
+                <div class="message-content">
+                    <p>Hello! I'm your financial assistant. I can help you understand your data and provide recommendations. What would you like to know?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="form-control" placeholder="Ask me anything about your finances...">
+            <button id="chat-send" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Widget Styles -->
+<style>
+    .chat-widget {
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        width: 350px;
+        height: 450px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        resize: none;
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 800px;
+        max-height: 800px;
+    }
+    
+    .chat-widget.minimized {
+        height: 50px;
+    }
+    
+    .chat-header {
+        background-color: #f8f9fa;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .chat-header h5 {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .chat-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .chat-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 15px;
+    }
+    
+    .message {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .message.user {
+        align-items: flex-end;
+    }
+    
+    .message.assistant {
+        align-items: flex-start;
+    }
+    
+    .message-content {
+        max-width: 80%;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    
+    .message.user .message-content {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    .message.assistant .message-content {
+        background-color: #f1f3f5;
+        color: #343a40;
+    }
+    
+    .chat-input-container {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #e9ecef;
+    }
+    
+    #chat-input {
+        flex: 1;
+        margin-right: 10px;
+    }
+    
+    .chat-widget.minimized .chat-body {
+        display: none;
+    }
+    
+    .chat-suggestions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .chat-suggestion {
+        background-color: #e9ecef;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    
+    .chat-suggestion:hover {
+        background-color: #dee2e6;
+    }
+    
+    .typing-indicator {
+        display: flex;
+        padding: 10px 15px;
+    }
+    
+    .typing-indicator span {
+        height: 8px;
+        width: 8px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+        animation: typing 1s infinite;
+    }
+    
+    .typing-indicator span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .typing-indicator span:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+    
+    @keyframes typing {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+    }
+</style>
+
+<!-- Chat Widget Scripts -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const chatWidget = document.getElementById('chat-widget');
+        const chatHeader = document.getElementById('chat-header');
+        const chatMinimize = document.getElementById('chat-minimize');
+        const chatResize = document.getElementById('chat-resize');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const chatSend = document.getElementById('chat-send');
+        
+        // Make the chat widget draggable by the header
+        makeDraggable(chatWidget, chatHeader);
+        
+        // Function to make an element draggable
+        function makeDraggable(element, handle) {
+            let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            
+            if (handle) {
+                // If a handle is provided, use it to drag the element
+                handle.style.cursor = 'move';
+                handle.onmousedown = dragMouseDown;
+            } else {
+                // Otherwise, move from anywhere inside the element
+                element.onmousedown = dragMouseDown;
+            }
+            
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // Get the mouse cursor position at startup
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // Call a function whenever the cursor moves
+                document.onmousemove = elementDrag;
+            }
+            
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // Calculate the new cursor position
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // Set the element's new position
+                const newTop = (element.offsetTop - pos2);
+                const newLeft = (element.offsetLeft - pos1);
+                
+                // Make sure the widget stays within the viewport
+                const maxTop = window.innerHeight - element.offsetHeight;
+                const maxLeft = window.innerWidth - element.offsetWidth;
+                
+                element.style.top = Math.min(Math.max(0, newTop), maxTop) + 'px';
+                element.style.left = Math.min(Math.max(0, newLeft), maxLeft) + 'px';
+                
+                // When dragging starts, switch from bottom/right positioning to top/left
+                element.style.bottom = 'auto';
+                element.style.right = 'auto';
+            }
+            
+            function closeDragElement() {
+                // Stop moving when mouse button is released
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+        
+        // Context information about the current page
+        const pageContext = {
+            page: window.location.pathname,
+            title: document.title,
+            data: {}
+        };
+        
+        // Add page-specific context
+        if (window.location.pathname.includes('/transactions')) {
+            pageContext.data.view = 'transactions';
+        } else if (window.location.pathname.includes('/recommendations')) {
+            pageContext.data.view = 'recommendations';
+        } else if (window.location.pathname.includes('/category/')) {
+            pageContext.data.view = 'category';
+            pageContext.data.category = window.location.pathname.split('/').pop();
+        }
+        
+        // Toggle chat widget minimize/maximize
+        chatMinimize.addEventListener('click', function() {
+            chatWidget.classList.toggle('minimized');
+            const icon = chatMinimize.querySelector('i');
+            if (chatWidget.classList.contains('minimized')) {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-expand');
+            } else {
+                icon.classList.remove('fa-expand');
+                icon.classList.add('fa-minus');
+            }
+        });
+        
+        // Toggle resize mode
+        let resizeMode = false;
+        chatResize.addEventListener('click', function() {
+            resizeMode = !resizeMode;
+            if (resizeMode) {
+                // Enable manual resize
+                chatWidget.style.resize = 'both';
+                chatWidget.style.overflow = 'auto';
+                chatResize.classList.add('active');
+                chatResize.querySelector('i').classList.add('text-primary');
+            } else {
+                // Disable manual resize
+                chatWidget.style.resize = 'none';
+                chatWidget.style.overflow = 'hidden';
+                chatResize.classList.remove('active');
+                chatResize.querySelector('i').classList.remove('text-primary');
+            }
+        });
+        
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message === '') return;
+            
+            // Add user message to chat
+            addMessage('user', message);
+            
+            // Clear input
+            chatInput.value = '';
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Send message to server with current page context
+            fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: message,
+                    context: pageContext
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Remove typing indicator
+                removeTypingIndicator();
+                
+                // Add assistant response
+                if (data.error) {
+                    addMessage('assistant', 'Sorry, I encountered an error: ' + data.error);
+                } else {
+                    addMessage('assistant', data.response);
+                }
+                
+                // Add suggestions based on current page
+                addSuggestions();
+            })
+            .catch(error => {
+                // Remove typing indicator
+                removeTypingIndicator();
+                
+                // Show error message
+                addMessage('assistant', 'Sorry, there was an error communicating with the server.');
+                console.error('Error:', error);
+            });
+        }
+        
+        // Add message to chat
+        function addMessage(role, content) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            const paragraph = document.createElement('p');
+            paragraph.textContent = content;
+            
+            contentDiv.appendChild(paragraph);
+            messageDiv.appendChild(contentDiv);
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Show typing indicator
+        function showTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'typing-indicator message assistant';
+            typingDiv.id = 'typing-indicator';
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            for (let i = 0; i < 3; i++) {
+                const dot = document.createElement('span');
+                contentDiv.appendChild(dot);
+            }
+            
+            typingDiv.appendChild(contentDiv);
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Remove typing indicator
+        function removeTypingIndicator() {
+            const typingIndicator = document.getElementById('typing-indicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+        
+        // Add contextual suggestions based on current page
+        function addSuggestions() {
+            // Create suggestions container if it doesn't exist
+            let suggestionsDiv = document.querySelector('.chat-suggestions');
+            if (!suggestionsDiv) {
+                suggestionsDiv = document.createElement('div');
+                suggestionsDiv.className = 'chat-suggestions';
+                chatMessages.appendChild(suggestionsDiv);
+            } else {
+                // Clear existing suggestions
+                suggestionsDiv.innerHTML = '';
+            }
+            
+            // Add page-specific suggestions
+            let suggestions = [];
+            
+            if (pageContext.data.view === 'transactions') {
+                suggestions = [
+                    'Summarize my spending',
+                    'Which category has highest spending?',
+                    'Any unusual transactions?'
+                ];
+            } else if (pageContext.data.view === 'recommendations') {
+                suggestions = [
+                    'Explain these recommendations',
+                    'How much can I save?',
+                    'Investment opportunities'
+                ];
+            } else if (pageContext.data.view === 'category') {
+                suggestions = [
+                    'Why is this spending high?',
+                    'How to reduce this expense',
+                    'Compare to average'
+                ];
+            } else {
+                suggestions = [
+                    'How to use this app',
+                    'Upload my statement',
+                    'Show sample data'
+                ];
+            }
+            
+            // Add suggestion buttons
+            suggestions.forEach(text => {
+                const suggestion = document.createElement('div');
+                suggestion.className = 'chat-suggestion';
+                suggestion.textContent = text;
+                suggestion.addEventListener('click', function() {
+                    chatInput.value = text;
+                    sendMessage();
+                });
+                suggestionsDiv.appendChild(suggestion);
+            });
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Send message on button click
+        chatSend.addEventListener('click', sendMessage);
+        
+        // Send message on Enter key
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Add initial suggestions
+        addSuggestions();
+    });
+</script>

@@ -80,7 +80,7 @@ This section provides a comprehensive guide on how to set up and run the Finance
 The project includes a Makefile that simplifies common tasks. Here are the most useful commands:
 
 ```bash
-# Set up the environment and install dependencies
+# Set up the environment
 make setup
 
 # Run with sample data
@@ -91,6 +91,12 @@ make run-interactive
 
 # Run with your own statement file
 make run-custom STATEMENT=path/to/your/statement.csv
+
+# Start the web application
+make run-webapp
+
+# Restart the web application (kills any running instance first)
+make restart-webapp
 
 # Open the generated report
 make open-report
@@ -119,6 +125,57 @@ pip install -r requirements.txt
 ```bash
 # Run with a specific statement file
 python main.py --statement path/to/your/statement.csv
+
+# Run the web application
+python app.py
+```
+
+#### 3. AI Chat Configuration
+
+The Finance Analyzer includes an AI-powered chat assistant that can provide personalized financial insights and recommendations based on your data. The chat assistant appears as a widget on every page of the web application.
+
+##### Setting Up AI Chat
+
+To use the AI-powered chat feature, you need to set up environment variables for the AI provider:
+
+```bash
+# Create a .env file in the project root with the following variables
+
+# AI Provider Selection (openai or claude)
+AI_PROVIDER=openai
+
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o  # Optional, defaults to gpt-4o
+
+# Claude Configuration (if using Claude)
+# ANTHROPIC_API_KEY=your_anthropic_api_key_here
+# CLAUDE_MODEL=claude-3-opus-20240229  # Optional
+```
+
+You can obtain API keys from:
+- OpenAI: https://platform.openai.com/account/api-keys
+- Anthropic Claude: https://www.anthropic.com/product
+
+##### Using the AI Chat Assistant
+
+The AI chat assistant is context-aware and provides different suggestions based on the page you're viewing:
+
+1. **On the Transactions page**: Get insights about spending patterns, unusual transactions, and categorization suggestions
+2. **On the Recommendations page**: Receive detailed explanations about savings recommendations and investment advice
+3. **On Category Details pages**: Get specific insights about a particular spending category and optimization strategies
+
+The chat widget can be minimized when not in use by clicking the minimize button in the top-right corner of the widget.
+
+##### Restarting the Web Application
+
+If you make changes to the AI configuration or encounter issues with the chat feature, you can restart the web application using:
+
+```bash
+make restart-webapp
+```
+
+This command will automatically kill any running instances of the application and start a fresh instance.
 
 # Use the included sample data
 python main.py --statement data/sample_statement.csv

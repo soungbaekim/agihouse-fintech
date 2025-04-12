@@ -1,0 +1,366 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - AI Chat{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Sidebar with financial summary -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Financial Summary</h5>
+                </div>
+                <div class="card-body">
+                    {% if 'analysis_data' in session %}
+                    <div class="mb-3">
+                        <h6>Key Metrics</h6>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Income</span>
+                                <span class="badge bg-success rounded-pill">${{ '{:,.2f}'.format(session.analysis_data.income|float) }}</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Expenses</span>
+                                <span class="badge bg-danger rounded-pill">${{ '{:,.2f}'.format(session.analysis_data.expenses|float) }}</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Net Cash Flow</span>
+                                <span class="badge {% if session.analysis_data.net_cash_flow >= 0 %}bg-success{% else %}bg-danger{% endif %} rounded-pill">
+                                    ${{ '{:,.2f}'.format(session.analysis_data.net_cash_flow|float) }}
+                                </span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Savings Rate</span>
+                                <span class="badge {% if session.analysis_data.savings_rate >= 20 %}bg-success{% elif session.analysis_data.savings_rate >= 10 %}bg-warning{% else %}bg-danger{% endif %} rounded-pill">
+                                    {{ '{:.1f}'.format(session.analysis_data.savings_rate|float) }}%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h6>Top Categories</h6>
+                        <div class="list-group list-group-flush">
+                            {% for category in session.analysis_data.top_spending_categories[:5] %}
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>{{ category.category }}</span>
+                                <span class="badge bg-primary rounded-pill">${{ '{:,.2f}'.format(category.amount|float) }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i> No financial data available. Please upload a statement or use sample data.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <!-- Main chat interface -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-robot me-2"></i> Financial Assistant
+                    </h5>
+                    <button id="clearChat" class="btn btn-sm btn-outline-light">
+                        <i class="fas fa-trash me-1"></i> Clear Chat
+                    </button>
+                </div>
+                <div class="card-body">
+                    {% if ai_chat_available %}
+                        <div id="chatMessages" class="chat-messages mb-3" style="height: 400px; overflow-y: auto;">
+                            <div class="chat-message assistant">
+                                <div class="chat-bubble">
+                                    <p>Hello! I'm your AI financial assistant. I can help you understand your financial data, answer questions, and provide personalized recommendations. How can I help you today?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-input">
+                            <form id="chatForm" class="d-flex">
+                                <input type="text" id="userMessage" class="form-control me-2" placeholder="Ask me about your finances..." required>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <p class="small text-muted">
+                                <i class="fas fa-info-circle me-1"></i> Try asking about your spending patterns, savings opportunities, or investment recommendations.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-sm btn-outline-secondary suggestion-btn">
+                                    Where am I spending the most money?
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary suggestion-btn">
+                                    How can I improve my savings?
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary suggestion-btn">
+                                    What investment options do you recommend?
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary suggestion-btn">
+                                    Analyze my spending trends
+                                </button>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning">
+                            <h5><i class="fas fa-exclamation-triangle me-2"></i> AI Chat Not Available</h5>
+                            <p>The AI chat service is not available. Please make sure you have set up the required API keys and installed the necessary packages.</p>
+                            <p>Check the README.md file for instructions on how to set up the AI chat service.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .chat-messages {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .chat-message {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .chat-message.user {
+        justify-content: flex-end;
+    }
+    
+    .chat-bubble {
+        max-width: 80%;
+        padding: 10px 15px;
+        border-radius: 18px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .chat-message.user .chat-bubble {
+        background-color: #007bff;
+        color: white;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .chat-message.assistant .chat-bubble {
+        background-color: #f1f3f5;
+        color: #343a40;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .chat-bubble p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .chat-bubble p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .typing-indicator {
+        display: flex;
+        align-items: center;
+    }
+    
+    .typing-indicator span {
+        height: 8px;
+        width: 8px;
+        background-color: #343a40;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 3px;
+        animation: typing 1s infinite;
+    }
+    
+    .typing-indicator span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .typing-indicator span:nth-child(3) {
+        animation-delay: 0.4s;
+        margin-right: 0;
+    }
+    
+    @keyframes typing {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+    }
+</style>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const chatMessages = document.getElementById('chatMessages');
+        const chatForm = document.getElementById('chatForm');
+        const userMessageInput = document.getElementById('userMessage');
+        const clearChatButton = document.getElementById('clearChat');
+        const suggestionButtons = document.querySelectorAll('.suggestion-btn');
+        
+        // Initialize Socket.IO
+        const socket = io();
+        
+        // Connect event
+        socket.on('connect', function() {
+            console.log('Connected to server');
+        });
+        
+        // Disconnect event
+        socket.on('disconnect', function() {
+            console.log('Disconnected from server');
+        });
+        
+        // Chat response event
+        socket.on('chat_response', function(data) {
+            removeTypingIndicator();
+            
+            if (data.error) {
+                addErrorMessage(data.error);
+            } else if (data.response) {
+                addAssistantMessage(data.response);
+            }
+            
+            // Scroll to bottom
+            scrollToBottom();
+        });
+        
+        // Form submission
+        chatForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const message = userMessageInput.value.trim();
+            if (!message) return;
+            
+            // Add user message to chat
+            addUserMessage(message);
+            
+            // Clear input
+            userMessageInput.value = '';
+            
+            // Add typing indicator
+            addTypingIndicator();
+            
+            // Scroll to bottom
+            scrollToBottom();
+            
+            // Send message to server
+            socket.emit('chat_message', { message: message });
+        });
+        
+        // Clear chat
+        clearChatButton.addEventListener('click', function() {
+            // Clear chat messages except for the welcome message
+            chatMessages.innerHTML = `
+                <div class="chat-message assistant">
+                    <div class="chat-bubble">
+                        <p>Hello! I'm your AI financial assistant. I can help you understand your financial data, answer questions, and provide personalized recommendations. How can I help you today?</p>
+                    </div>
+                </div>
+            `;
+            
+            // Send request to clear conversation history
+            fetch('/api/clear_chat', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error('Error:', error));
+        });
+        
+        // Suggestion buttons
+        suggestionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const suggestion = this.textContent.trim();
+                userMessageInput.value = suggestion;
+                chatForm.dispatchEvent(new Event('submit'));
+            });
+        });
+        
+        // Helper functions
+        function addUserMessage(message) {
+            const messageElement = document.createElement('div');
+            messageElement.className = 'chat-message user';
+            messageElement.innerHTML = `
+                <div class="chat-bubble">
+                    <p>${escapeHtml(message)}</p>
+                </div>
+            `;
+            chatMessages.appendChild(messageElement);
+        }
+        
+        function addAssistantMessage(message) {
+            const messageElement = document.createElement('div');
+            messageElement.className = 'chat-message assistant';
+            messageElement.innerHTML = `
+                <div class="chat-bubble">
+                    <p>${formatMessage(message)}</p>
+                </div>
+            `;
+            chatMessages.appendChild(messageElement);
+        }
+        
+        function addErrorMessage(error) {
+            const messageElement = document.createElement('div');
+            messageElement.className = 'chat-message assistant';
+            messageElement.innerHTML = `
+                <div class="chat-bubble" style="background-color: #f8d7da; color: #721c24;">
+                    <p><i class="fas fa-exclamation-circle me-2"></i> ${escapeHtml(error)}</p>
+                </div>
+            `;
+            chatMessages.appendChild(messageElement);
+        }
+        
+        function addTypingIndicator() {
+            removeTypingIndicator(); // Remove existing indicator if any
+            
+            const indicatorElement = document.createElement('div');
+            indicatorElement.className = 'chat-message assistant typing-indicator-container';
+            indicatorElement.innerHTML = `
+                <div class="chat-bubble">
+                    <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            `;
+            chatMessages.appendChild(indicatorElement);
+        }
+        
+        function removeTypingIndicator() {
+            const indicator = chatMessages.querySelector('.typing-indicator-container');
+            if (indicator) {
+                indicator.remove();
+            }
+        }
+        
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function formatMessage(message) {
+            // Replace newlines with <br>
+            let formatted = message.replace(/\n/g, '<br>');
+            
+            // Format dollar amounts
+            formatted = formatted.replace(/\$(\d+(\.\d{1,2})?)/g, '<span class="text-success">$$$1</span>');
+            
+            return formatted;
+        }
+    });
+</script>
+{% endblock %}

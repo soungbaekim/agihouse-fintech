@@ -12,6 +12,7 @@ import argparse
 from pathlib import Path
 from flask import Flask, render_template, request, redirect, url_for, jsonify, flash, session
 from werkzeug.utils import secure_filename
+from flask_socketio import SocketIO
 
 # Import core modules
 from parsers.parser_factory import ParserFactory
@@ -27,6 +28,9 @@ app.secret_key = os.urandom(24)  # For flash messages and sessions
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max upload size
 app.config['ALLOWED_EXTENSIONS'] = {'csv', 'xlsx', 'xls', 'pdf'}
+
+# Initialize SocketIO
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
@@ -456,7 +460,7 @@ if __name__ == '__main__':
             except Exception as e:
                 print(f"Error loading profile data: {str(e)}")
     elif args.sample:
-        print("Starting with sample data. Access the application at http://localhost:8082")
+        print("Starting with sample data. Access the application at http://localhost:8080")
         
         # Load sample data directly
         @app.before_request
@@ -491,6 +495,148 @@ if __name__ == '__main__':
             except Exception as e:
                 print(f"Error loading sample data: {str(e)}")
     else:
-        print("Starting Finance Analyzer. Access the application at http://localhost:8082")
+        print("Starting Finance Analyzer. Access the application at http://localhost:8080")
     
-    app.run(debug=True, host='0.0.0.0', port=8082)
+    # Import AI chat service
+    try:
+        from ai_chat.chat_factory import ChatServiceFactory
+        app.config['AI_CHAT_AVAILABLE'] = True
+    except ImportError:
+        app.config['AI_CHAT_AVAILABLE'] = False
+        print("AI Chat service not available. Please install required packages.")
+    
+    # Add chat route
+    @app.route('/chat')
+    def chat():
+        """Display the chat interface"""
+        return render_template('chat.html', ai_chat_available=app.config['AI_CHAT_AVAILABLE'])
+    
+    # Add chat API endpoint
+    @app.route('/api/chat', methods=['POST'])
+    def api_chat():
+        """API endpoint for chat"""
+        if not app.config['AI_CHAT_AVAILABLE']:
+            return jsonify({'error': 'AI Chat service not available'}), 503
+        
+        # Get user message and context from request
+        data = request.json
+        user_message = data.get('message', '')
+        page_context = data.get('context', {})
+        
+        if not user_message:
+            return jsonify({'error': 'No message provided'}), 400
+        
+        # Get financial data from session
+        financial_data = {
+            'analysis_data': session.get('analysis_data', {}),
+            'chart_data': session.get('chart_data', {}),
+            'recommendations': session.get('recommendations', {})
+        }
+        
+        # Add page context to financial data
+        financial_data['page_context'] = page_context
+        
+        # Get conversation history from session
+        conversation_history = session.get('conversation_history', [])
+        
+        try:
+            # Create context-aware prompt based on current page
+            context_prefix = ""
+            if page_context.get('page'):
+                page_path = page_context.get('page')
+                if 'transactions' in page_path:
+                    context_prefix = "The user is currently viewing their transactions. "
+                elif 'recommendations' in page_path:
+                    context_prefix = "The user is currently viewing savings recommendations. "
+                elif 'category' in page_path and page_context.get('data', {}).get('category'):
+                    category = page_context.get('data', {}).get('category')
+                    context_prefix = f"The user is currently viewing details for the '{category}' spending category. "
+            
+            # Enhance user message with context
+            enhanced_message = f"{context_prefix}{user_message}" if context_prefix else user_message
+            
+            # Get response from AI chat service
+            response = ChatServiceFactory.get_chat_response(
+                enhanced_message, financial_data, conversation_history
+            )
+            
+            # Update conversation history (store original message, not enhanced)
+            conversation_history.append({'role': 'user', 'content': user_message})
+            conversation_history.append({'role': 'assistant', 'content': response})
+            
+            # Limit conversation history to last 20 messages
+            if len(conversation_history) > 20:
+                conversation_history = conversation_history[-20:]
+            
+            # Store conversation history in session
+            session['conversation_history'] = conversation_history
+            
+            return jsonify({'response': response})
+        
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+    
+    # Add endpoint to clear chat history
+    @app.route('/api/clear_chat', methods=['POST'])
+    def clear_chat_history():
+        """Clear the chat conversation history"""
+        if 'conversation_history' in session:
+            session.pop('conversation_history')
+        return jsonify({'status': 'success', 'message': 'Chat history cleared'})
+    
+    # SocketIO event handlers
+    @socketio.on('connect')
+    def handle_connect():
+        print('Client connected')
+    
+    @socketio.on('disconnect')
+    def handle_disconnect():
+        print('Client disconnected')
+    
+    @socketio.on('chat_message')
+    def handle_chat_message(data):
+        """Handle chat messages via SocketIO"""
+        if not app.config['AI_CHAT_AVAILABLE']:
+            socketio.emit('chat_response', {'error': 'AI Chat service not available'})
+            return
+        
+        user_message = data.get('message', '')
+        
+        if not user_message:
+            socketio.emit('chat_response', {'error': 'No message provided'})
+            return
+        
+        # Get financial data from session
+        financial_data = {
+            'analysis_data': session.get('analysis_data', {}),
+            'chart_data': session.get('chart_data', {}),
+            'recommendations': session.get('recommendations', {})
+        }
+        
+        # Get conversation history from session
+        conversation_history = session.get('conversation_history', [])
+        
+        try:
+            # Get response from AI chat service
+            response = ChatServiceFactory.get_chat_response(
+                user_message, financial_data, conversation_history
+            )
+            
+            # Update conversation history
+            conversation_history.append({'role': 'user', 'content': user_message})
+            conversation_history.append({'role': 'assistant', 'content': response})
+            
+            # Limit conversation history to last 10 messages
+            if len(conversation_history) > 20:
+                conversation_history = conversation_history[-20:]
+            
+            # Store conversation history in session
+            session['conversation_history'] = conversation_history
+            
+            socketio.emit('chat_response', {'response': response})
+        
+        except Exception as e:
+            socketio.emit('chat_response', {'error': str(e)})
+    
+    # Run the app with SocketIO
+    socketio.run(app, debug=True, host='0.0.0.0', port=8080)
