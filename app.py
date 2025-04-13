@@ -863,15 +863,32 @@ def use_sample_profile(profile_name):
             if field in analysis:
                 analysis[field] = float(analysis[field])
         
+        # Calculate total potential savings properly from the savings recommendations
+        total_potential_savings = 0.0
+        if isinstance(profile_data['recommendations'], dict) and 'savings' in profile_data['recommendations']:
+            savings_recs = profile_data['recommendations']['savings']
+            if isinstance(savings_recs, list) and savings_recs:
+                # Sum up all potential savings from each recommendation
+                total_potential_savings = sum(
+                    float(rec.get('potential_savings', 0.0)) 
+                    for rec in savings_recs
+                )
+        
+        # Check if we already have a total_potential_savings directly in the recommendations
+        if isinstance(profile_data['recommendations'], dict) and 'total_potential_savings' in profile_data['recommendations']:
+            # Use the directly provided value if it exists
+            direct_total = float(profile_data['recommendations']['total_potential_savings'])
+            if direct_total > 0 and total_potential_savings == 0:
+                total_potential_savings = direct_total
+        
         session['analysis_data'] = {
             'transaction_count': len(session['transactions']),
-            'income': analysis['income'],
-            'expenses': analysis['expenses'],
-            'net_cash_flow': analysis['net_cash_flow'],
-            'savings_rate': analysis['savings_rate'],
+            'income': float(analysis['income']),
+            'expenses': float(analysis['expenses']),
+            'net_cash_flow': float(analysis['net_cash_flow']),
+            'savings_rate': float(analysis['savings_rate']),
             'top_categories': analysis['top_spending_categories'] if 'top_spending_categories' in analysis else analysis['top_categories'],
-            'total_potential_savings': profile_data['recommendations'].get('total_potential_savings', 0.0) 
-                                        if isinstance(profile_data['recommendations'], dict) else 0.0
+            'total_potential_savings': float(total_potential_savings)
         }
         
         print(f"Stored analysis data in session: {list(session['analysis_data'].keys())}")
@@ -902,13 +919,27 @@ def use_sample_profile(profile_name):
         # Store recommendations (ensuring proper format)
         if isinstance(profile_data['recommendations'], dict):
             recs = profile_data['recommendations']
+            savings_list = recs.get('savings', []) if isinstance(recs.get('savings'), list) else []
+            
+            # Ensure all potential_savings values are properly formatted as floats
+            for rec in savings_list:
+                if 'potential_savings' in rec:
+                    rec['potential_savings'] = float(rec['potential_savings'])
+            
+            investment_list = recs.get('investment', []) if isinstance(recs.get('investment'), list) else []
+            
             session['recommendations'] = {
-                'savings': recs.get('savings', []) if isinstance(recs.get('savings'), list) else [],
-                'investment': recs.get('investment', []) if isinstance(recs.get('investment'), list) else []
+                'savings': savings_list,
+                'investment': investment_list,
+                'total_potential_savings': float(total_potential_savings)  # Add this to recommendations too
             }
         else:
             # If the recommendations aren't in the right format, create an empty structure
-            session['recommendations'] = {'savings': [], 'investment': []}
+            session['recommendations'] = {
+                'savings': [], 
+                'investment': [],
+                'total_potential_savings': 0.0
+            }
             
         print("Stored recommendations in session")
         
@@ -919,24 +950,23 @@ def use_sample_profile(profile_name):
         # Mark the session as modified
         session.modified = True
         
-        # Redirect directly to recommendations instead of analyze
-        return redirect(url_for('recommendations'))
+        # Flash a message about the selected profile
+        profile_descriptions = get_profile_descriptions()
+        if profile_name in profile_descriptions:
+            flash(f'Loaded "{profile_name.replace("_", " ").title()}" profile: {profile_descriptions[profile_name]}', 'info')
+            # Also add a flash message to simulate upload success
+            flash(f'Successfully processed your financial data. Showing analysis for {profile_name.replace("_", " ").title()}', 'success')
+        
+        # Add a simulated file_path to make it feel like the user uploaded a file
+        sample_file_name = f"{profile_name}_statement.csv"
+        session['file_path'] = os.path.join(app.config['UPLOAD_FOLDER'], sample_file_name)
+        
+        # Redirect to analyze route to simulate the normal user flow after upload
+        return redirect(url_for('analyze'))
     except Exception as e:
         print(f"Error storing profile data in session: {e}")
         flash(f'Error loading profile: {str(e)}', 'danger')
         return redirect(url_for('index'))
-    # Flash a message about the selected profile
-    profile_descriptions = get_profile_descriptions()
-    if profile_name in profile_descriptions:
-        flash(f'Loaded "{profile_name.replace("_", " ").title()}" profile: {profile_descriptions[profile_name]}', 'info')
-    
-    # Instead of redirecting to analyze, we'll render the dashboard template directly
-    # This avoids potential issues with the analyze route
-    return render_template('dashboard.html',
-                          transactions=session['transactions'],
-                          analysis=session['analysis_data'],
-                          chart_data=session['chart_data'],
-                          recommendations=session['recommendations'])
 
 def load_profile_from_file(profile_name):
     """Load profile data from CSV and JSON files"""

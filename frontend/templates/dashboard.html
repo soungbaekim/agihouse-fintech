@@ -20,6 +20,82 @@
     .category-pill:hover {
         transform: scale(1.05);
     }
+    
+    /* Chat Styles */
+    .chat-messages {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .chat-message {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .chat-message.user {
+        justify-content: flex-end;
+    }
+    
+    .chat-bubble {
+        max-width: 80%;
+        padding: 10px 15px;
+        border-radius: 18px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .chat-message.user .chat-bubble {
+        background-color: #007bff;
+        color: white;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .chat-message.assistant .chat-bubble {
+        background-color: #f1f3f5;
+        color: #343a40;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .chat-message.error .chat-bubble {
+        border-bottom-left-radius: 5px;
+    }
+    
+    .chat-bubble p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .chat-bubble p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .typing-indicator {
+        display: flex;
+        align-items: center;
+    }
+    
+    .typing-indicator span {
+        height: 8px;
+        width: 8px;
+        background-color: #343a40;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 3px;
+        animation: typing 1s infinite;
+    }
+    
+    .typing-indicator span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .typing-indicator span:nth-child(3) {
+        animation-delay: 0.4s;
+        margin-right: 0;
+    }
+    
+    @keyframes typing {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+    }
 </style>
 {% endblock %}
 
@@ -165,6 +241,35 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AI Financial Expert Chat Section -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-user-tie me-2"></i> AI Financial Expert
+                </h5>
+                <button id="clearChat" class="btn btn-sm btn-outline-light">
+                    <i class="fas fa-trash-alt me-1"></i> Clear Chat
+                </button>
+            </div>
+            <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                <div id="chatMessages" class="chat-messages">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+            </div>
+            <div class="card-footer bg-light">
+                <form id="chatForm" class="d-flex">
+                    <input type="text" id="chatInput" class="form-control me-2" placeholder="Ask about your finances..." required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
@@ -330,7 +435,175 @@
         createCategoryChart();
         createMonthlyChart();
         createMerchantChart();
+        
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+        
+        // AI Chat Functionality
+        const socket = io();
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+        const chatMessages = document.getElementById('chatMessages');
+        const clearChatBtn = document.getElementById('clearChat');
+        
+        // Send initial analysis request when chat is loaded
+        socket.emit('chat_message', {
+            message: 'initial_analysis',
+            is_initial_analysis: true
+        });
+        addTypingIndicator();
+        
+        // Handle chat form submission
+        if (chatForm) {
+            chatForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const message = chatInput.value.trim();
+                if (message) {
+                    // Add user message to chat
+                    addUserMessage(message);
+                    
+                    // Clear input field
+                    chatInput.value = '';
+                    
+                    // Add typing indicator
+                    addTypingIndicator();
+                    
+                    // Send message to server
+                    socket.emit('chat_message', {
+                        message: message,
+                        is_initial_analysis: false
+                    });
+                }
+            });
+        }
+        
+        // Handle clear chat button
+        if (clearChatBtn) {
+            clearChatBtn.addEventListener('click', function() {
+                chatMessages.innerHTML = '';
+                socket.emit('clear_chat');
+                
+                // After clearing, send initial analysis request
+                setTimeout(() => {
+                    socket.emit('chat_message', {
+                        message: 'initial_analysis',
+                        is_initial_analysis: true
+                    });
+                    addTypingIndicator();
+                }, 500);
+            });
+        }
+        
+        // Handle incoming chat messages
+        socket.on('chat_response', function(data) {
+            removeTypingIndicator();
+            addAssistantMessage(data.response);
+        });
+        
+        // Handle errors
+        socket.on('chat_error', function(data) {
+            removeTypingIndicator();
+            addErrorMessage(data.error);
+        });
+        
+        socket.on('connect', function() {
+            console.log('Connected to server');
+        });
+        
+        socket.on('disconnect', function() {
+            console.log('Disconnected from server');
+            addErrorMessage('Disconnected from server. Please refresh the page.');
+        });
     });
+    
+    // Helper functions for chat UI
+    function addUserMessage(message) {
+        const chatMessages = document.getElementById('chatMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'chat-message user';
+        messageDiv.innerHTML = `
+            <div class="chat-bubble">
+                ${escapeHtml(message)}
+            </div>
+        `;
+        chatMessages.appendChild(messageDiv);
+        scrollToBottom();
+    }
+    
+    function addAssistantMessage(message) {
+        const chatMessages = document.getElementById('chatMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'chat-message assistant';
+        messageDiv.innerHTML = `
+            <div class="chat-bubble">
+                ${formatMessage(message)}
+            </div>
+        `;
+        chatMessages.appendChild(messageDiv);
+        scrollToBottom();
+    }
+    
+    function addErrorMessage(error) {
+        const chatMessages = document.getElementById('chatMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'chat-message error';
+        messageDiv.innerHTML = `
+            <div class="chat-bubble bg-danger text-white">
+                <i class="fas fa-exclamation-triangle me-2"></i>${escapeHtml(error)}
+            </div>
+        `;
+        chatMessages.appendChild(messageDiv);
+        scrollToBottom();
+    }
+    
+    function addTypingIndicator() {
+        removeTypingIndicator(); // Remove any existing indicator
+        const chatMessages = document.getElementById('chatMessages');
+        const indicatorDiv = document.createElement('div');
+        indicatorDiv.className = 'chat-message assistant typing-indicator-container';
+        indicatorDiv.innerHTML = `
+            <div class="chat-bubble">
+                <div class="typing-indicator">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        `;
+        indicatorDiv.id = 'typingIndicator';
+        chatMessages.appendChild(indicatorDiv);
+        scrollToBottom();
+    }
+    
+    function removeTypingIndicator() {
+        const indicator = document.getElementById('typingIndicator');
+        if (indicator) {
+            indicator.remove();
+        }
+    }
+    
+    function scrollToBottom() {
+        const chatContainer = document.getElementById('chatMessages').parentElement;
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+    
+    function escapeHtml(text) {
+        return text.replace(/&/g, '&amp;')
+                   .replace(/</g, '&lt;')
+                   .replace(/>/g, '&gt;')
+                   .replace(/"/g, '&quot;')
+                   .replace(/'/g, '&#039;');
+    }
+    
+    function formatMessage(message) {
+        // Handle markdown-style formatting
+        return message.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                      .replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>')
+                      .replace(/`(.*?)`/g, '<code>$1</code>')
+                      .replace(/\n/g, '<br>');
+    }
     
     // Handle window resize
     window.addEventListener('resize', function() {
