@@ -115,8 +115,8 @@ def analyze():
         if all(key in session for key in ['analysis_data', 'chart_data', 'recommendations']):
             print("Using pre-computed analysis data from session")
             
-            # Render the analysis template with the pre-computed data
-            return render_template('analysis.html',
+            # Render the dashboard template with the pre-computed data
+            return render_template('dashboard.html',
                                    transactions=session['transactions'],
                                    analysis=session['analysis_data'],
                                    chart_data=session['chart_data'],
@@ -429,12 +429,18 @@ def use_sample_profile(profile_name):
     
     # Store profile data in session
     try:
+        # Clear any existing data
+        for key in ['transactions', 'analysis_data', 'chart_data', 'recommendations', 'file_path']:
+            if key in session:
+                session.pop(key, None)
+                
         # Ensure we have a proper list of transactions
         if not isinstance(profile_data.get('transactions', []), list):
             print("Error: transactions is not a list")
             flash('Error processing profile data', 'danger')
             return redirect(url_for('index'))
             
+        # Store transactions
         session['transactions'] = []
         for t in profile_data['transactions']:
             trans = {
@@ -453,9 +459,12 @@ def use_sample_profile(profile_name):
                 trans['date'] = datetime.datetime.now().strftime('%Y-%m-%d')
                 
             session['transactions'].append(trans)
+        
+        print(f"Stored {len(session['transactions'])} transactions in session")
             
         # Store analysis data
         session['analysis_data'] = profile_data['analysis']
+        print(f"Stored analysis data in session: {list(profile_data['analysis'].keys())}")
         
         # Prepare chart data
         session['chart_data'] = {
@@ -463,14 +472,20 @@ def use_sample_profile(profile_name):
             'monthly_spending': profile_data['analysis']['monthly_spending'],
             'top_merchants': profile_data['analysis']['top_merchants']
         }
+        print("Stored chart data in session")
         
         # Store recommendations
         session['recommendations'] = profile_data['recommendations']
+        print("Stored recommendations in session")
         
         # Mark this as an active profile
         session['active_profile'] = profile_name
+        print(f"Set active profile to: {profile_name}")
         
-        print(f"Successfully stored profile data in session. Transactions: {len(session['transactions'])}")
+        # Store the session data
+        session.modified = True
+        
+        print(f"Successfully stored profile data in session. Session keys: {list(session.keys())}")
     except Exception as e:
         print(f"Error storing profile data in session: {str(e)}")
         flash(f'Error processing profile: {str(e)}', 'danger')
@@ -481,7 +496,13 @@ def use_sample_profile(profile_name):
     if profile_name in profile_descriptions:
         flash(f'Loaded "{profile_name.replace("_", " ").title()}" profile: {profile_descriptions[profile_name]}', 'info')
     
-    return redirect(url_for('analyze'))
+    # Instead of redirecting to analyze, we'll render the dashboard template directly
+    # This avoids potential issues with the analyze route
+    return render_template('dashboard.html',
+                          transactions=session['transactions'],
+                          analysis=session['analysis_data'],
+                          chart_data=session['chart_data'],
+                          recommendations=session['recommendations'])
 
 def load_profile_from_file(profile_name):
     """Load profile data from CSV and JSON files"""
