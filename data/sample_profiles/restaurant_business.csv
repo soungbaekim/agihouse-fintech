@@ -1,0 +1,1951 @@
+date,description,amount,category
+2024-05-06,Waste Management,-103.25,Utilities
+2024-05-28,Cox Communications,-141.72,Utilities
+2024-05-29,DirecTV,-80.66,Utilities
+2024-06-25,Xfinity,-96.12,Utilities
+2024-08-06,Internet Provider,-71.75,Utilities
+2024-09-01,Gas Bill,-164.36,Utilities
+2024-09-05,Waste Management,-147.63,Utilities
+2024-09-09,Water Service,-292.71,Utilities
+2024-09-13,Phone Bill,-41.67,Utilities
+2024-09-15,ConEd,-150.5,Utilities
+2024-09-25,Internet Provider,-81.32,Utilities
+2024-09-30,Comcast,-117.04,Utilities
+2024-10-11,AT&T,-201.23,Utilities
+2024-10-14,Gas Bill,-101.45,Utilities
+2024-10-16,Waste Management,-41.49,Utilities
+2024-10-26,Phone Bill,-120.63,Utilities
+2024-10-31,Dish Network,-49.53,Utilities
+2024-11-12,Waste Management,-275.42,Utilities
+2024-12-04,DirecTV,-127.26,Utilities
+2024-12-04,T-Mobile,-225.87,Utilities
+2024-12-06,Waste Management,-282.16,Utilities
+2024-12-06,Verizon,-277.9,Utilities
+2024-12-18,Cox Communications,-239.21,Utilities
+2024-12-21,ConEd,-76.28,Utilities
+2024-12-21,Spectrum,-201.42,Utilities
+2025-01-01,Internet Provider,-153.16,Utilities
+2025-01-13,Electric Company,-42.82,Utilities
+2025-01-23,Verizon,-259.0,Utilities
+2025-01-30,Cox Communications,-250.47,Utilities
+2025-02-09,DirecTV,-139.93,Utilities
+2025-02-13,Verizon,-276.86,Utilities
+2025-02-19,Water Service,-78.41,Utilities
+2025-03-06,Solar City,-67.06,Utilities
+2025-03-14,DirecTV,-241.39,Utilities
+2025-03-31,Comcast,-200.62,Utilities
+2025-03-19,Transfer to Savings,-0.0,Savings
+2024-04-12,Dinner Service Sales,1090,Revenue
+2024-04-12,Dinner Service Sales,1449,Revenue
+2024-04-12,Dinner Service Sales,1495,Revenue
+2024-04-12,Dinner Service Sales,1620,Revenue
+2024-04-12,Lunch Service Sales,608,Revenue
+2024-04-12,Lunch Service Sales,1164,Revenue
+2024-04-13,Dinner Service Sales,1019,Revenue
+2024-04-13,Dinner Service Sales,936,Revenue
+2024-04-13,Dinner Service Sales,2000,Revenue
+2024-04-13,Lunch Service Sales,710,Revenue
+2024-04-14,Dinner Service Sales,1011,Revenue
+2024-04-14,Dinner Service Sales,977,Revenue
+2024-04-14,Dinner Service Sales,944,Revenue
+2024-04-14,Dinner Service Sales,1683,Revenue
+2024-04-14,Dinner Service Sales,1856,Revenue
+2024-04-14,Lunch Service Sales,640,Revenue
+2024-04-15,Dinner Service Sales,785,Revenue
+2024-04-15,Dinner Service Sales,1043,Revenue
+2024-04-15,Dinner Service Sales,988,Revenue
+2024-04-15,Lunch Service Sales,704,Revenue
+2024-04-16,Dinner Service Sales,932,Revenue
+2024-04-16,Dinner Service Sales,659,Revenue
+2024-04-16,Dinner Service Sales,698,Revenue
+2024-04-16,Lunch Service Sales,467,Revenue
+2024-04-16,Lunch Service Sales,592,Revenue
+2024-04-17,Dinner Service Sales,588,Revenue
+2024-04-17,Dinner Service Sales,1059,Revenue
+2024-04-17,Lunch Service Sales,367,Revenue
+2024-04-18,Dinner Service Sales,593,Revenue
+2024-04-18,Lunch Service Sales,739,Revenue
+2024-04-18,Lunch Service Sales,699,Revenue
+2024-04-18,Private Event / Catering,2043,Revenue
+2024-04-19,Dinner Service Sales,1692,Revenue
+2024-04-19,Dinner Service Sales,1387,Revenue
+2024-04-19,Dinner Service Sales,859,Revenue
+2024-04-19,Lunch Service Sales,738,Revenue
+2024-04-19,Lunch Service Sales,445,Revenue
+2024-04-19,Lunch Service Sales,1139,Revenue
+2024-04-20,Dinner Service Sales,1896,Revenue
+2024-04-20,Dinner Service Sales,1752,Revenue
+2024-04-20,Lunch Service Sales,598,Revenue
+2024-04-20,Lunch Service Sales,573,Revenue
+2024-04-21,Dinner Service Sales,1613,Revenue
+2024-04-21,Dinner Service Sales,1322,Revenue
+2024-04-21,Dinner Service Sales,1554,Revenue
+2024-04-21,Dinner Service Sales,1408,Revenue
+2024-04-21,Dinner Service Sales,1995,Revenue
+2024-04-21,Lunch Service Sales,781,Revenue
+2024-04-21,Lunch Service Sales,598,Revenue
+2024-04-21,Lunch Service Sales,985,Revenue
+2024-04-22,Dinner Service Sales,761,Revenue
+2024-04-22,Lunch Service Sales,458,Revenue
+2024-04-22,Lunch Service Sales,376,Revenue
+2024-04-23,Dinner Service Sales,980,Revenue
+2024-04-23,Dinner Service Sales,810,Revenue
+2024-04-23,Dinner Service Sales,535,Revenue
+2024-04-23,Lunch Service Sales,710,Revenue
+2024-04-23,Lunch Service Sales,325,Revenue
+2024-04-24,Dinner Service Sales,792,Revenue
+2024-04-24,Dinner Service Sales,708,Revenue
+2024-04-24,Lunch Service Sales,418,Revenue
+2024-04-24,Lunch Service Sales,478,Revenue
+2024-04-25,Dinner Service Sales,759,Revenue
+2024-04-25,Dinner Service Sales,913,Revenue
+2024-04-25,Dinner Service Sales,956,Revenue
+2024-04-25,Lunch Service Sales,449,Revenue
+2024-04-26,Dinner Service Sales,1445,Revenue
+2024-04-26,Dinner Service Sales,1266,Revenue
+2024-04-26,Dinner Service Sales,1043,Revenue
+2024-04-26,Dinner Service Sales,1797,Revenue
+2024-04-26,Lunch Service Sales,563,Revenue
+2024-04-27,Dinner Service Sales,1673,Revenue
+2024-04-27,Dinner Service Sales,1329,Revenue
+2024-04-27,Dinner Service Sales,1149,Revenue
+2024-04-27,Dinner Service Sales,1308,Revenue
+2024-04-27,Lunch Service Sales,923,Revenue
+2024-04-27,Lunch Service Sales,1171,Revenue
+2024-04-28,Dinner Service Sales,1518,Revenue
+2024-04-28,Dinner Service Sales,874,Revenue
+2024-04-28,Dinner Service Sales,1649,Revenue
+2024-04-28,Lunch Service Sales,1004,Revenue
+2024-04-29,Dinner Service Sales,898,Revenue
+2024-04-29,Dinner Service Sales,1019,Revenue
+2024-04-29,Dinner Service Sales,869,Revenue
+2024-04-29,Lunch Service Sales,707,Revenue
+2024-04-29,Lunch Service Sales,543,Revenue
+2024-04-30,Dinner Service Sales,629,Revenue
+2024-04-30,Dinner Service Sales,512,Revenue
+2024-04-30,Lunch Service Sales,302,Revenue
+2024-05-01,Dinner Service Sales,869,Revenue
+2024-05-01,Dinner Service Sales,1032,Revenue
+2024-05-01,Dinner Service Sales,508,Revenue
+2024-05-01,Lunch Service Sales,666,Revenue
+2024-05-01,Lunch Service Sales,448,Revenue
+2024-05-02,Dinner Service Sales,615,Revenue
+2024-05-02,Dinner Service Sales,600,Revenue
+2024-05-02,Dinner Service Sales,1084,Revenue
+2024-05-02,Lunch Service Sales,474,Revenue
+2024-05-02,Lunch Service Sales,444,Revenue
+2024-05-03,Dinner Service Sales,1034,Revenue
+2024-05-03,Dinner Service Sales,974,Revenue
+2024-05-03,Dinner Service Sales,1892,Revenue
+2024-05-03,Dinner Service Sales,1793,Revenue
+2024-05-03,Lunch Service Sales,1150,Revenue
+2024-05-04,Dinner Service Sales,1448,Revenue
+2024-05-04,Dinner Service Sales,1088,Revenue
+2024-05-04,Dinner Service Sales,1041,Revenue
+2024-05-04,Lunch Service Sales,654,Revenue
+2024-05-04,Lunch Service Sales,635,Revenue
+2024-05-05,Dinner Service Sales,1059,Revenue
+2024-05-05,Dinner Service Sales,1746,Revenue
+2024-05-05,Dinner Service Sales,1180,Revenue
+2024-05-05,Dinner Service Sales,834,Revenue
+2024-05-05,Dinner Service Sales,1799,Revenue
+2024-05-05,Lunch Service Sales,794,Revenue
+2024-05-05,Lunch Service Sales,790,Revenue
+2024-05-05,Lunch Service Sales,501,Revenue
+2024-05-06,Dinner Service Sales,720,Revenue
+2024-05-06,Dinner Service Sales,1013,Revenue
+2024-05-06,Lunch Service Sales,569,Revenue
+2024-05-06,Lunch Service Sales,429,Revenue
+2024-05-07,Dinner Service Sales,930,Revenue
+2024-05-07,Dinner Service Sales,844,Revenue
+2024-05-07,Lunch Service Sales,566,Revenue
+2024-05-08,Dinner Service Sales,1072,Revenue
+2024-05-08,Lunch Service Sales,520,Revenue
+2024-05-09,Dinner Service Sales,823,Revenue
+2024-05-09,Dinner Service Sales,612,Revenue
+2024-05-09,Dinner Service Sales,1109,Revenue
+2024-05-09,Lunch Service Sales,487,Revenue
+2024-05-10,Dinner Service Sales,1091,Revenue
+2024-05-10,Dinner Service Sales,1030,Revenue
+2024-05-10,Dinner Service Sales,1982,Revenue
+2024-05-10,Lunch Service Sales,1085,Revenue
+2024-05-11,Dinner Service Sales,1861,Revenue
+2024-05-11,Dinner Service Sales,1535,Revenue
+2024-05-11,Dinner Service Sales,1029,Revenue
+2024-05-11,Dinner Service Sales,1127,Revenue
+2024-05-11,Lunch Service Sales,674,Revenue
+2024-05-11,Lunch Service Sales,969,Revenue
+2024-05-12,Dinner Service Sales,1235,Revenue
+2024-05-12,Dinner Service Sales,1677,Revenue
+2024-05-12,Lunch Service Sales,1085,Revenue
+2024-05-12,Lunch Service Sales,1088,Revenue
+2024-05-13,Dinner Service Sales,1079,Revenue
+2024-05-13,Dinner Service Sales,1124,Revenue
+2024-05-13,Lunch Service Sales,686,Revenue
+2024-05-13,Lunch Service Sales,551,Revenue
+2024-05-14,Dinner Service Sales,799,Revenue
+2024-05-14,Dinner Service Sales,887,Revenue
+2024-05-14,Lunch Service Sales,394,Revenue
+2024-05-14,Lunch Service Sales,517,Revenue
+2024-05-15,Dinner Service Sales,827,Revenue
+2024-05-15,Dinner Service Sales,513,Revenue
+2024-05-15,Dinner Service Sales,734,Revenue
+2024-05-15,Lunch Service Sales,407,Revenue
+2024-05-15,Private Event / Catering,2842,Revenue
+2024-05-16,Dinner Service Sales,649,Revenue
+2024-05-16,Dinner Service Sales,683,Revenue
+2024-05-16,Lunch Service Sales,795,Revenue
+2024-05-17,Dinner Service Sales,1740,Revenue
+2024-05-17,Dinner Service Sales,1515,Revenue
+2024-05-17,Dinner Service Sales,1108,Revenue
+2024-05-17,Lunch Service Sales,767,Revenue
+2024-05-18,Dinner Service Sales,1680,Revenue
+2024-05-18,Dinner Service Sales,1828,Revenue
+2024-05-18,Dinner Service Sales,1806,Revenue
+2024-05-18,Dinner Service Sales,1120,Revenue
+2024-05-18,Lunch Service Sales,878,Revenue
+2024-05-18,Lunch Service Sales,825,Revenue
+2024-05-18,Lunch Service Sales,611,Revenue
+2024-05-19,Dinner Service Sales,1129,Revenue
+2024-05-19,Dinner Service Sales,1888,Revenue
+2024-05-19,Lunch Service Sales,1172,Revenue
+2024-05-19,Lunch Service Sales,852,Revenue
+2024-05-19,Lunch Service Sales,1129,Revenue
+2024-05-20,Dinner Service Sales,936,Revenue
+2024-05-20,Dinner Service Sales,777,Revenue
+2024-05-20,Lunch Service Sales,748,Revenue
+2024-05-21,Dinner Service Sales,747,Revenue
+2024-05-21,Lunch Service Sales,527,Revenue
+2024-05-22,Dinner Service Sales,602,Revenue
+2024-05-22,Lunch Service Sales,723,Revenue
+2024-05-22,Lunch Service Sales,471,Revenue
+2024-05-23,Dinner Service Sales,1135,Revenue
+2024-05-23,Dinner Service Sales,1136,Revenue
+2024-05-23,Lunch Service Sales,757,Revenue
+2024-05-24,Dinner Service Sales,1279,Revenue
+2024-05-24,Dinner Service Sales,1190,Revenue
+2024-05-24,Dinner Service Sales,1789,Revenue
+2024-05-24,Lunch Service Sales,563,Revenue
+2024-05-24,Lunch Service Sales,816,Revenue
+2024-05-25,Dinner Service Sales,1637,Revenue
+2024-05-25,Dinner Service Sales,1486,Revenue
+2024-05-25,Dinner Service Sales,825,Revenue
+2024-05-25,Dinner Service Sales,1672,Revenue
+2024-05-25,Dinner Service Sales,841,Revenue
+2024-05-25,Lunch Service Sales,1148,Revenue
+2024-05-26,Dinner Service Sales,949,Revenue
+2024-05-26,Dinner Service Sales,1938,Revenue
+2024-05-26,Lunch Service Sales,520,Revenue
+2024-05-27,Dinner Service Sales,1196,Revenue
+2024-05-27,Dinner Service Sales,1177,Revenue
+2024-05-27,Dinner Service Sales,867,Revenue
+2024-05-27,Lunch Service Sales,342,Revenue
+2024-05-28,Dinner Service Sales,874,Revenue
+2024-05-28,Lunch Service Sales,497,Revenue
+2024-05-29,Dinner Service Sales,957,Revenue
+2024-05-29,Lunch Service Sales,772,Revenue
+2024-05-30,Dinner Service Sales,1000,Revenue
+2024-05-30,Lunch Service Sales,345,Revenue
+2024-05-30,Lunch Service Sales,503,Revenue
+2024-05-31,Dinner Service Sales,1783,Revenue
+2024-05-31,Dinner Service Sales,1038,Revenue
+2024-05-31,Dinner Service Sales,1072,Revenue
+2024-05-31,Lunch Service Sales,965,Revenue
+2024-05-31,Lunch Service Sales,593,Revenue
+2024-05-31,Lunch Service Sales,556,Revenue
+2024-06-01,Dinner Service Sales,1070,Revenue
+2024-06-01,Dinner Service Sales,1793,Revenue
+2024-06-01,Dinner Service Sales,1213,Revenue
+2024-06-01,Dinner Service Sales,1960,Revenue
+2024-06-01,Dinner Service Sales,1062,Revenue
+2024-06-01,Lunch Service Sales,1005,Revenue
+2024-06-01,Lunch Service Sales,508,Revenue
+2024-06-02,Dinner Service Sales,820,Revenue
+2024-06-02,Dinner Service Sales,1445,Revenue
+2024-06-02,Dinner Service Sales,1850,Revenue
+2024-06-02,Dinner Service Sales,844,Revenue
+2024-06-02,Dinner Service Sales,1663,Revenue
+2024-06-02,Lunch Service Sales,412,Revenue
+2024-06-02,Lunch Service Sales,907,Revenue
+2024-06-03,Dinner Service Sales,789,Revenue
+2024-06-03,Dinner Service Sales,945,Revenue
+2024-06-03,Dinner Service Sales,1129,Revenue
+2024-06-03,Lunch Service Sales,365,Revenue
+2024-06-03,Lunch Service Sales,786,Revenue
+2024-06-04,Dinner Service Sales,998,Revenue
+2024-06-04,Dinner Service Sales,1041,Revenue
+2024-06-04,Dinner Service Sales,740,Revenue
+2024-06-04,Lunch Service Sales,448,Revenue
+2024-06-04,Lunch Service Sales,626,Revenue
+2024-06-04,Private Event / Catering,2005,Revenue
+2024-06-05,Dinner Service Sales,1119,Revenue
+2024-06-05,Dinner Service Sales,665,Revenue
+2024-06-05,Lunch Service Sales,381,Revenue
+2024-06-05,Lunch Service Sales,650,Revenue
+2024-06-06,Dinner Service Sales,1097,Revenue
+2024-06-06,Dinner Service Sales,588,Revenue
+2024-06-06,Dinner Service Sales,797,Revenue
+2024-06-06,Lunch Service Sales,346,Revenue
+2024-06-07,Dinner Service Sales,1627,Revenue
+2024-06-07,Dinner Service Sales,1939,Revenue
+2024-06-07,Lunch Service Sales,896,Revenue
+2024-06-07,Lunch Service Sales,899,Revenue
+2024-06-07,Private Event / Catering,1622,Revenue
+2024-06-08,Dinner Service Sales,1234,Revenue
+2024-06-08,Dinner Service Sales,1257,Revenue
+2024-06-08,Dinner Service Sales,1471,Revenue
+2024-06-08,Dinner Service Sales,1616,Revenue
+2024-06-08,Dinner Service Sales,1353,Revenue
+2024-06-08,Lunch Service Sales,426,Revenue
+2024-06-09,Dinner Service Sales,1336,Revenue
+2024-06-09,Dinner Service Sales,1661,Revenue
+2024-06-09,Dinner Service Sales,1917,Revenue
+2024-06-09,Dinner Service Sales,2000,Revenue
+2024-06-09,Dinner Service Sales,869,Revenue
+2024-06-09,Lunch Service Sales,835,Revenue
+2024-06-09,Lunch Service Sales,443,Revenue
+2024-06-10,Dinner Service Sales,833,Revenue
+2024-06-10,Lunch Service Sales,504,Revenue
+2024-06-11,Dinner Service Sales,712,Revenue
+2024-06-11,Lunch Service Sales,305,Revenue
+2024-06-12,Dinner Service Sales,597,Revenue
+2024-06-12,Lunch Service Sales,506,Revenue
+2024-06-13,Dinner Service Sales,502,Revenue
+2024-06-13,Dinner Service Sales,1011,Revenue
+2024-06-13,Dinner Service Sales,1157,Revenue
+2024-06-13,Lunch Service Sales,433,Revenue
+2024-06-13,Lunch Service Sales,420,Revenue
+2024-06-14,Dinner Service Sales,1305,Revenue
+2024-06-14,Dinner Service Sales,1121,Revenue
+2024-06-14,Dinner Service Sales,1815,Revenue
+2024-06-14,Lunch Service Sales,868,Revenue
+2024-06-14,Lunch Service Sales,891,Revenue
+2024-06-14,Private Event / Catering,1699,Revenue
+2024-06-15,Dinner Service Sales,909,Revenue
+2024-06-15,Dinner Service Sales,1344,Revenue
+2024-06-15,Dinner Service Sales,1292,Revenue
+2024-06-15,Dinner Service Sales,854,Revenue
+2024-06-15,Dinner Service Sales,1866,Revenue
+2024-06-15,Lunch Service Sales,588,Revenue
+2024-06-15,Lunch Service Sales,643,Revenue
+2024-06-15,Private Event / Catering,3667,Revenue
+2024-06-16,Dinner Service Sales,1782,Revenue
+2024-06-16,Dinner Service Sales,1372,Revenue
+2024-06-16,Lunch Service Sales,860,Revenue
+2024-06-17,Dinner Service Sales,848,Revenue
+2024-06-17,Lunch Service Sales,755,Revenue
+2024-06-18,Dinner Service Sales,742,Revenue
+2024-06-18,Dinner Service Sales,689,Revenue
+2024-06-18,Lunch Service Sales,655,Revenue
+2024-06-19,Dinner Service Sales,647,Revenue
+2024-06-19,Dinner Service Sales,849,Revenue
+2024-06-19,Dinner Service Sales,989,Revenue
+2024-06-19,Lunch Service Sales,314,Revenue
+2024-06-19,Lunch Service Sales,311,Revenue
+2024-06-20,Dinner Service Sales,981,Revenue
+2024-06-20,Lunch Service Sales,435,Revenue
+2024-06-21,Dinner Service Sales,992,Revenue
+2024-06-21,Dinner Service Sales,1630,Revenue
+2024-06-21,Dinner Service Sales,1832,Revenue
+2024-06-21,Dinner Service Sales,878,Revenue
+2024-06-21,Dinner Service Sales,1163,Revenue
+2024-06-21,Lunch Service Sales,1021,Revenue
+2024-06-21,Lunch Service Sales,409,Revenue
+2024-06-21,Lunch Service Sales,1041,Revenue
+2024-06-22,Dinner Service Sales,855,Revenue
+2024-06-22,Dinner Service Sales,861,Revenue
+2024-06-22,Dinner Service Sales,1261,Revenue
+2024-06-22,Dinner Service Sales,1013,Revenue
+2024-06-22,Lunch Service Sales,827,Revenue
+2024-06-22,Lunch Service Sales,898,Revenue
+2024-06-22,Lunch Service Sales,833,Revenue
+2024-06-23,Dinner Service Sales,1366,Revenue
+2024-06-23,Dinner Service Sales,1973,Revenue
+2024-06-23,Lunch Service Sales,1197,Revenue
+2024-06-24,Dinner Service Sales,1079,Revenue
+2024-06-24,Dinner Service Sales,1167,Revenue
+2024-06-24,Lunch Service Sales,645,Revenue
+2024-06-25,Dinner Service Sales,832,Revenue
+2024-06-25,Lunch Service Sales,789,Revenue
+2024-06-26,Dinner Service Sales,802,Revenue
+2024-06-26,Lunch Service Sales,653,Revenue
+2024-06-26,Lunch Service Sales,648,Revenue
+2024-06-27,Dinner Service Sales,609,Revenue
+2024-06-27,Lunch Service Sales,721,Revenue
+2024-06-27,Lunch Service Sales,467,Revenue
+2024-06-27,Private Event / Catering,2350,Revenue
+2024-06-28,Dinner Service Sales,1409,Revenue
+2024-06-28,Dinner Service Sales,1573,Revenue
+2024-06-28,Dinner Service Sales,1778,Revenue
+2024-06-28,Dinner Service Sales,1571,Revenue
+2024-06-28,Dinner Service Sales,1838,Revenue
+2024-06-28,Lunch Service Sales,605,Revenue
+2024-06-28,Lunch Service Sales,446,Revenue
+2024-06-28,Lunch Service Sales,964,Revenue
+2024-06-29,Dinner Service Sales,1240,Revenue
+2024-06-29,Dinner Service Sales,1691,Revenue
+2024-06-29,Lunch Service Sales,716,Revenue
+2024-06-29,Lunch Service Sales,1053,Revenue
+2024-06-29,Lunch Service Sales,965,Revenue
+2024-06-30,Dinner Service Sales,1237,Revenue
+2024-06-30,Dinner Service Sales,1997,Revenue
+2024-06-30,Dinner Service Sales,1396,Revenue
+2024-06-30,Dinner Service Sales,1708,Revenue
+2024-06-30,Lunch Service Sales,1042,Revenue
+2024-06-30,Lunch Service Sales,976,Revenue
+2024-06-30,Lunch Service Sales,1048,Revenue
+2024-07-01,Dinner Service Sales,1015,Revenue
+2024-07-01,Dinner Service Sales,1092,Revenue
+2024-07-01,Dinner Service Sales,1186,Revenue
+2024-07-01,Lunch Service Sales,541,Revenue
+2024-07-02,Dinner Service Sales,626,Revenue
+2024-07-02,Dinner Service Sales,1119,Revenue
+2024-07-02,Lunch Service Sales,704,Revenue
+2024-07-02,Lunch Service Sales,409,Revenue
+2024-07-03,Dinner Service Sales,799,Revenue
+2024-07-03,Lunch Service Sales,695,Revenue
+2024-07-03,Lunch Service Sales,419,Revenue
+2024-07-04,Dinner Service Sales,1146,Revenue
+2024-07-04,Lunch Service Sales,453,Revenue
+2024-07-04,Lunch Service Sales,350,Revenue
+2024-07-05,Dinner Service Sales,1281,Revenue
+2024-07-05,Dinner Service Sales,832,Revenue
+2024-07-05,Dinner Service Sales,1560,Revenue
+2024-07-05,Dinner Service Sales,1551,Revenue
+2024-07-05,Lunch Service Sales,621,Revenue
+2024-07-05,Lunch Service Sales,862,Revenue
+2024-07-05,Lunch Service Sales,943,Revenue
+2024-07-06,Dinner Service Sales,1115,Revenue
+2024-07-06,Dinner Service Sales,1552,Revenue
+2024-07-06,Dinner Service Sales,1596,Revenue
+2024-07-06,Dinner Service Sales,1145,Revenue
+2024-07-06,Dinner Service Sales,1304,Revenue
+2024-07-06,Lunch Service Sales,1037,Revenue
+2024-07-06,Lunch Service Sales,1185,Revenue
+2024-07-06,Lunch Service Sales,920,Revenue
+2024-07-07,Dinner Service Sales,1566,Revenue
+2024-07-07,Dinner Service Sales,1914,Revenue
+2024-07-07,Lunch Service Sales,606,Revenue
+2024-07-08,Dinner Service Sales,506,Revenue
+2024-07-08,Dinner Service Sales,821,Revenue
+2024-07-08,Dinner Service Sales,529,Revenue
+2024-07-08,Lunch Service Sales,765,Revenue
+2024-07-08,Lunch Service Sales,600,Revenue
+2024-07-09,Dinner Service Sales,1054,Revenue
+2024-07-09,Lunch Service Sales,731,Revenue
+2024-07-10,Dinner Service Sales,1081,Revenue
+2024-07-10,Lunch Service Sales,432,Revenue
+2024-07-11,Dinner Service Sales,1072,Revenue
+2024-07-11,Lunch Service Sales,491,Revenue
+2024-07-11,Lunch Service Sales,367,Revenue
+2024-07-12,Dinner Service Sales,1005,Revenue
+2024-07-12,Dinner Service Sales,1072,Revenue
+2024-07-12,Dinner Service Sales,1676,Revenue
+2024-07-12,Lunch Service Sales,1009,Revenue
+2024-07-12,Lunch Service Sales,402,Revenue
+2024-07-12,Lunch Service Sales,1000,Revenue
+2024-07-13,Dinner Service Sales,849,Revenue
+2024-07-13,Dinner Service Sales,809,Revenue
+2024-07-13,Dinner Service Sales,1346,Revenue
+2024-07-13,Dinner Service Sales,1514,Revenue
+2024-07-13,Lunch Service Sales,872,Revenue
+2024-07-13,Lunch Service Sales,687,Revenue
+2024-07-13,Lunch Service Sales,451,Revenue
+2024-07-14,Dinner Service Sales,1435,Revenue
+2024-07-14,Dinner Service Sales,1275,Revenue
+2024-07-14,Dinner Service Sales,1374,Revenue
+2024-07-14,Dinner Service Sales,1297,Revenue
+2024-07-14,Lunch Service Sales,717,Revenue
+2024-07-14,Private Event / Catering,2188,Revenue
+2024-07-15,Dinner Service Sales,857,Revenue
+2024-07-15,Dinner Service Sales,614,Revenue
+2024-07-15,Dinner Service Sales,560,Revenue
+2024-07-15,Lunch Service Sales,781,Revenue
+2024-07-16,Dinner Service Sales,736,Revenue
+2024-07-16,Dinner Service Sales,922,Revenue
+2024-07-16,Lunch Service Sales,352,Revenue
+2024-07-16,Lunch Service Sales,753,Revenue
+2024-07-17,Dinner Service Sales,1086,Revenue
+2024-07-17,Dinner Service Sales,697,Revenue
+2024-07-17,Dinner Service Sales,857,Revenue
+2024-07-17,Lunch Service Sales,363,Revenue
+2024-07-18,Dinner Service Sales,1044,Revenue
+2024-07-18,Dinner Service Sales,1037,Revenue
+2024-07-18,Dinner Service Sales,973,Revenue
+2024-07-18,Lunch Service Sales,721,Revenue
+2024-07-19,Dinner Service Sales,994,Revenue
+2024-07-19,Dinner Service Sales,1290,Revenue
+2024-07-19,Dinner Service Sales,1705,Revenue
+2024-07-19,Dinner Service Sales,1864,Revenue
+2024-07-19,Lunch Service Sales,843,Revenue
+2024-07-19,Lunch Service Sales,794,Revenue
+2024-07-20,Dinner Service Sales,1194,Revenue
+2024-07-20,Dinner Service Sales,1804,Revenue
+2024-07-20,Dinner Service Sales,1491,Revenue
+2024-07-20,Lunch Service Sales,855,Revenue
+2024-07-20,Lunch Service Sales,527,Revenue
+2024-07-20,Lunch Service Sales,782,Revenue
+2024-07-21,Dinner Service Sales,1583,Revenue
+2024-07-21,Dinner Service Sales,1609,Revenue
+2024-07-21,Dinner Service Sales,1341,Revenue
+2024-07-21,Dinner Service Sales,1380,Revenue
+2024-07-21,Lunch Service Sales,786,Revenue
+2024-07-21,Lunch Service Sales,844,Revenue
+2024-07-21,Private Event / Catering,1596,Revenue
+2024-07-22,Dinner Service Sales,1000,Revenue
+2024-07-22,Lunch Service Sales,643,Revenue
+2024-07-23,Dinner Service Sales,653,Revenue
+2024-07-23,Dinner Service Sales,704,Revenue
+2024-07-23,Dinner Service Sales,794,Revenue
+2024-07-23,Lunch Service Sales,749,Revenue
+2024-07-23,Lunch Service Sales,435,Revenue
+2024-07-24,Dinner Service Sales,936,Revenue
+2024-07-24,Lunch Service Sales,639,Revenue
+2024-07-24,Lunch Service Sales,363,Revenue
+2024-07-25,Dinner Service Sales,1185,Revenue
+2024-07-25,Dinner Service Sales,738,Revenue
+2024-07-25,Dinner Service Sales,733,Revenue
+2024-07-25,Lunch Service Sales,608,Revenue
+2024-07-25,Lunch Service Sales,498,Revenue
+2024-07-26,Dinner Service Sales,1125,Revenue
+2024-07-26,Dinner Service Sales,1349,Revenue
+2024-07-26,Lunch Service Sales,774,Revenue
+2024-07-26,Lunch Service Sales,622,Revenue
+2024-07-26,Lunch Service Sales,1107,Revenue
+2024-07-27,Dinner Service Sales,1706,Revenue
+2024-07-27,Dinner Service Sales,1930,Revenue
+2024-07-27,Lunch Service Sales,1056,Revenue
+2024-07-27,Lunch Service Sales,538,Revenue
+2024-07-27,Lunch Service Sales,512,Revenue
+2024-07-28,Dinner Service Sales,943,Revenue
+2024-07-28,Dinner Service Sales,1523,Revenue
+2024-07-28,Dinner Service Sales,1504,Revenue
+2024-07-28,Dinner Service Sales,1911,Revenue
+2024-07-28,Lunch Service Sales,1151,Revenue
+2024-07-28,Lunch Service Sales,855,Revenue
+2024-07-28,Lunch Service Sales,621,Revenue
+2024-07-28,Private Event / Catering,2431,Revenue
+2024-07-29,Dinner Service Sales,704,Revenue
+2024-07-29,Dinner Service Sales,1076,Revenue
+2024-07-29,Dinner Service Sales,1172,Revenue
+2024-07-29,Lunch Service Sales,323,Revenue
+2024-07-29,Lunch Service Sales,404,Revenue
+2024-07-30,Dinner Service Sales,1171,Revenue
+2024-07-30,Dinner Service Sales,848,Revenue
+2024-07-30,Lunch Service Sales,384,Revenue
+2024-07-30,Lunch Service Sales,539,Revenue
+2024-07-31,Dinner Service Sales,601,Revenue
+2024-07-31,Lunch Service Sales,519,Revenue
+2024-07-31,Lunch Service Sales,342,Revenue
+2024-08-01,Dinner Service Sales,845,Revenue
+2024-08-01,Dinner Service Sales,991,Revenue
+2024-08-01,Dinner Service Sales,551,Revenue
+2024-08-01,Lunch Service Sales,661,Revenue
+2024-08-01,Lunch Service Sales,391,Revenue
+2024-08-02,Dinner Service Sales,1734,Revenue
+2024-08-02,Dinner Service Sales,825,Revenue
+2024-08-02,Dinner Service Sales,1039,Revenue
+2024-08-02,Dinner Service Sales,974,Revenue
+2024-08-02,Dinner Service Sales,1391,Revenue
+2024-08-02,Lunch Service Sales,448,Revenue
+2024-08-03,Dinner Service Sales,1892,Revenue
+2024-08-03,Dinner Service Sales,1931,Revenue
+2024-08-03,Dinner Service Sales,1201,Revenue
+2024-08-03,Dinner Service Sales,1630,Revenue
+2024-08-03,Lunch Service Sales,817,Revenue
+2024-08-03,Lunch Service Sales,427,Revenue
+2024-08-04,Dinner Service Sales,1616,Revenue
+2024-08-04,Dinner Service Sales,861,Revenue
+2024-08-04,Dinner Service Sales,1415,Revenue
+2024-08-04,Dinner Service Sales,1061,Revenue
+2024-08-04,Lunch Service Sales,938,Revenue
+2024-08-04,Lunch Service Sales,625,Revenue
+2024-08-04,Lunch Service Sales,433,Revenue
+2024-08-04,Private Event / Catering,3935,Revenue
+2024-08-05,Dinner Service Sales,524,Revenue
+2024-08-05,Lunch Service Sales,608,Revenue
+2024-08-06,Dinner Service Sales,721,Revenue
+2024-08-06,Dinner Service Sales,621,Revenue
+2024-08-06,Dinner Service Sales,1026,Revenue
+2024-08-06,Lunch Service Sales,513,Revenue
+2024-08-07,Dinner Service Sales,1039,Revenue
+2024-08-07,Dinner Service Sales,509,Revenue
+2024-08-07,Lunch Service Sales,541,Revenue
+2024-08-08,Dinner Service Sales,991,Revenue
+2024-08-08,Dinner Service Sales,686,Revenue
+2024-08-08,Lunch Service Sales,455,Revenue
+2024-08-08,Lunch Service Sales,496,Revenue
+2024-08-09,Dinner Service Sales,1508,Revenue
+2024-08-09,Dinner Service Sales,968,Revenue
+2024-08-09,Dinner Service Sales,1216,Revenue
+2024-08-09,Dinner Service Sales,1737,Revenue
+2024-08-09,Lunch Service Sales,1109,Revenue
+2024-08-09,Lunch Service Sales,776,Revenue
+2024-08-10,Dinner Service Sales,1158,Revenue
+2024-08-10,Dinner Service Sales,1577,Revenue
+2024-08-10,Dinner Service Sales,1349,Revenue
+2024-08-10,Dinner Service Sales,1670,Revenue
+2024-08-10,Dinner Service Sales,1963,Revenue
+2024-08-10,Lunch Service Sales,725,Revenue
+2024-08-10,Lunch Service Sales,1186,Revenue
+2024-08-10,Lunch Service Sales,517,Revenue
+2024-08-11,Dinner Service Sales,1938,Revenue
+2024-08-11,Dinner Service Sales,1594,Revenue
+2024-08-11,Dinner Service Sales,1721,Revenue
+2024-08-11,Dinner Service Sales,1039,Revenue
+2024-08-11,Lunch Service Sales,970,Revenue
+2024-08-12,Dinner Service Sales,1064,Revenue
+2024-08-12,Dinner Service Sales,886,Revenue
+2024-08-12,Lunch Service Sales,490,Revenue
+2024-08-12,Lunch Service Sales,717,Revenue
+2024-08-13,Dinner Service Sales,609,Revenue
+2024-08-13,Dinner Service Sales,537,Revenue
+2024-08-13,Dinner Service Sales,681,Revenue
+2024-08-13,Lunch Service Sales,666,Revenue
+2024-08-13,Lunch Service Sales,603,Revenue
+2024-08-14,Dinner Service Sales,513,Revenue
+2024-08-14,Dinner Service Sales,1037,Revenue
+2024-08-14,Dinner Service Sales,1133,Revenue
+2024-08-14,Lunch Service Sales,607,Revenue
+2024-08-14,Lunch Service Sales,373,Revenue
+2024-08-15,Dinner Service Sales,732,Revenue
+2024-08-15,Dinner Service Sales,961,Revenue
+2024-08-15,Lunch Service Sales,385,Revenue
+2024-08-15,Lunch Service Sales,788,Revenue
+2024-08-16,Dinner Service Sales,1504,Revenue
+2024-08-16,Dinner Service Sales,1247,Revenue
+2024-08-16,Dinner Service Sales,887,Revenue
+2024-08-16,Lunch Service Sales,956,Revenue
+2024-08-16,Lunch Service Sales,893,Revenue
+2024-08-17,Dinner Service Sales,1403,Revenue
+2024-08-17,Dinner Service Sales,956,Revenue
+2024-08-17,Dinner Service Sales,1780,Revenue
+2024-08-17,Lunch Service Sales,475,Revenue
+2024-08-17,Lunch Service Sales,799,Revenue
+2024-08-17,Private Event / Catering,2231,Revenue
+2024-08-18,Dinner Service Sales,1754,Revenue
+2024-08-18,Dinner Service Sales,1011,Revenue
+2024-08-18,Dinner Service Sales,1249,Revenue
+2024-08-18,Dinner Service Sales,1714,Revenue
+2024-08-18,Dinner Service Sales,1908,Revenue
+2024-08-18,Lunch Service Sales,1117,Revenue
+2024-08-18,Lunch Service Sales,705,Revenue
+2024-08-19,Dinner Service Sales,798,Revenue
+2024-08-19,Dinner Service Sales,1028,Revenue
+2024-08-19,Lunch Service Sales,670,Revenue
+2024-08-20,Dinner Service Sales,1153,Revenue
+2024-08-20,Dinner Service Sales,625,Revenue
+2024-08-20,Lunch Service Sales,465,Revenue
+2024-08-21,Dinner Service Sales,998,Revenue
+2024-08-21,Dinner Service Sales,558,Revenue
+2024-08-21,Dinner Service Sales,597,Revenue
+2024-08-21,Lunch Service Sales,426,Revenue
+2024-08-21,Lunch Service Sales,331,Revenue
+2024-08-22,Dinner Service Sales,783,Revenue
+2024-08-22,Lunch Service Sales,600,Revenue
+2024-08-22,Lunch Service Sales,334,Revenue
+2024-08-23,Dinner Service Sales,1721,Revenue
+2024-08-23,Dinner Service Sales,1104,Revenue
+2024-08-23,Dinner Service Sales,924,Revenue
+2024-08-23,Dinner Service Sales,1895,Revenue
+2024-08-23,Dinner Service Sales,1314,Revenue
+2024-08-23,Lunch Service Sales,853,Revenue
+2024-08-23,Lunch Service Sales,576,Revenue
+2024-08-24,Dinner Service Sales,1011,Revenue
+2024-08-24,Dinner Service Sales,1706,Revenue
+2024-08-24,Dinner Service Sales,1005,Revenue
+2024-08-24,Dinner Service Sales,1899,Revenue
+2024-08-24,Dinner Service Sales,1116,Revenue
+2024-08-24,Lunch Service Sales,1067,Revenue
+2024-08-24,Lunch Service Sales,541,Revenue
+2024-08-25,Dinner Service Sales,1070,Revenue
+2024-08-25,Dinner Service Sales,1862,Revenue
+2024-08-25,Dinner Service Sales,1522,Revenue
+2024-08-25,Dinner Service Sales,1457,Revenue
+2024-08-25,Lunch Service Sales,807,Revenue
+2024-08-26,Dinner Service Sales,636,Revenue
+2024-08-26,Lunch Service Sales,765,Revenue
+2024-08-26,Lunch Service Sales,617,Revenue
+2024-08-27,Dinner Service Sales,1081,Revenue
+2024-08-27,Dinner Service Sales,678,Revenue
+2024-08-27,Dinner Service Sales,1128,Revenue
+2024-08-27,Lunch Service Sales,718,Revenue
+2024-08-27,Lunch Service Sales,606,Revenue
+2024-08-28,Dinner Service Sales,1114,Revenue
+2024-08-28,Dinner Service Sales,558,Revenue
+2024-08-28,Dinner Service Sales,1135,Revenue
+2024-08-28,Lunch Service Sales,753,Revenue
+2024-08-28,Lunch Service Sales,790,Revenue
+2024-08-29,Dinner Service Sales,509,Revenue
+2024-08-29,Lunch Service Sales,680,Revenue
+2024-08-30,Dinner Service Sales,1543,Revenue
+2024-08-30,Dinner Service Sales,1964,Revenue
+2024-08-30,Dinner Service Sales,1536,Revenue
+2024-08-30,Dinner Service Sales,1844,Revenue
+2024-08-30,Lunch Service Sales,454,Revenue
+2024-08-30,Lunch Service Sales,1035,Revenue
+2024-08-30,Lunch Service Sales,754,Revenue
+2024-08-31,Dinner Service Sales,1107,Revenue
+2024-08-31,Dinner Service Sales,1079,Revenue
+2024-08-31,Lunch Service Sales,681,Revenue
+2024-08-31,Lunch Service Sales,427,Revenue
+2024-09-01,Dinner Service Sales,844,Revenue
+2024-09-01,Dinner Service Sales,1243,Revenue
+2024-09-01,Dinner Service Sales,948,Revenue
+2024-09-01,Dinner Service Sales,1268,Revenue
+2024-09-01,Dinner Service Sales,851,Revenue
+2024-09-01,Lunch Service Sales,612,Revenue
+2024-09-02,Dinner Service Sales,877,Revenue
+2024-09-02,Dinner Service Sales,1045,Revenue
+2024-09-02,Lunch Service Sales,662,Revenue
+2024-09-02,Lunch Service Sales,672,Revenue
+2024-09-03,Dinner Service Sales,608,Revenue
+2024-09-03,Dinner Service Sales,1072,Revenue
+2024-09-03,Lunch Service Sales,350,Revenue
+2024-09-04,Dinner Service Sales,671,Revenue
+2024-09-04,Dinner Service Sales,625,Revenue
+2024-09-04,Lunch Service Sales,454,Revenue
+2024-09-04,Lunch Service Sales,511,Revenue
+2024-09-05,Dinner Service Sales,1002,Revenue
+2024-09-05,Lunch Service Sales,628,Revenue
+2024-09-05,Lunch Service Sales,597,Revenue
+2024-09-06,Dinner Service Sales,1683,Revenue
+2024-09-06,Dinner Service Sales,1410,Revenue
+2024-09-06,Dinner Service Sales,1526,Revenue
+2024-09-06,Dinner Service Sales,1105,Revenue
+2024-09-06,Lunch Service Sales,609,Revenue
+2024-09-06,Lunch Service Sales,1082,Revenue
+2024-09-07,Dinner Service Sales,1523,Revenue
+2024-09-07,Dinner Service Sales,1269,Revenue
+2024-09-07,Dinner Service Sales,1673,Revenue
+2024-09-07,Lunch Service Sales,692,Revenue
+2024-09-08,Dinner Service Sales,1133,Revenue
+2024-09-08,Dinner Service Sales,1559,Revenue
+2024-09-08,Dinner Service Sales,1186,Revenue
+2024-09-08,Lunch Service Sales,833,Revenue
+2024-09-08,Lunch Service Sales,507,Revenue
+2024-09-08,Lunch Service Sales,870,Revenue
+2024-09-09,Dinner Service Sales,1019,Revenue
+2024-09-09,Dinner Service Sales,909,Revenue
+2024-09-09,Dinner Service Sales,923,Revenue
+2024-09-09,Lunch Service Sales,447,Revenue
+2024-09-10,Dinner Service Sales,638,Revenue
+2024-09-10,Dinner Service Sales,804,Revenue
+2024-09-10,Dinner Service Sales,963,Revenue
+2024-09-10,Lunch Service Sales,800,Revenue
+2024-09-11,Dinner Service Sales,1066,Revenue
+2024-09-11,Dinner Service Sales,790,Revenue
+2024-09-11,Dinner Service Sales,886,Revenue
+2024-09-11,Lunch Service Sales,458,Revenue
+2024-09-12,Dinner Service Sales,1160,Revenue
+2024-09-12,Dinner Service Sales,608,Revenue
+2024-09-12,Lunch Service Sales,400,Revenue
+2024-09-12,Lunch Service Sales,744,Revenue
+2024-09-13,Dinner Service Sales,969,Revenue
+2024-09-13,Dinner Service Sales,1074,Revenue
+2024-09-13,Lunch Service Sales,456,Revenue
+2024-09-14,Dinner Service Sales,1757,Revenue
+2024-09-14,Dinner Service Sales,1180,Revenue
+2024-09-14,Dinner Service Sales,1373,Revenue
+2024-09-14,Dinner Service Sales,1028,Revenue
+2024-09-14,Dinner Service Sales,1442,Revenue
+2024-09-14,Lunch Service Sales,1055,Revenue
+2024-09-15,Dinner Service Sales,1787,Revenue
+2024-09-15,Dinner Service Sales,1621,Revenue
+2024-09-15,Dinner Service Sales,928,Revenue
+2024-09-15,Lunch Service Sales,815,Revenue
+2024-09-15,Lunch Service Sales,528,Revenue
+2024-09-15,Lunch Service Sales,1171,Revenue
+2024-09-16,Dinner Service Sales,1135,Revenue
+2024-09-16,Dinner Service Sales,746,Revenue
+2024-09-16,Lunch Service Sales,582,Revenue
+2024-09-17,Dinner Service Sales,638,Revenue
+2024-09-17,Dinner Service Sales,783,Revenue
+2024-09-17,Lunch Service Sales,577,Revenue
+2024-09-17,Lunch Service Sales,726,Revenue
+2024-09-17,Private Event / Catering,2019,Revenue
+2024-09-18,Dinner Service Sales,1179,Revenue
+2024-09-18,Lunch Service Sales,320,Revenue
+2024-09-18,Lunch Service Sales,415,Revenue
+2024-09-19,Dinner Service Sales,1050,Revenue
+2024-09-19,Lunch Service Sales,340,Revenue
+2024-09-20,Dinner Service Sales,1967,Revenue
+2024-09-20,Dinner Service Sales,1223,Revenue
+2024-09-20,Dinner Service Sales,985,Revenue
+2024-09-20,Dinner Service Sales,1837,Revenue
+2024-09-20,Lunch Service Sales,536,Revenue
+2024-09-20,Lunch Service Sales,1179,Revenue
+2024-09-20,Lunch Service Sales,715,Revenue
+2024-09-21,Dinner Service Sales,1445,Revenue
+2024-09-21,Dinner Service Sales,1483,Revenue
+2024-09-21,Dinner Service Sales,1925,Revenue
+2024-09-21,Dinner Service Sales,1729,Revenue
+2024-09-21,Lunch Service Sales,1041,Revenue
+2024-09-21,Lunch Service Sales,896,Revenue
+2024-09-21,Lunch Service Sales,1007,Revenue
+2024-09-22,Dinner Service Sales,1127,Revenue
+2024-09-22,Dinner Service Sales,1430,Revenue
+2024-09-22,Dinner Service Sales,1454,Revenue
+2024-09-22,Lunch Service Sales,1119,Revenue
+2024-09-23,Dinner Service Sales,672,Revenue
+2024-09-23,Lunch Service Sales,660,Revenue
+2024-09-23,Lunch Service Sales,425,Revenue
+2024-09-24,Dinner Service Sales,511,Revenue
+2024-09-24,Dinner Service Sales,937,Revenue
+2024-09-24,Dinner Service Sales,822,Revenue
+2024-09-24,Lunch Service Sales,737,Revenue
+2024-09-25,Dinner Service Sales,584,Revenue
+2024-09-25,Dinner Service Sales,722,Revenue
+2024-09-25,Lunch Service Sales,748,Revenue
+2024-09-26,Dinner Service Sales,739,Revenue
+2024-09-26,Lunch Service Sales,599,Revenue
+2024-09-26,Lunch Service Sales,338,Revenue
+2024-09-27,Dinner Service Sales,1185,Revenue
+2024-09-27,Dinner Service Sales,840,Revenue
+2024-09-27,Dinner Service Sales,1133,Revenue
+2024-09-27,Lunch Service Sales,562,Revenue
+2024-09-28,Dinner Service Sales,994,Revenue
+2024-09-28,Dinner Service Sales,1511,Revenue
+2024-09-28,Dinner Service Sales,1802,Revenue
+2024-09-28,Dinner Service Sales,1177,Revenue
+2024-09-28,Dinner Service Sales,1980,Revenue
+2024-09-28,Lunch Service Sales,674,Revenue
+2024-09-29,Dinner Service Sales,957,Revenue
+2024-09-29,Dinner Service Sales,1646,Revenue
+2024-09-29,Dinner Service Sales,1124,Revenue
+2024-09-29,Dinner Service Sales,1083,Revenue
+2024-09-29,Dinner Service Sales,1323,Revenue
+2024-09-29,Lunch Service Sales,994,Revenue
+2024-09-29,Lunch Service Sales,815,Revenue
+2024-09-29,Lunch Service Sales,826,Revenue
+2024-09-30,Dinner Service Sales,1026,Revenue
+2024-09-30,Lunch Service Sales,436,Revenue
+2024-09-30,Lunch Service Sales,538,Revenue
+2024-09-30,Private Event / Catering,2966,Revenue
+2024-10-01,Dinner Service Sales,861,Revenue
+2024-10-01,Lunch Service Sales,682,Revenue
+2024-10-02,Dinner Service Sales,639,Revenue
+2024-10-02,Dinner Service Sales,514,Revenue
+2024-10-02,Dinner Service Sales,1047,Revenue
+2024-10-02,Lunch Service Sales,800,Revenue
+2024-10-03,Dinner Service Sales,1199,Revenue
+2024-10-03,Dinner Service Sales,574,Revenue
+2024-10-03,Dinner Service Sales,685,Revenue
+2024-10-03,Lunch Service Sales,450,Revenue
+2024-10-03,Lunch Service Sales,571,Revenue
+2024-10-03,Private Event / Catering,2615,Revenue
+2024-10-04,Dinner Service Sales,1229,Revenue
+2024-10-04,Dinner Service Sales,1359,Revenue
+2024-10-04,Dinner Service Sales,1712,Revenue
+2024-10-04,Lunch Service Sales,647,Revenue
+2024-10-04,Lunch Service Sales,1147,Revenue
+2024-10-05,Dinner Service Sales,923,Revenue
+2024-10-05,Dinner Service Sales,1992,Revenue
+2024-10-05,Dinner Service Sales,1190,Revenue
+2024-10-05,Lunch Service Sales,1075,Revenue
+2024-10-05,Lunch Service Sales,805,Revenue
+2024-10-05,Lunch Service Sales,553,Revenue
+2024-10-06,Dinner Service Sales,1794,Revenue
+2024-10-06,Dinner Service Sales,910,Revenue
+2024-10-06,Dinner Service Sales,1642,Revenue
+2024-10-06,Dinner Service Sales,1484,Revenue
+2024-10-06,Dinner Service Sales,1237,Revenue
+2024-10-06,Lunch Service Sales,1185,Revenue
+2024-10-07,Dinner Service Sales,942,Revenue
+2024-10-07,Lunch Service Sales,609,Revenue
+2024-10-07,Lunch Service Sales,404,Revenue
+2024-10-08,Dinner Service Sales,949,Revenue
+2024-10-08,Dinner Service Sales,851,Revenue
+2024-10-08,Dinner Service Sales,1085,Revenue
+2024-10-08,Lunch Service Sales,317,Revenue
+2024-10-09,Dinner Service Sales,819,Revenue
+2024-10-09,Dinner Service Sales,985,Revenue
+2024-10-09,Dinner Service Sales,505,Revenue
+2024-10-09,Lunch Service Sales,414,Revenue
+2024-10-10,Dinner Service Sales,1000,Revenue
+2024-10-10,Dinner Service Sales,576,Revenue
+2024-10-10,Lunch Service Sales,553,Revenue
+2024-10-11,Dinner Service Sales,1985,Revenue
+2024-10-11,Dinner Service Sales,1809,Revenue
+2024-10-11,Dinner Service Sales,1533,Revenue
+2024-10-11,Dinner Service Sales,986,Revenue
+2024-10-11,Lunch Service Sales,495,Revenue
+2024-10-12,Dinner Service Sales,1152,Revenue
+2024-10-12,Dinner Service Sales,911,Revenue
+2024-10-12,Dinner Service Sales,1372,Revenue
+2024-10-12,Dinner Service Sales,1335,Revenue
+2024-10-12,Dinner Service Sales,1518,Revenue
+2024-10-12,Lunch Service Sales,671,Revenue
+2024-10-13,Dinner Service Sales,1581,Revenue
+2024-10-13,Dinner Service Sales,1698,Revenue
+2024-10-13,Lunch Service Sales,937,Revenue
+2024-10-14,Dinner Service Sales,556,Revenue
+2024-10-14,Lunch Service Sales,622,Revenue
+2024-10-14,Lunch Service Sales,695,Revenue
+2024-10-15,Dinner Service Sales,693,Revenue
+2024-10-15,Lunch Service Sales,755,Revenue
+2024-10-15,Lunch Service Sales,321,Revenue
+2024-10-16,Dinner Service Sales,1108,Revenue
+2024-10-16,Lunch Service Sales,538,Revenue
+2024-10-17,Dinner Service Sales,720,Revenue
+2024-10-17,Lunch Service Sales,399,Revenue
+2024-10-18,Dinner Service Sales,1056,Revenue
+2024-10-18,Dinner Service Sales,998,Revenue
+2024-10-18,Dinner Service Sales,1347,Revenue
+2024-10-18,Dinner Service Sales,1671,Revenue
+2024-10-18,Dinner Service Sales,1331,Revenue
+2024-10-18,Lunch Service Sales,874,Revenue
+2024-10-18,Lunch Service Sales,579,Revenue
+2024-10-18,Lunch Service Sales,746,Revenue
+2024-10-19,Dinner Service Sales,1066,Revenue
+2024-10-19,Dinner Service Sales,822,Revenue
+2024-10-19,Lunch Service Sales,620,Revenue
+2024-10-19,Lunch Service Sales,1096,Revenue
+2024-10-19,Lunch Service Sales,648,Revenue
+2024-10-20,Dinner Service Sales,1160,Revenue
+2024-10-20,Dinner Service Sales,1347,Revenue
+2024-10-20,Dinner Service Sales,1690,Revenue
+2024-10-20,Dinner Service Sales,1679,Revenue
+2024-10-20,Lunch Service Sales,454,Revenue
+2024-10-20,Lunch Service Sales,521,Revenue
+2024-10-20,Lunch Service Sales,515,Revenue
+2024-10-21,Dinner Service Sales,568,Revenue
+2024-10-21,Dinner Service Sales,1167,Revenue
+2024-10-21,Dinner Service Sales,631,Revenue
+2024-10-21,Lunch Service Sales,551,Revenue
+2024-10-21,Lunch Service Sales,704,Revenue
+2024-10-22,Dinner Service Sales,568,Revenue
+2024-10-22,Dinner Service Sales,653,Revenue
+2024-10-22,Dinner Service Sales,522,Revenue
+2024-10-22,Lunch Service Sales,748,Revenue
+2024-10-22,Lunch Service Sales,480,Revenue
+2024-10-23,Dinner Service Sales,553,Revenue
+2024-10-23,Lunch Service Sales,361,Revenue
+2024-10-24,Dinner Service Sales,915,Revenue
+2024-10-24,Dinner Service Sales,1054,Revenue
+2024-10-24,Dinner Service Sales,785,Revenue
+2024-10-24,Lunch Service Sales,686,Revenue
+2024-10-25,Dinner Service Sales,1601,Revenue
+2024-10-25,Dinner Service Sales,1054,Revenue
+2024-10-25,Lunch Service Sales,774,Revenue
+2024-10-26,Dinner Service Sales,1898,Revenue
+2024-10-26,Dinner Service Sales,1044,Revenue
+2024-10-26,Dinner Service Sales,1245,Revenue
+2024-10-26,Dinner Service Sales,1904,Revenue
+2024-10-26,Dinner Service Sales,1253,Revenue
+2024-10-26,Lunch Service Sales,840,Revenue
+2024-10-26,Lunch Service Sales,652,Revenue
+2024-10-27,Dinner Service Sales,1259,Revenue
+2024-10-27,Dinner Service Sales,1204,Revenue
+2024-10-27,Dinner Service Sales,1312,Revenue
+2024-10-27,Dinner Service Sales,1298,Revenue
+2024-10-27,Dinner Service Sales,867,Revenue
+2024-10-27,Lunch Service Sales,1082,Revenue
+2024-10-27,Lunch Service Sales,884,Revenue
+2024-10-28,Dinner Service Sales,977,Revenue
+2024-10-28,Lunch Service Sales,557,Revenue
+2024-10-28,Lunch Service Sales,386,Revenue
+2024-10-29,Dinner Service Sales,1120,Revenue
+2024-10-29,Dinner Service Sales,1196,Revenue
+2024-10-29,Lunch Service Sales,584,Revenue
+2024-10-29,Lunch Service Sales,391,Revenue
+2024-10-30,Dinner Service Sales,1032,Revenue
+2024-10-30,Dinner Service Sales,794,Revenue
+2024-10-30,Lunch Service Sales,497,Revenue
+2024-10-30,Lunch Service Sales,357,Revenue
+2024-10-31,Dinner Service Sales,535,Revenue
+2024-10-31,Dinner Service Sales,925,Revenue
+2024-10-31,Dinner Service Sales,963,Revenue
+2024-10-31,Lunch Service Sales,507,Revenue
+2024-11-01,Dinner Service Sales,1307,Revenue
+2024-11-01,Dinner Service Sales,1508,Revenue
+2024-11-01,Dinner Service Sales,1010,Revenue
+2024-11-01,Dinner Service Sales,1933,Revenue
+2024-11-01,Lunch Service Sales,527,Revenue
+2024-11-01,Lunch Service Sales,404,Revenue
+2024-11-01,Lunch Service Sales,1117,Revenue
+2024-11-02,Dinner Service Sales,1382,Revenue
+2024-11-02,Dinner Service Sales,1286,Revenue
+2024-11-02,Lunch Service Sales,545,Revenue
+2024-11-03,Dinner Service Sales,1800,Revenue
+2024-11-03,Dinner Service Sales,937,Revenue
+2024-11-03,Dinner Service Sales,1789,Revenue
+2024-11-03,Dinner Service Sales,1330,Revenue
+2024-11-03,Dinner Service Sales,1530,Revenue
+2024-11-03,Lunch Service Sales,438,Revenue
+2024-11-03,Lunch Service Sales,1005,Revenue
+2024-11-03,Lunch Service Sales,792,Revenue
+2024-11-04,Dinner Service Sales,595,Revenue
+2024-11-04,Dinner Service Sales,613,Revenue
+2024-11-04,Lunch Service Sales,411,Revenue
+2024-11-05,Dinner Service Sales,660,Revenue
+2024-11-05,Dinner Service Sales,1142,Revenue
+2024-11-05,Dinner Service Sales,787,Revenue
+2024-11-05,Lunch Service Sales,542,Revenue
+2024-11-05,Lunch Service Sales,765,Revenue
+2024-11-05,Private Event / Catering,1654,Revenue
+2024-11-06,Dinner Service Sales,1193,Revenue
+2024-11-06,Dinner Service Sales,754,Revenue
+2024-11-06,Dinner Service Sales,506,Revenue
+2024-11-06,Lunch Service Sales,439,Revenue
+2024-11-07,Dinner Service Sales,1106,Revenue
+2024-11-07,Dinner Service Sales,585,Revenue
+2024-11-07,Dinner Service Sales,970,Revenue
+2024-11-07,Lunch Service Sales,427,Revenue
+2024-11-07,Lunch Service Sales,689,Revenue
+2024-11-08,Dinner Service Sales,1249,Revenue
+2024-11-08,Dinner Service Sales,1017,Revenue
+2024-11-08,Dinner Service Sales,1503,Revenue
+2024-11-08,Dinner Service Sales,1088,Revenue
+2024-11-08,Lunch Service Sales,1004,Revenue
+2024-11-08,Lunch Service Sales,637,Revenue
+2024-11-08,Lunch Service Sales,747,Revenue
+2024-11-09,Dinner Service Sales,1752,Revenue
+2024-11-09,Dinner Service Sales,1775,Revenue
+2024-11-09,Dinner Service Sales,869,Revenue
+2024-11-09,Dinner Service Sales,1133,Revenue
+2024-11-09,Lunch Service Sales,1046,Revenue
+2024-11-09,Lunch Service Sales,483,Revenue
+2024-11-10,Dinner Service Sales,906,Revenue
+2024-11-10,Dinner Service Sales,1321,Revenue
+2024-11-10,Lunch Service Sales,1161,Revenue
+2024-11-10,Lunch Service Sales,815,Revenue
+2024-11-10,Lunch Service Sales,717,Revenue
+2024-11-11,Dinner Service Sales,572,Revenue
+2024-11-11,Lunch Service Sales,698,Revenue
+2024-11-12,Dinner Service Sales,790,Revenue
+2024-11-12,Dinner Service Sales,546,Revenue
+2024-11-12,Dinner Service Sales,1179,Revenue
+2024-11-12,Lunch Service Sales,781,Revenue
+2024-11-12,Lunch Service Sales,411,Revenue
+2024-11-13,Dinner Service Sales,957,Revenue
+2024-11-13,Lunch Service Sales,540,Revenue
+2024-11-13,Lunch Service Sales,780,Revenue
+2024-11-13,Private Event / Catering,3512,Revenue
+2024-11-14,Dinner Service Sales,904,Revenue
+2024-11-14,Lunch Service Sales,379,Revenue
+2024-11-14,Lunch Service Sales,650,Revenue
+2024-11-15,Dinner Service Sales,1952,Revenue
+2024-11-15,Dinner Service Sales,1758,Revenue
+2024-11-15,Lunch Service Sales,953,Revenue
+2024-11-15,Lunch Service Sales,751,Revenue
+2024-11-15,Lunch Service Sales,736,Revenue
+2024-11-16,Dinner Service Sales,1259,Revenue
+2024-11-16,Dinner Service Sales,1696,Revenue
+2024-11-16,Lunch Service Sales,585,Revenue
+2024-11-16,Lunch Service Sales,682,Revenue
+2024-11-16,Lunch Service Sales,905,Revenue
+2024-11-17,Dinner Service Sales,1028,Revenue
+2024-11-17,Dinner Service Sales,1651,Revenue
+2024-11-17,Lunch Service Sales,495,Revenue
+2024-11-17,Lunch Service Sales,1008,Revenue
+2024-11-17,Lunch Service Sales,1070,Revenue
+2024-11-18,Dinner Service Sales,844,Revenue
+2024-11-18,Lunch Service Sales,765,Revenue
+2024-11-19,Dinner Service Sales,1111,Revenue
+2024-11-19,Dinner Service Sales,962,Revenue
+2024-11-19,Dinner Service Sales,724,Revenue
+2024-11-19,Lunch Service Sales,796,Revenue
+2024-11-20,Dinner Service Sales,630,Revenue
+2024-11-20,Dinner Service Sales,1105,Revenue
+2024-11-20,Dinner Service Sales,518,Revenue
+2024-11-20,Lunch Service Sales,506,Revenue
+2024-11-21,Dinner Service Sales,1032,Revenue
+2024-11-21,Dinner Service Sales,1165,Revenue
+2024-11-21,Dinner Service Sales,954,Revenue
+2024-11-21,Lunch Service Sales,715,Revenue
+2024-11-22,Dinner Service Sales,1377,Revenue
+2024-11-22,Dinner Service Sales,1597,Revenue
+2024-11-22,Dinner Service Sales,1235,Revenue
+2024-11-22,Lunch Service Sales,640,Revenue
+2024-11-22,Lunch Service Sales,1164,Revenue
+2024-11-22,Lunch Service Sales,600,Revenue
+2024-11-23,Dinner Service Sales,1503,Revenue
+2024-11-23,Dinner Service Sales,1555,Revenue
+2024-11-23,Lunch Service Sales,1032,Revenue
+2024-11-24,Dinner Service Sales,1341,Revenue
+2024-11-24,Dinner Service Sales,1626,Revenue
+2024-11-24,Lunch Service Sales,1108,Revenue
+2024-11-24,Lunch Service Sales,1078,Revenue
+2024-11-24,Lunch Service Sales,1111,Revenue
+2024-11-25,Dinner Service Sales,981,Revenue
+2024-11-25,Lunch Service Sales,645,Revenue
+2024-11-26,Dinner Service Sales,594,Revenue
+2024-11-26,Dinner Service Sales,912,Revenue
+2024-11-26,Dinner Service Sales,1106,Revenue
+2024-11-26,Lunch Service Sales,311,Revenue
+2024-11-26,Lunch Service Sales,413,Revenue
+2024-11-27,Dinner Service Sales,659,Revenue
+2024-11-27,Dinner Service Sales,788,Revenue
+2024-11-27,Lunch Service Sales,557,Revenue
+2024-11-28,Dinner Service Sales,1197,Revenue
+2024-11-28,Dinner Service Sales,531,Revenue
+2024-11-28,Dinner Service Sales,1048,Revenue
+2024-11-28,Lunch Service Sales,482,Revenue
+2024-11-28,Private Event / Catering,2006,Revenue
+2024-11-29,Dinner Service Sales,1501,Revenue
+2024-11-29,Dinner Service Sales,1471,Revenue
+2024-11-29,Lunch Service Sales,572,Revenue
+2024-11-30,Dinner Service Sales,1910,Revenue
+2024-11-30,Dinner Service Sales,1059,Revenue
+2024-11-30,Dinner Service Sales,1840,Revenue
+2024-11-30,Dinner Service Sales,1257,Revenue
+2024-11-30,Dinner Service Sales,1058,Revenue
+2024-11-30,Lunch Service Sales,1162,Revenue
+2024-11-30,Lunch Service Sales,565,Revenue
+2024-12-01,Dinner Service Sales,1134,Revenue
+2024-12-01,Dinner Service Sales,888,Revenue
+2024-12-01,Lunch Service Sales,1144,Revenue
+2024-12-01,Lunch Service Sales,447,Revenue
+2024-12-01,Lunch Service Sales,1110,Revenue
+2024-12-02,Dinner Service Sales,570,Revenue
+2024-12-02,Dinner Service Sales,745,Revenue
+2024-12-02,Lunch Service Sales,372,Revenue
+2024-12-03,Dinner Service Sales,1057,Revenue
+2024-12-03,Lunch Service Sales,365,Revenue
+2024-12-04,Dinner Service Sales,787,Revenue
+2024-12-04,Dinner Service Sales,1046,Revenue
+2024-12-04,Dinner Service Sales,559,Revenue
+2024-12-04,Lunch Service Sales,574,Revenue
+2024-12-05,Dinner Service Sales,1015,Revenue
+2024-12-05,Dinner Service Sales,527,Revenue
+2024-12-05,Dinner Service Sales,722,Revenue
+2024-12-05,Lunch Service Sales,529,Revenue
+2024-12-06,Dinner Service Sales,1698,Revenue
+2024-12-06,Dinner Service Sales,1135,Revenue
+2024-12-06,Dinner Service Sales,939,Revenue
+2024-12-06,Lunch Service Sales,1142,Revenue
+2024-12-06,Lunch Service Sales,817,Revenue
+2024-12-07,Dinner Service Sales,1320,Revenue
+2024-12-07,Dinner Service Sales,1328,Revenue
+2024-12-07,Dinner Service Sales,1002,Revenue
+2024-12-07,Dinner Service Sales,1904,Revenue
+2024-12-07,Dinner Service Sales,1032,Revenue
+2024-12-07,Lunch Service Sales,527,Revenue
+2024-12-07,Lunch Service Sales,974,Revenue
+2024-12-08,Dinner Service Sales,1486,Revenue
+2024-12-08,Dinner Service Sales,992,Revenue
+2024-12-08,Dinner Service Sales,1532,Revenue
+2024-12-08,Dinner Service Sales,1849,Revenue
+2024-12-08,Lunch Service Sales,1140,Revenue
+2024-12-08,Lunch Service Sales,612,Revenue
+2024-12-09,Dinner Service Sales,579,Revenue
+2024-12-09,Lunch Service Sales,372,Revenue
+2024-12-09,Lunch Service Sales,320,Revenue
+2024-12-09,Private Event / Catering,1940,Revenue
+2024-12-10,Dinner Service Sales,1017,Revenue
+2024-12-10,Lunch Service Sales,428,Revenue
+2024-12-10,Lunch Service Sales,781,Revenue
+2024-12-11,Dinner Service Sales,535,Revenue
+2024-12-11,Dinner Service Sales,894,Revenue
+2024-12-11,Lunch Service Sales,753,Revenue
+2024-12-12,Dinner Service Sales,566,Revenue
+2024-12-12,Dinner Service Sales,586,Revenue
+2024-12-12,Dinner Service Sales,590,Revenue
+2024-12-12,Lunch Service Sales,694,Revenue
+2024-12-13,Dinner Service Sales,1440,Revenue
+2024-12-13,Dinner Service Sales,1260,Revenue
+2024-12-13,Dinner Service Sales,1754,Revenue
+2024-12-13,Dinner Service Sales,1035,Revenue
+2024-12-13,Lunch Service Sales,661,Revenue
+2024-12-13,Lunch Service Sales,748,Revenue
+2024-12-14,Dinner Service Sales,1282,Revenue
+2024-12-14,Dinner Service Sales,1378,Revenue
+2024-12-14,Dinner Service Sales,1796,Revenue
+2024-12-14,Lunch Service Sales,798,Revenue
+2024-12-14,Lunch Service Sales,1057,Revenue
+2024-12-14,Lunch Service Sales,692,Revenue
+2024-12-15,Dinner Service Sales,1481,Revenue
+2024-12-15,Dinner Service Sales,1221,Revenue
+2024-12-15,Lunch Service Sales,666,Revenue
+2024-12-15,Lunch Service Sales,1034,Revenue
+2024-12-15,Lunch Service Sales,1056,Revenue
+2024-12-15,Private Event / Catering,2302,Revenue
+2024-12-16,Dinner Service Sales,728,Revenue
+2024-12-16,Dinner Service Sales,688,Revenue
+2024-12-16,Dinner Service Sales,867,Revenue
+2024-12-16,Lunch Service Sales,603,Revenue
+2024-12-17,Dinner Service Sales,1058,Revenue
+2024-12-17,Dinner Service Sales,840,Revenue
+2024-12-17,Lunch Service Sales,768,Revenue
+2024-12-17,Lunch Service Sales,571,Revenue
+2024-12-18,Dinner Service Sales,905,Revenue
+2024-12-18,Lunch Service Sales,448,Revenue
+2024-12-19,Dinner Service Sales,1033,Revenue
+2024-12-19,Dinner Service Sales,1127,Revenue
+2024-12-19,Lunch Service Sales,763,Revenue
+2024-12-19,Lunch Service Sales,636,Revenue
+2024-12-20,Dinner Service Sales,875,Revenue
+2024-12-20,Dinner Service Sales,875,Revenue
+2024-12-20,Lunch Service Sales,1196,Revenue
+2024-12-20,Lunch Service Sales,603,Revenue
+2024-12-21,Dinner Service Sales,1690,Revenue
+2024-12-21,Dinner Service Sales,1686,Revenue
+2024-12-21,Dinner Service Sales,1750,Revenue
+2024-12-21,Dinner Service Sales,1955,Revenue
+2024-12-21,Dinner Service Sales,1954,Revenue
+2024-12-21,Lunch Service Sales,862,Revenue
+2024-12-21,Lunch Service Sales,965,Revenue
+2024-12-21,Lunch Service Sales,1109,Revenue
+2024-12-22,Dinner Service Sales,1208,Revenue
+2024-12-22,Dinner Service Sales,1194,Revenue
+2024-12-22,Dinner Service Sales,804,Revenue
+2024-12-22,Dinner Service Sales,1980,Revenue
+2024-12-22,Lunch Service Sales,816,Revenue
+2024-12-22,Private Event / Catering,3816,Revenue
+2024-12-23,Dinner Service Sales,1037,Revenue
+2024-12-23,Lunch Service Sales,674,Revenue
+2024-12-24,Dinner Service Sales,1061,Revenue
+2024-12-24,Dinner Service Sales,975,Revenue
+2024-12-24,Lunch Service Sales,705,Revenue
+2024-12-25,Dinner Service Sales,644,Revenue
+2024-12-25,Dinner Service Sales,823,Revenue
+2024-12-25,Lunch Service Sales,375,Revenue
+2024-12-26,Dinner Service Sales,668,Revenue
+2024-12-26,Dinner Service Sales,542,Revenue
+2024-12-26,Dinner Service Sales,1133,Revenue
+2024-12-26,Lunch Service Sales,640,Revenue
+2024-12-26,Lunch Service Sales,319,Revenue
+2024-12-27,Dinner Service Sales,1110,Revenue
+2024-12-27,Dinner Service Sales,1539,Revenue
+2024-12-27,Dinner Service Sales,915,Revenue
+2024-12-27,Lunch Service Sales,944,Revenue
+2024-12-27,Lunch Service Sales,1147,Revenue
+2024-12-27,Lunch Service Sales,614,Revenue
+2024-12-28,Dinner Service Sales,883,Revenue
+2024-12-28,Dinner Service Sales,1150,Revenue
+2024-12-28,Dinner Service Sales,1508,Revenue
+2024-12-28,Dinner Service Sales,1633,Revenue
+2024-12-28,Dinner Service Sales,1051,Revenue
+2024-12-28,Lunch Service Sales,937,Revenue
+2024-12-28,Lunch Service Sales,1100,Revenue
+2024-12-29,Dinner Service Sales,1780,Revenue
+2024-12-29,Dinner Service Sales,1776,Revenue
+2024-12-29,Dinner Service Sales,1743,Revenue
+2024-12-29,Dinner Service Sales,1452,Revenue
+2024-12-29,Dinner Service Sales,1110,Revenue
+2024-12-29,Lunch Service Sales,535,Revenue
+2024-12-29,Lunch Service Sales,701,Revenue
+2024-12-29,Lunch Service Sales,518,Revenue
+2024-12-30,Dinner Service Sales,876,Revenue
+2024-12-30,Dinner Service Sales,696,Revenue
+2024-12-30,Lunch Service Sales,797,Revenue
+2024-12-30,Lunch Service Sales,472,Revenue
+2024-12-31,Dinner Service Sales,1113,Revenue
+2024-12-31,Dinner Service Sales,856,Revenue
+2024-12-31,Dinner Service Sales,635,Revenue
+2024-12-31,Lunch Service Sales,417,Revenue
+2024-12-31,Lunch Service Sales,399,Revenue
+2025-01-01,Dinner Service Sales,832,Revenue
+2025-01-01,Dinner Service Sales,614,Revenue
+2025-01-01,Dinner Service Sales,1114,Revenue
+2025-01-01,Lunch Service Sales,745,Revenue
+2025-01-01,Lunch Service Sales,300,Revenue
+2025-01-02,Dinner Service Sales,924,Revenue
+2025-01-02,Dinner Service Sales,1186,Revenue
+2025-01-02,Lunch Service Sales,732,Revenue
+2025-01-03,Dinner Service Sales,1133,Revenue
+2025-01-03,Dinner Service Sales,1507,Revenue
+2025-01-03,Dinner Service Sales,933,Revenue
+2025-01-03,Lunch Service Sales,449,Revenue
+2025-01-03,Lunch Service Sales,671,Revenue
+2025-01-04,Dinner Service Sales,1609,Revenue
+2025-01-04,Dinner Service Sales,1666,Revenue
+2025-01-04,Dinner Service Sales,1351,Revenue
+2025-01-04,Lunch Service Sales,980,Revenue
+2025-01-04,Lunch Service Sales,950,Revenue
+2025-01-04,Lunch Service Sales,1138,Revenue
+2025-01-05,Dinner Service Sales,1336,Revenue
+2025-01-05,Dinner Service Sales,1060,Revenue
+2025-01-05,Dinner Service Sales,1153,Revenue
+2025-01-05,Lunch Service Sales,778,Revenue
+2025-01-06,Dinner Service Sales,552,Revenue
+2025-01-06,Dinner Service Sales,852,Revenue
+2025-01-06,Dinner Service Sales,684,Revenue
+2025-01-06,Lunch Service Sales,555,Revenue
+2025-01-07,Dinner Service Sales,548,Revenue
+2025-01-07,Dinner Service Sales,1042,Revenue
+2025-01-07,Dinner Service Sales,816,Revenue
+2025-01-07,Lunch Service Sales,660,Revenue
+2025-01-07,Lunch Service Sales,303,Revenue
+2025-01-08,Dinner Service Sales,955,Revenue
+2025-01-08,Dinner Service Sales,1088,Revenue
+2025-01-08,Dinner Service Sales,849,Revenue
+2025-01-08,Lunch Service Sales,531,Revenue
+2025-01-08,Lunch Service Sales,551,Revenue
+2025-01-09,Dinner Service Sales,551,Revenue
+2025-01-09,Dinner Service Sales,1027,Revenue
+2025-01-09,Dinner Service Sales,837,Revenue
+2025-01-09,Lunch Service Sales,719,Revenue
+2025-01-10,Dinner Service Sales,1255,Revenue
+2025-01-10,Dinner Service Sales,1844,Revenue
+2025-01-10,Dinner Service Sales,1970,Revenue
+2025-01-10,Dinner Service Sales,1149,Revenue
+2025-01-10,Lunch Service Sales,759,Revenue
+2025-01-10,Lunch Service Sales,586,Revenue
+2025-01-10,Lunch Service Sales,636,Revenue
+2025-01-11,Dinner Service Sales,895,Revenue
+2025-01-11,Dinner Service Sales,1873,Revenue
+2025-01-11,Dinner Service Sales,1910,Revenue
+2025-01-11,Dinner Service Sales,810,Revenue
+2025-01-11,Dinner Service Sales,1409,Revenue
+2025-01-11,Lunch Service Sales,560,Revenue
+2025-01-12,Dinner Service Sales,1879,Revenue
+2025-01-12,Dinner Service Sales,1239,Revenue
+2025-01-12,Lunch Service Sales,1006,Revenue
+2025-01-12,Lunch Service Sales,1006,Revenue
+2025-01-12,Lunch Service Sales,704,Revenue
+2025-01-13,Dinner Service Sales,710,Revenue
+2025-01-13,Dinner Service Sales,894,Revenue
+2025-01-13,Dinner Service Sales,814,Revenue
+2025-01-13,Lunch Service Sales,788,Revenue
+2025-01-14,Dinner Service Sales,965,Revenue
+2025-01-14,Dinner Service Sales,1156,Revenue
+2025-01-14,Lunch Service Sales,475,Revenue
+2025-01-15,Dinner Service Sales,799,Revenue
+2025-01-15,Lunch Service Sales,729,Revenue
+2025-01-15,Lunch Service Sales,785,Revenue
+2025-01-16,Dinner Service Sales,1086,Revenue
+2025-01-16,Dinner Service Sales,749,Revenue
+2025-01-16,Lunch Service Sales,527,Revenue
+2025-01-17,Dinner Service Sales,1235,Revenue
+2025-01-17,Dinner Service Sales,1099,Revenue
+2025-01-17,Lunch Service Sales,540,Revenue
+2025-01-17,Lunch Service Sales,605,Revenue
+2025-01-17,Lunch Service Sales,1080,Revenue
+2025-01-18,Dinner Service Sales,1961,Revenue
+2025-01-18,Dinner Service Sales,1179,Revenue
+2025-01-18,Lunch Service Sales,689,Revenue
+2025-01-18,Lunch Service Sales,553,Revenue
+2025-01-19,Dinner Service Sales,1586,Revenue
+2025-01-19,Dinner Service Sales,832,Revenue
+2025-01-19,Dinner Service Sales,1850,Revenue
+2025-01-19,Dinner Service Sales,1306,Revenue
+2025-01-19,Dinner Service Sales,1525,Revenue
+2025-01-19,Lunch Service Sales,678,Revenue
+2025-01-20,Dinner Service Sales,881,Revenue
+2025-01-20,Lunch Service Sales,490,Revenue
+2025-01-21,Dinner Service Sales,1027,Revenue
+2025-01-21,Dinner Service Sales,695,Revenue
+2025-01-21,Dinner Service Sales,1078,Revenue
+2025-01-21,Lunch Service Sales,538,Revenue
+2025-01-21,Lunch Service Sales,519,Revenue
+2025-01-22,Dinner Service Sales,603,Revenue
+2025-01-22,Dinner Service Sales,1117,Revenue
+2025-01-22,Lunch Service Sales,756,Revenue
+2025-01-23,Dinner Service Sales,1080,Revenue
+2025-01-23,Dinner Service Sales,682,Revenue
+2025-01-23,Dinner Service Sales,676,Revenue
+2025-01-23,Lunch Service Sales,750,Revenue
+2025-01-23,Lunch Service Sales,784,Revenue
+2025-01-24,Dinner Service Sales,888,Revenue
+2025-01-24,Dinner Service Sales,847,Revenue
+2025-01-24,Lunch Service Sales,432,Revenue
+2025-01-24,Lunch Service Sales,729,Revenue
+2025-01-24,Lunch Service Sales,842,Revenue
+2025-01-25,Dinner Service Sales,908,Revenue
+2025-01-25,Dinner Service Sales,1861,Revenue
+2025-01-25,Lunch Service Sales,772,Revenue
+2025-01-25,Lunch Service Sales,1010,Revenue
+2025-01-26,Dinner Service Sales,1423,Revenue
+2025-01-26,Dinner Service Sales,1568,Revenue
+2025-01-26,Dinner Service Sales,866,Revenue
+2025-01-26,Dinner Service Sales,1235,Revenue
+2025-01-26,Lunch Service Sales,893,Revenue
+2025-01-26,Lunch Service Sales,1036,Revenue
+2025-01-27,Dinner Service Sales,1094,Revenue
+2025-01-27,Lunch Service Sales,332,Revenue
+2025-01-27,Lunch Service Sales,793,Revenue
+2025-01-28,Dinner Service Sales,526,Revenue
+2025-01-28,Dinner Service Sales,990,Revenue
+2025-01-28,Lunch Service Sales,462,Revenue
+2025-01-29,Dinner Service Sales,1060,Revenue
+2025-01-29,Dinner Service Sales,794,Revenue
+2025-01-29,Lunch Service Sales,565,Revenue
+2025-01-29,Lunch Service Sales,316,Revenue
+2025-01-30,Dinner Service Sales,760,Revenue
+2025-01-30,Dinner Service Sales,1034,Revenue
+2025-01-30,Lunch Service Sales,468,Revenue
+2025-01-30,Lunch Service Sales,701,Revenue
+2025-01-31,Dinner Service Sales,1916,Revenue
+2025-01-31,Dinner Service Sales,1753,Revenue
+2025-01-31,Dinner Service Sales,1426,Revenue
+2025-01-31,Dinner Service Sales,1266,Revenue
+2025-01-31,Lunch Service Sales,805,Revenue
+2025-02-01,Dinner Service Sales,1848,Revenue
+2025-02-01,Dinner Service Sales,1175,Revenue
+2025-02-01,Dinner Service Sales,946,Revenue
+2025-02-01,Dinner Service Sales,1969,Revenue
+2025-02-01,Lunch Service Sales,1083,Revenue
+2025-02-02,Dinner Service Sales,1698,Revenue
+2025-02-02,Dinner Service Sales,1737,Revenue
+2025-02-02,Dinner Service Sales,1726,Revenue
+2025-02-02,Dinner Service Sales,1244,Revenue
+2025-02-02,Dinner Service Sales,1646,Revenue
+2025-02-02,Lunch Service Sales,603,Revenue
+2025-02-02,Lunch Service Sales,585,Revenue
+2025-02-02,Lunch Service Sales,1031,Revenue
+2025-02-03,Dinner Service Sales,573,Revenue
+2025-02-03,Dinner Service Sales,917,Revenue
+2025-02-03,Lunch Service Sales,330,Revenue
+2025-02-04,Dinner Service Sales,1046,Revenue
+2025-02-04,Dinner Service Sales,533,Revenue
+2025-02-04,Dinner Service Sales,517,Revenue
+2025-02-04,Lunch Service Sales,713,Revenue
+2025-02-04,Lunch Service Sales,757,Revenue
+2025-02-05,Dinner Service Sales,623,Revenue
+2025-02-05,Dinner Service Sales,1067,Revenue
+2025-02-05,Dinner Service Sales,896,Revenue
+2025-02-05,Lunch Service Sales,642,Revenue
+2025-02-06,Dinner Service Sales,1057,Revenue
+2025-02-06,Dinner Service Sales,818,Revenue
+2025-02-06,Lunch Service Sales,760,Revenue
+2025-02-07,Dinner Service Sales,1921,Revenue
+2025-02-07,Dinner Service Sales,1329,Revenue
+2025-02-07,Dinner Service Sales,1400,Revenue
+2025-02-07,Lunch Service Sales,508,Revenue
+2025-02-07,Lunch Service Sales,561,Revenue
+2025-02-07,Lunch Service Sales,767,Revenue
+2025-02-08,Dinner Service Sales,1685,Revenue
+2025-02-08,Dinner Service Sales,1771,Revenue
+2025-02-08,Dinner Service Sales,927,Revenue
+2025-02-08,Dinner Service Sales,1442,Revenue
+2025-02-08,Lunch Service Sales,626,Revenue
+2025-02-08,Lunch Service Sales,1127,Revenue
+2025-02-08,Lunch Service Sales,445,Revenue
+2025-02-09,Dinner Service Sales,1226,Revenue
+2025-02-09,Dinner Service Sales,1347,Revenue
+2025-02-09,Dinner Service Sales,1923,Revenue
+2025-02-09,Dinner Service Sales,1226,Revenue
+2025-02-09,Lunch Service Sales,913,Revenue
+2025-02-09,Lunch Service Sales,899,Revenue
+2025-02-09,Private Event / Catering,1681,Revenue
+2025-02-10,Dinner Service Sales,1176,Revenue
+2025-02-10,Lunch Service Sales,530,Revenue
+2025-02-10,Lunch Service Sales,582,Revenue
+2025-02-11,Dinner Service Sales,1144,Revenue
+2025-02-11,Dinner Service Sales,504,Revenue
+2025-02-11,Lunch Service Sales,610,Revenue
+2025-02-12,Dinner Service Sales,515,Revenue
+2025-02-12,Dinner Service Sales,683,Revenue
+2025-02-12,Lunch Service Sales,448,Revenue
+2025-02-13,Dinner Service Sales,721,Revenue
+2025-02-13,Dinner Service Sales,1186,Revenue
+2025-02-13,Dinner Service Sales,592,Revenue
+2025-02-13,Lunch Service Sales,539,Revenue
+2025-02-13,Lunch Service Sales,643,Revenue
+2025-02-14,Dinner Service Sales,1607,Revenue
+2025-02-14,Dinner Service Sales,1728,Revenue
+2025-02-14,Dinner Service Sales,1335,Revenue
+2025-02-14,Dinner Service Sales,1684,Revenue
+2025-02-14,Dinner Service Sales,1924,Revenue
+2025-02-14,Lunch Service Sales,1024,Revenue
+2025-02-15,Dinner Service Sales,992,Revenue
+2025-02-15,Dinner Service Sales,1425,Revenue
+2025-02-15,Dinner Service Sales,1130,Revenue
+2025-02-15,Dinner Service Sales,1687,Revenue
+2025-02-15,Dinner Service Sales,1449,Revenue
+2025-02-15,Lunch Service Sales,587,Revenue
+2025-02-15,Private Event / Catering,2317,Revenue
+2025-02-16,Dinner Service Sales,1041,Revenue
+2025-02-16,Dinner Service Sales,1922,Revenue
+2025-02-16,Lunch Service Sales,434,Revenue
+2025-02-16,Lunch Service Sales,1157,Revenue
+2025-02-16,Lunch Service Sales,919,Revenue
+2025-02-17,Dinner Service Sales,630,Revenue
+2025-02-17,Dinner Service Sales,983,Revenue
+2025-02-17,Dinner Service Sales,817,Revenue
+2025-02-17,Lunch Service Sales,702,Revenue
+2025-02-17,Lunch Service Sales,623,Revenue
+2025-02-18,Dinner Service Sales,1050,Revenue
+2025-02-18,Lunch Service Sales,415,Revenue
+2025-02-19,Dinner Service Sales,1083,Revenue
+2025-02-19,Lunch Service Sales,792,Revenue
+2025-02-19,Lunch Service Sales,660,Revenue
+2025-02-20,Dinner Service Sales,587,Revenue
+2025-02-20,Dinner Service Sales,986,Revenue
+2025-02-20,Lunch Service Sales,315,Revenue
+2025-02-21,Dinner Service Sales,1130,Revenue
+2025-02-21,Dinner Service Sales,1829,Revenue
+2025-02-21,Dinner Service Sales,1387,Revenue
+2025-02-21,Dinner Service Sales,1613,Revenue
+2025-02-21,Lunch Service Sales,598,Revenue
+2025-02-22,Dinner Service Sales,1125,Revenue
+2025-02-22,Dinner Service Sales,1383,Revenue
+2025-02-22,Dinner Service Sales,1679,Revenue
+2025-02-22,Dinner Service Sales,1342,Revenue
+2025-02-22,Lunch Service Sales,417,Revenue
+2025-02-23,Dinner Service Sales,1975,Revenue
+2025-02-23,Dinner Service Sales,874,Revenue
+2025-02-23,Dinner Service Sales,1490,Revenue
+2025-02-23,Lunch Service Sales,966,Revenue
+2025-02-23,Lunch Service Sales,505,Revenue
+2025-02-23,Lunch Service Sales,510,Revenue
+2025-02-24,Dinner Service Sales,697,Revenue
+2025-02-24,Dinner Service Sales,1106,Revenue
+2025-02-24,Dinner Service Sales,1159,Revenue
+2025-02-24,Lunch Service Sales,362,Revenue
+2025-02-24,Lunch Service Sales,779,Revenue
+2025-02-25,Dinner Service Sales,1094,Revenue
+2025-02-25,Dinner Service Sales,915,Revenue
+2025-02-25,Lunch Service Sales,648,Revenue
+2025-02-25,Lunch Service Sales,328,Revenue
+2025-02-26,Dinner Service Sales,861,Revenue
+2025-02-26,Dinner Service Sales,798,Revenue
+2025-02-26,Dinner Service Sales,982,Revenue
+2025-02-26,Lunch Service Sales,585,Revenue
+2025-02-26,Lunch Service Sales,341,Revenue
+2025-02-27,Dinner Service Sales,1010,Revenue
+2025-02-27,Dinner Service Sales,775,Revenue
+2025-02-27,Dinner Service Sales,592,Revenue
+2025-02-27,Lunch Service Sales,690,Revenue
+2025-02-27,Lunch Service Sales,762,Revenue
+2025-02-28,Dinner Service Sales,1641,Revenue
+2025-02-28,Dinner Service Sales,1745,Revenue
+2025-02-28,Dinner Service Sales,1396,Revenue
+2025-02-28,Dinner Service Sales,829,Revenue
+2025-02-28,Lunch Service Sales,409,Revenue
+2025-03-01,Dinner Service Sales,1366,Revenue
+2025-03-01,Dinner Service Sales,1418,Revenue
+2025-03-01,Dinner Service Sales,1223,Revenue
+2025-03-01,Lunch Service Sales,897,Revenue
+2025-03-01,Lunch Service Sales,402,Revenue
+2025-03-02,Dinner Service Sales,932,Revenue
+2025-03-02,Dinner Service Sales,1939,Revenue
+2025-03-02,Dinner Service Sales,1232,Revenue
+2025-03-02,Dinner Service Sales,1839,Revenue
+2025-03-02,Lunch Service Sales,755,Revenue
+2025-03-02,Lunch Service Sales,636,Revenue
+2025-03-02,Lunch Service Sales,466,Revenue
+2025-03-03,Dinner Service Sales,990,Revenue
+2025-03-03,Dinner Service Sales,966,Revenue
+2025-03-03,Dinner Service Sales,769,Revenue
+2025-03-03,Lunch Service Sales,613,Revenue
+2025-03-03,Lunch Service Sales,627,Revenue
+2025-03-04,Dinner Service Sales,643,Revenue
+2025-03-04,Lunch Service Sales,651,Revenue
+2025-03-04,Lunch Service Sales,723,Revenue
+2025-03-05,Dinner Service Sales,774,Revenue
+2025-03-05,Dinner Service Sales,1160,Revenue
+2025-03-05,Dinner Service Sales,550,Revenue
+2025-03-05,Lunch Service Sales,349,Revenue
+2025-03-06,Dinner Service Sales,728,Revenue
+2025-03-06,Lunch Service Sales,567,Revenue
+2025-03-06,Lunch Service Sales,461,Revenue
+2025-03-07,Dinner Service Sales,1102,Revenue
+2025-03-07,Dinner Service Sales,905,Revenue
+2025-03-07,Dinner Service Sales,1539,Revenue
+2025-03-07,Dinner Service Sales,1008,Revenue
+2025-03-07,Lunch Service Sales,942,Revenue
+2025-03-07,Lunch Service Sales,563,Revenue
+2025-03-07,Lunch Service Sales,1017,Revenue
+2025-03-08,Dinner Service Sales,1305,Revenue
+2025-03-08,Dinner Service Sales,1823,Revenue
+2025-03-08,Dinner Service Sales,865,Revenue
+2025-03-08,Lunch Service Sales,1112,Revenue
+2025-03-08,Lunch Service Sales,992,Revenue
+2025-03-08,Lunch Service Sales,441,Revenue
+2025-03-09,Dinner Service Sales,1960,Revenue
+2025-03-09,Dinner Service Sales,1017,Revenue
+2025-03-09,Lunch Service Sales,845,Revenue
+2025-03-10,Dinner Service Sales,977,Revenue
+2025-03-10,Dinner Service Sales,1080,Revenue
+2025-03-10,Lunch Service Sales,656,Revenue
+2025-03-10,Lunch Service Sales,470,Revenue
+2025-03-11,Dinner Service Sales,686,Revenue
+2025-03-11,Dinner Service Sales,733,Revenue
+2025-03-11,Dinner Service Sales,1047,Revenue
+2025-03-11,Lunch Service Sales,729,Revenue
+2025-03-12,Dinner Service Sales,709,Revenue
+2025-03-12,Lunch Service Sales,751,Revenue
+2025-03-13,Dinner Service Sales,1129,Revenue
+2025-03-13,Lunch Service Sales,435,Revenue
+2025-03-13,Private Event / Catering,3168,Revenue
+2025-03-14,Dinner Service Sales,1891,Revenue
+2025-03-14,Dinner Service Sales,847,Revenue
+2025-03-14,Lunch Service Sales,613,Revenue
+2025-03-15,Dinner Service Sales,1627,Revenue
+2025-03-15,Dinner Service Sales,1670,Revenue
+2025-03-15,Dinner Service Sales,1630,Revenue
+2025-03-15,Dinner Service Sales,1720,Revenue
+2025-03-15,Lunch Service Sales,614,Revenue
+2025-03-16,Dinner Service Sales,1608,Revenue
+2025-03-16,Dinner Service Sales,1643,Revenue
+2025-03-16,Lunch Service Sales,482,Revenue
+2025-03-17,Dinner Service Sales,824,Revenue
+2025-03-17,Dinner Service Sales,641,Revenue
+2025-03-17,Lunch Service Sales,520,Revenue
+2025-03-18,Dinner Service Sales,664,Revenue
+2025-03-18,Dinner Service Sales,1001,Revenue
+2025-03-18,Lunch Service Sales,691,Revenue
+2025-03-19,Dinner Service Sales,984,Revenue
+2025-03-19,Lunch Service Sales,694,Revenue
+2025-03-20,Dinner Service Sales,961,Revenue
+2025-03-20,Dinner Service Sales,1110,Revenue
+2025-03-20,Dinner Service Sales,1174,Revenue
+2025-03-20,Lunch Service Sales,439,Revenue
+2025-03-21,Dinner Service Sales,840,Revenue
+2025-03-21,Dinner Service Sales,1989,Revenue
+2025-03-21,Lunch Service Sales,800,Revenue
+2025-03-22,Dinner Service Sales,1310,Revenue
+2025-03-22,Dinner Service Sales,1289,Revenue
+2025-03-22,Dinner Service Sales,1884,Revenue
+2025-03-22,Dinner Service Sales,1426,Revenue
+2025-03-22,Lunch Service Sales,499,Revenue
+2025-03-22,Lunch Service Sales,1037,Revenue
+2025-03-22,Lunch Service Sales,489,Revenue
+2025-03-23,Dinner Service Sales,1666,Revenue
+2025-03-23,Dinner Service Sales,1520,Revenue
+2025-03-23,Dinner Service Sales,1121,Revenue
+2025-03-23,Dinner Service Sales,988,Revenue
+2025-03-23,Dinner Service Sales,1510,Revenue
+2025-03-23,Lunch Service Sales,968,Revenue
+2025-03-23,Lunch Service Sales,851,Revenue
+2025-03-23,Private Event / Catering,1632,Revenue
+2025-03-24,Dinner Service Sales,806,Revenue
+2025-03-24,Dinner Service Sales,942,Revenue
+2025-03-24,Dinner Service Sales,1019,Revenue
+2025-03-24,Lunch Service Sales,701,Revenue
+2025-03-25,Dinner Service Sales,1142,Revenue
+2025-03-25,Dinner Service Sales,950,Revenue
+2025-03-25,Lunch Service Sales,306,Revenue
+2025-03-25,Lunch Service Sales,661,Revenue
+2025-03-26,Dinner Service Sales,585,Revenue
+2025-03-26,Dinner Service Sales,1170,Revenue
+2025-03-26,Lunch Service Sales,624,Revenue
+2025-03-27,Dinner Service Sales,936,Revenue
+2025-03-27,Lunch Service Sales,477,Revenue
+2025-03-27,Lunch Service Sales,565,Revenue
+2025-03-28,Dinner Service Sales,1653,Revenue
+2025-03-28,Dinner Service Sales,1142,Revenue
+2025-03-28,Lunch Service Sales,967,Revenue
+2025-03-28,Lunch Service Sales,723,Revenue
+2025-03-28,Lunch Service Sales,878,Revenue
+2025-03-29,Dinner Service Sales,880,Revenue
+2025-03-29,Dinner Service Sales,1733,Revenue
+2025-03-29,Dinner Service Sales,1504,Revenue
+2025-03-29,Lunch Service Sales,1017,Revenue
+2025-03-29,Lunch Service Sales,866,Revenue
+2025-03-30,Dinner Service Sales,1667,Revenue
+2025-03-30,Dinner Service Sales,1871,Revenue
+2025-03-30,Dinner Service Sales,1514,Revenue
+2025-03-30,Lunch Service Sales,645,Revenue
+2025-03-30,Lunch Service Sales,486,Revenue
+2025-03-31,Dinner Service Sales,981,Revenue
+2025-03-31,Dinner Service Sales,971,Revenue
+2025-03-31,Lunch Service Sales,528,Revenue
+2025-03-31,Lunch Service Sales,612,Revenue
+2025-04-01,Dinner Service Sales,648,Revenue
+2025-04-01,Dinner Service Sales,668,Revenue
+2025-04-01,Dinner Service Sales,1000,Revenue
+2025-04-01,Lunch Service Sales,493,Revenue
+2025-04-01,Lunch Service Sales,532,Revenue
+2025-04-02,Dinner Service Sales,587,Revenue
+2025-04-02,Dinner Service Sales,1076,Revenue
+2025-04-02,Lunch Service Sales,383,Revenue
+2025-04-02,Lunch Service Sales,739,Revenue
+2025-04-03,Dinner Service Sales,891,Revenue
+2025-04-03,Lunch Service Sales,671,Revenue
+2025-04-04,Dinner Service Sales,1202,Revenue
+2025-04-04,Dinner Service Sales,1473,Revenue
+2025-04-04,Dinner Service Sales,1231,Revenue
+2025-04-04,Lunch Service Sales,484,Revenue
+2025-04-04,Lunch Service Sales,509,Revenue
+2025-04-04,Private Event / Catering,3359,Revenue
+2025-04-05,Dinner Service Sales,1966,Revenue
+2025-04-05,Dinner Service Sales,1921,Revenue
+2025-04-05,Dinner Service Sales,1428,Revenue
+2025-04-05,Lunch Service Sales,428,Revenue
+2025-04-06,Dinner Service Sales,852,Revenue
+2025-04-06,Dinner Service Sales,1733,Revenue
+2025-04-06,Dinner Service Sales,1282,Revenue
+2025-04-06,Dinner Service Sales,1733,Revenue
+2025-04-06,Dinner Service Sales,1061,Revenue
+2025-04-06,Lunch Service Sales,1026,Revenue
+2025-04-07,Dinner Service Sales,861,Revenue
+2025-04-07,Dinner Service Sales,719,Revenue
+2025-04-07,Dinner Service Sales,669,Revenue
+2025-04-07,Lunch Service Sales,377,Revenue
+2025-04-08,Dinner Service Sales,922,Revenue
+2025-04-08,Dinner Service Sales,565,Revenue
+2025-04-08,Dinner Service Sales,1108,Revenue
+2025-04-08,Lunch Service Sales,479,Revenue
+2025-04-08,Lunch Service Sales,640,Revenue
+2025-04-09,Dinner Service Sales,967,Revenue
+2025-04-09,Lunch Service Sales,380,Revenue
+2025-04-09,Lunch Service Sales,355,Revenue
+2025-04-10,Dinner Service Sales,740,Revenue
+2025-04-10,Dinner Service Sales,803,Revenue
+2025-04-10,Dinner Service Sales,1164,Revenue
+2025-04-10,Lunch Service Sales,430,Revenue
+2025-04-11,Dinner Service Sales,1210,Revenue
+2025-04-11,Dinner Service Sales,1667,Revenue
+2025-04-11,Dinner Service Sales,1455,Revenue
+2025-04-11,Lunch Service Sales,954,Revenue
+2025-04-12,Dinner Service Sales,1576,Revenue
+2025-04-12,Dinner Service Sales,1785,Revenue
+2025-04-12,Lunch Service Sales,932,Revenue
+2024-04-19,Restaurant Staff Payroll,-7310,Payroll
+2024-05-03,Restaurant Staff Payroll,-8822,Payroll
+2024-05-17,Restaurant Staff Payroll,-8722,Payroll
+2024-05-31,Restaurant Staff Payroll,-8156,Payroll
+2024-06-14,Restaurant Staff Payroll,-7881,Payroll
+2024-06-28,Restaurant Staff Payroll,-6201,Payroll
+2024-07-05,Restaurant Staff Payroll,-8161,Payroll
+2024-07-19,Restaurant Staff Payroll,-6271,Payroll
+2024-08-02,Restaurant Staff Payroll,-6144,Payroll
+2024-08-16,Restaurant Staff Payroll,-6924,Payroll
+2024-08-30,Restaurant Staff Payroll,-8936,Payroll
+2024-09-06,Restaurant Staff Payroll,-6169,Payroll
+2024-09-20,Restaurant Staff Payroll,-7634,Payroll
+2024-10-04,Restaurant Staff Payroll,-8964,Payroll
+2024-10-18,Restaurant Staff Payroll,-7529,Payroll
+2024-11-01,Restaurant Staff Payroll,-8073,Payroll
+2024-11-15,Restaurant Staff Payroll,-7610,Payroll
+2024-11-29,Restaurant Staff Payroll,-6418,Payroll
+2024-12-06,Restaurant Staff Payroll,-7076,Payroll
+2024-12-20,Restaurant Staff Payroll,-7194,Payroll
+2025-01-03,Restaurant Staff Payroll,-7167,Payroll
+2025-01-17,Restaurant Staff Payroll,-7762,Payroll
+2025-01-31,Restaurant Staff Payroll,-7494,Payroll
+2025-02-14,Restaurant Staff Payroll,-8978,Payroll
+2025-02-28,Restaurant Staff Payroll,-8527,Payroll
+2025-03-14,Restaurant Staff Payroll,-7966,Payroll
+2025-03-28,Restaurant Staff Payroll,-8080,Payroll
+2025-04-04,Restaurant Staff Payroll,-8887,Payroll
+2024-04-15,Food Inventory - US Foods,-1328,Food Inventory
+2024-04-16,Beverage Order - Beverage Distributor,-1738,Beverage Inventory
+2024-04-22,Food Inventory - Specialty Foods,-1988,Food Inventory
+2024-04-23,Beverage Order - Brewery Distributor,-1298,Beverage Inventory
+2024-04-25,Food Inventory - Seafood Wholesaler,-1246,Food Inventory
+2024-04-29,Food Inventory - Seafood Wholesaler,-1769,Food Inventory
+2024-05-02,Food Inventory - Seafood Wholesaler,-1072,Food Inventory
+2024-05-06,Food Inventory - Restaurant Depot,-1083,Food Inventory
+2024-05-07,Beverage Order - Coffee Supplier,-1699,Beverage Inventory
+2024-05-09,Food Inventory - Restaurant Depot,-1444,Food Inventory
+2024-05-13,Food Inventory - Seafood Wholesaler,-1272,Food Inventory
+2024-05-16,Food Inventory - Meat Distributor,-2076,Food Inventory
+2024-05-20,Food Inventory - Seafood Wholesaler,-2463,Food Inventory
+2024-05-21,Beverage Order - Brewery Distributor,-1637,Beverage Inventory
+2024-05-23,Food Inventory - Seafood Wholesaler,-1136,Food Inventory
+2024-05-27,Food Inventory - Restaurant Depot,-2102,Food Inventory
+2024-05-28,Beverage Order - Brewery Distributor,-888,Beverage Inventory
+2024-05-30,Food Inventory - Local Produce Supplier,-1705,Food Inventory
+2024-06-03,Food Inventory - Specialty Foods,-2400,Food Inventory
+2024-06-04,Beverage Order - Coffee Supplier,-701,Beverage Inventory
+2024-06-06,Food Inventory - US Foods,-1086,Food Inventory
+2024-06-10,Food Inventory - Local Produce Supplier,-1983,Food Inventory
+2024-06-11,Beverage Order - Liquor Distributor,-1699,Beverage Inventory
+2024-06-13,Food Inventory - US Foods,-1680,Food Inventory
+2024-06-17,Food Inventory - Local Produce Supplier,-1499,Food Inventory
+2024-06-18,Beverage Order - Wine Wholesaler,-962,Beverage Inventory
+2024-06-25,Beverage Order - Coffee Supplier,-1588,Beverage Inventory
+2024-07-02,Beverage Order - Coffee Supplier,-1339,Beverage Inventory
+2024-07-04,Food Inventory - Restaurant Depot,-1886,Food Inventory
+2024-07-08,Food Inventory - Sysco Foods,-1177,Food Inventory
+2024-07-15,Food Inventory - US Foods,-839,Food Inventory
+2024-07-22,Food Inventory - Seafood Wholesaler,-1617,Food Inventory
+2024-07-23,Beverage Order - Brewery Distributor,-950,Beverage Inventory
+2024-07-25,Food Inventory - Restaurant Depot,-1380,Food Inventory
+2024-07-29,Food Inventory - Seafood Wholesaler,-955,Food Inventory
+2024-07-30,Beverage Order - Wine Wholesaler,-1068,Beverage Inventory
+2024-08-01,Food Inventory - Meat Distributor,-1661,Food Inventory
+2024-08-05,Food Inventory - Sysco Foods,-1792,Food Inventory
+2024-08-06,Beverage Order - Brewery Distributor,-799,Beverage Inventory
+2024-08-08,Food Inventory - Sysco Foods,-1661,Food Inventory
+2024-08-13,Beverage Order - Wine Wholesaler,-1508,Beverage Inventory
+2024-08-15,Food Inventory - US Foods,-1401,Food Inventory
+2024-08-19,Food Inventory - US Foods,-1092,Food Inventory
+2024-08-20,Beverage Order - Wine Wholesaler,-961,Beverage Inventory
+2024-08-22,Food Inventory - Meat Distributor,-2348,Food Inventory
+2024-08-26,Food Inventory - Restaurant Depot,-1871,Food Inventory
+2024-08-27,Beverage Order - Brewery Distributor,-1445,Beverage Inventory
+2024-08-29,Food Inventory - US Foods,-1749,Food Inventory
+2024-09-02,Food Inventory - Meat Distributor,-2170,Food Inventory
+2024-09-03,Beverage Order - Brewery Distributor,-1279,Beverage Inventory
+2024-09-05,Food Inventory - Local Produce Supplier,-2031,Food Inventory
+2024-09-12,Food Inventory - US Foods,-1950,Food Inventory
+2024-09-16,Food Inventory - Seafood Wholesaler,-2486,Food Inventory
+2024-09-17,Beverage Order - Liquor Distributor,-518,Beverage Inventory
+2024-09-19,Food Inventory - Meat Distributor,-1968,Food Inventory
+2024-09-23,Food Inventory - Specialty Foods,-1349,Food Inventory
+2024-09-30,Food Inventory - Restaurant Depot,-1282,Food Inventory
+2024-10-01,Beverage Order - Brewery Distributor,-1222,Beverage Inventory
+2024-10-03,Food Inventory - US Foods,-1584,Food Inventory
+2024-10-07,Food Inventory - US Foods,-1869,Food Inventory
+2024-10-10,Food Inventory - Sysco Foods,-1837,Food Inventory
+2024-10-17,Food Inventory - Meat Distributor,-1423,Food Inventory
+2024-10-22,Beverage Order - Beverage Distributor,-1084,Beverage Inventory
+2024-10-24,Food Inventory - Local Produce Supplier,-1100,Food Inventory
+2024-10-28,Food Inventory - Specialty Foods,-1549,Food Inventory
+2024-10-31,Food Inventory - Seafood Wholesaler,-1476,Food Inventory
+2024-11-07,Food Inventory - Sysco Foods,-1574,Food Inventory
+2024-11-11,Food Inventory - Sysco Foods,-1176,Food Inventory
+2024-11-14,Food Inventory - Meat Distributor,-2372,Food Inventory
+2024-11-18,Food Inventory - Sysco Foods,-1752,Food Inventory
+2024-11-19,Beverage Order - Brewery Distributor,-1371,Beverage Inventory
+2024-11-21,Food Inventory - Specialty Foods,-830,Food Inventory
+2024-11-25,Food Inventory - Specialty Foods,-1349,Food Inventory
+2024-11-26,Beverage Order - Brewery Distributor,-986,Beverage Inventory
+2024-12-02,Food Inventory - Meat Distributor,-891,Food Inventory
+2024-12-03,Beverage Order - Brewery Distributor,-648,Beverage Inventory
+2024-12-05,Food Inventory - US Foods,-1433,Food Inventory
+2024-12-09,Food Inventory - Seafood Wholesaler,-2304,Food Inventory
+2024-12-10,Beverage Order - Coffee Supplier,-1361,Beverage Inventory
+2024-12-12,Food Inventory - Seafood Wholesaler,-1240,Food Inventory
+2024-12-16,Food Inventory - Local Produce Supplier,-859,Food Inventory
+2024-12-19,Food Inventory - Sysco Foods,-2113,Food Inventory
+2024-12-23,Food Inventory - Meat Distributor,-1037,Food Inventory
+2024-12-24,Beverage Order - Brewery Distributor,-1319,Beverage Inventory
+2024-12-26,Food Inventory - Sysco Foods,-1273,Food Inventory
+2024-12-30,Food Inventory - Restaurant Depot,-1885,Food Inventory
+2024-12-31,Beverage Order - Wine Wholesaler,-1406,Beverage Inventory
+2025-01-02,Food Inventory - Meat Distributor,-2358,Food Inventory
+2025-01-06,Food Inventory - Seafood Wholesaler,-1304,Food Inventory
+2025-01-07,Beverage Order - Beverage Distributor,-1136,Beverage Inventory
+2025-01-09,Food Inventory - US Foods,-823,Food Inventory
+2025-01-13,Food Inventory - Local Produce Supplier,-883,Food Inventory
+2025-01-14,Beverage Order - Brewery Distributor,-909,Beverage Inventory
+2025-01-16,Food Inventory - US Foods,-2477,Food Inventory
+2025-01-20,Food Inventory - Restaurant Depot,-1091,Food Inventory
+2025-01-21,Beverage Order - Brewery Distributor,-1274,Beverage Inventory
+2025-01-23,Food Inventory - US Foods,-2255,Food Inventory
+2025-01-28,Beverage Order - Liquor Distributor,-839,Beverage Inventory
+2025-01-30,Food Inventory - Restaurant Depot,-1364,Food Inventory
+2025-02-03,Food Inventory - Restaurant Depot,-1797,Food Inventory
+2025-02-04,Beverage Order - Wine Wholesaler,-745,Beverage Inventory
+2025-02-06,Food Inventory - Meat Distributor,-1590,Food Inventory
+2025-02-10,Food Inventory - Seafood Wholesaler,-1005,Food Inventory
+2025-02-11,Beverage Order - Beverage Distributor,-1136,Beverage Inventory
+2025-02-17,Food Inventory - Local Produce Supplier,-1408,Food Inventory
+2025-02-18,Beverage Order - Brewery Distributor,-1297,Beverage Inventory
+2025-02-24,Food Inventory - Local Produce Supplier,-2407,Food Inventory
+2025-02-25,Beverage Order - Coffee Supplier,-827,Beverage Inventory
+2025-02-27,Food Inventory - Meat Distributor,-2086,Food Inventory
+2025-03-03,Food Inventory - US Foods,-1841,Food Inventory
+2025-03-06,Food Inventory - Sysco Foods,-881,Food Inventory
+2025-03-10,Food Inventory - Local Produce Supplier,-1002,Food Inventory
+2025-03-11,Beverage Order - Liquor Distributor,-1450,Beverage Inventory
+2025-03-13,Food Inventory - Specialty Foods,-970,Food Inventory
+2025-03-18,Beverage Order - Brewery Distributor,-642,Beverage Inventory
+2025-03-20,Food Inventory - Restaurant Depot,-2272,Food Inventory
+2025-03-24,Food Inventory - US Foods,-2045,Food Inventory
+2025-03-25,Beverage Order - Wine Wholesaler,-1232,Beverage Inventory
+2025-03-27,Food Inventory - Sysco Foods,-2353,Food Inventory
+2025-04-01,Beverage Order - Coffee Supplier,-1257,Beverage Inventory
+2025-04-03,Food Inventory - Restaurant Depot,-1460,Food Inventory
+2025-04-07,Food Inventory - Restaurant Depot,-1388,Food Inventory
+2024-05-01,Restaurant Rent,-3595,Rent
+2024-05-01,Electricity,-1244,Utilities
+2024-05-01,Water and Sewer,-377,Utilities
+2024-05-01,Gas,-656,Utilities
+2024-05-01,Restaurant Insurance,-506,Insurance
+2024-05-01,POS System Subscription,-259,Services
+2024-05-01,Waste Management,-306,Services
+2024-05-01,Pest Control,-214,Maintenance
+2024-05-01,Equipment Maintenance,-233,Maintenance
+2024-05-01,Cleaning Supplies,-278,Miscellaneous
+2024-05-01,Menu Printing,-113,Marketing
+2024-05-01,Local Advertising,-519,Marketing
+2024-06-01,Restaurant Rent,-3766,Rent
+2024-06-01,Electricity,-1292,Utilities
+2024-06-01,Water and Sewer,-393,Utilities
+2024-06-01,Gas,-595,Utilities
+2024-06-01,Restaurant Insurance,-457,Insurance
+2024-06-01,POS System Subscription,-252,Services
+2024-06-01,Waste Management,-310,Services
+2024-06-01,Cleaning Supplies,-293,Miscellaneous
+2024-07-01,Restaurant Rent,-3798,Rent
+2024-07-01,Electricity,-1341,Utilities
+2024-07-01,Water and Sewer,-442,Utilities
+2024-07-01,Gas,-676,Utilities
+2024-07-01,Restaurant Insurance,-490,Insurance
+2024-07-01,POS System Subscription,-260,Services
+2024-07-01,Waste Management,-316,Services
+2024-07-01,Cleaning Supplies,-301,Miscellaneous
+2024-08-01,Restaurant Rent,-4308,Rent
+2024-08-01,Electricity,-1342,Utilities
+2024-08-01,Water and Sewer,-368,Utilities
+2024-08-01,Gas,-652,Utilities
+2024-08-01,Restaurant Insurance,-446,Insurance
+2024-08-01,POS System Subscription,-253,Services
+2024-08-01,Waste Management,-277,Services
+2024-08-01,Pest Control,-231,Maintenance
+2024-08-01,Equipment Maintenance,-261,Maintenance
+2024-08-01,Cleaning Supplies,-268,Miscellaneous
+2024-08-01,Menu Printing,-104,Marketing
+2024-08-01,Local Advertising,-515,Marketing
+2024-09-01,Restaurant Rent,-3652,Rent
+2024-09-01,Electricity,-1369,Utilities
+2024-09-01,Water and Sewer,-427,Utilities
+2024-09-01,Gas,-638,Utilities
+2024-09-01,Restaurant Insurance,-444,Insurance
+2024-09-01,POS System Subscription,-232,Services
+2024-09-01,Waste Management,-308,Services
+2024-09-01,Cleaning Supplies,-296,Miscellaneous
+2024-10-01,Restaurant Rent,-4379,Rent
+2024-10-01,Electricity,-1297,Utilities
+2024-10-01,Water and Sewer,-371,Utilities
+2024-10-01,Gas,-646,Utilities
+2024-10-01,Restaurant Insurance,-479,Insurance
+2024-10-01,POS System Subscription,-254,Services
+2024-10-01,Waste Management,-287,Services
+2024-10-01,Cleaning Supplies,-266,Miscellaneous
+2024-11-01,Restaurant Rent,-4197,Rent
+2024-11-01,Electricity,-1290,Utilities
+2024-11-01,Water and Sewer,-404,Utilities
+2024-11-01,Gas,-607,Utilities
+2024-11-01,Restaurant Insurance,-434,Insurance
+2024-11-01,POS System Subscription,-241,Services
+2024-11-01,Waste Management,-283,Services
+2024-11-01,Pest Control,-205,Maintenance
+2024-11-01,Equipment Maintenance,-269,Maintenance
+2024-11-01,Cleaning Supplies,-261,Miscellaneous
+2024-11-01,Menu Printing,-121,Marketing
+2024-11-01,Local Advertising,-477,Marketing
+2024-12-01,Restaurant Rent,-4199,Rent
+2024-12-01,Electricity,-1314,Utilities
+2024-12-01,Water and Sewer,-386,Utilities
+2024-12-01,Gas,-600,Utilities
+2024-12-01,Restaurant Insurance,-490,Insurance
+2024-12-01,POS System Subscription,-214,Services
+2024-12-01,Waste Management,-288,Services
+2024-12-01,Cleaning Supplies,-304,Miscellaneous
+2025-01-01,Restaurant Rent,-4091,Rent
+2025-01-01,Electricity,-1141,Utilities
+2025-01-01,Water and Sewer,-382,Utilities
+2025-01-01,Gas,-645,Utilities
+2025-01-01,Restaurant Insurance,-493,Insurance
+2025-01-01,POS System Subscription,-256,Services
+2025-01-01,Waste Management,-331,Services
+2025-01-01,Cleaning Supplies,-287,Miscellaneous
+2025-02-01,Restaurant Rent,-4335,Rent
+2025-02-01,Electricity,-1345,Utilities
+2025-02-01,Water and Sewer,-388,Utilities
+2025-02-01,Gas,-620,Utilities
+2025-02-01,Restaurant Insurance,-470,Insurance
+2025-02-01,POS System Subscription,-218,Services
+2025-02-01,Waste Management,-321,Services
+2025-02-01,Pest Control,-230,Maintenance
+2025-02-01,Equipment Maintenance,-249,Maintenance
+2025-02-01,Cleaning Supplies,-292,Miscellaneous
+2025-02-01,Menu Printing,-123,Marketing
+2025-02-01,Local Advertising,-499,Marketing
+2025-03-01,Restaurant Rent,-4208,Rent
+2025-03-01,Electricity,-1202,Utilities
+2025-03-01,Water and Sewer,-440,Utilities
+2025-03-01,Gas,-689,Utilities
+2025-03-01,Restaurant Insurance,-492,Insurance
+2025-03-01,POS System Subscription,-234,Services
+2025-03-01,Waste Management,-295,Services
+2025-03-01,Cleaning Supplies,-289,Miscellaneous
+2025-04-01,Restaurant Rent,-4106,Rent
+2025-04-01,Electricity,-1251,Utilities
+2025-04-01,Water and Sewer,-390,Utilities
+2025-04-01,Gas,-570,Utilities
+2025-04-01,Restaurant Insurance,-464,Insurance
+2025-04-01,POS System Subscription,-254,Services
+2025-04-01,Waste Management,-331,Services
+2025-04-01,Cleaning Supplies,-299,Miscellaneous
+2025-01-26,Bar Equipment,-956,Equipment
+2024-08-11,Kitchen Equipment Replacement,-2019,Equipment

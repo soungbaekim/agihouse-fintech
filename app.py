@@ -764,11 +764,9 @@ def use_sample_profile(profile_name):
     # Clean up the profile name to ensure it's valid
     profile_name = profile_name.strip().lower()
     
-    # Define the valid profiles
-    valid_profiles = [
-        "young_professional", "family_budget", "student_finances", 
-        "retirement_planning", "high_income", "debt_reduction"
-    ]
+    # Get the list of valid profiles from the sample_profiles module
+    from data.sample_profiles import get_profile_names
+    valid_profiles = get_profile_names()
     
     if profile_name not in valid_profiles:
         flash(f'Invalid profile name: {profile_name}', 'warning')
@@ -974,11 +972,9 @@ def load_profile_from_file(profile_name):
     profile_name = profile_name.strip().lower()
     print(f"Loading profile: {profile_name}")
     
-    # Define the specific profiles we support
-    valid_profiles = [
-        "young_professional", "family_budget", "student_finances", 
-        "retirement_planning", "high_income", "debt_reduction"
-    ]
+    # Get the list of valid profiles from the sample_profiles module
+    from data.sample_profiles import get_profile_names
+    valid_profiles = get_profile_names()
     
     # Make sure we have a valid profile name
     if profile_name not in valid_profiles:

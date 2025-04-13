@@ -73,11 +73,17 @@ def save_profile_to_csv(profile_name: str, profile_data: Dict[str, Any], output_
         
         writer.writeheader()
         for transaction in transactions:
+            # Create a filtered copy with only the fields we need for CSV
+            transaction_copy = {}
+            for field in fieldnames:
+                if field in transaction:
+                    transaction_copy[field] = transaction[field]
+            
             # Convert date to string if it's a datetime object
-            if isinstance(transaction['date'], datetime.date):
-                transaction = transaction.copy()
-                transaction['date'] = transaction['date'].isoformat()
-            writer.writerow(transaction)
+            if isinstance(transaction_copy['date'], datetime.date):
+                transaction_copy['date'] = transaction_copy['date'].isoformat()
+            
+            writer.writerow(transaction_copy)
     
     print(f"Created {file_path}")
     

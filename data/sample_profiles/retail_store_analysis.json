@@ -1,0 +1,264 @@
+{
+  "analysis": {
+    "income": 1397237.03,
+    "expenses": 516875.06,
+    "net_cash_flow": 880361.97,
+    "savings_rate": 63.01,
+    "spending_by_category": {
+      "Utilities": 16456.36,
+      "Savings": 5388.7,
+      "Payroll": 184706,
+      "Inventory": 192766,
+      "Rent": 41274,
+      "Insurance": 4390,
+      "Services": 7574,
+      "Marketing": 45828,
+      "Shipping": 4249,
+      "Fixtures": 14243
+    },
+    "top_spending_categories": [
+      {
+        "category": "Inventory",
+        "amount": 192766
+      },
+      {
+        "category": "Payroll",
+        "amount": 184706
+      },
+      {
+        "category": "Marketing",
+        "amount": 45828
+      },
+      {
+        "category": "Rent",
+        "amount": 41274
+      },
+      {
+        "category": "Utilities",
+        "amount": 16456.36
+      }
+    ],
+    "monthly_spending": {
+      "2024-04": {
+        "Utilities": 154.82,
+        "Payroll": 5293,
+        "Inventory": 16777
+      },
+      "2024-05": {
+        "Utilities": 1165.71,
+        "Payroll": 19199,
+        "Inventory": 14919,
+        "Rent": 3088,
+        "Insurance": 359,
+        "Services": 627,
+        "Marketing": 1838,
+        "Shipping": 363
+      },
+      "2024-06": {
+        "Utilities": 1436.71,
+        "Payroll": 12990,
+        "Inventory": 28432,
+        "Rent": 3427,
+        "Insurance": 337,
+        "Services": 643,
+        "Marketing": 5358,
+        "Shipping": 362
+      },
+      "2024-07": {
+        "Utilities": 1074.35,
+        "Payroll": 11881,
+        "Inventory": 14828,
+        "Rent": 3626,
+        "Insurance": 366,
+        "Services": 650,
+        "Marketing": 1745,
+        "Shipping": 354
+      },
+      "2024-08": {
+        "Utilities": 1275.28,
+        "Payroll": 18825,
+        "Inventory": 12927,
+        "Rent": 3529,
+        "Insurance": 364,
+        "Services": 657,
+        "Marketing": 6964,
+        "Shipping": 319
+      },
+      "2024-09": {
+        "Utilities": 1299.69,
+        "Payroll": 12966,
+        "Inventory": 23245,
+        "Rent": 3421,
+        "Insurance": 349,
+        "Services": 623,
+        "Marketing": 1838,
+        "Shipping": 377
+      },
+      "2024-10": {
+        "Utilities": 1676.95,
+        "Payroll": 12917,
+        "Inventory": 24164,
+        "Rent": 3753,
+        "Insurance": 347,
+        "Services": 647,
+        "Marketing": 2831,
+        "Shipping": 367
+      },
+      "2024-12": {
+        "Utilities": 1826.46,
+        "Payroll": 16913,
+        "Inventory": 3050,
+        "Rent": 3261,
+        "Insurance": 403,
+        "Services": 624,
+        "Marketing": 7726,
+        "Shipping": 372
+      },
+      "2025-01": {
+        "Utilities": 1282.33,
+        "Payroll": 17757,
+        "Inventory": 22970,
+        "Rent": 3122,
+        "Insurance": 384,
+        "Services": 623,
+        "Marketing": 1902,
+        "Shipping": 332,
+        "Fixtures": 11759
+      },
+      "2025-02": {
+        "Utilities": 1275.53,
+        "Payroll": 10896,
+        "Inventory": 3102,
+        "Rent": 3473,
+        "Insurance": 353,
+        "Services": 615,
+        "Marketing": 1802,
+        "Shipping": 342
+      },
+      "2025-03": {
+        "Utilities": 1952.5300000000002,
+        "Savings": 5388.7,
+        "Payroll": 12889,
+        "Inventory": 5847,
+        "Rent": 3597,
+        "Insurance": 389,
+        "Services": 598,
+        "Marketing": 1689,
+        "Shipping": 381
+      },
+      "2024-11": {
+        "Payroll": 25743,
+        "Inventory": 4341,
+        "Rent": 3735,
+        "Utilities": 958,
+        "Insurance": 385,
+        "Services": 635,
+        "Marketing": 10310,
+        "Shipping": 335,
+        "Fixtures": 2484
+      },
+      "2025-04": {
+        "Payroll": 6437,
+        "Inventory": 18164,
+        "Rent": 3242,
+        "Utilities": 1078,
+        "Insurance": 354,
+        "Services": 632,
+        "Marketing": 1825,
+        "Shipping": 345
+      }
+    },
+    "top_merchants": [
+      {
+        "merchant": "Retail Staff Payroll",
+        "amount": 184706
+      },
+      {
+        "merchant": "Store Rent",
+        "amount": 41274
+      },
+      {
+        "merchant": "Holiday Inventory Order - Factory Direct",
+        "amount": 38311
+      },
+      {
+        "merchant": "Regular Inventory - Wholesale Supplier",
+        "amount": 16918
+      },
+      {
+        "merchant": "Local Advertising",
+        "amount": 16625
+      },
+      {
+        "merchant": "Summer Inventory Order - Factory Direct",
+        "amount": 14928
+      },
+      {
+        "merchant": "Summer Inventory Order - Main Distributor",
+        "amount": 13769
+      },
+      {
+        "merchant": "Back-to-School Inventory Order - Main Distributor",
+        "amount": 12676
+      },
+      {
+        "merchant": "Back-to-School Inventory Order - Brand Manufacturer",
+        "amount": 12606
+      },
+      {
+        "merchant": "Store Renovation",
+        "amount": 11759
+      }
+    ],
+    "total_potential_savings": 1755.64
+  },
+  "recommendations": {
+    "savings": [
+      {
+        "category": "utilities",
+        "description": "Your utility bills total $16456.36. Consider energy-efficient appliances.",
+        "potential_savings": 1645.64
+      },
+      {
+        "category": "dining",
+        "description": "Reducing dining out by cooking more meals at home could save you significant money each month.",
+        "potential_savings": 85.0
+      },
+      {
+        "category": "entertainment",
+        "description": "Consider consolidating streaming services instead of subscribing to multiple platforms simultaneously.",
+        "potential_savings": 25.0
+      }
+    ],
+    "investment": [
+      {
+        "title": "Emergency Fund",
+        "description": "Build an emergency fund covering 3-6 months of expenses ($129218.77 to $258437.53).",
+        "priority": "High",
+        "risk_level": "Very Low",
+        "potential_return": "3-4% APY"
+      },
+      {
+        "title": "Retirement Contributions",
+        "description": "Increase your 401(k) contributions to at least capture the full employer match ($17465.46 monthly).",
+        "priority": "High",
+        "risk_level": "Medium",
+        "potential_return": "7-10% annually (long-term)"
+      },
+      {
+        "title": "Index Fund Investing",
+        "description": "Consider investing $29345.4 monthly in low-cost index funds for long-term growth.",
+        "priority": "Medium",
+        "risk_level": "Medium",
+        "potential_return": "7-10% annually (long-term)"
+      },
+      {
+        "title": "Debt Reduction",
+        "description": "Pay down high-interest debt before focusing on additional investments.",
+        "priority": "High",
+        "risk_level": "Low",
+        "potential_return": "Equivalent to your interest rate"
+      }
+    ]
+  }
+}

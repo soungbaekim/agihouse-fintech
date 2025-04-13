@@ -1,0 +1,688 @@
+date,description,amount,category
+2024-04-17,Pep Boys,-181.75,Transportation
+2024-04-19,United Airlines,-193.92,Travel
+2024-04-20,Hotels.com,-902.31,Travel
+2024-04-21,Applebee's,-38.38,Dining
+2024-04-23,Southwest Airlines,-817.1,Travel
+2024-04-24,LastPass,-33.61,Subscriptions
+2024-04-27,Target,-198.01,Shopping
+2024-04-27,Vacation Rental,-655.78,Travel
+2024-04-29,Dropbox,-47.91,Subscriptions
+2024-04-30,McDonald's,-65.4,Dining
+2024-04-30,Walmart,-268.74,Shopping
+2024-04-30,Apple Store,-88.06,Shopping
+2024-04-30,Wayfair,-76.72,Shopping
+2024-05-01,Wendy's,-35.95,Dining
+2024-05-01,Southwest Airlines,-279.7,Travel
+2024-05-02,Mental Health Services,-356.02,Healthcare
+2024-05-03,Publix,-116.19,Groceries
+2024-05-03,Kroger,-123.45,Groceries
+2024-05-03,Chick-fil-A,-36.36,Dining
+2024-05-03,Chegg,-731.55,Education
+2024-05-03,Substack,-6.51,Subscriptions
+2024-05-03,Airbnb,-534.65,Travel
+2024-05-04,Wendy's,-65.77,Dining
+2024-05-05,Phone Bill,-194.16,Utilities
+2024-05-06,American Airlines,-284.06,Travel
+2024-05-08,School Supplies,-973.23,Education
+2024-05-10,TJ Maxx,-247.27,Shopping
+2024-05-10,Disney+,-130.16,Entertainment
+2024-05-10,Delta Airlines,-1929.18,Travel
+2024-05-11,Old Navy,-69.52,Shopping
+2024-05-11,Bowling Alley,-134.31,Entertainment
+2024-05-12,Booking.com,-1334.95,Travel
+2024-05-12,Cruise Line,-1301.37,Travel
+2024-05-13,Subway,-71.63,Dining
+2024-05-13,Olive Garden,-41.58,Dining
+2024-05-16,Chipotle,-67.12,Dining
+2024-05-16,TJ Maxx,-162.07,Shopping
+2024-05-17,BP,-57.27,Transportation
+2024-05-17,Home Warranty,-986.04,Housing
+2024-05-17,Kaiser Permanente,-293.13,Healthcare
+2024-05-18,McGraw-Hill,-766.22,Education
+2024-05-18,NordVPN,-7.68,Subscriptions
+2024-05-18,Hilton,-1445.07,Travel
+2024-05-19,Kohl's,-297.26,Shopping
+2024-05-19,Online Courses,-574.86,Education
+2024-05-19,American Airlines,-590.71,Travel
+2024-05-21,Spotify,-35.69,Entertainment
+2024-05-21,Blue Cross,-454.8,Healthcare
+2024-05-24,Kaiser Permanente,-336.04,Healthcare
+2024-05-25,In-N-Out Burger,-74.47,Dining
+2024-05-27,Pest Control,-1740.02,Housing
+2024-05-27,American Airlines,-1022.27,Travel
+2024-05-28,edX,-588.05,Education
+2024-05-28,iCloud Storage,-30.26,Subscriptions
+2024-05-30,Macy's,-49.73,Shopping
+2024-05-30,AutoZone,-82.91,Transportation
+2024-05-30,Airline Tickets,-134.28,Transportation
+2024-05-31,Dunkin' Donuts,-29.1,Dining
+2024-06-02,Hobby Lobby,-21.54,Shopping
+2024-06-02,Electric Company,-166.29,Utilities
+2024-06-03,Etsy,-168.7,Shopping
+2024-06-03,Hotels.com,-1327.46,Travel
+2024-06-04,BP,-188.17,Transportation
+2024-06-06,Safeway,-164.32,Groceries
+2024-06-06,edX,-975.77,Education
+2024-06-07,Costco,-189.48,Groceries
+2024-06-08,VRBO,-1993.22,Travel
+2024-06-09,Lowe's,-76.35,Shopping
+2024-06-10,HBO Max,-94.75,Entertainment
+2024-06-11,Ticketmaster,-39.62,Entertainment
+2024-06-12,Avis,-36.5,Transportation
+2024-06-12,VRBO,-626.42,Travel
+2024-06-12,Kayak,-1944.5,Travel
+2024-06-13,Whole Foods,-48.78,Groceries
+2024-06-15,Olive Garden,-17.02,Dining
+2024-06-15,Amazon,-210.01,Shopping
+2024-06-15,Property Tax,-2793.56,Housing
+2024-06-15,Expedia,-1050.74,Travel
+2024-06-16,VRBO,-1498.36,Travel
+2024-06-16,Expedia,-1075.87,Travel
+2024-06-17,Old Navy,-119.05,Shopping
+2024-06-17,Wayfair,-244.87,Shopping
+2024-06-17,Hertz,-30.03,Transportation
+2024-06-19,Concert Tickets,-25.81,Entertainment
+2024-06-19,Amtrak,-54.37,Transportation
+2024-06-20,Best Buy,-76.85,Shopping
+2024-06-21,Peacock,-87.97,Entertainment
+2024-06-24,Chipotle,-39.18,Dining
+2024-06-24,Home Insurance,-2613.56,Housing
+2024-06-25,Applebee's,-28.97,Dining
+2024-06-25,Newegg,-21.76,Shopping
+2024-06-25,Taxi Service,-192.63,Transportation
+2024-06-25,Travelocity,-1912.26,Travel
+2024-06-25,Airbnb,-1267.41,Travel
+2024-06-27,Apartment Management,-1504.87,Housing
+2024-06-27,Lawn Service,-947.73,Housing
+2024-06-27,Travelocity,-1637.56,Travel
+2024-06-27,Resort Fees,-1999.34,Travel
+2024-06-29,eBay,-195.6,Shopping
+2024-06-30,Hotels.com,-1858.21,Travel
+2024-06-30,VRBO,-1025.19,Travel
+2024-07-01,Kroger,-186.32,Groceries
+2024-07-01,ShopRite,-108.52,Groceries
+2024-07-01,Peacock,-15.65,Entertainment
+2024-07-02,Kroger,-198.03,Groceries
+2024-07-02,Pearson,-210.16,Education
+2024-07-03,Panda Express,-50.94,Dining
+2024-07-03,Kindle Unlimited,-32.72,Subscriptions
+2024-07-05,Domino's Pizza,-61.38,Dining
+2024-07-06,Kayak,-177.19,Travel
+2024-07-07,Mortgage,-3292.14,Housing
+2024-07-07,Booking.com,-1113.43,Travel
+2024-07-08,Netflix,-130.6,Entertainment
+2024-07-08,Kayak,-1354.49,Travel
+2024-07-09,eBay,-155.02,Shopping
+2024-07-11,Airbnb,-1556.43,Travel
+2024-07-12,Old Navy,-57.3,Shopping
+2024-07-13,Chegg,-887.52,Education
+2024-07-13,United Airlines,-1267.14,Travel
+2024-07-14,Pearson,-220.37,Education
+2024-07-15,Gas Station,-109.69,Transportation
+2024-07-15,Kayak,-799.33,Travel
+2024-07-16,Olive Garden,-49.74,Dining
+2024-07-16,American Airlines,-218.91,Travel
+2024-07-17,KFC,-34.3,Dining
+2024-07-18,Food Lion,-189.9,Groceries
+2024-07-18,Lowe's,-218.05,Shopping
+2024-07-18,Hulu,-128.28,Entertainment
+2024-07-19,Pep Boys,-169.47,Transportation
+2024-07-21,Hulu,-63.98,Entertainment
+2024-07-22,Etsy,-275.5,Shopping
+2024-07-22,CVS,-66.86,Healthcare
+2024-07-22,Expedia,-317.46,Travel
+2024-07-23,Audible,-25.67,Subscriptions
+2024-07-24,Old Navy,-51.17,Shopping
+2024-07-24,Public Transit,-163.87,Transportation
+2024-07-25,Uber,-120.16,Transportation
+2024-07-26,BP,-14.0,Transportation
+2024-07-27,Ulta Beauty,-189.76,Shopping
+2024-07-27,Marriott,-448.65,Travel
+2024-07-28,Ulta Beauty,-224.12,Shopping
+2024-07-28,Dish Network,-152.6,Utilities
+2024-07-28,T-Mobile,-200.27,Utilities
+2024-07-30,Apple Store,-189.59,Shopping
+2024-08-01,Udemy,-231.57,Education
+2024-08-01,Travelocity,-506.62,Travel
+2024-08-02,Amazon Prime,-26.42,Subscriptions
+2024-08-03,Local Restaurant,-37.81,Dining
+2024-08-04,Booking.com,-1186.93,Travel
+2024-08-04,Delta Airlines,-509.78,Travel
+2024-08-04,Resort Fees,-1666.41,Travel
+2024-08-07,Wendy's,-64.3,Dining
+2024-08-07,Hilton,-996.39,Travel
+2024-08-08,Panda Express,-13.77,Dining
+2024-08-10,Meijer,-191.68,Groceries
+2024-08-10,Substack,-28.6,Subscriptions
+2024-08-11,Wendy's,-61.13,Dining
+2024-08-11,Sephora,-223.29,Shopping
+2024-08-11,Pharmacy,-199.72,Healthcare
+2024-08-13,Costco,-86.08,Groceries
+2024-08-13,Airbnb,-1299.48,Travel
+2024-08-15,Subway,-57.43,Dining
+2024-08-15,Medium,-30.75,Subscriptions
+2024-08-17,Meijer,-192.57,Groceries
+2024-08-18,Lowe's,-293.08,Shopping
+2024-08-18,Walmart,-24.16,Shopping
+2024-08-18,Gas Station,-223.86,Transportation
+2024-08-18,Home Warranty,-3420.11,Housing
+2024-08-18,Resort Fees,-1735.37,Travel
+2024-08-18,Travel Agency,-1032.68,Travel
+2024-08-19,Home Insurance,-1106.81,Housing
+2024-08-19,Mortgage,-939.57,Housing
+2024-08-19,Travel Insurance,-910.89,Travel
+2024-08-20,Olive Garden,-37.37,Dining
+2024-08-20,KFC,-21.23,Dining
+2024-08-20,NordVPN,-20.74,Subscriptions
+2024-08-21,Starbucks,-54.01,Dining
+2024-08-21,Cigna,-249.46,Healthcare
+2024-08-21,VRBO,-656.82,Travel
+2024-08-22,Food Lion,-23.48,Groceries
+2024-08-22,Local Restaurant,-47.5,Dining
+2024-08-22,Pizza Hut,-29.14,Dining
+2024-08-23,Aldi,-18.56,Groceries
+2024-08-23,IKEA,-214.39,Shopping
+2024-08-24,Toll Roads,-40.81,Transportation
+2024-08-25,HBO Max,-76.43,Entertainment
+2024-08-25,Booking.com,-529.87,Travel
+2024-08-26,Olive Garden,-46.54,Dining
+2024-08-26,McDonald's,-53.89,Dining
+2024-08-26,Car Repair,-72.12,Transportation
+2024-08-26,Car Wash,-31.07,Transportation
+2024-08-26,Vacation Rental,-755.35,Travel
+2024-08-28,Midas,-39.63,Transportation
+2024-08-30,Concert Tickets,-144.56,Entertainment
+2024-08-30,Travel Agency,-461.37,Travel
+2024-08-31,Resort Fees,-752.62,Travel
+2024-09-02,Hilton,-782.05,Travel
+2024-09-02,Hotels.com,-508.47,Travel
+2024-09-03,Microsoft 365,-37.15,Subscriptions
+2024-09-04,McDonald's,-31.87,Dining
+2024-09-04,Hilton,-893.96,Travel
+2024-09-06,Cruise Line,-1941.19,Travel
+2024-09-06,Booking.com,-1187.83,Travel
+2024-09-07,Car Repair,-89.84,Transportation
+2024-09-08,Resort Fees,-1529.85,Travel
+2024-09-08,Hilton,-220.58,Travel
+2024-09-09,Amtrak,-51.49,Transportation
+2024-09-09,edX,-467.17,Education
+2024-09-10,Meijer,-43.68,Groceries
+2024-09-10,Kayak,-777.32,Travel
+2024-09-11,Pest Control,-2857.28,Housing
+2024-09-11,Resort Fees,-153.06,Travel
+2024-09-11,Southwest Airlines,-655.57,Travel
+2024-09-12,Live Nation,-141.61,Entertainment
+2024-09-13,Apple TV+,-75.35,Entertainment
+2024-09-14,Whole Foods,-136.41,Groceries
+2024-09-14,Save-A-Lot,-73.44,Groceries
+2024-09-15,Wendy's,-44.8,Dining
+2024-09-15,eBay,-215.1,Shopping
+2024-09-16,Kayak,-1749.62,Travel
+2024-09-17,Best Buy,-133.45,Shopping
+2024-09-17,Enterprise Rent-A-Car,-204.07,Transportation
+2024-09-18,Chick-fil-A,-33.31,Dining
+2024-09-22,Electric Company,-113.58,Utilities
+2024-09-22,Vacation Rental,-1906.45,Travel
+2024-09-22,Resort Fees,-1910.8,Travel
+2024-09-23,Whole Foods,-69.12,Groceries
+2024-09-23,Five Guys,-13.35,Dining
+2024-09-23,Uber,-52.5,Transportation
+2024-09-24,BP,-187.15,Transportation
+2024-09-25,Trader Joe's,-73.29,Groceries
+2024-09-28,Meijer,-160.35,Groceries
+2024-09-28,KFC,-53.99,Dining
+2024-09-28,Live Nation,-29.4,Entertainment
+2024-09-28,Travel Insurance,-1063.69,Travel
+2024-09-29,Resort Fees,-1850.15,Travel
+2024-09-30,Gas Station,-215.77,Transportation
+2024-10-01,Security Deposit,-2409.41,Housing
+2024-10-01,Apartment Management,-989.2,Housing
+2024-10-01,Home Insurance,-2896.69,Housing
+2024-10-02,eBay,-160.35,Shopping
+2024-10-02,eBay,-154.04,Shopping
+2024-10-03,Cruise Line,-1076.75,Travel
+2024-10-04,Kroger,-61.06,Groceries
+2024-10-04,Dunkin' Donuts,-49.39,Dining
+2024-10-05,Aldi,-175.58,Groceries
+2024-10-06,Cox Communications,-146.69,Utilities
+2024-10-06,Wall Street Journal,-49.12,Subscriptions
+2024-10-06,iCloud Storage,-5.17,Subscriptions
+2024-10-07,Dish Network,-294.23,Utilities
+2024-10-10,Kaiser Permanente,-268.75,Healthcare
+2024-10-11,New York Times,-29.44,Subscriptions
+2024-10-11,Travel Agency,-1432.46,Travel
+2024-10-12,Uber,-206.56,Transportation
+2024-10-13,Kroger,-180.59,Groceries
+2024-10-13,Vacation Rental,-111.81,Travel
+2024-10-14,Amtrak,-82.3,Transportation
+2024-10-16,Kaiser Permanente,-141.7,Healthcare
+2024-10-16,Resort Fees,-141.8,Travel
+2024-10-17,Panda Express,-11.39,Dining
+2024-10-17,YouTube Premium,-123.21,Entertainment
+2024-10-18,Food Lion,-55.19,Groceries
+2024-10-18,In-N-Out Burger,-62.54,Dining
+2024-10-18,In-N-Out Burger,-30.09,Dining
+2024-10-19,Moving Service,-3462.13,Housing
+2024-10-20,Hulu,-99.98,Entertainment
+2024-10-21,Pizza Hut,-21.93,Dining
+2024-10-21,Uber,-232.32,Transportation
+2024-10-21,Marriott,-769.84,Travel
+2024-10-23,Sprouts,-15.4,Groceries
+2024-10-25,ShopRite,-151.97,Groceries
+2024-10-25,Nordstrom,-70.47,Shopping
+2024-10-25,Hilton,-1984.98,Travel
+2024-10-25,Delta Airlines,-711.57,Travel
+2024-10-25,Airbnb,-608.16,Travel
+2024-10-26,McDonald's,-41.5,Dining
+2024-10-26,Hotels.com,-1143.75,Travel
+2024-10-28,Kayak,-1248.94,Travel
+2024-10-29,IKEA,-129.65,Shopping
+2024-10-29,Apple TV+,-87.33,Entertainment
+2024-10-29,Public Transit,-104.04,Transportation
+2024-10-29,VRBO,-1719.65,Travel
+2024-10-30,Safeway,-112.81,Groceries
+2024-10-30,Panda Express,-26.51,Dining
+2024-10-30,Paramount+,-10.88,Entertainment
+2024-10-30,Airline Tickets,-57.06,Transportation
+2024-10-31,Wendy's,-73.62,Dining
+2024-11-01,KFC,-28.49,Dining
+2024-11-01,AT&T,-290.13,Utilities
+2024-11-02,DirecTV,-241.14,Utilities
+2024-11-03,Hospital,-81.43,Healthcare
+2024-11-03,Travel Insurance,-123.81,Travel
+2024-11-04,Dunkin' Donuts,-40.22,Dining
+2024-11-05,Food Lion,-156.14,Groceries
+2024-11-05,Peacock,-55.75,Entertainment
+2024-11-05,Student Loans,-641.99,Education
+2024-11-06,Security Deposit,-1128.23,Housing
+2024-11-07,Ticketmaster,-95.72,Entertainment
+2024-11-07,Marriott,-1250.78,Travel
+2024-11-07,Travelocity,-971.3,Travel
+2024-11-08,Target,-149.46,Shopping
+2024-11-08,Audible,-19.1,Subscriptions
+2024-11-09,Lyft,-225.12,Transportation
+2024-11-09,Midas,-44.54,Transportation
+2024-11-10,Wegmans,-41.55,Groceries
+2024-11-10,Gas Station,-57.48,Transportation
+2024-11-10,Pest Control,-1191.21,Housing
+2024-11-11,ShopRite,-97.28,Groceries
+2024-11-11,Aldi,-107.12,Groceries
+2024-11-13,Public Transit,-138.83,Transportation
+2024-11-13,Hotels.com,-341.68,Travel
+2024-11-13,Airbnb,-1657.65,Travel
+2024-11-14,Kohl's,-207.9,Shopping
+2024-11-14,Urgent Care,-83.47,Healthcare
+2024-11-14,Airbnb,-620.51,Travel
+2024-11-14,Vacation Rental,-1891.39,Travel
+2024-11-15,Burger King,-40.48,Dining
+2024-11-16,Kayak,-1245.78,Travel
+2024-11-17,Travel Insurance,-1800.22,Travel
+2024-11-18,Amazon Prime,-103.91,Entertainment
+2024-11-18,Home Warranty,-3461.51,Housing
+2024-11-18,Kayak,-1052.02,Travel
+2024-11-19,Hotels.com,-249.33,Travel
+2024-11-19,Vacation Rental,-1994.28,Travel
+2024-11-20,Etsy,-131.01,Shopping
+2024-11-21,Steam,-92.67,Entertainment
+2024-11-21,Toll Roads,-146.54,Transportation
+2024-11-21,American Airlines,-428.44,Travel
+2024-11-22,Bowling Alley,-100.2,Entertainment
+2024-11-23,Five Guys,-35.84,Dining
+2024-11-24,Dunkin' Donuts,-60.57,Dining
+2024-11-25,Trader Joe's,-19.86,Groceries
+2024-11-25,Applebee's,-45.76,Dining
+2024-11-25,Airbnb,-343.94,Travel
+2024-11-26,Amazon,-64.29,Shopping
+2024-11-26,Travel Agency,-905.92,Travel
+2024-11-27,Hilton,-960.32,Travel
+2024-11-29,T-Mobile,-185.1,Utilities
+2024-12-01,Peacock,-48.32,Entertainment
+2024-12-02,Property Tax,-3232.78,Housing
+2024-12-02,Hilton,-1956.57,Travel
+2024-12-03,Amtrak,-172.04,Transportation
+2024-12-03,Hotels.com,-296.87,Travel
+2024-12-04,Delta Airlines,-1303.75,Travel
+2024-12-04,Travel Agency,-526.87,Travel
+2024-12-05,Movie Theater,-54.34,Entertainment
+2024-12-06,Subway,-51.0,Dining
+2024-12-06,Hilton,-1842.17,Travel
+2024-12-06,Marriott,-197.68,Travel
+2024-12-07,Macy's,-28.41,Shopping
+2024-12-07,Public Transit,-99.85,Transportation
+2024-12-07,Travel Insurance,-1122.62,Travel
+2024-12-08,Netflix,-137.71,Entertainment
+2024-12-08,Marriott,-947.64,Travel
+2024-12-09,Wendy's,-57.93,Dining
+2024-12-09,Skillshare,-218.4,Education
+2024-12-09,Travel Insurance,-1438.86,Travel
+2024-12-10,Five Guys,-41.71,Dining
+2024-12-10,Rite Aid,-262.38,Healthcare
+2024-12-11,Duke Energy,-124.55,Utilities
+2024-12-11,Hotels.com,-326.57,Travel
+2024-12-12,Avis,-209.52,Transportation
+2024-12-12,Laboratory Services,-403.41,Healthcare
+2024-12-13,Airbnb,-197.97,Travel
+2024-12-13,Travelocity,-1397.2,Travel
+2024-12-15,Safeway,-109.44,Groceries
+2024-12-15,Ticketmaster,-24.38,Entertainment
+2024-12-15,Verizon,-53.4,Utilities
+2024-12-16,Electric Company,-135.98,Utilities
+2024-12-18,Hotels.com,-1633.57,Travel
+2024-12-18,Cruise Line,-905.34,Travel
+2024-12-20,Avis,-25.36,Transportation
+2024-12-21,Apple TV+,-74.92,Entertainment
+2024-12-22,AutoZone,-136.55,Transportation
+2024-12-22,PlayStation Plus,-20.65,Subscriptions
+2024-12-22,Marriott,-1184.42,Travel
+2024-12-24,Meijer,-198.62,Groceries
+2024-12-25,Newegg,-102.79,Shopping
+2024-12-26,Chipotle,-59.15,Dining
+2024-12-26,Starbucks,-9.62,Dining
+2024-12-26,Marriott,-864.03,Travel
+2024-12-26,Travelocity,-1726.76,Travel
+2024-12-27,Netflix,-17.31,Entertainment
+2024-12-27,Travel Insurance,-1477.41,Travel
+2024-12-29,Wayfair,-118.4,Shopping
+2024-12-30,Home Depot,-256.49,Shopping
+2024-12-30,Travel Insurance,-882.64,Travel
+2024-12-31,Applebee's,-31.25,Dining
+2024-12-31,Panda Express,-13.26,Dining
+2024-12-31,Pest Control,-1841.82,Housing
+2025-01-01,Hulu,-34.49,Entertainment
+2025-01-01,Laboratory Services,-142.26,Healthcare
+2025-01-01,Walgreens,-112.96,Healthcare
+2025-01-01,Travelocity,-1636.55,Travel
+2025-01-02,Applebee's,-8.46,Dining
+2025-01-03,Wall Street Journal,-46.32,Subscriptions
+2025-01-03,Travel Insurance,-1147.11,Travel
+2025-01-04,Toll Roads,-5.44,Transportation
+2025-01-05,Taco Bell,-59.37,Dining
+2025-01-06,Home Insurance,-3041.33,Housing
+2025-01-07,Peacock,-19.5,Entertainment
+2025-01-07,HOA Fees,-3379.59,Housing
+2025-01-08,Moving Service,-2349.32,Housing
+2025-01-09,Applebee's,-17.54,Dining
+2025-01-09,Bed Bath & Beyond,-286.95,Shopping
+2025-01-09,Apple Music,-112.09,Entertainment
+2025-01-12,VRBO,-922.6,Travel
+2025-01-15,Save-A-Lot,-110.34,Groceries
+2025-01-15,Chick-fil-A,-9.84,Dining
+2025-01-15,American Airlines,-1100.09,Travel
+2025-01-17,Dish Network,-170.2,Utilities
+2025-01-17,Expedia,-676.92,Travel
+2025-01-17,Southwest Airlines,-866.31,Travel
+2025-01-17,Travelocity,-235.44,Travel
+2025-01-19,Property Tax,-918.42,Housing
+2025-01-21,iCloud Storage,-21.5,Subscriptions
+2025-01-21,Cruise Line,-1970.08,Travel
+2025-01-23,Olive Garden,-12.51,Dining
+2025-01-24,Netflix,-68.62,Entertainment
+2025-01-25,Amazon Prime,-45.7,Entertainment
+2025-01-27,Jiffy Lube,-70.64,Transportation
+2025-01-27,Hotels.com,-1789.1,Travel
+2025-01-29,Steam,-86.85,Entertainment
+2025-01-29,Dave & Buster's,-102.15,Entertainment
+2025-01-29,Mortgage,-1979.63,Housing
+2025-01-30,T-Mobile,-216.04,Utilities
+2025-01-30,Travel Insurance,-1062.5,Travel
+2025-02-01,Hulu,-85.91,Entertainment
+2025-02-01,Disney+,-145.52,Entertainment
+2025-02-02,Marshalls,-108.53,Shopping
+2025-02-02,Textbooks,-548.53,Education
+2025-02-02,Substack,-28.92,Subscriptions
+2025-02-02,United Airlines,-1290.97,Travel
+2025-02-03,Peacock,-94.34,Entertainment
+2025-02-03,Chevron,-192.95,Transportation
+2025-02-03,Property Tax,-2133.52,Housing
+2025-02-04,Travelocity,-1894.9,Travel
+2025-02-05,Taco Bell,-62.82,Dining
+2025-02-05,Public Transit,-66.89,Transportation
+2025-02-06,Nordstrom,-195.2,Shopping
+2025-02-08,Sephora,-118.06,Shopping
+2025-02-08,Wayfair,-228.88,Shopping
+2025-02-08,Dental Care,-74.72,Healthcare
+2025-02-09,Airbnb,-1779.8,Travel
+2025-02-10,Applebee's,-22.18,Dining
+2025-02-10,Delta Airlines,-619.51,Travel
+2025-02-11,Enterprise Rent-A-Car,-104.1,Transportation
+2025-02-12,Nordstrom,-248.6,Shopping
+2025-02-12,Michaels,-106.94,Shopping
+2025-02-12,Cigna,-156.35,Healthcare
+2025-02-13,ShopRite,-180.96,Groceries
+2025-02-13,Food Lion,-44.2,Groceries
+2025-02-13,Sephora,-202.42,Shopping
+2025-02-14,Hilton,-546.03,Travel
+2025-02-15,Chevron,-132.32,Transportation
+2025-02-15,Hilton,-889.54,Travel
+2025-02-16,Kayak,-243.97,Travel
+2025-02-17,Udemy,-740.01,Education
+2025-02-17,Educational Software,-423.31,Education
+2025-02-17,Vacation Rental,-1169.65,Travel
+2025-02-17,Travelocity,-1886.81,Travel
+2025-02-18,Health Insurance,-180.58,Healthcare
+2025-02-19,Macy's,-285.51,Shopping
+2025-02-19,United Airlines,-1294.26,Travel
+2025-02-20,Vision Care,-133.17,Healthcare
+2025-02-20,Google One,-35.24,Subscriptions
+2025-02-20,Hilton,-1806.08,Travel
+2025-02-22,Save-A-Lot,-105.38,Groceries
+2025-02-22,Subway,-21.49,Dining
+2025-02-24,Cruise Line,-1896.8,Travel
+2025-02-25,Burger King,-20.26,Dining
+2025-02-25,Resort Fees,-546.96,Travel
+2025-02-26,Domino's Pizza,-10.61,Dining
+2025-02-27,Meijer,-64.33,Groceries
+2025-02-27,Wegmans,-108.36,Groceries
+2025-02-27,Amtrak,-94.74,Transportation
+2025-02-28,VRBO,-300.4,Travel
+2025-03-01,Airline Tickets,-150.49,Transportation
+2025-03-01,Southwest Airlines,-1438.45,Travel
+2025-03-04,Apple Store,-127.31,Shopping
+2025-03-05,Newegg,-160.24,Shopping
+2025-03-05,Home Insurance,-2006.12,Housing
+2025-03-05,Travel Agency,-1626.58,Travel
+2025-03-06,Paramount+,-129.21,Entertainment
+2025-03-07,Domino's Pizza,-58.33,Dining
+2025-03-07,Hobby Lobby,-110.4,Shopping
+2025-03-07,Movie Theater,-103.08,Entertainment
+2025-03-10,Subway,-40.02,Dining
+2025-03-10,Starbucks,-8.17,Dining
+2025-03-10,Best Buy,-183.69,Shopping
+2025-03-11,Applebee's,-33.4,Dining
+2025-03-12,Marriott,-436.23,Travel
+2025-03-12,Booking.com,-476.76,Travel
+2025-03-13,Hotels.com,-782.84,Travel
+2025-03-14,Dunkin' Donuts,-62.58,Dining
+2025-03-14,Panda Express,-20.65,Dining
+2025-03-14,PG&E,-221.11,Utilities
+2025-03-16,United Airlines,-857.5,Travel
+2025-03-19,AMC Theaters,-140.52,Entertainment
+2025-03-21,Amazon Prime,-87.77,Entertainment
+2025-03-21,Water Service,-169.3,Utilities
+2025-03-21,Southwest Airlines,-498.36,Travel
+2025-03-22,Expedia,-1992.18,Travel
+2025-03-23,Aldi,-146.11,Groceries
+2025-03-23,Burger King,-27.08,Dining
+2025-03-23,Apple Store,-192.29,Shopping
+2025-03-23,Apartment Management,-984.24,Housing
+2025-03-24,Movie Theater,-133.76,Entertainment
+2025-03-25,AT&T,-266.67,Utilities
+2025-03-26,Skillshare,-352.57,Education
+2025-03-27,Apple Music,-123.94,Entertainment
+2025-03-27,Chegg,-874.35,Education
+2025-03-28,United Airlines,-546.55,Travel
+2025-03-28,Delta Airlines,-1918.54,Travel
+2025-03-29,H-E-B,-46.27,Groceries
+2025-03-30,Travel Agency,-1488.48,Travel
+2025-04-01,United Airlines,-1858.89,Travel
+2025-04-02,TJ Maxx,-137.72,Shopping
+2025-04-03,Airline Tickets,-179.77,Transportation
+2025-04-03,Cruise Line,-134.54,Travel
+2025-04-05,Chegg,-958.49,Education
+2025-04-05,Hilton,-1129.86,Travel
+2025-04-06,Resort Fees,-1332.82,Travel
+2025-04-07,Publix,-65.48,Groceries
+2025-04-07,Verizon,-201.23,Utilities
+2025-04-07,Expedia,-1041.39,Travel
+2025-04-08,Chipotle,-39.57,Dining
+2025-04-09,Kohl's,-52.57,Shopping
+2025-04-09,Google One,-11.93,Subscriptions
+2025-04-09,iCloud Storage,-8.24,Subscriptions
+2025-04-10,Apple TV+,-48.0,Entertainment
+2025-04-10,Resort Fees,-1218.19,Travel
+2025-04-11,Lowe's,-121.07,Shopping
+2025-04-11,Ticketmaster,-115.76,Entertainment
+2025-04-11,Home Warranty,-3246.66,Housing
+2025-04-12,Storage Unit,-3145.13,Housing
+2025-03-13,Transfer to Savings,-0.0,Savings
+2024-09-27,Airfare to Costa Rica,-1034,Travel
+2024-10-01,Accommodation in Costa Rica,-2031,Travel
+2024-10-28,Restaurant in Costa Rica,-157,Dining
+2024-10-28,Activity/Tour in Costa Rica,-103,Travel
+2024-10-28,Shopping in Costa Rica,-83,Shopping
+2024-10-29,Restaurant in Costa Rica,-79,Dining
+2024-10-29,Activity/Tour in Costa Rica,-131,Travel
+2024-10-29,Local Transportation in Costa Rica,-72,Transportation
+2024-10-30,Restaurant in Costa Rica,-103,Dining
+2024-10-30,Activity/Tour in Costa Rica,-151,Travel
+2024-10-30,Shopping in Costa Rica,-94,Shopping
+2024-10-31,Restaurant in Costa Rica,-150,Dining
+2024-10-31,Activity/Tour in Costa Rica,-110,Travel
+2024-10-31,Shopping in Costa Rica,-106,Shopping
+2024-11-01,Activity/Tour in Costa Rica,-131,Travel
+2024-11-01,Shopping in Costa Rica,-246,Shopping
+2024-11-02,Restaurant in Costa Rica,-137,Dining
+2024-11-02,Shopping in Costa Rica,-58,Shopping
+2024-11-03,Restaurant in Costa Rica,-183,Dining
+2024-11-03,Activity/Tour in Costa Rica,-285,Travel
+2024-11-03,Shopping in Costa Rica,-250,Shopping
+2024-11-04,Restaurant in Costa Rica,-189,Dining
+2024-11-04,Activity/Tour in Costa Rica,-289,Travel
+2024-11-04,Local Transportation in Costa Rica,-48,Transportation
+2024-11-05,Restaurant in Costa Rica,-126,Dining
+2024-11-05,Activity/Tour in Costa Rica,-130,Travel
+2024-11-05,Shopping in Costa Rica,-59,Shopping
+2024-11-06,Restaurant in Costa Rica,-179,Dining
+2024-11-06,Activity/Tour in Costa Rica,-296,Travel
+2024-11-06,Local Transportation in Costa Rica,-79,Transportation
+2024-10-06,"Airfare to Barcelona, Spain",-1633,Travel
+2024-10-10,"Accommodation in Barcelona, Spain",-2002,Travel
+2024-12-11,"Restaurant in Barcelona, Spain",-135,Dining
+2024-12-11,"Local Transportation in Barcelona, Spain",-34,Transportation
+2024-12-12,"Restaurant in Barcelona, Spain",-75,Dining
+2024-12-12,"Activity/Tour in Barcelona, Spain",-138,Travel
+2024-12-12,"Shopping in Barcelona, Spain",-201,Shopping
+2024-12-13,"Restaurant in Barcelona, Spain",-161,Dining
+2024-12-13,"Activity/Tour in Barcelona, Spain",-239,Travel
+2024-12-13,"Shopping in Barcelona, Spain",-51,Shopping
+2024-12-13,"Local Transportation in Barcelona, Spain",-38,Transportation
+2024-12-14,"Restaurant in Barcelona, Spain",-154,Dining
+2024-12-14,"Activity/Tour in Barcelona, Spain",-135,Travel
+2024-12-14,"Shopping in Barcelona, Spain",-206,Shopping
+2024-12-14,"Local Transportation in Barcelona, Spain",-44,Transportation
+2024-12-15,"Restaurant in Barcelona, Spain",-174,Dining
+2024-12-15,"Activity/Tour in Barcelona, Spain",-207,Travel
+2024-12-16,"Activity/Tour in Barcelona, Spain",-179,Travel
+2024-12-17,"Restaurant in Barcelona, Spain",-118,Dining
+2024-12-17,"Activity/Tour in Barcelona, Spain",-115,Travel
+2024-12-17,"Shopping in Barcelona, Spain",-230,Shopping
+2024-12-18,"Restaurant in Barcelona, Spain",-114,Dining
+2024-12-18,"Activity/Tour in Barcelona, Spain",-278,Travel
+2024-12-18,"Shopping in Barcelona, Spain",-178,Shopping
+2024-12-19,"Activity/Tour in Barcelona, Spain",-290,Travel
+2024-12-19,"Shopping in Barcelona, Spain",-85,Shopping
+2024-12-20,"Restaurant in Barcelona, Spain",-154,Dining
+2024-12-20,"Activity/Tour in Barcelona, Spain",-175,Travel
+2024-12-21,"Restaurant in Barcelona, Spain",-181,Dining
+2024-12-21,"Activity/Tour in Barcelona, Spain",-119,Travel
+2024-12-21,"Shopping in Barcelona, Spain",-60,Shopping
+2024-12-21,"Local Transportation in Barcelona, Spain",-91,Transportation
+2024-12-22,"Restaurant in Barcelona, Spain",-141,Dining
+2024-12-22,"Activity/Tour in Barcelona, Spain",-174,Travel
+2024-12-23,"Restaurant in Barcelona, Spain",-54,Dining
+2024-12-23,"Activity/Tour in Barcelona, Spain",-239,Travel
+2024-12-23,"Local Transportation in Barcelona, Spain",-40,Transportation
+2024-12-24,"Restaurant in Barcelona, Spain",-192,Dining
+2024-12-24,"Shopping in Barcelona, Spain",-72,Shopping
+2024-12-24,"Local Transportation in Barcelona, Spain",-95,Transportation
+2024-12-25,"Restaurant in Barcelona, Spain",-104,Dining
+2024-12-25,"Local Transportation in Barcelona, Spain",-75,Transportation
+2024-05-28,"Airfare to Sydney, Australia",-1892,Travel
+2024-06-01,"Accommodation in Sydney, Australia",-2413,Travel
+2024-07-11,"Activity/Tour in Sydney, Australia",-131,Travel
+2024-07-12,"Restaurant in Sydney, Australia",-58,Dining
+2024-07-13,"Activity/Tour in Sydney, Australia",-133,Travel
+2024-07-14,"Restaurant in Sydney, Australia",-188,Dining
+2024-07-14,"Activity/Tour in Sydney, Australia",-231,Travel
+2024-07-14,"Local Transportation in Sydney, Australia",-36,Transportation
+2024-07-15,"Restaurant in Sydney, Australia",-59,Dining
+2024-07-15,"Activity/Tour in Sydney, Australia",-154,Travel
+2024-07-15,"Shopping in Sydney, Australia",-122,Shopping
+2024-07-15,"Local Transportation in Sydney, Australia",-92,Transportation
+2024-07-16,"Activity/Tour in Sydney, Australia",-184,Travel
+2024-07-17,"Restaurant in Sydney, Australia",-119,Dining
+2024-07-17,"Activity/Tour in Sydney, Australia",-167,Travel
+2024-07-17,"Shopping in Sydney, Australia",-214,Shopping
+2024-07-18,"Restaurant in Sydney, Australia",-132,Dining
+2024-07-18,"Activity/Tour in Sydney, Australia",-156,Travel
+2024-07-18,"Shopping in Sydney, Australia",-215,Shopping
+2024-07-19,"Restaurant in Sydney, Australia",-144,Dining
+2024-07-19,"Activity/Tour in Sydney, Australia",-218,Travel
+2024-07-20,"Restaurant in Sydney, Australia",-147,Dining
+2024-07-20,"Shopping in Sydney, Australia",-159,Shopping
+2024-07-20,"Local Transportation in Sydney, Australia",-32,Transportation
+2024-07-21,"Restaurant in Sydney, Australia",-108,Dining
+2024-07-21,"Activity/Tour in Sydney, Australia",-141,Travel
+2024-07-21,"Shopping in Sydney, Australia",-130,Shopping
+2024-07-22,"Restaurant in Sydney, Australia",-133,Dining
+2024-07-22,"Shopping in Sydney, Australia",-242,Shopping
+2024-07-23,"Restaurant in Sydney, Australia",-59,Dining
+2024-07-23,"Activity/Tour in Sydney, Australia",-148,Travel
+2024-07-23,"Local Transportation in Sydney, Australia",-77,Transportation
+2024-07-24,"Restaurant in Sydney, Australia",-184,Dining
+2024-07-24,"Activity/Tour in Sydney, Australia",-188,Travel
+2024-07-25,"Activity/Tour in Sydney, Australia",-128,Travel
+2024-07-25,"Local Transportation in Sydney, Australia",-74,Transportation
+2024-10-02,Priority Pass Membership,-429,Subscriptions
+2025-02-01,Travel Insurance Annual Plan,-250,Subscriptions
+2024-04-15,Language Learning App,-12.99,Subscriptions
+2024-05-15,Language Learning App,-12.99,Subscriptions
+2024-06-15,Language Learning App,-12.99,Subscriptions
+2024-07-15,Language Learning App,-12.99,Subscriptions
+2024-08-15,Language Learning App,-12.99,Subscriptions
+2024-09-15,Language Learning App,-12.99,Subscriptions
+2024-10-15,Language Learning App,-12.99,Subscriptions
+2024-11-15,Language Learning App,-12.99,Subscriptions
+2024-12-15,Language Learning App,-12.99,Subscriptions
+2025-01-15,Language Learning App,-12.99,Subscriptions
+2025-02-15,Language Learning App,-12.99,Subscriptions
+2025-03-15,Language Learning App,-12.99,Subscriptions
+2025-01-22,Travel Credit Card Annual Fee,-95,Subscriptions
+2024-04-12,Employer Payroll,4500,Income
+2024-04-26,Employer Payroll,4500,Income
+2024-05-10,Employer Payroll,4500,Income
+2024-05-24,Employer Payroll,4500,Income
+2024-06-07,Employer Payroll,4500,Income
+2024-06-21,Employer Payroll,4500,Income
+2024-07-05,Employer Payroll,4500,Income
+2024-07-19,Employer Payroll,4500,Income
+2024-08-02,Employer Payroll,4500,Income
+2024-08-16,Employer Payroll,4500,Income
+2024-08-30,Employer Payroll,4500,Income
+2024-09-13,Employer Payroll,4500,Income
+2024-09-27,Employer Payroll,4500,Income
+2024-10-11,Employer Payroll,4500,Income
+2024-10-25,Employer Payroll,4500,Income
+2024-11-08,Employer Payroll,4500,Income
+2024-11-22,Employer Payroll,4500,Income
+2024-12-06,Employer Payroll,4500,Income
+2024-12-20,Employer Payroll,4500,Income
+2025-01-03,Employer Payroll,4500,Income
+2025-01-17,Employer Payroll,4500,Income
+2025-01-31,Employer Payroll,4500,Income
+2025-02-14,Employer Payroll,4500,Income
+2025-02-28,Employer Payroll,4500,Income
+2025-03-14,Employer Payroll,4500,Income
+2025-03-28,Employer Payroll,4500,Income
+2025-04-11,Employer Payroll,4500,Income

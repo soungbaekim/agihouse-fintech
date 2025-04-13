@@ -1,0 +1,472 @@
+date,description,amount,category
+2024-04-17,Aldi,-57.7,Groceries
+2024-04-17,Regal Cinemas,-26.0,Entertainment
+2024-04-20,Skillshare,-250.73,Education
+2024-04-24,Kohl's,-160.94,Shopping
+2024-04-24,Tuition Payment,-367.12,Education
+2024-04-25,Burger King,-71.76,Dining
+2024-04-25,Best Buy,-268.04,Shopping
+2024-04-26,Save-A-Lot,-19.19,Groceries
+2024-04-26,Sephora,-112.52,Shopping
+2024-04-26,Furniture Rental,-3083.39,Housing
+2024-04-27,Chegg,-929.09,Education
+2024-04-29,Regal Cinemas,-144.73,Entertainment
+2024-04-30,Cleaning Service,-818.07,Housing
+2024-04-30,Medium,-30.51,Subscriptions
+2024-05-01,Furniture Rental,-868.07,Housing
+2024-05-04,Aldi,-176.0,Groceries
+2024-05-04,Walmart,-232.07,Shopping
+2024-05-04,Doctor's Office,-64.38,Healthcare
+2024-05-07,Disney+,-41.0,Entertainment
+2024-05-08,Doctor's Office,-435.27,Healthcare
+2024-05-09,Hulu,-135.28,Entertainment
+2024-05-10,Amazon Prime,-35.02,Entertainment
+2024-05-13,Food Lion,-107.88,Groceries
+2024-05-13,Mental Health Services,-468.48,Healthcare
+2024-05-16,Pizza Hut,-21.73,Dining
+2024-05-16,Hospital,-31.19,Healthcare
+2024-05-17,ShopRite,-150.18,Groceries
+2024-05-18,Tidal,-94.46,Entertainment
+2024-05-19,Health Insurance,-425.39,Healthcare
+2024-05-19,Doctor's Office,-41.37,Healthcare
+2024-05-20,Public Transit,-63.9,Transportation
+2024-05-20,Urgent Care,-47.59,Healthcare
+2024-05-23,Five Guys,-29.7,Dining
+2024-05-23,Newegg,-286.08,Shopping
+2024-05-24,Food Lion,-190.53,Groceries
+2024-05-25,Etsy,-176.4,Shopping
+2024-05-27,Enterprise Rent-A-Car,-9.12,Transportation
+2024-05-28,Starbucks,-68.76,Dining
+2024-05-28,Xfinity,-161.68,Utilities
+2024-05-29,Aldi,-121.08,Groceries
+2024-06-03,Domino's Pizza,-28.7,Dining
+2024-06-03,PG&E,-237.55,Utilities
+2024-06-06,Save-A-Lot,-117.34,Groceries
+2024-06-08,ShopRite,-197.59,Groceries
+2024-06-08,Chipotle,-24.84,Dining
+2024-06-09,Burger King,-10.79,Dining
+2024-06-10,Rent Payment,-3478.53,Housing
+2024-06-11,Nordstrom,-172.13,Shopping
+2024-06-12,Car Repair,-159.06,Transportation
+2024-06-13,Southwest Airlines,-333.67,Travel
+2024-06-17,Delta Airlines,-375.8,Travel
+2024-06-18,Uber,-181.25,Transportation
+2024-06-18,Patreon,-9.23,Subscriptions
+2024-06-18,Wall Street Journal,-30.6,Subscriptions
+2024-06-19,Laboratory Services,-144.44,Healthcare
+2024-06-20,Live Nation,-109.85,Entertainment
+2024-06-22,Live Nation,-10.79,Entertainment
+2024-06-24,DirecTV,-283.11,Utilities
+2024-06-26,Marshalls,-201.2,Shopping
+2024-06-28,Kayak,-934.85,Travel
+2024-06-29,Delta Airlines,-1000.76,Travel
+2024-06-30,T-Mobile,-261.44,Utilities
+2024-07-02,KFC,-39.56,Dining
+2024-07-02,Blue Cross,-390.24,Healthcare
+2024-07-03,Panera Bread,-61.27,Dining
+2024-07-03,Marriott,-1185.14,Travel
+2024-07-05,Enterprise Rent-A-Car,-89.75,Transportation
+2024-07-05,Uber,-55.66,Transportation
+2024-07-05,HOA Fees,-2912.21,Housing
+2024-07-05,Substack,-24.31,Subscriptions
+2024-07-06,Costco,-178.75,Groceries
+2024-07-06,KFC,-34.85,Dining
+2024-07-06,Furniture Rental,-3130.72,Housing
+2024-07-06,Home Warranty,-1330.86,Housing
+2024-07-07,Taco Bell,-18.73,Dining
+2024-07-08,Wendy's,-43.78,Dining
+2024-07-08,Live Nation,-70.94,Entertainment
+2024-07-08,Paramount+,-29.03,Entertainment
+2024-07-09,YouTube Premium,-34.47,Entertainment
+2024-07-12,TJ Maxx,-179.17,Shopping
+2024-07-12,Home Insurance,-1581.87,Housing
+2024-07-12,Cigna,-330.97,Healthcare
+2024-07-13,Parking,-24.89,Transportation
+2024-07-14,Olive Garden,-53.4,Dining
+2024-07-14,Nordstrom,-101.1,Shopping
+2024-07-17,Wegmans,-78.66,Groceries
+2024-07-17,Lyft,-97.43,Transportation
+2024-07-18,Marriott,-758.01,Travel
+2024-07-20,Cox Communications,-134.06,Utilities
+2024-07-23,Apple Store,-272.63,Shopping
+2024-07-25,Starbucks,-69.22,Dining
+2024-07-25,Khan Academy,-405.58,Education
+2024-07-26,Cleaning Service,-946.43,Housing
+2024-07-26,Laboratory Services,-477.11,Healthcare
+2024-07-27,Publix,-18.3,Groceries
+2024-07-29,Costco,-46.05,Groceries
+2024-07-29,Apple Store,-35.07,Shopping
+2024-07-29,Pep Boys,-226.85,Transportation
+2024-07-29,Verizon,-123.38,Utilities
+2024-07-30,Etsy,-154.26,Shopping
+2024-07-30,Dropbox,-18.75,Subscriptions
+2024-07-31,Udemy,-168.19,Education
+2024-07-31,Student Loans,-180.74,Education
+2024-08-01,Urgent Care,-375.25,Healthcare
+2024-08-03,TJ Maxx,-17.67,Shopping
+2024-08-03,Jiffy Lube,-142.89,Transportation
+2024-08-03,Rental Insurance,-2089.27,Housing
+2024-08-05,iCloud Storage,-17.7,Subscriptions
+2024-08-06,Gap,-139.02,Shopping
+2024-08-06,Chegg,-184.86,Education
+2024-08-07,Five Guys,-37.97,Dining
+2024-08-08,Wendy's,-67.88,Dining
+2024-08-08,Concert Tickets,-143.33,Entertainment
+2024-08-08,Health Insurance,-287.62,Healthcare
+2024-08-09,Hospital,-112.02,Healthcare
+2024-08-10,Sprouts,-194.01,Groceries
+2024-08-10,Apple Store,-170.71,Shopping
+2024-08-11,Olive Garden,-32.27,Dining
+2024-08-12,H-E-B,-103.68,Groceries
+2024-08-12,ShopRite,-94.55,Groceries
+2024-08-14,Taxi Service,-220.43,Transportation
+2024-08-15,Amtrak,-90.3,Transportation
+2024-08-16,Tuition Payment,-459.79,Education
+2024-08-17,KFC,-49.31,Dining
+2024-08-18,Panda Express,-25.9,Dining
+2024-08-18,Disney+,-142.34,Entertainment
+2024-08-18,Movie Theater,-86.47,Entertainment
+2024-08-19,Paramount+,-60.44,Entertainment
+2024-08-19,Lyft,-214.09,Transportation
+2024-08-19,Furniture Rental,-3369.29,Housing
+2024-08-20,Aldi,-158.59,Groceries
+2024-08-21,Kaiser Permanente,-184.97,Healthcare
+2024-08-22,Doctor's Office,-374.56,Healthcare
+2024-08-23,Target,-249.7,Shopping
+2024-08-23,Ticketmaster,-46.23,Entertainment
+2024-08-24,Booking.com,-1680.33,Travel
+2024-08-26,Costco,-91.22,Groceries
+2024-08-27,Student Loans,-514.2,Education
+2024-08-30,Safeway,-25.72,Groceries
+2024-08-30,BP,-185.67,Transportation
+2024-08-30,Cleaning Service,-999.73,Housing
+2024-08-30,College Board,-622.64,Education
+2024-09-02,Gap,-190.81,Shopping
+2024-09-03,Ulta Beauty,-229.42,Shopping
+2024-09-03,CVS,-450.11,Healthcare
+2024-09-03,VRBO,-620.49,Travel
+2024-09-04,H-E-B,-168.83,Groceries
+2024-09-05,Publix,-164.89,Groceries
+2024-09-05,Blue Cross,-349.23,Healthcare
+2024-09-06,Lawn Service,-1095.01,Housing
+2024-09-06,New York Times,-15.88,Subscriptions
+2024-09-09,Pizza Hut,-28.08,Dining
+2024-09-09,CVS,-370.04,Healthcare
+2024-09-11,Hobby Lobby,-255.58,Shopping
+2024-09-13,Amazon,-78.37,Shopping
+2024-09-14,Local Restaurant,-25.28,Dining
+2024-09-14,Gap,-191.11,Shopping
+2024-09-14,Marshalls,-139.07,Shopping
+2024-09-14,Health Insurance,-245.78,Healthcare
+2024-09-16,Chick-fil-A,-63.91,Dining
+2024-09-19,Xbox Game Pass,-12.74,Subscriptions
+2024-09-20,Etsy,-153.97,Shopping
+2024-09-21,McDonald's,-25.3,Dining
+2024-09-21,School Supplies,-264.51,Education
+2024-09-22,Whole Foods,-124.77,Groceries
+2024-09-22,Exxon,-239.77,Transportation
+2024-09-22,Mental Health Services,-148.72,Healthcare
+2024-09-22,MasterClass,-188.42,Education
+2024-09-23,Cigna,-26.97,Healthcare
+2024-09-25,Urgent Care,-423.63,Healthcare
+2024-09-26,McGraw-Hill,-429.89,Education
+2024-09-27,Doctor's Office,-131.17,Healthcare
+2024-09-29,edX,-529.4,Education
+2024-09-30,Apple Music,-54.54,Entertainment
+2024-09-30,edX,-364.67,Education
+2024-10-02,Urgent Care,-342.55,Healthcare
+2024-10-03,Albertsons,-151.08,Groceries
+2024-10-04,Shell,-107.05,Transportation
+2024-10-04,Public Transit,-86.94,Transportation
+2024-10-04,Laboratory Services,-238.91,Healthcare
+2024-10-04,Expedia,-1368.71,Travel
+2024-10-05,Meijer,-98.15,Groceries
+2024-10-05,Rent Payment,-2292.54,Housing
+2024-10-06,Marshalls,-66.73,Shopping
+2024-10-06,Shell,-78.92,Transportation
+2024-10-06,Solar City,-164.87,Utilities
+2024-10-06,Blue Cross,-94.93,Healthcare
+2024-10-08,Patreon,-7.22,Subscriptions
+2024-10-09,Audible,-34.05,Subscriptions
+2024-10-10,Substack,-27.01,Subscriptions
+2024-10-11,Wegmans,-65.96,Groceries
+2024-10-11,Shell,-152.27,Transportation
+2024-10-12,Panda Express,-26.12,Dining
+2024-10-15,Aldi,-28.4,Groceries
+2024-10-17,Chick-fil-A,-24.1,Dining
+2024-10-17,Student Loans,-61.78,Education
+2024-10-17,VRBO,-742.93,Travel
+2024-10-19,Dish Network,-73.34,Utilities
+2024-10-19,PlayStation Plus,-18.08,Subscriptions
+2024-10-21,Khan Academy,-557.76,Education
+2024-10-22,Kroger,-171.34,Groceries
+2024-10-23,Apple TV+,-25.05,Entertainment
+2024-10-28,Booking.com,-1117.14,Travel
+2024-10-29,Safeway,-122.59,Groceries
+2024-10-30,McDonald's,-54.49,Dining
+2024-10-30,Best Buy,-270.0,Shopping
+2024-10-31,Wayfair,-294.25,Shopping
+2024-11-02,Trader Joe's,-115.47,Groceries
+2024-11-03,College Board,-269.08,Education
+2024-11-03,Airbnb,-156.65,Travel
+2024-11-04,Target,-120.03,Shopping
+2024-11-06,Meijer,-184.05,Groceries
+2024-11-07,YouTube Premium,-129.37,Entertainment
+2024-11-07,Internet Provider,-72.2,Utilities
+2024-11-08,Travel Agency,-204.28,Travel
+2024-11-10,Trader Joe's,-132.98,Groceries
+2024-11-10,Rent Payment,-3058.42,Housing
+2024-11-11,Panda Express,-62.04,Dining
+2024-11-12,Kaiser Permanente,-79.57,Healthcare
+2024-11-14,Local Restaurant,-8.26,Dining
+2024-11-14,HOA Fees,-1981.44,Housing
+2024-11-15,ShopRite,-130.77,Groceries
+2024-11-15,AutoZone,-54.37,Transportation
+2024-11-17,Storage Unit,-2794.32,Housing
+2024-11-19,Costco,-95.06,Groceries
+2024-11-19,Apple Music,-14.48,Entertainment
+2024-11-20,Apple TV+,-45.2,Entertainment
+2024-11-23,Panda Express,-49.27,Dining
+2024-11-23,Kindle Unlimited,-14.41,Subscriptions
+2024-11-24,Xfinity,-139.73,Utilities
+2024-11-26,Adobe Creative Cloud,-36.74,Subscriptions
+2024-11-27,Microsoft 365,-29.31,Subscriptions
+2024-11-30,Wegmans,-115.0,Groceries
+2024-11-30,Wayfair,-15.15,Shopping
+2024-12-02,Movie Theater,-50.97,Entertainment
+2024-12-02,School Supplies,-386.52,Education
+2024-12-04,Wegmans,-90.54,Groceries
+2024-12-04,Car Wash,-122.13,Transportation
+2024-12-04,Doctor's Office,-414.97,Healthcare
+2024-12-04,McGraw-Hill,-276.28,Education
+2024-12-06,Parking,-157.77,Transportation
+2024-12-06,Laboratory Services,-471.86,Healthcare
+2024-12-06,Online Courses,-614.89,Education
+2024-12-06,American Airlines,-637.68,Travel
+2024-12-07,Airline Tickets,-126.77,Transportation
+2024-12-09,Hotels.com,-1397.81,Travel
+2024-12-11,Electric Company,-205.21,Utilities
+2024-12-14,Lawn Service,-1768.58,Housing
+2024-12-16,Car Repair,-14.33,Transportation
+2024-12-20,KFC,-30.28,Dining
+2024-12-20,eBay,-273.18,Shopping
+2024-12-23,Meijer,-171.28,Groceries
+2024-12-24,Travel Agency,-468.02,Travel
+2024-12-25,Olive Garden,-47.38,Dining
+2024-12-27,Tidal,-108.35,Entertainment
+2024-12-27,Home Insurance,-2403.17,Housing
+2024-12-28,NordVPN,-13.87,Subscriptions
+2024-12-29,In-N-Out Burger,-54.5,Dining
+2024-12-30,Enterprise Rent-A-Car,-147.14,Transportation
+2024-12-31,Panda Express,-49.66,Dining
+2024-12-31,Spotify,-36.86,Entertainment
+2025-01-01,Newegg,-144.18,Shopping
+2025-01-02,Home Warranty,-1218.73,Housing
+2025-01-03,School Supplies,-914.52,Education
+2025-01-05,Wendy's,-41.09,Dining
+2025-01-06,Car Repair,-191.4,Transportation
+2025-01-06,Storage Unit,-1581.08,Housing
+2025-01-08,Movie Theater,-104.85,Entertainment
+2025-01-08,Airline Tickets,-194.77,Transportation
+2025-01-11,H-E-B,-37.63,Groceries
+2025-01-11,ConEd,-243.67,Utilities
+2025-01-11,Spectrum,-202.24,Utilities
+2025-01-11,MasterClass,-239.61,Education
+2025-01-12,Health Insurance,-265.14,Healthcare
+2025-01-13,Aldi,-120.62,Groceries
+2025-01-14,Panda Express,-68.15,Dining
+2025-01-16,Local Restaurant,-18.31,Dining
+2025-01-16,UnitedHealthcare,-453.08,Healthcare
+2025-01-16,Tutoring Services,-581.29,Education
+2025-01-17,NordVPN,-16.89,Subscriptions
+2025-01-18,Peacock,-62.66,Entertainment
+2025-01-19,Save-A-Lot,-155.32,Groceries
+2025-01-20,Subway,-64.96,Dining
+2025-01-20,Michaels,-95.27,Shopping
+2025-01-20,Tidal,-84.46,Entertainment
+2025-01-21,Duke Energy,-46.71,Utilities
+2025-01-23,Pizza Hut,-18.28,Dining
+2025-01-25,Parking,-34.55,Transportation
+2025-01-25,Travel Agency,-1378.5,Travel
+2025-01-26,UnitedHealthcare,-196.26,Healthcare
+2025-01-29,Chegg,-715.99,Education
+2025-01-31,Apple TV+,-139.12,Entertainment
+2025-01-31,Solar City,-149.9,Utilities
+2025-02-02,Expedia,-1541.59,Travel
+2025-02-03,Whole Foods,-89.21,Groceries
+2025-02-04,Kroger,-148.2,Groceries
+2025-02-07,Cox Communications,-197.72,Utilities
+2025-02-08,Food Lion,-42.95,Groceries
+2025-02-08,Publix,-98.6,Groceries
+2025-02-10,Urgent Care,-153.69,Healthcare
+2025-02-11,Peacock,-87.42,Entertainment
+2025-02-12,Safeway,-64.05,Groceries
+2025-02-14,Kindle Unlimited,-19.21,Subscriptions
+2025-02-14,Hilton,-381.65,Travel
+2025-02-16,Concert Tickets,-122.97,Entertainment
+2025-02-16,NordVPN,-23.83,Subscriptions
+2025-02-18,Cleaning Service,-869.96,Housing
+2025-02-19,Five Guys,-53.79,Dining
+2025-02-21,Chick-fil-A,-51.92,Dining
+2025-02-22,Dental Care,-269.36,Healthcare
+2025-02-23,Michaels,-87.26,Shopping
+2025-02-23,Tidal,-131.62,Entertainment
+2025-02-23,Hospital,-139.52,Healthcare
+2025-02-23,Pearson,-246.94,Education
+2025-02-23,Khan Academy,-964.65,Education
+2025-02-23,McGraw-Hill,-889.99,Education
+2025-02-24,Subway,-54.16,Dining
+2025-02-24,Apple Store,-198.68,Shopping
+2025-02-25,Hobby Lobby,-86.12,Shopping
+2025-02-25,Bowling Alley,-59.17,Entertainment
+2025-02-27,McDonald's,-47.01,Dining
+2025-02-28,Panera Bread,-30.8,Dining
+2025-02-28,Pharmacy,-112.93,Healthcare
+2025-03-02,Old Navy,-13.32,Shopping
+2025-03-02,TJ Maxx,-186.61,Shopping
+2025-03-03,Spotify,-54.14,Entertainment
+2025-03-03,Electric Company,-159.47,Utilities
+2025-03-03,Chegg,-920.12,Education
+2025-03-05,ShopRite,-52.58,Groceries
+2025-03-05,McDonald's,-59.33,Dining
+2025-03-06,Macy's,-153.03,Shopping
+2025-03-08,Aldi,-76.05,Groceries
+2025-03-08,Panda Express,-21.94,Dining
+2025-03-08,Moving Service,-1649.51,Housing
+2025-03-09,iCloud Storage,-10.41,Subscriptions
+2025-03-11,Panera Bread,-67.11,Dining
+2025-03-11,Physical Therapy,-412.7,Healthcare
+2025-03-11,New York Times,-17.23,Subscriptions
+2025-03-13,Albertsons,-124.69,Groceries
+2025-03-14,Xfinity,-221.52,Utilities
+2025-03-14,Patreon,-10.15,Subscriptions
+2025-03-16,LastPass,-9.55,Subscriptions
+2025-03-17,Chipotle,-22.71,Dining
+2025-03-20,Tuition Payment,-534.21,Education
+2025-03-21,Live Nation,-35.84,Entertainment
+2025-03-23,Subway,-33.48,Dining
+2025-03-23,Internet Provider,-223.03,Utilities
+2025-03-23,Grammarly,-5.96,Subscriptions
+2025-03-24,IKEA,-121.07,Shopping
+2025-03-24,Blue Cross,-141.28,Healthcare
+2025-03-25,Old Navy,-295.7,Shopping
+2025-03-25,Exxon,-25.37,Transportation
+2025-03-25,Dish Network,-250.58,Utilities
+2025-03-27,Sprouts,-22.96,Groceries
+2025-03-29,Whole Foods,-19.57,Groceries
+2025-03-29,Security Deposit,-1636.65,Housing
+2025-03-30,Trader Joe's,-53.55,Groceries
+2025-03-31,Burger King,-45.83,Dining
+2025-03-31,Bed Bath & Beyond,-90.75,Shopping
+2025-04-01,Tidal,-73.91,Entertainment
+2025-04-01,AutoZone,-20.67,Transportation
+2025-04-03,MasterClass,-668.52,Education
+2025-04-04,Cigna,-249.67,Healthcare
+2025-04-06,Albertsons,-113.2,Groceries
+2025-04-06,Vacation Rental,-1634.03,Travel
+2025-04-08,Home Insurance,-951.03,Housing
+2025-04-09,YouTube Premium,-119.03,Entertainment
+2025-04-10,Panda Express,-46.53,Dining
+2025-04-10,Uber,-127.93,Transportation
+2025-04-11,Burger King,-37.55,Dining
+2025-04-11,Walgreens,-294.18,Healthcare
+2025-04-11,Hotels.com,-1997.09,Travel
+2025-04-12,Xbox Game Pass,-12.77,Subscriptions
+2025-03-24,Transfer to Savings,-0.0,Savings
+2024-10-29,Client Payment - MediaGroup - Social Media Management,1868,Income
+2024-08-26,Client Payment - MediaGroup - Website Development,5091,Income
+2024-09-01,Client Payment - TechSolutions - Social Media Management,839,Income
+2024-10-07,Client Payment - DesignCorp - Marketing Campaign,548,Income
+2024-06-12,Client Payment - SmallBizNetwork - Consulting,3440,Income
+2025-03-09,Client Payment - SmallBizNetwork - Website Development,6012,Income
+2025-01-27,Client Payment - DesignCorp - Graphic Design,1108,Income
+2024-07-27,Client Payment - DesignCorp - Graphic Design,1989,Income
+2025-02-27,Client Payment - MediaGroup - Content Creation,1972,Income
+2024-06-18,Client Payment - DesignCorp - Marketing Campaign,1957,Income
+2024-05-05,Client Payment - WebServices - Website Development,2723,Income
+2024-05-29,Client Payment - InnovationLabs - Consulting,3636,Income
+2025-03-28,Client Payment - LocalBusiness - UX/UI Design,1049,Income
+2024-10-28,Client Payment - InnovationLabs - Video Production,2322,Income
+2024-06-05,Client Payment - ConsultingFirm - Consulting,3509,Income
+2025-02-08,Client Payment - TechSolutions - App Development,7596,Income
+2024-08-23,Client Payment - SmallBizNetwork - Video Production,7342,Income
+2024-12-12,Client Payment - WebServices - Brand Strategy,3313,Income
+2024-09-30,Client Payment - ConsultingFirm - Consulting,3925,Income
+2024-06-27,Client Payment - WebServices - Website Development,6412,Income
+2024-10-18,Client Payment - TechSolutions - Social Media Management,513,Income
+2024-05-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-05-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-05-01,Website Hosting,-25,Business Expenses
+2024-05-01,Professional Association Membership,-192.08753876706845,Business Expenses
+2024-05-01,Business Insurance,-168.5745333362538,Business Expenses
+2024-05-01,Coworking Space Membership,-299,Business Expenses
+2024-05-01,Office Supplies,-120.83861146791212,Business Expenses
+2024-05-01,Professional Development Course,-1040.1470485381485,Education
+2024-05-01,Networking Event,-98.32184379578368,Business Expenses
+2024-05-01,Equipment Purchase,-1158.4729589538888,Business Expenses
+2024-06-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-06-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-06-01,Website Hosting,-25,Business Expenses
+2024-06-01,Coworking Space Membership,-299,Business Expenses
+2024-07-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-07-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-07-01,Website Hosting,-25,Business Expenses
+2024-07-01,Coworking Space Membership,-299,Business Expenses
+2024-08-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-08-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-08-01,Website Hosting,-25,Business Expenses
+2024-08-01,Professional Association Membership,-222.50205046920777,Business Expenses
+2024-08-01,Business Insurance,-135.3395029832404,Business Expenses
+2024-08-01,Coworking Space Membership,-299,Business Expenses
+2024-08-01,Office Supplies,-108.0207408159994,Business Expenses
+2024-08-01,Professional Development Course,-812.5423619803312,Education
+2024-08-01,Networking Event,-79.85942732247995,Business Expenses
+2024-08-01,Equipment Purchase,-952.9861781148369,Business Expenses
+2024-09-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-09-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-09-01,Website Hosting,-25,Business Expenses
+2024-09-01,Coworking Space Membership,-299,Business Expenses
+2024-10-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-10-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-10-01,Website Hosting,-25,Business Expenses
+2024-10-01,Coworking Space Membership,-299,Business Expenses
+2024-11-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-11-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-11-01,Website Hosting,-25,Business Expenses
+2024-11-01,Professional Association Membership,-218.1212017157998,Business Expenses
+2024-11-01,Business Insurance,-155.47152859180417,Business Expenses
+2024-11-01,Coworking Space Membership,-299,Business Expenses
+2024-11-01,Office Supplies,-112.51892029073657,Business Expenses
+2024-11-01,Professional Development Course,-1089.5157873756548,Education
+2024-11-01,Networking Event,-105.62796523625433,Business Expenses
+2024-11-01,Equipment Purchase,-1117.066991066938,Business Expenses
+2024-12-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2024-12-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2024-12-01,Website Hosting,-25,Business Expenses
+2024-12-01,Coworking Space Membership,-299,Business Expenses
+2025-01-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2025-01-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2025-01-01,Website Hosting,-25,Business Expenses
+2025-01-01,Coworking Space Membership,-299,Business Expenses
+2025-02-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2025-02-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2025-02-01,Website Hosting,-25,Business Expenses
+2025-02-01,Professional Association Membership,-229.27856820101672,Business Expenses
+2025-02-01,Business Insurance,-128.92086223678652,Business Expenses
+2025-02-01,Coworking Space Membership,-299,Business Expenses
+2025-02-01,Office Supplies,-133.9367748239318,Business Expenses
+2025-02-01,Professional Development Course,-927.6913581307945,Education
+2025-02-01,Networking Event,-101.79012358767011,Business Expenses
+2025-02-01,Equipment Purchase,-902.3944842973841,Business Expenses
+2025-03-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2025-03-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2025-03-01,Website Hosting,-25,Business Expenses
+2025-03-01,Coworking Space Membership,-299,Business Expenses
+2025-04-01,Software Subscription - Adobe Creative Cloud,-52.99,Business Expenses
+2025-04-01,Software Subscription - Microsoft 365,-12.99,Business Expenses
+2025-04-01,Website Hosting,-25,Business Expenses
+2025-04-01,Coworking Space Membership,-299,Business Expenses
+2024-04-15,Quarterly Estimated Tax Payment,-2334,Business Expenses
+2024-06-15,Quarterly Estimated Tax Payment,-3244,Business Expenses
+2024-09-15,Quarterly Estimated Tax Payment,-2063,Business Expenses
+2025-01-15,Quarterly Estimated Tax Payment,-3679,Business Expenses

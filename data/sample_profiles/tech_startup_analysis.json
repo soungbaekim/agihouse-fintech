@@ -1,0 +1,233 @@
+{
+  "analysis": {
+    "income": 648831.7840951001,
+    "expenses": 414880.36,
+    "net_cash_flow": 233951.42409510014,
+    "savings_rate": 36.06,
+    "spending_by_category": {
+      "Travel": 25293.430000000004,
+      "Utilities": 3192.93,
+      "Payroll": 259510,
+      "Software": 66226,
+      "Rent": 25839,
+      "Legal": 8127,
+      "Marketing": 12932,
+      "Services": 4050,
+      "Hardware": 9710
+    },
+    "top_spending_categories": [
+      {
+        "category": "Payroll",
+        "amount": 259510
+      },
+      {
+        "category": "Software",
+        "amount": 66226
+      },
+      {
+        "category": "Rent",
+        "amount": 25839
+      },
+      {
+        "category": "Travel",
+        "amount": 25293.430000000004
+      },
+      {
+        "category": "Marketing",
+        "amount": 12932
+      }
+    ],
+    "monthly_spending": {
+      "2024-04": {
+        "Travel": 551.24,
+        "Utilities": 112.23,
+        "Payroll": 18066
+      },
+      "2024-05": {
+        "Utilities": 60.57,
+        "Travel": 423.29,
+        "Payroll": 23361,
+        "Software": 5386,
+        "Rent": 2092,
+        "Legal": 1950,
+        "Marketing": 3039,
+        "Services": 1023
+      },
+      "2024-06": {
+        "Travel": 4018.07,
+        "Payroll": 18961,
+        "Software": 5599,
+        "Rent": 2204
+      },
+      "2024-07": {
+        "Travel": 3289.5499999999997,
+        "Utilities": 532.84,
+        "Payroll": 18163,
+        "Software": 5538,
+        "Rent": 2175,
+        "Hardware": 7669
+      },
+      "2024-08": {
+        "Travel": 5729.650000000001,
+        "Utilities": 434.27000000000004,
+        "Payroll": 20469,
+        "Software": 5443,
+        "Rent": 2054,
+        "Legal": 1951,
+        "Marketing": 3464,
+        "Services": 1100
+      },
+      "2024-09": {
+        "Travel": 1743.75,
+        "Utilities": 223.72,
+        "Payroll": 21210,
+        "Software": 5753,
+        "Rent": 2270
+      },
+      "2024-10": {
+        "Travel": 1885.75,
+        "Utilities": 77.21,
+        "Payroll": 23744,
+        "Software": 5682,
+        "Rent": 2318,
+        "Hardware": 2041
+      },
+      "2024-11": {
+        "Travel": 1199.52,
+        "Utilities": 126.86,
+        "Payroll": 24898,
+        "Software": 5296,
+        "Rent": 2233,
+        "Legal": 1961,
+        "Marketing": 3211,
+        "Services": 984
+      },
+      "2024-12": {
+        "Utilities": 255.63,
+        "Payroll": 20621,
+        "Software": 5475,
+        "Rent": 2070
+      },
+      "2025-01": {
+        "Travel": 2643.0600000000004,
+        "Utilities": 437.45000000000005,
+        "Payroll": 22494,
+        "Software": 5623,
+        "Rent": 1977
+      },
+      "2025-02": {
+        "Utilities": 462.56,
+        "Travel": 3000.48,
+        "Payroll": 23356,
+        "Software": 5372,
+        "Rent": 2171,
+        "Legal": 2265,
+        "Marketing": 3218,
+        "Services": 943
+      },
+      "2025-03": {
+        "Utilities": 469.59000000000003,
+        "Travel": 809.07,
+        "Payroll": 24167,
+        "Software": 5780,
+        "Rent": 2029
+      },
+      "2025-04": {
+        "Software": 5279,
+        "Rent": 2246
+      }
+    },
+    "top_merchants": [
+      {
+        "merchant": "Tech Team Payroll",
+        "amount": 259510
+      },
+      {
+        "merchant": "AWS Cloud Services",
+        "amount": 35333
+      },
+      {
+        "merchant": "Coworking Space Rent",
+        "amount": 25839
+      },
+      {
+        "merchant": "Digital Marketing Campaign",
+        "amount": 12932
+      },
+      {
+        "merchant": "Legal Services",
+        "amount": 8127
+      },
+      {
+        "merchant": "Server Hardware",
+        "amount": 7669
+      },
+      {
+        "merchant": "Analytics Platform",
+        "amount": 7175
+      },
+      {
+        "merchant": "GitHub Enterprise",
+        "amount": 5876
+      },
+      {
+        "merchant": "CRM Software",
+        "amount": 5711
+      },
+      {
+        "merchant": "Slack Enterprise",
+        "amount": 4175
+      }
+    ],
+    "total_potential_savings": 429.29
+  },
+  "recommendations": {
+    "savings": [
+      {
+        "category": "utilities",
+        "description": "Your utility bills total $3192.93. Consider energy-efficient appliances.",
+        "potential_savings": 319.29
+      },
+      {
+        "category": "dining",
+        "description": "Reducing dining out by cooking more meals at home could save you significant money each month.",
+        "potential_savings": 85.0
+      },
+      {
+        "category": "entertainment",
+        "description": "Consider consolidating streaming services instead of subscribing to multiple platforms simultaneously.",
+        "potential_savings": 25.0
+      }
+    ],
+    "investment": [
+      {
+        "title": "Emergency Fund",
+        "description": "Build an emergency fund covering 3-6 months of expenses ($103720.09 to $207440.18).",
+        "priority": "High",
+        "risk_level": "Very Low",
+        "potential_return": "3-4% APY"
+      },
+      {
+        "title": "Retirement Contributions",
+        "description": "Increase your 401(k) contributions to at least capture the full employer match ($8110.4 monthly).",
+        "priority": "High",
+        "risk_level": "Medium",
+        "potential_return": "7-10% annually (long-term)"
+      },
+      {
+        "title": "Index Fund Investing",
+        "description": "Consider investing $7798.38 monthly in low-cost index funds for long-term growth.",
+        "priority": "Medium",
+        "risk_level": "Medium",
+        "potential_return": "7-10% annually (long-term)"
+      },
+      {
+        "title": "Debt Reduction",
+        "description": "Pay down high-interest debt before focusing on additional investments.",
+        "priority": "High",
+        "risk_level": "Low",
+        "potential_return": "Equivalent to your interest rate"
+      }
+    ]
+  }
+}

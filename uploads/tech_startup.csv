@@ -1,0 +1,314 @@
+date,description,amount,category
+2024-04-30,Travel Insurance,-809.4,Travel
+2024-05-08,Hotels.com,-1028.15,Travel
+2024-05-18,Waste Management,-58.63,Utilities
+2024-05-21,Internet Provider,-224.18,Utilities
+2024-06-07,Gas Bill,-227.07,Utilities
+2024-06-09,Delta Airlines,-156.29,Travel
+2024-06-10,Marriott,-1492.08,Travel
+2024-06-20,Vacation Rental,-1155.32,Travel
+2024-06-28,Marriott,-881.46,Travel
+2024-07-02,Hilton,-640.07,Travel
+2024-07-03,Vacation Rental,-1369.41,Travel
+2024-07-04,Internet Provider,-43.61,Utilities
+2024-07-11,Southwest Airlines,-1662.89,Travel
+2024-07-13,Electric Company,-195.04,Utilities
+2024-07-23,Southwest Airlines,-126.12,Travel
+2024-07-27,Xfinity,-118.46,Utilities
+2024-08-10,Kayak,-500.89,Travel
+2024-09-19,Delta Airlines,-167.19,Travel
+2024-09-24,Booking.com,-1167.91,Travel
+2024-10-14,Xfinity,-150.14,Utilities
+2024-10-31,Duke Energy,-171.62,Utilities
+2024-11-01,Solar City,-281.32,Utilities
+2024-11-12,Electric Company,-187.79,Utilities
+2024-11-15,PG&E,-268.82,Utilities
+2024-11-16,Vacation Rental,-1550.14,Travel
+2024-11-17,AT&T,-228.11,Utilities
+2024-11-29,Cruise Line,-1969.08,Travel
+2024-12-06,Travelocity,-1150.02,Travel
+2024-12-24,Comcast,-65.4,Utilities
+2024-12-30,Verizon,-295.43,Utilities
+2025-01-08,Expedia,-901.5,Travel
+2025-01-14,American Airlines,-345.6,Travel
+2025-01-20,Kayak,-1084.04,Travel
+2025-01-21,Cruise Line,-690.33,Travel
+2025-01-24,Spectrum,-172.03,Utilities
+2025-01-24,American Airlines,-243.52,Travel
+2025-02-09,American Airlines,-807.21,Travel
+2025-03-06,AT&T,-153.21,Utilities
+2025-03-14,Travel Agency,-1533.21,Travel
+2025-03-14,Expedia,-1310.01,Travel
+2025-04-02,Resort Fees,-1827.74,Travel
+2025-04-06,AT&T,-74.8,Utilities
+2025-04-11,Transfer to Savings,-0.0,Savings
+2024-08-15,Angel Investment,170947,Funding
+2024-04-15,Tech Team Payroll,-20175,Payroll
+2024-05-15,Tech Team Payroll,-20403,Payroll
+2024-06-15,Tech Team Payroll,-20904,Payroll
+2024-07-15,Tech Team Payroll,-22069,Payroll
+2024-08-15,Tech Team Payroll,-20288,Payroll
+2024-09-15,Tech Team Payroll,-19081,Payroll
+2024-10-15,Tech Team Payroll,-20755,Payroll
+2024-11-15,Tech Team Payroll,-21277,Payroll
+2024-12-15,Tech Team Payroll,-23209,Payroll
+2025-01-15,Tech Team Payroll,-23564,Payroll
+2025-02-15,Tech Team Payroll,-22557,Payroll
+2025-03-15,Tech Team Payroll,-19934,Payroll
+2024-05-01,AWS Cloud Services,-1940,Software
+2024-05-01,GitHub Enterprise,-412,Software
+2024-05-01,Atlassian Suite,-274,Software
+2024-05-01,Slack Enterprise,-161,Software
+2024-05-01,GSuite Business,-143,Software
+2024-05-01,Analytics Platform,-764,Software
+2024-05-01,CRM Software,-359,Software
+2024-05-01,Design Software Licenses,-344,Software
+2024-05-01,Coworking Space Rent,-3509,Rent
+2024-05-01,Legal Services,-2698,Legal
+2024-05-01,Digital Marketing Campaign,-3683,Marketing
+2024-05-01,Recruitment Services,-2461,Services
+2024-06-01,AWS Cloud Services,-1902,Software
+2024-06-01,GitHub Enterprise,-356,Software
+2024-06-01,Atlassian Suite,-283,Software
+2024-06-01,Slack Enterprise,-151,Software
+2024-06-01,GSuite Business,-158,Software
+2024-06-01,Analytics Platform,-698,Software
+2024-06-01,CRM Software,-323,Software
+2024-06-01,Design Software Licenses,-323,Software
+2024-06-01,Coworking Space Rent,-3026,Rent
+2024-07-01,AWS Cloud Services,-1742,Software
+2024-07-01,GitHub Enterprise,-417,Software
+2024-07-01,Atlassian Suite,-252,Software
+2024-07-01,Slack Enterprise,-163,Software
+2024-07-01,GSuite Business,-167,Software
+2024-07-01,Analytics Platform,-680,Software
+2024-07-01,CRM Software,-373,Software
+2024-07-01,Design Software Licenses,-341,Software
+2024-07-01,Coworking Space Rent,-3430,Rent
+2024-08-01,AWS Cloud Services,-1925,Software
+2024-08-01,GitHub Enterprise,-355,Software
+2024-08-01,Atlassian Suite,-263,Software
+2024-08-01,Slack Enterprise,-147,Software
+2024-08-01,GSuite Business,-166,Software
+2024-08-01,Analytics Platform,-753,Software
+2024-08-01,CRM Software,-371,Software
+2024-08-01,Design Software Licenses,-348,Software
+2024-08-01,Coworking Space Rent,-3312,Rent
+2024-08-01,Legal Services,-2744,Legal
+2024-08-01,Digital Marketing Campaign,-3795,Marketing
+2024-08-01,Recruitment Services,-2593,Services
+2024-09-01,AWS Cloud Services,-1636,Software
+2024-09-01,GitHub Enterprise,-417,Software
+2024-09-01,Atlassian Suite,-255,Software
+2024-09-01,Slack Enterprise,-146,Software
+2024-09-01,GSuite Business,-147,Software
+2024-09-01,Analytics Platform,-651,Software
+2024-09-01,CRM Software,-345,Software
+2024-09-01,Design Software Licenses,-331,Software
+2024-09-01,Coworking Space Rent,-3049,Rent
+2024-10-01,AWS Cloud Services,-1617,Software
+2024-10-01,GitHub Enterprise,-419,Software
+2024-10-01,Atlassian Suite,-281,Software
+2024-10-01,Slack Enterprise,-137,Software
+2024-10-01,GSuite Business,-156,Software
+2024-10-01,Analytics Platform,-725,Software
+2024-10-01,CRM Software,-323,Software
+2024-10-01,Design Software Licenses,-325,Software
+2024-10-01,Coworking Space Rent,-3439,Rent
+2024-11-01,AWS Cloud Services,-1834,Software
+2024-11-01,GitHub Enterprise,-379,Software
+2024-11-01,Atlassian Suite,-263,Software
+2024-11-01,Slack Enterprise,-145,Software
+2024-11-01,GSuite Business,-167,Software
+2024-11-01,Analytics Platform,-684,Software
+2024-11-01,CRM Software,-372,Software
+2024-11-01,Design Software Licenses,-300,Software
+2024-11-01,Coworking Space Rent,-3426,Rent
+2024-11-01,Legal Services,-2923,Legal
+2024-11-01,Digital Marketing Campaign,-3564,Marketing
+2024-11-01,Recruitment Services,-2801,Services
+2024-12-01,AWS Cloud Services,-1827,Software
+2024-12-01,GitHub Enterprise,-360,Software
+2024-12-01,Atlassian Suite,-263,Software
+2024-12-01,Slack Enterprise,-148,Software
+2024-12-01,GSuite Business,-169,Software
+2024-12-01,Analytics Platform,-678,Software
+2024-12-01,CRM Software,-342,Software
+2024-12-01,Design Software Licenses,-316,Software
+2024-12-01,Coworking Space Rent,-3042,Rent
+2025-01-01,AWS Cloud Services,-1900,Software
+2025-01-01,GitHub Enterprise,-413,Software
+2025-01-01,Atlassian Suite,-266,Software
+2025-01-01,Slack Enterprise,-145,Software
+2025-01-01,GSuite Business,-161,Software
+2025-01-01,Analytics Platform,-649,Software
+2025-01-01,CRM Software,-308,Software
+2025-01-01,Design Software Licenses,-337,Software
+2025-01-01,Coworking Space Rent,-3430,Rent
+2025-02-01,AWS Cloud Services,-1912,Software
+2025-02-01,GitHub Enterprise,-387,Software
+2025-02-01,Atlassian Suite,-293,Software
+2025-02-01,Slack Enterprise,-150,Software
+2025-02-01,GSuite Business,-152,Software
+2025-02-01,Analytics Platform,-758,Software
+2025-02-01,CRM Software,-307,Software
+2025-02-01,Design Software Licenses,-351,Software
+2025-02-01,Coworking Space Rent,-3343,Rent
+2025-02-01,Legal Services,-2705,Legal
+2025-02-01,Digital Marketing Campaign,-3195,Marketing
+2025-02-01,Recruitment Services,-2884,Services
+2025-03-01,AWS Cloud Services,-1805,Software
+2025-03-01,GitHub Enterprise,-413,Software
+2025-03-01,Atlassian Suite,-279,Software
+2025-03-01,Slack Enterprise,-159,Software
+2025-03-01,GSuite Business,-151,Software
+2025-03-01,Analytics Platform,-684,Software
+2025-03-01,CRM Software,-372,Software
+2025-03-01,Design Software Licenses,-297,Software
+2025-03-01,Coworking Space Rent,-3381,Rent
+2025-04-01,AWS Cloud Services,-1636,Software
+2025-04-01,GitHub Enterprise,-368,Software
+2025-04-01,Atlassian Suite,-292,Software
+2025-04-01,Slack Enterprise,-147,Software
+2025-04-01,GSuite Business,-169,Software
+2025-04-01,Analytics Platform,-653,Software
+2025-04-01,CRM Software,-324,Software
+2025-04-01,Design Software Licenses,-329,Software
+2025-04-01,Coworking Space Rent,-3381,Rent
+2024-07-05,Server Hardware,-3970,Hardware
+2024-11-19,Mobile Test Devices,-1203,Hardware
+2024-05-18,New Subscription - Client 2735,1185.9384038863957,Revenue
+2024-05-24,New Subscription - Client 9038,1115.3494339195388,Revenue
+2024-05-22,New Subscription - Client 7981,1575.0040401455997,Revenue
+2024-05-07,New Subscription - Client 3347,1000.3433285274181,Revenue
+2024-05-09,New Subscription - Client 2289,1231.0070336297294,Revenue
+2024-05-06,New Subscription - Client 1541,1007.4284759109295,Revenue
+2024-08-19,New Subscription - Client 1767,1121.5381296590842,Revenue
+2024-08-17,New Subscription - Client 6151,1426.1071006763063,Revenue
+2024-08-19,New Subscription - Client 9002,1856.1265407633891,Revenue
+2024-08-16,New Subscription - Client 6998,1793.1146642350643,Revenue
+2024-08-19,New Subscription - Client 5445,1757.3047662704705,Revenue
+2024-08-28,New Subscription - Client 1424,1157.929419394192,Revenue
+2024-08-14,New Subscription - Client 5921,1255.1369585872567,Revenue
+2024-08-28,New Subscription - Client 9085,1306.4492922624763,Revenue
+2024-08-08,New Subscription - Client 5671,1066.8465204003141,Revenue
+2024-08-09,New Subscription - Client 1759,1822.1731440778049,Revenue
+2024-08-23,New Subscription - Client 5769,1416.0853117078725,Revenue
+2024-08-15,New Subscription - Client 9846,1554.0088117071718,Revenue
+2024-08-07,New Subscription - Client 5289,1640.6181271260866,Revenue
+2024-08-13,New Subscription - Client 9740,1638.4717807009758,Revenue
+2024-11-10,New Subscription - Client 9441,597.976381945095,Revenue
+2024-11-09,New Subscription - Client 1819,912.9348483116744,Revenue
+2024-11-20,New Subscription - Client 9320,556.2155391666422,Revenue
+2024-11-09,New Subscription - Client 8867,553.9377142162994,Revenue
+2024-11-28,New Subscription - Client 2874,758.7348718516964,Revenue
+2024-11-21,New Subscription - Client 1366,812.2805361535668,Revenue
+2024-11-26,New Subscription - Client 7019,618.9734784601675,Revenue
+2024-11-16,New Subscription - Client 4944,593.9372885678262,Revenue
+2024-11-08,New Subscription - Client 3750,651.7464571762775,Revenue
+2024-11-09,New Subscription - Client 1387,744.902651767399,Revenue
+2024-11-16,New Subscription - Client 6355,637.8916787338542,Revenue
+2024-11-14,New Subscription - Client 5287,749.1499815006923,Revenue
+2024-11-01,New Subscription - Client 6845,852.19076762999,Revenue
+2024-11-28,New Subscription - Client 4333,703.2935815639562,Revenue
+2024-06-17,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-07-15,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-08-24,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-09-07,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-10-27,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-11-26,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-12-20,Monthly Subscription - Client 2735,1185.9384038863957,Revenue
+2024-06-07,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-07-28,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-08-14,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-09-08,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-10-24,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-11-09,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-12-16,Monthly Subscription - Client 9038,1115.3494339195388,Revenue
+2024-06-19,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-07-03,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-08-05,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-09-07,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-10-27,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-11-24,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-12-27,Monthly Subscription - Client 7981,1575.0040401455997,Revenue
+2024-06-12,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-07-20,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-08-14,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-09-26,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-10-25,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-11-08,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-12-04,Monthly Subscription - Client 3347,1000.3433285274181,Revenue
+2024-06-20,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-07-23,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-08-08,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-09-01,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-10-19,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-11-04,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-12-21,Monthly Subscription - Client 2289,1231.0070336297294,Revenue
+2024-06-24,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-07-09,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-08-05,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-09-27,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-10-15,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-11-09,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-12-15,Monthly Subscription - Client 1541,1007.4284759109295,Revenue
+2024-09-26,Monthly Subscription - Client 1767,1121.5381296590842,Revenue
+2024-10-02,Monthly Subscription - Client 1767,1121.5381296590842,Revenue
+2024-11-01,Monthly Subscription - Client 1767,1121.5381296590842,Revenue
+2024-12-17,Monthly Subscription - Client 1767,1121.5381296590842,Revenue
+2024-09-28,Monthly Subscription - Client 6151,1426.1071006763063,Revenue
+2024-10-25,Monthly Subscription - Client 6151,1426.1071006763063,Revenue
+2024-11-02,Monthly Subscription - Client 6151,1426.1071006763063,Revenue
+2024-12-28,Monthly Subscription - Client 6151,1426.1071006763063,Revenue
+2024-09-03,Monthly Subscription - Client 9002,1856.1265407633891,Revenue
+2024-10-23,Monthly Subscription - Client 9002,1856.1265407633891,Revenue
+2024-11-15,Monthly Subscription - Client 9002,1856.1265407633891,Revenue
+2024-12-16,Monthly Subscription - Client 9002,1856.1265407633891,Revenue
+2024-09-26,Monthly Subscription - Client 6998,1793.1146642350643,Revenue
+2024-10-18,Monthly Subscription - Client 6998,1793.1146642350643,Revenue
+2024-09-03,Monthly Subscription - Client 5445,1757.3047662704705,Revenue
+2024-10-23,Monthly Subscription - Client 5445,1757.3047662704705,Revenue
+2024-11-16,Monthly Subscription - Client 5445,1757.3047662704705,Revenue
+2024-12-24,Monthly Subscription - Client 5445,1757.3047662704705,Revenue
+2024-09-19,Monthly Subscription - Client 1424,1157.929419394192,Revenue
+2024-10-04,Monthly Subscription - Client 1424,1157.929419394192,Revenue
+2024-11-12,Monthly Subscription - Client 1424,1157.929419394192,Revenue
+2024-12-24,Monthly Subscription - Client 1424,1157.929419394192,Revenue
+2024-09-03,Monthly Subscription - Client 5921,1255.1369585872567,Revenue
+2024-10-12,Monthly Subscription - Client 5921,1255.1369585872567,Revenue
+2024-11-23,Monthly Subscription - Client 5921,1255.1369585872567,Revenue
+2024-12-14,Monthly Subscription - Client 5921,1255.1369585872567,Revenue
+2024-09-15,Monthly Subscription - Client 9085,1306.4492922624763,Revenue
+2024-10-01,Monthly Subscription - Client 9085,1306.4492922624763,Revenue
+2024-11-21,Monthly Subscription - Client 9085,1306.4492922624763,Revenue
+2024-12-10,Monthly Subscription - Client 9085,1306.4492922624763,Revenue
+2024-09-17,Monthly Subscription - Client 5671,1066.8465204003141,Revenue
+2024-10-04,Monthly Subscription - Client 5671,1066.8465204003141,Revenue
+2024-11-07,Monthly Subscription - Client 5671,1066.8465204003141,Revenue
+2024-12-20,Monthly Subscription - Client 5671,1066.8465204003141,Revenue
+2024-09-07,Monthly Subscription - Client 1759,1822.1731440778049,Revenue
+2024-10-03,Monthly Subscription - Client 1759,1822.1731440778049,Revenue
+2024-11-22,Monthly Subscription - Client 1759,1822.1731440778049,Revenue
+2024-12-22,Monthly Subscription - Client 1759,1822.1731440778049,Revenue
+2024-09-05,Monthly Subscription - Client 5769,1416.0853117078725,Revenue
+2024-10-27,Monthly Subscription - Client 5769,1416.0853117078725,Revenue
+2024-11-26,Monthly Subscription - Client 5769,1416.0853117078725,Revenue
+2024-12-08,Monthly Subscription - Client 5769,1416.0853117078725,Revenue
+2024-09-25,Monthly Subscription - Client 5289,1640.6181271260866,Revenue
+2024-10-24,Monthly Subscription - Client 5289,1640.6181271260866,Revenue
+2024-11-22,Monthly Subscription - Client 5289,1640.6181271260866,Revenue
+2024-12-14,Monthly Subscription - Client 5289,1640.6181271260866,Revenue
+2024-12-09,Monthly Subscription - Client 9441,597.976381945095,Revenue
+2024-12-25,Monthly Subscription - Client 1819,912.9348483116744,Revenue
+2024-12-23,Monthly Subscription - Client 9320,556.2155391666422,Revenue
+2024-12-28,Monthly Subscription - Client 8867,553.9377142162994,Revenue
+2024-12-05,Monthly Subscription - Client 2874,758.7348718516964,Revenue
+2024-12-09,Monthly Subscription - Client 1366,812.2805361535668,Revenue
+2024-12-28,Monthly Subscription - Client 7019,618.9734784601675,Revenue
+2024-12-05,Monthly Subscription - Client 4944,593.9372885678262,Revenue
+2024-12-03,Monthly Subscription - Client 3750,651.7464571762775,Revenue
+2024-12-10,Monthly Subscription - Client 1387,744.902651767399,Revenue
+2024-12-09,Monthly Subscription - Client 5287,749.1499815006923,Revenue
+2024-12-14,Monthly Subscription - Client 6845,852.19076762999,Revenue
+2024-12-20,Monthly Subscription - Client 4333,703.2935815639562,Revenue
