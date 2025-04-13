@@ -2,6 +2,7 @@
 <h1>✨ Finance Analyzer ✨</h1>
 <h2>🌊 VIBECODED with WindSurf 🌊</h2>
 <h3>Elevate your financial intelligence</h3>
+Submission to [AGI AI x FinTech Hackathon](https://app.agihouse.org/events/ai-fintech-20250412)
 
 ![Vibecoded Badge](https://img.shields.io/badge/VIBECODED-✓-blueviolet?style=for-the-badge)
 ![Built With Love](https://img.shields.io/badge/Built_With-❤️-red?style=for-the-badge)
