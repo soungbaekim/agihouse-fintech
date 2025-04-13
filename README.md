@@ -1,6 +1,6 @@
 <div align="center">
 <h1>✨ Finance Analyzer ✨</h1>
-<h2>🌊 VIBECODED 🌊</h2>
+<h2>🌊 VIBECODED with WindSurf 🌊</h2>
 <h3>Elevate your financial intelligence</h3>
 
 ![Vibecoded Badge](https://img.shields.io/badge/VIBECODED-✓-blueviolet?style=for-the-badge)
