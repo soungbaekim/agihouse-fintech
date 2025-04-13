@@ -19,21 +19,23 @@ A smart banking statement parser and financial advisor that helps you analyze yo
 
 <div align="center">
 
-### Dashboard Overview
-![Dashboard Overview](/screenshots/dashboard.png)
+### Homepage
+![Homepage](/screenshots/homepage.png)
+*The main entry point of the application*
+
+### Dashboard Views
+![Dashboard Overview](/screenshots/dashboard_1.png)
 *The main dashboard provides a comprehensive view of your financial health*
+![Spending Analysis](/screenshots/dashboard_2.png)
+*A detailed breakdown of your spending patterns*
+![Transaction Summary](/screenshots/dashboard_3.png)
+*A summary of your recent transactions*
 
-### Transaction Analysis
-![Transaction Analysis](/screenshots/transactions.png)
-*Detailed breakdown of your spending patterns and transaction history*
-
-### Personalized Recommendations
-![Recommendations](/screenshots/recommendations.png)
-*AI-powered recommendations to optimize your finances*
-
-### AI Financial Assistant
-![AI Assistant](/screenshots/ai_chat.png)
-*Intelligent chat assistant to answer your financial questions*
+### Recommendations
+![Savings Recommendations](/screenshots/recommendation_1.png)
+*Personalized suggestions to reduce expenses and increase savings*
+![AI-Powered Recommendations & Chat](/screenshots/recommendation_2.png)
+*The recommendation page with AI chat interface for personalized financial advice*
 
 </div>
 
