@@ -19,13 +19,24 @@ class OpenAIChatService:
     
     def __init__(self):
         """Initialize the OpenAI chat service"""
+        # Explicitly reload environment variables to ensure we get the latest values
+        load_dotenv(override=True)
+        
         # Get API key from environment variable
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable is not set")
-        
-        # Initialize OpenAI client
-        self.client = openai.OpenAI(api_key=api_key)
+            print("Warning: OPENAI_API_KEY environment variable is not set. Using mock responses.")
+            self.use_mock = True
+        else:
+            self.use_mock = False
+            # Initialize OpenAI client
+            try:
+                self.client = openai.OpenAI(api_key=api_key)
+                print("Successfully initialized OpenAI client")
+            except Exception as e:
+                print(f"Error initializing OpenAI client: {e}")
+                self.use_mock = True
+                
         self.model = os.getenv("OPENAI_MODEL", "gpt-4o")
         
         # System message template for financial advisor
@@ -59,6 +70,56 @@ class OpenAIChatService:
         
         Keep your responses focused on financial matters and avoid giving advice outside your expertise.
         """
+    
+    def _get_mock_response(self, user_message: str, financial_data: Dict[str, Any], initial_analysis: bool = False) -> str:
+        """Generate a mock response when OpenAI API is not available
+        
+        Args:
+            user_message: The message from the user
+            financial_data: Dictionary containing financial analysis data
+            initial_analysis: Whether this is the initial analysis message
+            
+        Returns:
+            A mock response based on financial data
+        """
+        income = financial_data.get('income', 0)
+        expenses = financial_data.get('expenses', 0)
+        savings_rate = financial_data.get('savings_rate', 0)
+        net_cash_flow = financial_data.get('net_cash_flow', 0)
+        
+        # For initial analysis, provide a financial overview
+        if initial_analysis:
+            return f"""Based on your financial data, here's my analysis:
+
+* Your monthly income is ${income:.2f}
+* Your expenses total ${expenses:.2f}
+* Your net cash flow is ${net_cash_flow:.2f}
+* Your savings rate is {savings_rate:.1f}%
+
+Your financial health appears to be {'good' if savings_rate > 20 else 'fair' if savings_rate > 10 else 'needs attention'}. {'You are saving a healthy portion of your income.' if savings_rate > 20 else 'Consider increasing your savings rate to at least 20% of your income.'}
+
+I'd recommend focusing on these areas:
+1. Track your spending in more detail
+2. {'Build an emergency fund' if net_cash_flow < 1000 else 'Consider investing some of your savings'}
+3. Review recurring subscriptions for potential savings
+
+I'm happy to discuss any specific financial questions you have!"""
+        
+        # For regular messages, respond based on common financial questions
+        if "budget" in user_message.lower() or "spending" in user_message.lower():
+            return "Based on your spending patterns, I'd recommend allocating 50% of your income to necessities, 30% to wants, and 20% to savings and debt repayment. This follows the popular 50/30/20 budgeting rule."
+        
+        elif "save" in user_message.lower() or "saving" in user_message.lower():
+            return "To improve your savings, consider automating transfers to a high-yield savings account on payday, cutting unnecessary subscriptions, and following the 24-hour rule for non-essential purchases."
+        
+        elif "invest" in user_message.lower() or "investment" in user_message.lower():
+            return "For investing, first ensure you have an emergency fund covering 3-6 months of expenses. Then consider tax-advantaged accounts like a 401(k) or IRA, followed by a diversified portfolio of index funds for long-term growth."
+        
+        elif "debt" in user_message.lower():
+            return "To tackle debt effectively, prioritize high-interest debt first (like credit cards), consider consolidation for lower interest rates, and maintain minimum payments on all debts while putting extra money toward the highest-interest debt."
+        
+        else:
+            return "I'm here to help with your financial questions! You can ask about budgeting, saving strategies, investment options, debt management, or specific aspects of your financial situation. What would you like to know more about?"
     
     def _format_financial_data(self, financial_data: Dict[str, Any]) -> str:
         """
@@ -192,54 +253,51 @@ class OpenAIChatService:
         # For now, return an empty dictionary
         return {}
     
-    def get_chat_response(self, 
-                         user_message: str, 
-                         financial_data: Dict[str, Any], 
-                         conversation_history: Optional[List[Dict[str, str]]] = None, 
-                         initial_analysis: bool = False) -> str:
-        """
-        Get response from OpenAI chat completion API
+    def get_chat_response(self, user_message: str, financial_data: Dict[str, Any], 
+                         conversation_history: List[Dict[str, str]], initial_analysis: bool = False) -> str:
+        """Get a response from OpenAI based on user message and financial data
         
         Args:
-            user_message (str): User's message
-            financial_data (Dict[str, Any]): User's financial data
-            conversation_history (Optional[List[Dict[str, str]]]): Previous conversation history
-            initial_analysis (bool): Whether this is the initial analysis request
-        
+            user_message: The message from the user
+            financial_data: Dictionary containing financial analysis data
+            conversation_history: Previous messages in the conversation
+            initial_analysis: Whether this is the initial analysis message
+            
         Returns:
-            str: AI response message
+            Response from the AI assistant
         """
+        # If using mock mode, return a predefined response
+        if hasattr(self, 'use_mock') and self.use_mock:
+            return self._get_mock_response(user_message, financial_data, initial_analysis)
+            
+        # Format financial data for the system prompt
+        financial_data_formatted = self._format_financial_data(financial_data)
+        
+        # Create system message with financial context
+        system_message = self.system_message + financial_data_formatted
+        
+        # Prepare messages for the API
+        messages = [
+            {"role": "system", "content": system_message}
+        ]
+        
+        # Add conversation history
+        for message in conversation_history:
+            messages.append({
+                "role": message["role"],
+                "content": message["content"]
+            })
+        
+        # If this is not an initial analysis, add the user's message
+        if not initial_analysis:
+            messages.append({"role": "user", "content": user_message})
+        else:
+            # For initial analysis, use a specific prompt
+            initial_prompt = "Please analyze my financial situation based on the data provided."
+            messages.append({"role": "user", "content": initial_prompt})
+        
         try:
-            # Format financial data for context
-            financial_context = self._format_financial_data(financial_data)
-            
-            # Prepare messages
-            messages = [
-                {"role": "system", "content": self.system_message}
-            ]
-            
-            # Add financial context
-            messages.append({"role": "system", "content": financial_context})
-            
-            # Add conversation history if available
-            if conversation_history:
-                messages.extend(conversation_history)
-            
-            # For initial analysis, provide a specific prompt to guide the AI
-            if initial_analysis:
-                analysis_prompt = (
-                    "Based on the financial data provided, please:"
-                    "\n1. Give a brief overview of the user's financial health"
-                    "\n2. Identify 2-3 key areas where they could improve their finances"
-                    "\n3. Provide 2-3 specific, actionable recommendations tailored to their spending patterns"
-                    "\n4. Highlight any unusual transactions or concerning patterns"
-                    "\n\nKeep your response friendly, constructive, and personalized to their specific situation."
-                )
-                messages.append({"role": "user", "content": analysis_prompt})
-            else:
-                # Add user message for normal conversation
-                messages.append({"role": "user", "content": user_message})
-            
+            # Make the API call to OpenAI
             # Call the OpenAI API with function calling abilities
             response = self.client.chat.completions.create(
                 model=self.model,
