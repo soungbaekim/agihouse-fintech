@@ -34,7 +34,6 @@ coverage.xml
 
 # Generated files
 finance_report.html
-*.png
 
 # Logs
 *.log
