@@ -1,1513 +1,1515 @@
 date,description,amount,category
-2024-04-17,Employer Payroll,21408.55,Revenue
-2024-04-23,Internet Provider,-154.82,Utilities
-2024-05-02,Gift,32478.48,Revenue
-2024-05-09,T-Mobile,-112.12,Utilities
-2024-05-28,DirecTV,-88.59,Utilities
-2024-06-07,Gas Bill,-203.42,Utilities
-2024-06-07,Solar City,-156.29,Utilities
-2024-07-20,Xfinity,-43.35,Utilities
-2024-08-23,AT&T,-194.66,Utilities
-2024-08-23,Dish Network,-92.62,Utilities
-2024-09-07,AT&T,-178.27,Utilities
-2024-09-16,Phone Bill,-136.42,Utilities
-2024-10-11,Internet Provider,-132.06,Utilities
-2024-10-27,DirecTV,-107.08,Utilities
-2024-10-27,Gas Bill,-186.72,Utilities
-2024-10-28,Xfinity,-172.09,Utilities
-2024-12-07,Spectrum,-209.9,Utilities
-2024-12-14,Solar City,-238.72,Utilities
-2024-12-16,Cox Communications,-189.35,Utilities
-2024-12-18,Dish Network,-140.49,Utilities
-2025-01-08,Cox Communications,-262.33,Utilities
-2025-02-26,Xfinity,-287.53,Utilities
-2025-03-06,Solar City,-299.47,Utilities
-2025-03-12,Verizon,-79.34,Utilities
-2025-03-15,Spectrum,-185.52,Utilities
-2025-03-16,PG&E,-280.31,Utilities
-2025-03-30,Gas Bill,-119.89,Utilities
-2025-03-20,Transfer to Savings,-5388.7,Savings
-2024-04-12,Store Sales,642,Revenue
-2024-04-12,Store Sales,766,Revenue
-2024-04-12,Store Sales,925,Revenue
-2024-04-13,Store Sales,713,Revenue
-2024-04-13,Store Sales,1014,Revenue
-2024-04-13,Store Sales,730,Revenue
-2024-04-14,Store Sales,1280,Revenue
-2024-04-14,Store Sales,416,Revenue
-2024-04-14,Store Sales,1184,Revenue
-2024-04-14,Special Promotion Sales,2480,Revenue
-2024-04-15,Store Sales,974,Revenue
-2024-04-15,Store Sales,539,Revenue
-2024-04-15,Store Sales,379,Revenue
-2024-04-16,Store Sales,413,Revenue
-2024-04-16,Store Sales,667,Revenue
-2024-04-16,Store Sales,676,Revenue
-2024-04-17,Store Sales,319,Revenue
-2024-04-17,Store Sales,922,Revenue
-2024-04-17,Store Sales,1000,Revenue
-2024-04-18,Store Sales,889,Revenue
-2024-04-18,Store Sales,724,Revenue
-2024-04-18,Store Sales,957,Revenue
-2024-04-19,Store Sales,456,Revenue
-2024-04-19,Store Sales,313,Revenue
-2024-04-19,Store Sales,1138,Revenue
-2024-04-20,Store Sales,882,Revenue
-2024-04-20,Store Sales,1474,Revenue
-2024-04-20,Store Sales,843,Revenue
-2024-04-21,Store Sales,982,Revenue
-2024-04-21,Store Sales,1111,Revenue
-2024-04-21,Store Sales,1342,Revenue
-2024-04-22,Store Sales,816,Revenue
-2024-04-22,Store Sales,890,Revenue
-2024-04-22,Store Sales,360,Revenue
-2024-04-23,Store Sales,478,Revenue
-2024-04-23,Store Sales,766,Revenue
-2024-04-23,Store Sales,1199,Revenue
-2024-04-24,Store Sales,415,Revenue
-2024-04-24,Store Sales,485,Revenue
-2024-04-24,Store Sales,1103,Revenue
-2024-04-25,Store Sales,1058,Revenue
-2024-04-25,Store Sales,420,Revenue
-2024-04-25,Store Sales,352,Revenue
-2024-04-26,Store Sales,542,Revenue
-2024-04-26,Store Sales,882,Revenue
-2024-04-26,Store Sales,674,Revenue
-2024-04-27,Store Sales,743,Revenue
-2024-04-27,Store Sales,1480,Revenue
-2024-04-27,Store Sales,1051,Revenue
-2024-04-28,Store Sales,1449,Revenue
-2024-04-28,Store Sales,392,Revenue
-2024-04-28,Store Sales,1207,Revenue
-2024-04-29,Store Sales,1094,Revenue
-2024-04-29,Store Sales,781,Revenue
-2024-04-29,Store Sales,397,Revenue
-2024-04-30,Store Sales,329,Revenue
-2024-04-30,Store Sales,889,Revenue
-2024-04-30,Store Sales,950,Revenue
-2024-05-01,Store Sales,788,Revenue
-2024-05-01,Store Sales,1091,Revenue
-2024-05-01,Store Sales,1109,Revenue
-2024-05-02,Store Sales,1055,Revenue
-2024-05-02,Store Sales,488,Revenue
-2024-05-02,Store Sales,807,Revenue
-2024-05-03,Store Sales,928,Revenue
-2024-05-03,Store Sales,1014,Revenue
-2024-05-03,Store Sales,695,Revenue
-2024-05-04,Store Sales,994,Revenue
-2024-05-04,Store Sales,975,Revenue
-2024-05-04,Store Sales,984,Revenue
-2024-05-05,Store Sales,1010,Revenue
-2024-05-05,Store Sales,426,Revenue
-2024-05-05,Store Sales,1229,Revenue
-2024-05-06,Store Sales,775,Revenue
-2024-05-06,Store Sales,1052,Revenue
-2024-05-06,Store Sales,566,Revenue
-2024-05-07,Store Sales,1003,Revenue
-2024-05-07,Store Sales,769,Revenue
-2024-05-07,Store Sales,367,Revenue
-2024-05-08,Store Sales,686,Revenue
-2024-05-08,Store Sales,829,Revenue
-2024-05-08,Store Sales,821,Revenue
-2024-05-08,Special Promotion Sales,1713,Revenue
-2024-05-09,Store Sales,348,Revenue
-2024-05-09,Store Sales,795,Revenue
-2024-05-09,Store Sales,967,Revenue
-2024-05-10,Store Sales,1143,Revenue
-2024-05-10,Store Sales,378,Revenue
-2024-05-10,Store Sales,787,Revenue
-2024-05-11,Store Sales,500,Revenue
-2024-05-11,Store Sales,404,Revenue
-2024-05-11,Store Sales,1509,Revenue
-2024-05-12,Store Sales,686,Revenue
-2024-05-12,Store Sales,887,Revenue
-2024-05-12,Store Sales,729,Revenue
-2024-05-13,Store Sales,1070,Revenue
-2024-05-13,Store Sales,438,Revenue
-2024-05-13,Store Sales,597,Revenue
-2024-05-14,Store Sales,796,Revenue
-2024-05-14,Store Sales,511,Revenue
-2024-05-14,Store Sales,497,Revenue
-2024-05-15,Store Sales,1025,Revenue
-2024-05-15,Store Sales,1011,Revenue
-2024-05-15,Store Sales,628,Revenue
-2024-05-16,Store Sales,693,Revenue
-2024-05-16,Store Sales,810,Revenue
-2024-05-16,Store Sales,353,Revenue
-2024-05-17,Store Sales,627,Revenue
-2024-05-17,Store Sales,479,Revenue
-2024-05-17,Store Sales,756,Revenue
-2024-05-18,Store Sales,1219,Revenue
-2024-05-18,Store Sales,1487,Revenue
-2024-05-18,Store Sales,865,Revenue
-2024-05-19,Store Sales,473,Revenue
-2024-05-19,Store Sales,656,Revenue
-2024-05-19,Store Sales,674,Revenue
-2024-05-20,Store Sales,479,Revenue
-2024-05-20,Store Sales,912,Revenue
-2024-05-20,Store Sales,885,Revenue
-2024-05-21,Store Sales,354,Revenue
-2024-05-21,Store Sales,1125,Revenue
-2024-05-21,Store Sales,767,Revenue
-2024-05-22,Store Sales,860,Revenue
-2024-05-22,Store Sales,1075,Revenue
-2024-05-22,Store Sales,584,Revenue
-2024-05-23,Store Sales,449,Revenue
-2024-05-23,Store Sales,602,Revenue
-2024-05-23,Store Sales,864,Revenue
-2024-05-24,Store Sales,729,Revenue
-2024-05-24,Store Sales,307,Revenue
-2024-05-24,Store Sales,507,Revenue
-2024-05-25,Store Sales,1528,Revenue
-2024-05-25,Store Sales,1300,Revenue
-2024-05-25,Store Sales,553,Revenue
-2024-05-26,Store Sales,969,Revenue
-2024-05-26,Store Sales,865,Revenue
-2024-05-26,Store Sales,638,Revenue
-2024-05-27,Store Sales,928,Revenue
-2024-05-27,Store Sales,310,Revenue
-2024-05-27,Store Sales,569,Revenue
-2024-05-28,Store Sales,566,Revenue
-2024-05-28,Store Sales,385,Revenue
-2024-05-28,Store Sales,859,Revenue
-2024-05-29,Store Sales,553,Revenue
-2024-05-29,Store Sales,804,Revenue
-2024-05-29,Store Sales,710,Revenue
-2024-05-30,Store Sales,1188,Revenue
-2024-05-30,Store Sales,663,Revenue
-2024-05-30,Store Sales,913,Revenue
-2024-05-31,Store Sales,580,Revenue
-2024-05-31,Store Sales,535,Revenue
-2024-05-31,Store Sales,559,Revenue
-2024-06-01,Store Sales,1634,Revenue
-2024-06-01,Store Sales,1460,Revenue
-2024-06-01,Store Sales,1578,Revenue
-2024-06-01,Store Sales,1469,Revenue
-2024-06-02,Store Sales,1408,Revenue
-2024-06-02,Store Sales,489,Revenue
-2024-06-02,Store Sales,1210,Revenue
-2024-06-02,Store Sales,761,Revenue
-2024-06-03,Store Sales,858,Revenue
-2024-06-03,Store Sales,1008,Revenue
-2024-06-03,Store Sales,686,Revenue
-2024-06-04,Store Sales,404,Revenue
-2024-06-04,Store Sales,1406,Revenue
-2024-06-04,Store Sales,684,Revenue
-2024-06-05,Store Sales,961,Revenue
-2024-06-05,Store Sales,1372,Revenue
-2024-06-05,Store Sales,520,Revenue
-2024-06-06,Store Sales,1142,Revenue
-2024-06-06,Store Sales,1218,Revenue
-2024-06-06,Store Sales,1146,Revenue
-2024-06-07,Store Sales,873,Revenue
-2024-06-07,Store Sales,962,Revenue
-2024-06-07,Store Sales,1314,Revenue
-2024-06-08,Store Sales,1706,Revenue
-2024-06-08,Store Sales,856,Revenue
-2024-06-08,Store Sales,918,Revenue
-2024-06-08,Store Sales,1065,Revenue
-2024-06-09,Store Sales,1363,Revenue
-2024-06-09,Store Sales,1042,Revenue
-2024-06-09,Store Sales,868,Revenue
-2024-06-09,Store Sales,1497,Revenue
-2024-06-10,Store Sales,1268,Revenue
-2024-06-10,Store Sales,970,Revenue
-2024-06-10,Store Sales,1315,Revenue
-2024-06-11,Store Sales,1020,Revenue
-2024-06-11,Store Sales,790,Revenue
-2024-06-11,Store Sales,462,Revenue
-2024-06-12,Store Sales,922,Revenue
-2024-06-12,Store Sales,414,Revenue
-2024-06-12,Store Sales,412,Revenue
-2024-06-13,Store Sales,693,Revenue
-2024-06-13,Store Sales,506,Revenue
-2024-06-13,Store Sales,385,Revenue
-2024-06-14,Store Sales,517,Revenue
-2024-06-14,Store Sales,1153,Revenue
-2024-06-14,Store Sales,1180,Revenue
-2024-06-15,Store Sales,594,Revenue
-2024-06-15,Store Sales,1443,Revenue
-2024-06-15,Store Sales,600,Revenue
-2024-06-15,Store Sales,1205,Revenue
-2024-06-16,Store Sales,1478,Revenue
-2024-06-16,Store Sales,1015,Revenue
-2024-06-16,Store Sales,1241,Revenue
-2024-06-16,Store Sales,687,Revenue
-2024-06-17,Store Sales,1118,Revenue
-2024-06-17,Store Sales,474,Revenue
-2024-06-17,Store Sales,732,Revenue
-2024-06-18,Store Sales,474,Revenue
-2024-06-18,Store Sales,444,Revenue
-2024-06-18,Store Sales,1177,Revenue
-2024-06-19,Store Sales,909,Revenue
-2024-06-19,Store Sales,1416,Revenue
-2024-06-19,Store Sales,892,Revenue
-2024-06-20,Store Sales,510,Revenue
-2024-06-20,Store Sales,1400,Revenue
-2024-06-20,Store Sales,438,Revenue
-2024-06-21,Store Sales,1070,Revenue
-2024-06-21,Store Sales,546,Revenue
-2024-06-21,Store Sales,1204,Revenue
-2024-06-21,Special Promotion Sales,1771,Revenue
-2024-06-22,Store Sales,893,Revenue
-2024-06-22,Store Sales,471,Revenue
-2024-06-22,Store Sales,1004,Revenue
-2024-06-22,Store Sales,1790,Revenue
-2024-06-23,Store Sales,951,Revenue
-2024-06-23,Store Sales,1726,Revenue
-2024-06-23,Store Sales,1062,Revenue
-2024-06-23,Store Sales,1332,Revenue
-2024-06-24,Store Sales,679,Revenue
-2024-06-24,Store Sales,710,Revenue
-2024-06-24,Store Sales,1021,Revenue
-2024-06-25,Store Sales,595,Revenue
-2024-06-25,Store Sales,1213,Revenue
-2024-06-25,Store Sales,672,Revenue
-2024-06-26,Store Sales,531,Revenue
-2024-06-26,Store Sales,1255,Revenue
-2024-06-26,Store Sales,1328,Revenue
-2024-06-27,Store Sales,812,Revenue
-2024-06-27,Store Sales,477,Revenue
-2024-06-27,Store Sales,1167,Revenue
-2024-06-28,Store Sales,964,Revenue
-2024-06-28,Store Sales,1324,Revenue
-2024-06-28,Store Sales,672,Revenue
-2024-06-29,Store Sales,1241,Revenue
-2024-06-29,Store Sales,1304,Revenue
-2024-06-29,Store Sales,519,Revenue
-2024-06-29,Store Sales,1001,Revenue
-2024-06-30,Store Sales,918,Revenue
-2024-06-30,Store Sales,492,Revenue
-2024-06-30,Store Sales,1689,Revenue
-2024-06-30,Store Sales,1297,Revenue
-2024-07-01,Store Sales,493,Revenue
-2024-07-01,Store Sales,1245,Revenue
-2024-07-01,Store Sales,1160,Revenue
-2024-07-02,Store Sales,439,Revenue
-2024-07-02,Store Sales,1398,Revenue
-2024-07-02,Store Sales,392,Revenue
-2024-07-03,Store Sales,388,Revenue
-2024-07-03,Store Sales,559,Revenue
-2024-07-03,Store Sales,553,Revenue
-2024-07-04,Store Sales,632,Revenue
-2024-07-04,Store Sales,679,Revenue
-2024-07-04,Store Sales,897,Revenue
-2024-07-05,Store Sales,1250,Revenue
-2024-07-05,Store Sales,614,Revenue
-2024-07-05,Store Sales,1057,Revenue
-2024-07-06,Store Sales,1686,Revenue
-2024-07-06,Store Sales,1232,Revenue
-2024-07-06,Store Sales,1137,Revenue
-2024-07-06,Store Sales,1354,Revenue
-2024-07-07,Store Sales,524,Revenue
-2024-07-07,Store Sales,521,Revenue
-2024-07-07,Store Sales,1393,Revenue
-2024-07-07,Store Sales,641,Revenue
-2024-07-08,Store Sales,836,Revenue
-2024-07-08,Store Sales,560,Revenue
-2024-07-08,Store Sales,434,Revenue
-2024-07-08,Special Promotion Sales,2720,Revenue
-2024-07-09,Store Sales,494,Revenue
-2024-07-09,Store Sales,452,Revenue
-2024-07-09,Store Sales,1432,Revenue
-2024-07-10,Store Sales,594,Revenue
-2024-07-10,Store Sales,417,Revenue
-2024-07-10,Store Sales,1375,Revenue
-2024-07-11,Store Sales,1068,Revenue
-2024-07-11,Store Sales,648,Revenue
-2024-07-11,Store Sales,1327,Revenue
-2024-07-12,Store Sales,625,Revenue
-2024-07-12,Store Sales,588,Revenue
-2024-07-12,Store Sales,1423,Revenue
-2024-07-13,Store Sales,1672,Revenue
-2024-07-13,Store Sales,1723,Revenue
-2024-07-13,Store Sales,1747,Revenue
-2024-07-13,Store Sales,1365,Revenue
-2024-07-14,Store Sales,1004,Revenue
-2024-07-14,Store Sales,1647,Revenue
-2024-07-14,Store Sales,489,Revenue
-2024-07-14,Store Sales,914,Revenue
-2024-07-15,Store Sales,921,Revenue
-2024-07-15,Store Sales,1322,Revenue
-2024-07-15,Store Sales,679,Revenue
-2024-07-16,Store Sales,649,Revenue
-2024-07-16,Store Sales,1264,Revenue
-2024-07-16,Store Sales,1290,Revenue
-2024-07-17,Store Sales,1428,Revenue
-2024-07-17,Store Sales,879,Revenue
-2024-07-17,Store Sales,859,Revenue
-2024-07-18,Store Sales,793,Revenue
-2024-07-18,Store Sales,1236,Revenue
-2024-07-18,Store Sales,1165,Revenue
-2024-07-19,Store Sales,1388,Revenue
-2024-07-19,Store Sales,1210,Revenue
-2024-07-19,Store Sales,363,Revenue
-2024-07-20,Store Sales,1184,Revenue
-2024-07-20,Store Sales,566,Revenue
-2024-07-20,Store Sales,1190,Revenue
-2024-07-20,Store Sales,1329,Revenue
-2024-07-20,Special Promotion Sales,3090,Revenue
-2024-07-21,Store Sales,1062,Revenue
-2024-07-21,Store Sales,761,Revenue
-2024-07-21,Store Sales,486,Revenue
-2024-07-21,Store Sales,1102,Revenue
-2024-07-22,Store Sales,1174,Revenue
-2024-07-22,Store Sales,831,Revenue
-2024-07-22,Store Sales,385,Revenue
-2024-07-23,Store Sales,928,Revenue
-2024-07-23,Store Sales,369,Revenue
-2024-07-23,Store Sales,472,Revenue
-2024-07-24,Store Sales,412,Revenue
-2024-07-24,Store Sales,1006,Revenue
-2024-07-24,Store Sales,486,Revenue
-2024-07-25,Store Sales,379,Revenue
-2024-07-25,Store Sales,998,Revenue
-2024-07-25,Store Sales,1380,Revenue
-2024-07-26,Store Sales,1086,Revenue
-2024-07-26,Store Sales,607,Revenue
-2024-07-26,Store Sales,1069,Revenue
-2024-07-27,Store Sales,1864,Revenue
-2024-07-27,Store Sales,1808,Revenue
-2024-07-27,Store Sales,775,Revenue
-2024-07-27,Store Sales,1001,Revenue
-2024-07-28,Store Sales,1402,Revenue
-2024-07-28,Store Sales,1385,Revenue
-2024-07-28,Store Sales,1038,Revenue
-2024-07-28,Store Sales,645,Revenue
-2024-07-29,Store Sales,1149,Revenue
-2024-07-29,Store Sales,1089,Revenue
-2024-07-29,Store Sales,858,Revenue
-2024-07-30,Store Sales,765,Revenue
-2024-07-30,Store Sales,1094,Revenue
-2024-07-30,Store Sales,411,Revenue
-2024-07-31,Store Sales,872,Revenue
-2024-07-31,Store Sales,646,Revenue
-2024-07-31,Store Sales,648,Revenue
-2024-08-01,Store Sales,1341,Revenue
-2024-08-01,Store Sales,904,Revenue
-2024-08-01,Store Sales,1442,Revenue
-2024-08-01,Store Sales,1089,Revenue
-2024-08-02,Store Sales,1122,Revenue
-2024-08-02,Store Sales,1212,Revenue
-2024-08-02,Store Sales,638,Revenue
-2024-08-02,Store Sales,494,Revenue
-2024-08-03,Store Sales,1368,Revenue
-2024-08-03,Store Sales,2074,Revenue
-2024-08-03,Store Sales,647,Revenue
-2024-08-03,Store Sales,607,Revenue
-2024-08-03,Store Sales,653,Revenue
-2024-08-04,Store Sales,2000,Revenue
-2024-08-04,Store Sales,900,Revenue
-2024-08-04,Store Sales,1153,Revenue
-2024-08-04,Store Sales,1779,Revenue
-2024-08-04,Store Sales,1235,Revenue
-2024-08-05,Store Sales,862,Revenue
-2024-08-05,Store Sales,821,Revenue
-2024-08-05,Store Sales,1531,Revenue
-2024-08-05,Store Sales,1663,Revenue
-2024-08-06,Store Sales,788,Revenue
-2024-08-06,Store Sales,1132,Revenue
-2024-08-06,Store Sales,1537,Revenue
-2024-08-06,Store Sales,1258,Revenue
-2024-08-06,Special Promotion Sales,3480,Revenue
-2024-08-07,Store Sales,1668,Revenue
-2024-08-07,Store Sales,1268,Revenue
-2024-08-07,Store Sales,784,Revenue
-2024-08-07,Store Sales,644,Revenue
-2024-08-08,Store Sales,788,Revenue
-2024-08-08,Store Sales,683,Revenue
-2024-08-08,Store Sales,1131,Revenue
-2024-08-08,Store Sales,641,Revenue
-2024-08-09,Store Sales,1675,Revenue
-2024-08-09,Store Sales,786,Revenue
-2024-08-09,Store Sales,715,Revenue
-2024-08-09,Store Sales,940,Revenue
-2024-08-10,Store Sales,1335,Revenue
-2024-08-10,Store Sales,1501,Revenue
-2024-08-10,Store Sales,919,Revenue
-2024-08-10,Store Sales,1179,Revenue
-2024-08-10,Store Sales,1925,Revenue
-2024-08-11,Store Sales,873,Revenue
-2024-08-11,Store Sales,607,Revenue
-2024-08-11,Store Sales,1654,Revenue
-2024-08-11,Store Sales,1013,Revenue
-2024-08-11,Store Sales,1692,Revenue
-2024-08-11,Special Promotion Sales,1070,Revenue
-2024-08-12,Store Sales,1278,Revenue
-2024-08-12,Store Sales,1475,Revenue
-2024-08-12,Store Sales,1314,Revenue
-2024-08-12,Store Sales,1464,Revenue
-2024-08-13,Store Sales,1317,Revenue
-2024-08-13,Store Sales,894,Revenue
-2024-08-13,Store Sales,523,Revenue
-2024-08-13,Store Sales,1456,Revenue
-2024-08-14,Store Sales,1468,Revenue
-2024-08-14,Store Sales,1043,Revenue
-2024-08-14,Store Sales,1493,Revenue
-2024-08-14,Store Sales,1255,Revenue
-2024-08-15,Store Sales,1085,Revenue
-2024-08-15,Store Sales,937,Revenue
-2024-08-15,Store Sales,651,Revenue
-2024-08-15,Store Sales,806,Revenue
-2024-08-16,Store Sales,515,Revenue
-2024-08-16,Store Sales,855,Revenue
-2024-08-16,Store Sales,572,Revenue
-2024-08-16,Store Sales,459,Revenue
-2024-08-17,Store Sales,1304,Revenue
-2024-08-17,Store Sales,1503,Revenue
-2024-08-17,Store Sales,1175,Revenue
-2024-08-17,Store Sales,875,Revenue
-2024-08-17,Store Sales,818,Revenue
-2024-08-18,Store Sales,1066,Revenue
-2024-08-18,Store Sales,1925,Revenue
-2024-08-18,Store Sales,1539,Revenue
-2024-08-18,Store Sales,1122,Revenue
-2024-08-18,Store Sales,633,Revenue
-2024-08-19,Store Sales,1352,Revenue
-2024-08-19,Store Sales,890,Revenue
-2024-08-19,Store Sales,1136,Revenue
-2024-08-19,Store Sales,1052,Revenue
-2024-08-20,Store Sales,1201,Revenue
-2024-08-20,Store Sales,704,Revenue
-2024-08-20,Store Sales,988,Revenue
-2024-08-20,Store Sales,484,Revenue
-2024-08-20,Special Promotion Sales,1268,Revenue
-2024-08-21,Store Sales,1078,Revenue
-2024-08-21,Store Sales,993,Revenue
-2024-08-21,Store Sales,1531,Revenue
-2024-08-21,Store Sales,768,Revenue
-2024-08-22,Store Sales,434,Revenue
-2024-08-22,Store Sales,1320,Revenue
-2024-08-22,Store Sales,786,Revenue
-2024-08-22,Store Sales,599,Revenue
-2024-08-23,Store Sales,1528,Revenue
-2024-08-23,Store Sales,1198,Revenue
-2024-08-23,Store Sales,449,Revenue
-2024-08-23,Store Sales,1304,Revenue
-2024-08-24,Store Sales,798,Revenue
-2024-08-24,Store Sales,1099,Revenue
-2024-08-24,Store Sales,1208,Revenue
-2024-08-24,Store Sales,1181,Revenue
-2024-08-24,Store Sales,606,Revenue
-2024-08-24,Special Promotion Sales,1100,Revenue
-2024-08-25,Store Sales,704,Revenue
-2024-08-25,Store Sales,1004,Revenue
-2024-08-25,Store Sales,1346,Revenue
-2024-08-25,Store Sales,1466,Revenue
-2024-08-25,Store Sales,2182,Revenue
-2024-08-25,Special Promotion Sales,2037,Revenue
-2024-08-26,Store Sales,996,Revenue
-2024-08-26,Store Sales,1157,Revenue
-2024-08-26,Store Sales,1479,Revenue
-2024-08-26,Store Sales,653,Revenue
-2024-08-27,Store Sales,639,Revenue
-2024-08-27,Store Sales,1612,Revenue
-2024-08-27,Store Sales,1275,Revenue
-2024-08-27,Store Sales,630,Revenue
-2024-08-27,Special Promotion Sales,1149,Revenue
-2024-08-28,Store Sales,1589,Revenue
-2024-08-28,Store Sales,522,Revenue
-2024-08-28,Store Sales,1227,Revenue
-2024-08-28,Store Sales,974,Revenue
-2024-08-29,Store Sales,1482,Revenue
-2024-08-29,Store Sales,499,Revenue
-2024-08-29,Store Sales,669,Revenue
-2024-08-29,Store Sales,957,Revenue
-2024-08-30,Store Sales,688,Revenue
-2024-08-30,Store Sales,680,Revenue
-2024-08-30,Store Sales,936,Revenue
-2024-08-30,Store Sales,624,Revenue
-2024-08-31,Store Sales,1454,Revenue
-2024-08-31,Store Sales,951,Revenue
-2024-08-31,Store Sales,1385,Revenue
-2024-08-31,Store Sales,968,Revenue
-2024-08-31,Store Sales,1639,Revenue
-2024-08-31,Special Promotion Sales,3731,Revenue
-2024-09-01,Store Sales,989,Revenue
-2024-09-01,Store Sales,972,Revenue
-2024-09-01,Store Sales,1285,Revenue
-2024-09-02,Store Sales,300,Revenue
-2024-09-02,Store Sales,746,Revenue
-2024-09-02,Store Sales,396,Revenue
-2024-09-03,Store Sales,860,Revenue
-2024-09-03,Store Sales,782,Revenue
-2024-09-03,Store Sales,1113,Revenue
-2024-09-04,Store Sales,427,Revenue
-2024-09-04,Store Sales,763,Revenue
-2024-09-04,Store Sales,1127,Revenue
-2024-09-05,Store Sales,961,Revenue
-2024-09-05,Store Sales,470,Revenue
-2024-09-05,Store Sales,1178,Revenue
-2024-09-06,Store Sales,552,Revenue
-2024-09-06,Store Sales,680,Revenue
-2024-09-06,Store Sales,385,Revenue
-2024-09-07,Store Sales,483,Revenue
-2024-09-07,Store Sales,977,Revenue
-2024-09-07,Store Sales,1254,Revenue
-2024-09-08,Store Sales,458,Revenue
-2024-09-08,Store Sales,1514,Revenue
-2024-09-08,Store Sales,816,Revenue
-2024-09-09,Store Sales,683,Revenue
-2024-09-09,Store Sales,1161,Revenue
-2024-09-09,Store Sales,550,Revenue
-2024-09-10,Store Sales,623,Revenue
-2024-09-10,Store Sales,1021,Revenue
-2024-09-10,Store Sales,1015,Revenue
-2024-09-11,Store Sales,605,Revenue
-2024-09-11,Store Sales,1142,Revenue
-2024-09-11,Store Sales,437,Revenue
-2024-09-12,Store Sales,1022,Revenue
-2024-09-12,Store Sales,688,Revenue
-2024-09-12,Store Sales,539,Revenue
-2024-09-13,Store Sales,700,Revenue
-2024-09-13,Store Sales,448,Revenue
-2024-09-13,Store Sales,438,Revenue
-2024-09-13,Special Promotion Sales,3246,Revenue
-2024-09-14,Store Sales,904,Revenue
-2024-09-14,Store Sales,1185,Revenue
-2024-09-14,Store Sales,1172,Revenue
-2024-09-15,Store Sales,1183,Revenue
-2024-09-15,Store Sales,1557,Revenue
-2024-09-15,Store Sales,856,Revenue
-2024-09-16,Store Sales,615,Revenue
-2024-09-16,Store Sales,974,Revenue
-2024-09-16,Store Sales,759,Revenue
-2024-09-16,Special Promotion Sales,3813,Revenue
-2024-09-17,Store Sales,494,Revenue
-2024-09-17,Store Sales,1168,Revenue
-2024-09-17,Store Sales,1169,Revenue
-2024-09-18,Store Sales,655,Revenue
-2024-09-18,Store Sales,438,Revenue
-2024-09-18,Store Sales,822,Revenue
-2024-09-19,Store Sales,915,Revenue
-2024-09-19,Store Sales,1060,Revenue
-2024-09-19,Store Sales,990,Revenue
-2024-09-20,Store Sales,1053,Revenue
-2024-09-20,Store Sales,1013,Revenue
-2024-09-20,Store Sales,556,Revenue
-2024-09-21,Store Sales,699,Revenue
-2024-09-21,Store Sales,690,Revenue
-2024-09-21,Store Sales,1509,Revenue
-2024-09-22,Store Sales,1241,Revenue
-2024-09-22,Store Sales,1245,Revenue
-2024-09-22,Store Sales,1229,Revenue
-2024-09-23,Store Sales,629,Revenue
-2024-09-23,Store Sales,1095,Revenue
-2024-09-23,Store Sales,1129,Revenue
-2024-09-24,Store Sales,770,Revenue
-2024-09-24,Store Sales,1012,Revenue
-2024-09-24,Store Sales,400,Revenue
-2024-09-25,Store Sales,316,Revenue
-2024-09-25,Store Sales,860,Revenue
-2024-09-25,Store Sales,584,Revenue
-2024-09-26,Store Sales,1041,Revenue
-2024-09-26,Store Sales,870,Revenue
-2024-09-26,Store Sales,896,Revenue
-2024-09-27,Store Sales,724,Revenue
-2024-09-27,Store Sales,836,Revenue
-2024-09-27,Store Sales,705,Revenue
-2024-09-28,Store Sales,575,Revenue
-2024-09-28,Store Sales,436,Revenue
-2024-09-28,Store Sales,1394,Revenue
-2024-09-29,Store Sales,707,Revenue
-2024-09-29,Store Sales,742,Revenue
-2024-09-29,Store Sales,794,Revenue
-2024-09-30,Store Sales,540,Revenue
-2024-09-30,Store Sales,1100,Revenue
-2024-09-30,Store Sales,1011,Revenue
-2024-10-01,Store Sales,572,Revenue
-2024-10-01,Store Sales,1032,Revenue
-2024-10-01,Store Sales,991,Revenue
-2024-10-02,Store Sales,377,Revenue
-2024-10-02,Store Sales,1086,Revenue
-2024-10-02,Store Sales,1007,Revenue
-2024-10-03,Store Sales,1051,Revenue
-2024-10-03,Store Sales,466,Revenue
-2024-10-03,Store Sales,927,Revenue
-2024-10-04,Store Sales,696,Revenue
-2024-10-04,Store Sales,807,Revenue
-2024-10-04,Store Sales,1163,Revenue
-2024-10-05,Store Sales,405,Revenue
-2024-10-05,Store Sales,1062,Revenue
-2024-10-05,Store Sales,1137,Revenue
-2024-10-06,Store Sales,1090,Revenue
-2024-10-06,Store Sales,442,Revenue
-2024-10-06,Store Sales,495,Revenue
-2024-10-07,Store Sales,316,Revenue
-2024-10-07,Store Sales,760,Revenue
-2024-10-07,Store Sales,902,Revenue
-2024-10-08,Store Sales,662,Revenue
-2024-10-08,Store Sales,918,Revenue
-2024-10-08,Store Sales,1022,Revenue
-2024-10-09,Store Sales,858,Revenue
-2024-10-09,Store Sales,841,Revenue
-2024-10-09,Store Sales,892,Revenue
-2024-10-10,Store Sales,1090,Revenue
-2024-10-10,Store Sales,1111,Revenue
-2024-10-10,Store Sales,964,Revenue
-2024-10-11,Store Sales,444,Revenue
-2024-10-11,Store Sales,365,Revenue
-2024-10-11,Store Sales,651,Revenue
-2024-10-12,Store Sales,791,Revenue
-2024-10-12,Store Sales,1297,Revenue
-2024-10-12,Store Sales,760,Revenue
-2024-10-13,Store Sales,767,Revenue
-2024-10-13,Store Sales,1138,Revenue
-2024-10-13,Store Sales,1090,Revenue
-2024-10-14,Store Sales,1000,Revenue
-2024-10-14,Store Sales,1060,Revenue
-2024-10-14,Store Sales,744,Revenue
-2024-10-15,Store Sales,589,Revenue
-2024-10-15,Store Sales,477,Revenue
-2024-10-15,Store Sales,1145,Revenue
-2024-10-16,Store Sales,724,Revenue
-2024-10-16,Store Sales,596,Revenue
-2024-10-16,Store Sales,1065,Revenue
-2024-10-17,Store Sales,1013,Revenue
-2024-10-17,Store Sales,1179,Revenue
-2024-10-17,Store Sales,691,Revenue
-2024-10-18,Store Sales,857,Revenue
-2024-10-18,Store Sales,991,Revenue
-2024-10-18,Store Sales,1153,Revenue
-2024-10-18,Special Promotion Sales,2245,Revenue
-2024-10-19,Store Sales,731,Revenue
-2024-10-19,Store Sales,456,Revenue
-2024-10-19,Store Sales,1370,Revenue
-2024-10-20,Store Sales,676,Revenue
-2024-10-20,Store Sales,920,Revenue
-2024-10-20,Store Sales,930,Revenue
-2024-10-21,Store Sales,901,Revenue
-2024-10-21,Store Sales,412,Revenue
-2024-10-21,Store Sales,899,Revenue
-2024-10-22,Store Sales,1142,Revenue
-2024-10-22,Store Sales,924,Revenue
-2024-10-22,Store Sales,938,Revenue
-2024-10-23,Store Sales,520,Revenue
-2024-10-23,Store Sales,328,Revenue
-2024-10-23,Store Sales,883,Revenue
-2024-10-24,Store Sales,924,Revenue
-2024-10-24,Store Sales,402,Revenue
-2024-10-24,Store Sales,626,Revenue
-2024-10-25,Store Sales,735,Revenue
-2024-10-25,Store Sales,1105,Revenue
-2024-10-25,Store Sales,910,Revenue
-2024-10-26,Store Sales,1173,Revenue
-2024-10-26,Store Sales,1549,Revenue
-2024-10-26,Store Sales,1060,Revenue
-2024-10-27,Store Sales,917,Revenue
-2024-10-27,Store Sales,521,Revenue
-2024-10-27,Store Sales,1398,Revenue
-2024-10-28,Store Sales,990,Revenue
-2024-10-28,Store Sales,813,Revenue
-2024-10-28,Store Sales,426,Revenue
-2024-10-29,Store Sales,1026,Revenue
-2024-10-29,Store Sales,681,Revenue
-2024-10-29,Store Sales,557,Revenue
-2024-10-30,Store Sales,339,Revenue
-2024-10-30,Store Sales,903,Revenue
-2024-10-30,Store Sales,693,Revenue
-2024-10-31,Store Sales,952,Revenue
-2024-10-31,Store Sales,611,Revenue
-2024-10-31,Store Sales,460,Revenue
-2024-11-01,Store Sales,1999,Revenue
-2024-11-01,Store Sales,1056,Revenue
-2024-11-01,Store Sales,1938,Revenue
-2024-11-01,Store Sales,862,Revenue
-2024-11-01,Store Sales,1558,Revenue
-2024-11-02,Store Sales,1209,Revenue
-2024-11-02,Store Sales,1649,Revenue
-2024-11-02,Store Sales,1502,Revenue
-2024-11-02,Store Sales,1205,Revenue
-2024-11-02,Store Sales,730,Revenue
-2024-11-02,Store Sales,2478,Revenue
-2024-11-03,Store Sales,1731,Revenue
-2024-11-03,Store Sales,1584,Revenue
-2024-11-03,Store Sales,2136,Revenue
-2024-11-03,Store Sales,1099,Revenue
-2024-11-03,Store Sales,1017,Revenue
-2024-11-03,Store Sales,2021,Revenue
-2024-11-04,Store Sales,1317,Revenue
-2024-11-04,Store Sales,628,Revenue
-2024-11-04,Store Sales,1024,Revenue
-2024-11-04,Store Sales,1546,Revenue
-2024-11-04,Store Sales,1526,Revenue
-2024-11-05,Store Sales,982,Revenue
-2024-11-05,Store Sales,1996,Revenue
-2024-11-05,Store Sales,802,Revenue
-2024-11-05,Store Sales,1560,Revenue
-2024-11-05,Store Sales,919,Revenue
-2024-11-06,Store Sales,1819,Revenue
-2024-11-06,Store Sales,1731,Revenue
-2024-11-06,Store Sales,1092,Revenue
-2024-11-06,Store Sales,2138,Revenue
-2024-11-06,Store Sales,1306,Revenue
-2024-11-07,Store Sales,568,Revenue
-2024-11-07,Store Sales,817,Revenue
-2024-11-07,Store Sales,1890,Revenue
-2024-11-07,Store Sales,903,Revenue
-2024-11-07,Store Sales,1733,Revenue
-2024-11-08,Store Sales,619,Revenue
-2024-11-08,Store Sales,1713,Revenue
-2024-11-08,Store Sales,1080,Revenue
-2024-11-08,Store Sales,637,Revenue
-2024-11-08,Store Sales,646,Revenue
-2024-11-09,Store Sales,1900,Revenue
-2024-11-09,Store Sales,1991,Revenue
-2024-11-09,Store Sales,2113,Revenue
-2024-11-09,Store Sales,1659,Revenue
-2024-11-09,Store Sales,1708,Revenue
-2024-11-09,Store Sales,2662,Revenue
-2024-11-10,Store Sales,2527,Revenue
-2024-11-10,Store Sales,2138,Revenue
-2024-11-10,Store Sales,1944,Revenue
-2024-11-10,Store Sales,2405,Revenue
-2024-11-10,Store Sales,2447,Revenue
-2024-11-10,Store Sales,1240,Revenue
-2024-11-10,Special Promotion Sales,1195,Revenue
-2024-11-11,Store Sales,1213,Revenue
-2024-11-11,Store Sales,2098,Revenue
-2024-11-11,Store Sales,1490,Revenue
-2024-11-11,Store Sales,1522,Revenue
-2024-11-11,Store Sales,1866,Revenue
-2024-11-11,Special Promotion Sales,2912,Revenue
-2024-11-12,Store Sales,2080,Revenue
-2024-11-12,Store Sales,1024,Revenue
-2024-11-12,Store Sales,912,Revenue
-2024-11-12,Store Sales,961,Revenue
-2024-11-12,Store Sales,1002,Revenue
-2024-11-13,Store Sales,1114,Revenue
-2024-11-13,Store Sales,583,Revenue
-2024-11-13,Store Sales,1020,Revenue
-2024-11-13,Store Sales,856,Revenue
-2024-11-13,Store Sales,1004,Revenue
-2024-11-13,Special Promotion Sales,2003,Revenue
-2024-11-14,Store Sales,540,Revenue
-2024-11-14,Store Sales,2084,Revenue
-2024-11-14,Store Sales,1791,Revenue
-2024-11-14,Store Sales,1549,Revenue
-2024-11-14,Store Sales,2145,Revenue
-2024-11-15,Store Sales,1080,Revenue
-2024-11-15,Store Sales,991,Revenue
-2024-11-15,Store Sales,2080,Revenue
-2024-11-15,Store Sales,2034,Revenue
-2024-11-15,Store Sales,640,Revenue
-2024-11-15,Special Promotion Sales,3657,Revenue
-2024-11-16,Store Sales,910,Revenue
-2024-11-16,Store Sales,716,Revenue
-2024-11-16,Store Sales,1345,Revenue
-2024-11-16,Store Sales,2040,Revenue
-2024-11-16,Store Sales,847,Revenue
-2024-11-16,Store Sales,807,Revenue
-2024-11-17,Store Sales,2375,Revenue
-2024-11-17,Store Sales,1574,Revenue
-2024-11-17,Store Sales,1324,Revenue
-2024-11-17,Store Sales,2770,Revenue
-2024-11-17,Store Sales,727,Revenue
-2024-11-17,Store Sales,2393,Revenue
-2024-11-18,Store Sales,2086,Revenue
-2024-11-18,Store Sales,1265,Revenue
-2024-11-18,Store Sales,1654,Revenue
-2024-11-18,Store Sales,1807,Revenue
-2024-11-18,Store Sales,813,Revenue
-2024-11-19,Store Sales,977,Revenue
-2024-11-19,Store Sales,1551,Revenue
-2024-11-19,Store Sales,1080,Revenue
-2024-11-19,Store Sales,927,Revenue
-2024-11-19,Store Sales,1760,Revenue
-2024-11-20,Store Sales,1737,Revenue
-2024-11-20,Store Sales,1654,Revenue
-2024-11-20,Store Sales,1861,Revenue
-2024-11-20,Store Sales,2017,Revenue
-2024-11-20,Store Sales,1522,Revenue
-2024-11-21,Store Sales,2062,Revenue
-2024-11-21,Store Sales,1594,Revenue
-2024-11-21,Store Sales,972,Revenue
-2024-11-21,Store Sales,1933,Revenue
-2024-11-21,Store Sales,702,Revenue
-2024-11-22,Store Sales,1121,Revenue
-2024-11-22,Store Sales,1357,Revenue
-2024-11-22,Store Sales,1521,Revenue
-2024-11-22,Store Sales,1762,Revenue
-2024-11-22,Store Sales,1819,Revenue
-2024-11-23,Store Sales,1989,Revenue
-2024-11-23,Store Sales,2723,Revenue
-2024-11-23,Store Sales,2337,Revenue
-2024-11-23,Store Sales,889,Revenue
-2024-11-23,Store Sales,2398,Revenue
-2024-11-23,Store Sales,1289,Revenue
-2024-11-24,Store Sales,2585,Revenue
-2024-11-24,Store Sales,1698,Revenue
-2024-11-24,Store Sales,2784,Revenue
-2024-11-24,Store Sales,706,Revenue
-2024-11-24,Store Sales,2038,Revenue
-2024-11-24,Store Sales,2602,Revenue
-2024-11-25,Store Sales,1665,Revenue
-2024-11-25,Store Sales,2115,Revenue
-2024-11-25,Store Sales,1323,Revenue
-2024-11-25,Store Sales,1589,Revenue
-2024-11-25,Store Sales,1438,Revenue
-2024-11-26,Store Sales,1229,Revenue
-2024-11-26,Store Sales,1341,Revenue
-2024-11-26,Store Sales,1564,Revenue
-2024-11-26,Store Sales,673,Revenue
-2024-11-26,Store Sales,585,Revenue
-2024-11-27,Store Sales,1906,Revenue
-2024-11-27,Store Sales,1058,Revenue
-2024-11-27,Store Sales,1605,Revenue
-2024-11-27,Store Sales,961,Revenue
-2024-11-27,Store Sales,957,Revenue
-2024-11-28,Store Sales,572,Revenue
-2024-11-28,Store Sales,829,Revenue
-2024-11-28,Store Sales,676,Revenue
-2024-11-28,Store Sales,1733,Revenue
-2024-11-28,Store Sales,1933,Revenue
-2024-11-28,Special Promotion Sales,2508,Revenue
-2024-11-29,Store Sales,792,Revenue
-2024-11-29,Store Sales,739,Revenue
-2024-11-29,Store Sales,1767,Revenue
-2024-11-29,Store Sales,822,Revenue
-2024-11-29,Store Sales,2138,Revenue
-2024-11-29,Special Promotion Sales,1429,Revenue
-2024-11-30,Store Sales,1097,Revenue
-2024-11-30,Store Sales,2127,Revenue
-2024-11-30,Store Sales,1233,Revenue
-2024-11-30,Store Sales,1794,Revenue
-2024-11-30,Store Sales,2244,Revenue
-2024-11-30,Store Sales,2730,Revenue
-2024-12-01,Store Sales,1439,Revenue
-2024-12-01,Store Sales,1329,Revenue
-2024-12-01,Store Sales,863,Revenue
-2024-12-01,Store Sales,2665,Revenue
-2024-12-01,Store Sales,1308,Revenue
-2024-12-01,Store Sales,1013,Revenue
-2024-12-02,Store Sales,594,Revenue
-2024-12-02,Store Sales,1695,Revenue
-2024-12-02,Store Sales,1744,Revenue
-2024-12-02,Store Sales,833,Revenue
-2024-12-02,Store Sales,1585,Revenue
-2024-12-02,Special Promotion Sales,3723,Revenue
-2024-12-03,Store Sales,900,Revenue
-2024-12-03,Store Sales,676,Revenue
-2024-12-03,Store Sales,1769,Revenue
-2024-12-03,Store Sales,1866,Revenue
-2024-12-03,Store Sales,1981,Revenue
-2024-12-04,Store Sales,1832,Revenue
-2024-12-04,Store Sales,1330,Revenue
-2024-12-04,Store Sales,1035,Revenue
-2024-12-04,Store Sales,1440,Revenue
-2024-12-04,Store Sales,2143,Revenue
-2024-12-05,Store Sales,1038,Revenue
-2024-12-05,Store Sales,977,Revenue
-2024-12-05,Store Sales,1575,Revenue
-2024-12-05,Store Sales,910,Revenue
-2024-12-05,Store Sales,549,Revenue
-2024-12-06,Store Sales,1767,Revenue
-2024-12-06,Store Sales,885,Revenue
-2024-12-06,Store Sales,1062,Revenue
-2024-12-06,Store Sales,1819,Revenue
-2024-12-06,Store Sales,1891,Revenue
-2024-12-07,Store Sales,2742,Revenue
-2024-12-07,Store Sales,1836,Revenue
-2024-12-07,Store Sales,2686,Revenue
-2024-12-07,Store Sales,1237,Revenue
-2024-12-07,Store Sales,2066,Revenue
-2024-12-07,Store Sales,741,Revenue
-2024-12-08,Store Sales,1373,Revenue
-2024-12-08,Store Sales,2365,Revenue
-2024-12-08,Store Sales,1797,Revenue
-2024-12-08,Store Sales,1628,Revenue
-2024-12-08,Store Sales,1963,Revenue
-2024-12-08,Store Sales,2087,Revenue
-2024-12-09,Store Sales,2113,Revenue
-2024-12-09,Store Sales,1771,Revenue
-2024-12-09,Store Sales,1818,Revenue
-2024-12-09,Store Sales,1393,Revenue
-2024-12-09,Store Sales,1657,Revenue
-2024-12-10,Store Sales,813,Revenue
-2024-12-10,Store Sales,1542,Revenue
-2024-12-10,Store Sales,1643,Revenue
-2024-12-10,Store Sales,1486,Revenue
-2024-12-10,Store Sales,1128,Revenue
-2024-12-10,Special Promotion Sales,1317,Revenue
-2024-12-11,Store Sales,1015,Revenue
-2024-12-11,Store Sales,588,Revenue
-2024-12-11,Store Sales,1573,Revenue
-2024-12-11,Store Sales,1184,Revenue
-2024-12-11,Store Sales,1123,Revenue
-2024-12-12,Store Sales,1605,Revenue
-2024-12-12,Store Sales,1702,Revenue
-2024-12-12,Store Sales,1920,Revenue
-2024-12-12,Store Sales,1569,Revenue
-2024-12-12,Store Sales,1870,Revenue
-2024-12-13,Store Sales,864,Revenue
-2024-12-13,Store Sales,1756,Revenue
-2024-12-13,Store Sales,1504,Revenue
-2024-12-13,Store Sales,932,Revenue
-2024-12-13,Store Sales,1981,Revenue
-2024-12-14,Store Sales,2304,Revenue
-2024-12-14,Store Sales,1687,Revenue
-2024-12-14,Store Sales,2417,Revenue
-2024-12-14,Store Sales,1230,Revenue
-2024-12-14,Store Sales,1722,Revenue
-2024-12-14,Store Sales,896,Revenue
-2024-12-14,Special Promotion Sales,1420,Revenue
-2024-12-15,Store Sales,2021,Revenue
-2024-12-15,Store Sales,2129,Revenue
-2024-12-15,Store Sales,2513,Revenue
-2024-12-15,Store Sales,1055,Revenue
-2024-12-15,Store Sales,1160,Revenue
-2024-12-15,Store Sales,945,Revenue
-2024-12-16,Store Sales,1877,Revenue
-2024-12-16,Store Sales,1981,Revenue
-2024-12-16,Store Sales,1258,Revenue
-2024-12-16,Store Sales,1398,Revenue
-2024-12-16,Store Sales,901,Revenue
-2024-12-17,Store Sales,1481,Revenue
-2024-12-17,Store Sales,1657,Revenue
-2024-12-17,Store Sales,2113,Revenue
-2024-12-17,Store Sales,1978,Revenue
-2024-12-17,Store Sales,2097,Revenue
-2024-12-18,Store Sales,1207,Revenue
-2024-12-18,Store Sales,2104,Revenue
-2024-12-18,Store Sales,1153,Revenue
-2024-12-18,Store Sales,1483,Revenue
-2024-12-18,Store Sales,795,Revenue
-2024-12-19,Store Sales,1546,Revenue
-2024-12-19,Store Sales,1531,Revenue
-2024-12-19,Store Sales,1301,Revenue
-2024-12-19,Store Sales,1711,Revenue
-2024-12-19,Store Sales,1992,Revenue
-2024-12-20,Store Sales,1596,Revenue
-2024-12-20,Store Sales,1983,Revenue
-2024-12-20,Store Sales,1454,Revenue
-2024-12-20,Store Sales,1400,Revenue
-2024-12-20,Store Sales,693,Revenue
-2024-12-21,Store Sales,2208,Revenue
-2024-12-21,Store Sales,1074,Revenue
-2024-12-21,Store Sales,2611,Revenue
-2024-12-21,Store Sales,2330,Revenue
-2024-12-21,Store Sales,2655,Revenue
-2024-12-21,Store Sales,1724,Revenue
-2024-12-22,Store Sales,1003,Revenue
-2024-12-22,Store Sales,1336,Revenue
-2024-12-22,Store Sales,2143,Revenue
-2024-12-22,Store Sales,2251,Revenue
-2024-12-22,Store Sales,1333,Revenue
-2024-12-22,Store Sales,1228,Revenue
-2024-12-23,Store Sales,2120,Revenue
-2024-12-23,Store Sales,1648,Revenue
-2024-12-23,Store Sales,1742,Revenue
-2024-12-23,Store Sales,1476,Revenue
-2024-12-23,Store Sales,1953,Revenue
-2024-12-24,Store Sales,2066,Revenue
-2024-12-24,Store Sales,727,Revenue
-2024-12-24,Store Sales,2014,Revenue
-2024-12-24,Store Sales,1521,Revenue
-2024-12-24,Store Sales,1758,Revenue
-2024-12-24,Special Promotion Sales,2249,Revenue
-2024-12-25,Store Sales,585,Revenue
-2024-12-25,Store Sales,1094,Revenue
-2024-12-25,Store Sales,1580,Revenue
-2024-12-25,Store Sales,1279,Revenue
-2024-12-25,Store Sales,1053,Revenue
-2024-12-26,Store Sales,1983,Revenue
-2024-12-26,Store Sales,873,Revenue
-2024-12-26,Store Sales,1265,Revenue
-2024-12-26,Store Sales,1063,Revenue
-2024-12-26,Store Sales,756,Revenue
-2024-12-27,Store Sales,1794,Revenue
-2024-12-27,Store Sales,824,Revenue
-2024-12-27,Store Sales,1294,Revenue
-2024-12-27,Store Sales,855,Revenue
-2024-12-27,Store Sales,2097,Revenue
-2024-12-28,Store Sales,1808,Revenue
-2024-12-28,Store Sales,802,Revenue
-2024-12-28,Store Sales,1497,Revenue
-2024-12-28,Store Sales,1226,Revenue
-2024-12-28,Store Sales,1946,Revenue
-2024-12-28,Store Sales,1130,Revenue
-2024-12-29,Store Sales,2061,Revenue
-2024-12-29,Store Sales,1666,Revenue
-2024-12-29,Store Sales,2447,Revenue
-2024-12-29,Store Sales,2548,Revenue
-2024-12-29,Store Sales,1879,Revenue
-2024-12-29,Store Sales,1710,Revenue
-2024-12-30,Store Sales,1753,Revenue
-2024-12-30,Store Sales,1103,Revenue
-2024-12-30,Store Sales,1632,Revenue
-2024-12-30,Store Sales,1526,Revenue
-2024-12-30,Store Sales,606,Revenue
-2024-12-30,Special Promotion Sales,3179,Revenue
-2024-12-31,Store Sales,1209,Revenue
-2024-12-31,Store Sales,1571,Revenue
-2024-12-31,Store Sales,1391,Revenue
-2024-12-31,Store Sales,1476,Revenue
-2024-12-31,Store Sales,1026,Revenue
-2025-01-01,Store Sales,347,Revenue
-2025-01-01,Store Sales,462,Revenue
-2025-01-02,Store Sales,660,Revenue
-2025-01-02,Store Sales,810,Revenue
-2025-01-03,Store Sales,679,Revenue
-2025-01-03,Store Sales,329,Revenue
-2025-01-04,Store Sales,356,Revenue
-2025-01-04,Store Sales,926,Revenue
-2025-01-05,Store Sales,864,Revenue
-2025-01-05,Store Sales,365,Revenue
-2025-01-06,Store Sales,361,Revenue
-2025-01-06,Store Sales,523,Revenue
-2025-01-07,Store Sales,571,Revenue
-2025-01-07,Store Sales,265,Revenue
-2025-01-08,Store Sales,775,Revenue
-2025-01-08,Store Sales,487,Revenue
-2025-01-09,Store Sales,360,Revenue
-2025-01-09,Store Sales,403,Revenue
-2025-01-09,Special Promotion Sales,2258,Revenue
-2025-01-10,Store Sales,763,Revenue
-2025-01-10,Store Sales,610,Revenue
-2025-01-11,Store Sales,581,Revenue
-2025-01-11,Store Sales,1006,Revenue
-2025-01-12,Store Sales,988,Revenue
-2025-01-12,Store Sales,759,Revenue
-2025-01-13,Store Sales,778,Revenue
-2025-01-13,Store Sales,396,Revenue
-2025-01-14,Store Sales,266,Revenue
-2025-01-14,Store Sales,228,Revenue
-2025-01-15,Store Sales,432,Revenue
-2025-01-15,Store Sales,469,Revenue
-2025-01-16,Store Sales,741,Revenue
-2025-01-16,Store Sales,560,Revenue
-2025-01-17,Store Sales,530,Revenue
-2025-01-17,Store Sales,364,Revenue
-2025-01-18,Store Sales,528,Revenue
-2025-01-18,Store Sales,1085,Revenue
-2025-01-19,Store Sales,462,Revenue
-2025-01-19,Store Sales,354,Revenue
-2025-01-20,Store Sales,534,Revenue
-2025-01-20,Store Sales,695,Revenue
-2025-01-21,Store Sales,618,Revenue
-2025-01-21,Store Sales,380,Revenue
-2025-01-22,Store Sales,828,Revenue
-2025-01-22,Store Sales,455,Revenue
-2025-01-23,Store Sales,277,Revenue
-2025-01-23,Store Sales,394,Revenue
-2025-01-24,Store Sales,813,Revenue
-2025-01-24,Store Sales,709,Revenue
-2025-01-25,Store Sales,434,Revenue
-2025-01-25,Store Sales,867,Revenue
-2025-01-26,Store Sales,903,Revenue
-2025-01-26,Store Sales,477,Revenue
-2025-01-27,Store Sales,579,Revenue
-2025-01-27,Store Sales,805,Revenue
-2025-01-28,Store Sales,327,Revenue
-2025-01-28,Store Sales,294,Revenue
-2025-01-29,Store Sales,269,Revenue
-2025-01-29,Store Sales,660,Revenue
-2025-01-30,Store Sales,339,Revenue
-2025-01-30,Store Sales,367,Revenue
-2025-01-31,Store Sales,800,Revenue
-2025-01-31,Store Sales,749,Revenue
-2025-02-01,Store Sales,371,Revenue
-2025-02-01,Store Sales,1081,Revenue
-2025-02-02,Store Sales,634,Revenue
-2025-02-02,Store Sales,897,Revenue
-2025-02-03,Store Sales,729,Revenue
-2025-02-03,Store Sales,497,Revenue
-2025-02-04,Store Sales,587,Revenue
-2025-02-04,Store Sales,398,Revenue
-2025-02-05,Store Sales,391,Revenue
-2025-02-05,Store Sales,291,Revenue
-2025-02-06,Store Sales,394,Revenue
-2025-02-06,Store Sales,578,Revenue
-2025-02-06,Special Promotion Sales,1434,Revenue
-2025-02-07,Store Sales,823,Revenue
-2025-02-07,Store Sales,282,Revenue
-2025-02-08,Store Sales,630,Revenue
-2025-02-08,Store Sales,313,Revenue
-2025-02-09,Store Sales,394,Revenue
-2025-02-09,Store Sales,444,Revenue
-2025-02-10,Store Sales,654,Revenue
-2025-02-10,Store Sales,632,Revenue
-2025-02-11,Store Sales,809,Revenue
-2025-02-11,Store Sales,609,Revenue
-2025-02-12,Store Sales,224,Revenue
-2025-02-12,Store Sales,386,Revenue
-2025-02-13,Store Sales,788,Revenue
-2025-02-13,Store Sales,729,Revenue
-2025-02-14,Store Sales,558,Revenue
-2025-02-14,Store Sales,798,Revenue
-2025-02-15,Store Sales,1006,Revenue
-2025-02-15,Store Sales,1056,Revenue
-2025-02-16,Store Sales,524,Revenue
-2025-02-16,Store Sales,970,Revenue
-2025-02-17,Store Sales,339,Revenue
-2025-02-17,Store Sales,686,Revenue
-2025-02-18,Store Sales,438,Revenue
-2025-02-18,Store Sales,212,Revenue
-2025-02-19,Store Sales,788,Revenue
-2025-02-19,Store Sales,290,Revenue
-2025-02-20,Store Sales,825,Revenue
-2025-02-20,Store Sales,414,Revenue
-2025-02-21,Store Sales,620,Revenue
-2025-02-21,Store Sales,478,Revenue
-2025-02-22,Store Sales,298,Revenue
-2025-02-22,Store Sales,498,Revenue
-2025-02-23,Store Sales,855,Revenue
-2025-02-23,Store Sales,374,Revenue
-2025-02-24,Store Sales,831,Revenue
-2025-02-24,Store Sales,560,Revenue
-2025-02-25,Store Sales,674,Revenue
-2025-02-25,Store Sales,487,Revenue
-2025-02-26,Store Sales,312,Revenue
-2025-02-26,Store Sales,623,Revenue
-2025-02-27,Store Sales,679,Revenue
-2025-02-27,Store Sales,456,Revenue
-2025-02-28,Store Sales,658,Revenue
-2025-02-28,Store Sales,224,Revenue
-2025-03-01,Store Sales,1040,Revenue
-2025-03-01,Store Sales,965,Revenue
-2025-03-01,Store Sales,746,Revenue
-2025-03-02,Store Sales,1465,Revenue
-2025-03-02,Store Sales,1153,Revenue
-2025-03-02,Store Sales,691,Revenue
-2025-03-03,Store Sales,783,Revenue
-2025-03-03,Store Sales,813,Revenue
-2025-03-03,Store Sales,356,Revenue
-2025-03-03,Special Promotion Sales,3607,Revenue
-2025-03-04,Store Sales,878,Revenue
-2025-03-04,Store Sales,484,Revenue
-2025-03-04,Store Sales,1082,Revenue
-2025-03-05,Store Sales,512,Revenue
-2025-03-05,Store Sales,484,Revenue
-2025-03-05,Store Sales,318,Revenue
-2025-03-06,Store Sales,967,Revenue
-2025-03-06,Store Sales,418,Revenue
-2025-03-06,Store Sales,578,Revenue
-2025-03-07,Store Sales,300,Revenue
-2025-03-07,Store Sales,571,Revenue
-2025-03-07,Store Sales,1180,Revenue
-2025-03-08,Store Sales,1354,Revenue
-2025-03-08,Store Sales,1129,Revenue
-2025-03-08,Store Sales,669,Revenue
-2025-03-09,Store Sales,1098,Revenue
-2025-03-09,Store Sales,924,Revenue
-2025-03-09,Store Sales,1255,Revenue
-2025-03-10,Store Sales,1199,Revenue
-2025-03-10,Store Sales,678,Revenue
-2025-03-10,Store Sales,653,Revenue
-2025-03-11,Store Sales,312,Revenue
-2025-03-11,Store Sales,458,Revenue
-2025-03-11,Store Sales,384,Revenue
-2025-03-12,Store Sales,963,Revenue
-2025-03-12,Store Sales,588,Revenue
-2025-03-12,Store Sales,1024,Revenue
-2025-03-13,Store Sales,543,Revenue
-2025-03-13,Store Sales,657,Revenue
-2025-03-13,Store Sales,533,Revenue
-2025-03-14,Store Sales,385,Revenue
-2025-03-14,Store Sales,762,Revenue
-2025-03-14,Store Sales,849,Revenue
-2025-03-15,Store Sales,505,Revenue
-2025-03-15,Store Sales,639,Revenue
-2025-03-15,Store Sales,799,Revenue
-2025-03-16,Store Sales,760,Revenue
-2025-03-16,Store Sales,1319,Revenue
-2025-03-16,Store Sales,1523,Revenue
-2025-03-17,Store Sales,994,Revenue
-2025-03-17,Store Sales,1058,Revenue
-2025-03-17,Store Sales,450,Revenue
-2025-03-18,Store Sales,521,Revenue
-2025-03-18,Store Sales,900,Revenue
-2025-03-18,Store Sales,1049,Revenue
-2025-03-19,Store Sales,934,Revenue
-2025-03-19,Store Sales,971,Revenue
-2025-03-19,Store Sales,720,Revenue
-2025-03-19,Special Promotion Sales,2727,Revenue
-2025-03-20,Store Sales,1189,Revenue
-2025-03-20,Store Sales,964,Revenue
-2025-03-20,Store Sales,476,Revenue
-2025-03-21,Store Sales,1150,Revenue
-2025-03-21,Store Sales,748,Revenue
-2025-03-21,Store Sales,1171,Revenue
-2025-03-22,Store Sales,465,Revenue
-2025-03-22,Store Sales,802,Revenue
-2025-03-22,Store Sales,1176,Revenue
-2025-03-23,Store Sales,514,Revenue
-2025-03-23,Store Sales,488,Revenue
-2025-03-23,Store Sales,917,Revenue
-2025-03-24,Store Sales,941,Revenue
-2025-03-24,Store Sales,996,Revenue
-2025-03-24,Store Sales,1178,Revenue
-2025-03-25,Store Sales,964,Revenue
-2025-03-25,Store Sales,696,Revenue
-2025-03-25,Store Sales,834,Revenue
-2025-03-26,Store Sales,492,Revenue
-2025-03-26,Store Sales,508,Revenue
-2025-03-26,Store Sales,849,Revenue
-2025-03-27,Store Sales,307,Revenue
-2025-03-27,Store Sales,648,Revenue
-2025-03-27,Store Sales,830,Revenue
-2025-03-28,Store Sales,470,Revenue
-2025-03-28,Store Sales,636,Revenue
-2025-03-28,Store Sales,763,Revenue
-2025-03-29,Store Sales,1414,Revenue
-2025-03-29,Store Sales,1446,Revenue
-2025-03-29,Store Sales,1294,Revenue
-2025-03-30,Store Sales,1125,Revenue
-2025-03-30,Store Sales,440,Revenue
-2025-03-30,Store Sales,1439,Revenue
-2025-03-31,Store Sales,345,Revenue
-2025-03-31,Store Sales,1039,Revenue
-2025-03-31,Store Sales,798,Revenue
-2025-04-01,Store Sales,1067,Revenue
-2025-04-01,Store Sales,1097,Revenue
-2025-04-01,Store Sales,1193,Revenue
-2025-04-02,Store Sales,516,Revenue
-2025-04-02,Store Sales,344,Revenue
-2025-04-02,Store Sales,669,Revenue
-2025-04-03,Store Sales,540,Revenue
-2025-04-03,Store Sales,465,Revenue
-2025-04-03,Store Sales,825,Revenue
-2025-04-04,Store Sales,1006,Revenue
-2025-04-04,Store Sales,777,Revenue
-2025-04-04,Store Sales,1036,Revenue
-2025-04-05,Store Sales,669,Revenue
-2025-04-05,Store Sales,1082,Revenue
-2025-04-05,Store Sales,728,Revenue
-2025-04-06,Store Sales,984,Revenue
-2025-04-06,Store Sales,1333,Revenue
-2025-04-06,Store Sales,1002,Revenue
-2025-04-07,Store Sales,479,Revenue
-2025-04-07,Store Sales,987,Revenue
-2025-04-07,Store Sales,796,Revenue
-2025-04-08,Store Sales,1106,Revenue
-2025-04-08,Store Sales,911,Revenue
-2025-04-08,Store Sales,518,Revenue
-2025-04-09,Store Sales,815,Revenue
-2025-04-09,Store Sales,973,Revenue
-2025-04-09,Store Sales,838,Revenue
-2025-04-10,Store Sales,914,Revenue
-2025-04-10,Store Sales,732,Revenue
-2025-04-10,Store Sales,1071,Revenue
-2025-04-11,Store Sales,519,Revenue
-2025-04-11,Store Sales,1133,Revenue
-2025-04-11,Store Sales,996,Revenue
-2025-04-12,Store Sales,850,Revenue
-2025-04-12,Store Sales,1340,Revenue
-2025-04-12,Store Sales,1150,Revenue
-2024-04-19,Retail Staff Payroll,-5293,Payroll
-2024-05-03,Retail Staff Payroll,-6783,Payroll
-2024-05-17,Retail Staff Payroll,-5784,Payroll
-2024-05-31,Retail Staff Payroll,-6632,Payroll
-2024-06-14,Retail Staff Payroll,-6903,Payroll
-2024-06-28,Retail Staff Payroll,-6087,Payroll
-2024-07-05,Retail Staff Payroll,-6376,Payroll
-2024-07-19,Retail Staff Payroll,-5505,Payroll
-2024-08-02,Retail Staff Payroll,-6830,Payroll
-2024-08-16,Retail Staff Payroll,-6988,Payroll
-2024-08-30,Retail Staff Payroll,-5007,Payroll
-2024-09-06,Retail Staff Payroll,-6849,Payroll
-2024-09-20,Retail Staff Payroll,-6117,Payroll
-2024-10-04,Retail Staff Payroll,-6715,Payroll
-2024-10-18,Retail Staff Payroll,-6202,Payroll
-2024-11-01,Retail Staff Payroll,-9206,Payroll
-2024-11-15,Retail Staff Payroll,-9237,Payroll
-2024-11-29,Retail Staff Payroll,-7300,Payroll
-2024-12-06,Retail Staff Payroll,-8056,Payroll
-2024-12-20,Retail Staff Payroll,-8857,Payroll
-2025-01-03,Retail Staff Payroll,-5716,Payroll
-2025-01-17,Retail Staff Payroll,-5222,Payroll
-2025-01-31,Retail Staff Payroll,-6819,Payroll
-2025-02-14,Retail Staff Payroll,-5666,Payroll
-2025-02-28,Retail Staff Payroll,-5230,Payroll
-2025-03-14,Retail Staff Payroll,-6468,Payroll
-2025-03-28,Retail Staff Payroll,-6421,Payroll
-2025-04-04,Retail Staff Payroll,-6437,Payroll
-2024-04-17,Regular Inventory - Wholesale Supplier,-1530,Inventory
-2024-04-24,Regular Inventory - Brand Manufacturer,-1478,Inventory
-2024-04-25,Summer Inventory Order - Main Distributor,-13769,Inventory
-2024-05-01,Regular Inventory - Factory Direct,-1906,Inventory
-2024-05-08,Regular Inventory - Wholesale Supplier,-1058,Inventory
-2024-05-10,Back-to-School Inventory Order - Local Producer,-9354,Inventory
-2024-05-15,Regular Inventory - Factory Direct,-1642,Inventory
-2024-05-22,Regular Inventory - Local Producer,-959,Inventory
-2024-06-05,Regular Inventory - Wholesale Supplier,-1117,Inventory
-2024-06-10,Back-to-School Inventory Order - Main Distributor,-12676,Inventory
-2024-06-12,Regular Inventory - Factory Direct,-1087,Inventory
-2024-06-25,Back-to-School Inventory Order - Brand Manufacturer,-12606,Inventory
-2024-06-26,Regular Inventory - Wholesale Supplier,-946,Inventory
-2024-07-03,Regular Inventory - Factory Direct,-935,Inventory
-2024-07-10,Regular Inventory - Import Company,-865,Inventory
-2024-07-10,Fall Inventory Order - Factory Direct,-10081,Inventory
-2024-07-17,Regular Inventory - Main Distributor,-1461,Inventory
-2024-07-24,Regular Inventory - Wholesale Supplier,-1486,Inventory
-2024-08-07,Regular Inventory - Local Producer,-1349,Inventory
-2024-08-14,Regular Inventory - Factory Direct,-1774,Inventory
-2024-08-25,Fall Inventory Order - Import Company,-9804,Inventory
-2024-09-04,Regular Inventory - Brand Manufacturer,-926,Inventory
-2024-09-10,Holiday Inventory Order - Factory Direct,-19710,Inventory
-2024-09-11,Regular Inventory - Wholesale Supplier,-1156,Inventory
-2024-09-25,Regular Inventory - Import Company,-1453,Inventory
-2024-10-02,Regular Inventory - Main Distributor,-1084,Inventory
-2024-10-09,Regular Inventory - Factory Direct,-1670,Inventory
-2024-10-10,Holiday Inventory Order - Factory Direct,-18601,Inventory
-2024-10-16,Regular Inventory - Main Distributor,-891,Inventory
-2024-10-30,Regular Inventory - Main Distributor,-1918,Inventory
-2024-11-06,Regular Inventory - Wholesale Supplier,-1543,Inventory
-2024-11-20,Regular Inventory - Import Company,-1713,Inventory
-2024-11-27,Regular Inventory - Local Producer,-1085,Inventory
-2024-12-18,Regular Inventory - Brand Manufacturer,-1057,Inventory
-2024-12-25,Regular Inventory - Wholesale Supplier,-1993,Inventory
-2025-01-01,Regular Inventory - Import Company,-1954,Inventory
-2025-01-08,Regular Inventory - Wholesale Supplier,-1285,Inventory
-2025-01-10,Spring Inventory Order - Local Producer,-7678,Inventory
-2025-01-15,Regular Inventory - Factory Direct,-1490,Inventory
-2025-01-22,Regular Inventory - Local Producer,-1047,Inventory
-2025-01-25,Spring Inventory Order - Factory Direct,-8049,Inventory
-2025-01-29,Regular Inventory - Import Company,-1467,Inventory
-2025-02-05,Regular Inventory - Wholesale Supplier,-1758,Inventory
-2025-02-12,Regular Inventory - Wholesale Supplier,-1344,Inventory
-2025-03-05,Regular Inventory - Wholesale Supplier,-1702,Inventory
-2025-03-12,Regular Inventory - Import Company,-1048,Inventory
-2025-03-19,Regular Inventory - Brand Manufacturer,-1145,Inventory
-2025-03-26,Regular Inventory - Import Company,-1952,Inventory
-2025-04-02,Regular Inventory - Local Producer,-1617,Inventory
-2025-04-09,Regular Inventory - Main Distributor,-1619,Inventory
-2025-04-10,Summer Inventory Order - Factory Direct,-14928,Inventory
-2024-05-01,Store Rent,-3088,Rent
-2024-05-01,Electricity,-651,Utilities
-2024-05-01,Water,-139,Utilities
-2024-05-01,Internet and Phone,-175,Utilities
-2024-05-01,Store Insurance,-359,Insurance
-2024-05-01,POS System Subscription,-130,Services
-2024-05-01,Security System,-197,Services
-2024-05-01,Cleaning Service,-300,Services
-2024-05-01,Local Advertising,-1222,Marketing
-2024-05-01,Social Media Marketing,-616,Marketing
-2024-05-01,Shipping Costs,-363,Shipping
-2024-06-01,Store Rent,-3427,Rent
-2024-06-01,Electricity,-762,Utilities
-2024-06-01,Water,-134,Utilities
-2024-06-01,Internet and Phone,-181,Utilities
-2024-06-01,Store Insurance,-337,Insurance
-2024-06-01,POS System Subscription,-149,Services
-2024-06-01,Security System,-172,Services
-2024-06-01,Cleaning Service,-322,Services
-2024-06-01,Local Advertising,-1304,Marketing
-2024-06-01,Social Media Marketing,-526,Marketing
-2024-06-01,Shipping Costs,-362,Shipping
-2024-07-01,Store Rent,-3626,Rent
-2024-07-01,Electricity,-696,Utilities
-2024-07-01,Water,-126,Utilities
-2024-07-01,Internet and Phone,-209,Utilities
-2024-07-01,Store Insurance,-366,Insurance
-2024-07-01,POS System Subscription,-133,Services
-2024-07-01,Security System,-191,Services
-2024-07-01,Cleaning Service,-326,Services
-2024-07-01,Local Advertising,-1112,Marketing
-2024-07-01,Social Media Marketing,-633,Marketing
-2024-07-01,Shipping Costs,-354,Shipping
-2024-08-01,Store Rent,-3529,Rent
-2024-08-01,Electricity,-673,Utilities
-2024-08-01,Water,-133,Utilities
-2024-08-01,Internet and Phone,-182,Utilities
-2024-08-01,Store Insurance,-364,Insurance
-2024-08-01,POS System Subscription,-153,Services
-2024-08-01,Security System,-179,Services
-2024-08-01,Cleaning Service,-325,Services
-2024-08-01,Local Advertising,-1150,Marketing
-2024-08-01,Social Media Marketing,-635,Marketing
-2024-08-01,Shipping Costs,-319,Shipping
-2024-09-01,Store Rent,-3421,Rent
-2024-09-01,Electricity,-653,Utilities
-2024-09-01,Water,-144,Utilities
-2024-09-01,Internet and Phone,-188,Utilities
-2024-09-01,Store Insurance,-349,Insurance
-2024-09-01,POS System Subscription,-152,Services
-2024-09-01,Security System,-168,Services
-2024-09-01,Cleaning Service,-303,Services
-2024-09-01,Local Advertising,-1264,Marketing
-2024-09-01,Social Media Marketing,-574,Marketing
-2024-09-01,Shipping Costs,-377,Shipping
-2024-10-01,Store Rent,-3753,Rent
-2024-10-01,Electricity,-739,Utilities
-2024-10-01,Water,-141,Utilities
-2024-10-01,Internet and Phone,-199,Utilities
-2024-10-01,Store Insurance,-347,Insurance
-2024-10-01,POS System Subscription,-148,Services
-2024-10-01,Security System,-174,Services
-2024-10-01,Cleaning Service,-325,Services
-2024-10-01,Local Advertising,-1823,Marketing
-2024-10-01,Social Media Marketing,-1008,Marketing
-2024-10-01,Shipping Costs,-367,Shipping
-2024-11-01,Store Rent,-3735,Rent
-2024-11-01,Electricity,-649,Utilities
-2024-11-01,Water,-134,Utilities
-2024-11-01,Internet and Phone,-175,Utilities
-2024-11-01,Store Insurance,-385,Insurance
-2024-11-01,POS System Subscription,-133,Services
-2024-11-01,Security System,-189,Services
-2024-11-01,Cleaning Service,-313,Services
-2024-11-01,Local Advertising,-1868,Marketing
-2024-11-01,Social Media Marketing,-1085,Marketing
-2024-11-01,Shipping Costs,-335,Shipping
-2024-12-01,Store Rent,-3261,Rent
-2024-12-01,Electricity,-745,Utilities
-2024-12-01,Water,-126,Utilities
-2024-12-01,Internet and Phone,-177,Utilities
-2024-12-01,Store Insurance,-403,Insurance
-2024-12-01,POS System Subscription,-149,Services
-2024-12-01,Security System,-202,Services
-2024-12-01,Cleaning Service,-273,Services
-2024-12-01,Local Advertising,-1917,Marketing
-2024-12-01,Social Media Marketing,-933,Marketing
-2024-12-01,Shipping Costs,-372,Shipping
-2025-01-01,Store Rent,-3122,Rent
-2025-01-01,Electricity,-674,Utilities
-2025-01-01,Water,-139,Utilities
-2025-01-01,Internet and Phone,-207,Utilities
-2025-01-01,Store Insurance,-384,Insurance
-2025-01-01,POS System Subscription,-145,Services
-2025-01-01,Security System,-187,Services
-2025-01-01,Cleaning Service,-291,Services
-2025-01-01,Local Advertising,-1285,Marketing
-2025-01-01,Social Media Marketing,-617,Marketing
-2025-01-01,Shipping Costs,-332,Shipping
-2025-02-01,Store Rent,-3473,Rent
-2025-02-01,Electricity,-641,Utilities
-2025-02-01,Water,-145,Utilities
-2025-02-01,Internet and Phone,-202,Utilities
-2025-02-01,Store Insurance,-353,Insurance
-2025-02-01,POS System Subscription,-129,Services
-2025-02-01,Security System,-192,Services
-2025-02-01,Cleaning Service,-294,Services
-2025-02-01,Local Advertising,-1254,Marketing
-2025-02-01,Social Media Marketing,-548,Marketing
-2025-02-01,Shipping Costs,-342,Shipping
-2025-03-01,Store Rent,-3597,Rent
-2025-03-01,Electricity,-678,Utilities
-2025-03-01,Water,-132,Utilities
-2025-03-01,Internet and Phone,-178,Utilities
-2025-03-01,Store Insurance,-389,Insurance
-2025-03-01,POS System Subscription,-146,Services
-2025-03-01,Security System,-175,Services
-2025-03-01,Cleaning Service,-277,Services
-2025-03-01,Local Advertising,-1138,Marketing
-2025-03-01,Social Media Marketing,-551,Marketing
-2025-03-01,Shipping Costs,-381,Shipping
-2025-04-01,Store Rent,-3242,Rent
-2025-04-01,Electricity,-762,Utilities
-2025-04-01,Water,-133,Utilities
-2025-04-01,Internet and Phone,-183,Utilities
-2025-04-01,Store Insurance,-354,Insurance
-2025-04-01,POS System Subscription,-150,Services
-2025-04-01,Security System,-175,Services
-2025-04-01,Cleaning Service,-307,Services
-2025-04-01,Local Advertising,-1288,Marketing
-2025-04-01,Social Media Marketing,-537,Marketing
-2025-04-01,Shipping Costs,-345,Shipping
-2024-11-13,Display Equipment,-2484,Fixtures
-2025-01-23,Store Renovation,-11759,Fixtures
-2024-06-09,Summer Sale Campaign,-3528,Marketing
-2024-08-06,Back-to-School Campaign,-5179,Marketing
-2024-11-07,Black Friday Campaign,-7357,Marketing
-2024-12-05,Holiday Marketing Campaign,-4876,Marketing
+2024-04-17,Rental Income,25962.36,Income
+2024-04-19,Waste Management,-152.87,Utilities
+2024-04-23,Xfinity,-110.74,Utilities
+2024-05-01,Gift,24359.84,Income
+2024-05-16,Cox Communications,-63.63,Utilities
+2024-05-16,Freelance Payment,19832.58,Income
+2024-07-13,Cox Communications,-103.94,Utilities
+2024-07-15,Phone Bill,-51.21,Utilities
+2024-07-23,Duke Energy,-223.48,Utilities
+2024-08-13,Electric Company,-139.3,Utilities
+2024-08-28,Phone Bill,-98.23,Utilities
+2024-08-31,Solar City,-213.03,Utilities
+2024-09-12,Solar City,-235.19,Utilities
+2024-09-13,Internet Provider,-56.63,Utilities
+2024-09-13,Phone Bill,-161.43,Utilities
+2024-09-28,Duke Energy,-297.11,Utilities
+2024-10-20,Phone Bill,-75.74,Utilities
+2024-10-23,Comcast,-270.63,Utilities
+2024-11-08,AT&T,-96.88,Utilities
+2024-12-01,Spectrum,-196.28,Utilities
+2024-12-08,Duke Energy,-87.22,Utilities
+2024-12-10,PG&E,-158.23,Utilities
+2025-02-10,DirecTV,-46.35,Utilities
+2025-02-17,Water Service,-281.74,Utilities
+2025-02-26,Cox Communications,-265.43,Utilities
+2025-03-10,Solar City,-82.02,Utilities
+2025-03-17,Dish Network,-154.56,Utilities
+2025-03-24,Transfer to Savings,-7015.48,Savings
+2024-04-12,Store Sales,1017,Income
+2024-04-12,Store Sales,711,Income
+2024-04-12,Store Sales,949,Income
+2024-04-13,Store Sales,1441,Income
+2024-04-13,Store Sales,1147,Income
+2024-04-13,Store Sales,890,Income
+2024-04-14,Store Sales,664,Income
+2024-04-14,Store Sales,929,Income
+2024-04-14,Store Sales,613,Income
+2024-04-15,Store Sales,749,Income
+2024-04-15,Store Sales,864,Income
+2024-04-15,Store Sales,1066,Income
+2024-04-16,Store Sales,1031,Income
+2024-04-16,Store Sales,954,Income
+2024-04-16,Store Sales,458,Income
+2024-04-17,Store Sales,751,Income
+2024-04-17,Store Sales,386,Income
+2024-04-17,Store Sales,598,Income
+2024-04-18,Store Sales,542,Income
+2024-04-18,Store Sales,1032,Income
+2024-04-18,Store Sales,301,Income
+2024-04-19,Store Sales,889,Income
+2024-04-19,Store Sales,425,Income
+2024-04-19,Store Sales,1128,Income
+2024-04-20,Store Sales,452,Income
+2024-04-20,Store Sales,1352,Income
+2024-04-20,Store Sales,955,Income
+2024-04-21,Store Sales,1437,Income
+2024-04-21,Store Sales,432,Income
+2024-04-21,Store Sales,1241,Income
+2024-04-22,Store Sales,670,Income
+2024-04-22,Store Sales,1077,Income
+2024-04-22,Store Sales,640,Income
+2024-04-23,Store Sales,1042,Income
+2024-04-23,Store Sales,638,Income
+2024-04-23,Store Sales,909,Income
+2024-04-24,Store Sales,324,Income
+2024-04-24,Store Sales,671,Income
+2024-04-24,Store Sales,892,Income
+2024-04-25,Store Sales,608,Income
+2024-04-25,Store Sales,952,Income
+2024-04-25,Store Sales,810,Income
+2024-04-26,Store Sales,872,Income
+2024-04-26,Store Sales,837,Income
+2024-04-26,Store Sales,562,Income
+2024-04-27,Store Sales,1293,Income
+2024-04-27,Store Sales,845,Income
+2024-04-27,Store Sales,1332,Income
+2024-04-28,Store Sales,1495,Income
+2024-04-28,Store Sales,1374,Income
+2024-04-28,Store Sales,440,Income
+2024-04-29,Store Sales,500,Income
+2024-04-29,Store Sales,938,Income
+2024-04-29,Store Sales,850,Income
+2024-04-30,Store Sales,671,Income
+2024-04-30,Store Sales,418,Income
+2024-04-30,Store Sales,717,Income
+2024-05-01,Store Sales,619,Income
+2024-05-01,Store Sales,977,Income
+2024-05-01,Store Sales,1191,Income
+2024-05-02,Store Sales,1126,Income
+2024-05-02,Store Sales,553,Income
+2024-05-02,Store Sales,319,Income
+2024-05-03,Store Sales,1074,Income
+2024-05-03,Store Sales,797,Income
+2024-05-03,Store Sales,422,Income
+2024-05-04,Store Sales,569,Income
+2024-05-04,Store Sales,1102,Income
+2024-05-04,Store Sales,858,Income
+2024-05-05,Store Sales,1394,Income
+2024-05-05,Store Sales,835,Income
+2024-05-05,Store Sales,644,Income
+2024-05-06,Store Sales,548,Income
+2024-05-06,Store Sales,694,Income
+2024-05-06,Store Sales,376,Income
+2024-05-07,Store Sales,414,Income
+2024-05-07,Store Sales,1098,Income
+2024-05-07,Store Sales,746,Income
+2024-05-08,Store Sales,978,Income
+2024-05-08,Store Sales,390,Income
+2024-05-08,Store Sales,853,Income
+2024-05-09,Store Sales,1149,Income
+2024-05-09,Store Sales,506,Income
+2024-05-09,Store Sales,403,Income
+2024-05-10,Store Sales,397,Income
+2024-05-10,Store Sales,621,Income
+2024-05-10,Store Sales,985,Income
+2024-05-11,Store Sales,1056,Income
+2024-05-11,Store Sales,912,Income
+2024-05-11,Store Sales,505,Income
+2024-05-12,Store Sales,560,Income
+2024-05-12,Store Sales,1332,Income
+2024-05-12,Store Sales,618,Income
+2024-05-13,Store Sales,506,Income
+2024-05-13,Store Sales,1130,Income
+2024-05-13,Store Sales,364,Income
+2024-05-14,Store Sales,1064,Income
+2024-05-14,Store Sales,704,Income
+2024-05-14,Store Sales,512,Income
+2024-05-15,Store Sales,733,Income
+2024-05-15,Store Sales,328,Income
+2024-05-15,Store Sales,769,Income
+2024-05-16,Store Sales,792,Income
+2024-05-16,Store Sales,369,Income
+2024-05-16,Store Sales,359,Income
+2024-05-17,Store Sales,491,Income
+2024-05-17,Store Sales,1076,Income
+2024-05-17,Store Sales,843,Income
+2024-05-18,Store Sales,804,Income
+2024-05-18,Store Sales,1032,Income
+2024-05-18,Store Sales,803,Income
+2024-05-19,Store Sales,1138,Income
+2024-05-19,Store Sales,975,Income
+2024-05-19,Store Sales,527,Income
+2024-05-20,Store Sales,372,Income
+2024-05-20,Store Sales,941,Income
+2024-05-20,Store Sales,717,Income
+2024-05-21,Store Sales,685,Income
+2024-05-21,Store Sales,334,Income
+2024-05-21,Store Sales,456,Income
+2024-05-22,Store Sales,701,Income
+2024-05-22,Store Sales,812,Income
+2024-05-22,Store Sales,323,Income
+2024-05-23,Store Sales,324,Income
+2024-05-23,Store Sales,511,Income
+2024-05-23,Store Sales,1033,Income
+2024-05-24,Store Sales,1065,Income
+2024-05-24,Store Sales,919,Income
+2024-05-24,Store Sales,463,Income
+2024-05-25,Store Sales,605,Income
+2024-05-25,Store Sales,517,Income
+2024-05-25,Store Sales,773,Income
+2024-05-25,Special Promotion Sales,1175,Income
+2024-05-26,Store Sales,400,Income
+2024-05-26,Store Sales,578,Income
+2024-05-26,Store Sales,1111,Income
+2024-05-27,Store Sales,406,Income
+2024-05-27,Store Sales,951,Income
+2024-05-27,Store Sales,462,Income
+2024-05-28,Store Sales,625,Income
+2024-05-28,Store Sales,468,Income
+2024-05-28,Store Sales,309,Income
+2024-05-29,Store Sales,389,Income
+2024-05-29,Store Sales,1179,Income
+2024-05-29,Store Sales,832,Income
+2024-05-30,Store Sales,962,Income
+2024-05-30,Store Sales,927,Income
+2024-05-30,Store Sales,1075,Income
+2024-05-31,Store Sales,638,Income
+2024-05-31,Store Sales,464,Income
+2024-05-31,Store Sales,1128,Income
+2024-06-01,Store Sales,1496,Income
+2024-06-01,Store Sales,1572,Income
+2024-06-01,Store Sales,1232,Income
+2024-06-01,Store Sales,519,Income
+2024-06-01,Special Promotion Sales,2044,Income
+2024-06-02,Store Sales,968,Income
+2024-06-02,Store Sales,536,Income
+2024-06-02,Store Sales,1230,Income
+2024-06-02,Store Sales,1634,Income
+2024-06-03,Store Sales,1176,Income
+2024-06-03,Store Sales,562,Income
+2024-06-03,Store Sales,1176,Income
+2024-06-04,Store Sales,1290,Income
+2024-06-04,Store Sales,483,Income
+2024-06-04,Store Sales,750,Income
+2024-06-05,Store Sales,920,Income
+2024-06-05,Store Sales,812,Income
+2024-06-05,Store Sales,1316,Income
+2024-06-06,Store Sales,1159,Income
+2024-06-06,Store Sales,969,Income
+2024-06-06,Store Sales,738,Income
+2024-06-06,Special Promotion Sales,1855,Income
+2024-06-07,Store Sales,609,Income
+2024-06-07,Store Sales,787,Income
+2024-06-07,Store Sales,667,Income
+2024-06-08,Store Sales,979,Income
+2024-06-08,Store Sales,528,Income
+2024-06-08,Store Sales,1427,Income
+2024-06-08,Store Sales,1282,Income
+2024-06-09,Store Sales,1363,Income
+2024-06-09,Store Sales,633,Income
+2024-06-09,Store Sales,1360,Income
+2024-06-09,Store Sales,854,Income
+2024-06-10,Store Sales,553,Income
+2024-06-10,Store Sales,765,Income
+2024-06-10,Store Sales,942,Income
+2024-06-11,Store Sales,512,Income
+2024-06-11,Store Sales,1194,Income
+2024-06-11,Store Sales,818,Income
+2024-06-12,Store Sales,1383,Income
+2024-06-12,Store Sales,1150,Income
+2024-06-12,Store Sales,1071,Income
+2024-06-13,Store Sales,1404,Income
+2024-06-13,Store Sales,1324,Income
+2024-06-13,Store Sales,1246,Income
+2024-06-14,Store Sales,1243,Income
+2024-06-14,Store Sales,518,Income
+2024-06-14,Store Sales,1180,Income
+2024-06-15,Store Sales,1199,Income
+2024-06-15,Store Sales,1132,Income
+2024-06-15,Store Sales,772,Income
+2024-06-15,Store Sales,1544,Income
+2024-06-16,Store Sales,887,Income
+2024-06-16,Store Sales,1062,Income
+2024-06-16,Store Sales,499,Income
+2024-06-16,Store Sales,1706,Income
+2024-06-16,Special Promotion Sales,2445,Income
+2024-06-17,Store Sales,1178,Income
+2024-06-17,Store Sales,1246,Income
+2024-06-17,Store Sales,1213,Income
+2024-06-18,Store Sales,1179,Income
+2024-06-18,Store Sales,458,Income
+2024-06-18,Store Sales,1269,Income
+2024-06-19,Store Sales,504,Income
+2024-06-19,Store Sales,1396,Income
+2024-06-19,Store Sales,747,Income
+2024-06-20,Store Sales,1009,Income
+2024-06-20,Store Sales,759,Income
+2024-06-20,Store Sales,1198,Income
+2024-06-21,Store Sales,1360,Income
+2024-06-21,Store Sales,1008,Income
+2024-06-21,Store Sales,799,Income
+2024-06-22,Store Sales,828,Income
+2024-06-22,Store Sales,1310,Income
+2024-06-22,Store Sales,744,Income
+2024-06-22,Store Sales,864,Income
+2024-06-23,Store Sales,684,Income
+2024-06-23,Store Sales,1458,Income
+2024-06-23,Store Sales,1673,Income
+2024-06-23,Store Sales,716,Income
+2024-06-24,Store Sales,1357,Income
+2024-06-24,Store Sales,1000,Income
+2024-06-24,Store Sales,883,Income
+2024-06-25,Store Sales,1166,Income
+2024-06-25,Store Sales,570,Income
+2024-06-25,Store Sales,1394,Income
+2024-06-26,Store Sales,963,Income
+2024-06-26,Store Sales,939,Income
+2024-06-26,Store Sales,907,Income
+2024-06-26,Special Promotion Sales,3586,Income
+2024-06-27,Store Sales,1392,Income
+2024-06-27,Store Sales,536,Income
+2024-06-27,Store Sales,915,Income
+2024-06-27,Special Promotion Sales,1536,Income
+2024-06-28,Store Sales,698,Income
+2024-06-28,Store Sales,729,Income
+2024-06-28,Store Sales,418,Income
+2024-06-29,Store Sales,848,Income
+2024-06-29,Store Sales,1542,Income
+2024-06-29,Store Sales,605,Income
+2024-06-29,Store Sales,1613,Income
+2024-06-30,Store Sales,480,Income
+2024-06-30,Store Sales,558,Income
+2024-06-30,Store Sales,1553,Income
+2024-06-30,Store Sales,1815,Income
+2024-07-01,Store Sales,778,Income
+2024-07-01,Store Sales,792,Income
+2024-07-01,Store Sales,469,Income
+2024-07-02,Store Sales,544,Income
+2024-07-02,Store Sales,991,Income
+2024-07-02,Store Sales,663,Income
+2024-07-03,Store Sales,1350,Income
+2024-07-03,Store Sales,752,Income
+2024-07-03,Store Sales,1030,Income
+2024-07-04,Store Sales,810,Income
+2024-07-04,Store Sales,627,Income
+2024-07-04,Store Sales,910,Income
+2024-07-05,Store Sales,638,Income
+2024-07-05,Store Sales,432,Income
+2024-07-05,Store Sales,834,Income
+2024-07-06,Store Sales,1452,Income
+2024-07-06,Store Sales,1790,Income
+2024-07-06,Store Sales,508,Income
+2024-07-06,Store Sales,1536,Income
+2024-07-07,Store Sales,725,Income
+2024-07-07,Store Sales,486,Income
+2024-07-07,Store Sales,973,Income
+2024-07-07,Store Sales,1389,Income
+2024-07-07,Special Promotion Sales,2216,Income
+2024-07-08,Store Sales,642,Income
+2024-07-08,Store Sales,460,Income
+2024-07-08,Store Sales,1160,Income
+2024-07-09,Store Sales,601,Income
+2024-07-09,Store Sales,1156,Income
+2024-07-09,Store Sales,718,Income
+2024-07-10,Store Sales,607,Income
+2024-07-10,Store Sales,1329,Income
+2024-07-10,Store Sales,418,Income
+2024-07-10,Special Promotion Sales,3970,Income
+2024-07-11,Store Sales,829,Income
+2024-07-11,Store Sales,831,Income
+2024-07-11,Store Sales,1176,Income
+2024-07-12,Store Sales,1054,Income
+2024-07-12,Store Sales,1329,Income
+2024-07-12,Store Sales,709,Income
+2024-07-13,Store Sales,784,Income
+2024-07-13,Store Sales,1057,Income
+2024-07-13,Store Sales,1393,Income
+2024-07-13,Store Sales,666,Income
+2024-07-14,Store Sales,1450,Income
+2024-07-14,Store Sales,1506,Income
+2024-07-14,Store Sales,1170,Income
+2024-07-14,Store Sales,1652,Income
+2024-07-15,Store Sales,1232,Income
+2024-07-15,Store Sales,1130,Income
+2024-07-15,Store Sales,420,Income
+2024-07-15,Special Promotion Sales,1276,Income
+2024-07-16,Store Sales,920,Income
+2024-07-16,Store Sales,1213,Income
+2024-07-16,Store Sales,702,Income
+2024-07-17,Store Sales,1347,Income
+2024-07-17,Store Sales,1196,Income
+2024-07-17,Store Sales,1207,Income
+2024-07-18,Store Sales,657,Income
+2024-07-18,Store Sales,1429,Income
+2024-07-18,Store Sales,1028,Income
+2024-07-19,Store Sales,538,Income
+2024-07-19,Store Sales,866,Income
+2024-07-19,Store Sales,1287,Income
+2024-07-20,Store Sales,911,Income
+2024-07-20,Store Sales,1037,Income
+2024-07-20,Store Sales,1074,Income
+2024-07-20,Store Sales,1435,Income
+2024-07-21,Store Sales,1262,Income
+2024-07-21,Store Sales,1653,Income
+2024-07-21,Store Sales,884,Income
+2024-07-21,Store Sales,1744,Income
+2024-07-22,Store Sales,726,Income
+2024-07-22,Store Sales,1406,Income
+2024-07-22,Store Sales,567,Income
+2024-07-23,Store Sales,613,Income
+2024-07-23,Store Sales,625,Income
+2024-07-23,Store Sales,686,Income
+2024-07-24,Store Sales,1262,Income
+2024-07-24,Store Sales,1422,Income
+2024-07-24,Store Sales,1293,Income
+2024-07-25,Store Sales,382,Income
+2024-07-25,Store Sales,1227,Income
+2024-07-25,Store Sales,1266,Income
+2024-07-26,Store Sales,1110,Income
+2024-07-26,Store Sales,464,Income
+2024-07-26,Store Sales,1221,Income
+2024-07-27,Store Sales,1857,Income
+2024-07-27,Store Sales,1779,Income
+2024-07-27,Store Sales,1441,Income
+2024-07-27,Store Sales,1567,Income
+2024-07-28,Store Sales,1455,Income
+2024-07-28,Store Sales,1263,Income
+2024-07-28,Store Sales,783,Income
+2024-07-28,Store Sales,1516,Income
+2024-07-29,Store Sales,876,Income
+2024-07-29,Store Sales,1260,Income
+2024-07-29,Store Sales,740,Income
+2024-07-30,Store Sales,981,Income
+2024-07-30,Store Sales,1438,Income
+2024-07-30,Store Sales,1350,Income
+2024-07-31,Store Sales,1368,Income
+2024-07-31,Store Sales,1248,Income
+2024-07-31,Store Sales,1020,Income
+2024-08-01,Store Sales,454,Income
+2024-08-01,Store Sales,932,Income
+2024-08-01,Store Sales,884,Income
+2024-08-01,Store Sales,1260,Income
+2024-08-02,Store Sales,760,Income
+2024-08-02,Store Sales,421,Income
+2024-08-02,Store Sales,707,Income
+2024-08-02,Store Sales,1640,Income
+2024-08-03,Store Sales,718,Income
+2024-08-03,Store Sales,602,Income
+2024-08-03,Store Sales,666,Income
+2024-08-03,Store Sales,573,Income
+2024-08-03,Store Sales,1055,Income
+2024-08-04,Store Sales,851,Income
+2024-08-04,Store Sales,1896,Income
+2024-08-04,Store Sales,1173,Income
+2024-08-04,Store Sales,1193,Income
+2024-08-04,Store Sales,1301,Income
+2024-08-05,Store Sales,1192,Income
+2024-08-05,Store Sales,992,Income
+2024-08-05,Store Sales,1398,Income
+2024-08-05,Store Sales,904,Income
+2024-08-06,Store Sales,1267,Income
+2024-08-06,Store Sales,467,Income
+2024-08-06,Store Sales,1107,Income
+2024-08-06,Store Sales,1124,Income
+2024-08-07,Store Sales,718,Income
+2024-08-07,Store Sales,1425,Income
+2024-08-07,Store Sales,1292,Income
+2024-08-07,Store Sales,854,Income
+2024-08-08,Store Sales,1411,Income
+2024-08-08,Store Sales,1358,Income
+2024-08-08,Store Sales,424,Income
+2024-08-08,Store Sales,1468,Income
+2024-08-09,Store Sales,764,Income
+2024-08-09,Store Sales,1076,Income
+2024-08-09,Store Sales,1071,Income
+2024-08-09,Store Sales,1561,Income
+2024-08-10,Store Sales,722,Income
+2024-08-10,Store Sales,1237,Income
+2024-08-10,Store Sales,1758,Income
+2024-08-10,Store Sales,1625,Income
+2024-08-10,Store Sales,2005,Income
+2024-08-11,Store Sales,988,Income
+2024-08-11,Store Sales,1204,Income
+2024-08-11,Store Sales,2014,Income
+2024-08-11,Store Sales,1274,Income
+2024-08-11,Store Sales,1397,Income
+2024-08-12,Store Sales,624,Income
+2024-08-12,Store Sales,1373,Income
+2024-08-12,Store Sales,1439,Income
+2024-08-12,Store Sales,961,Income
+2024-08-13,Store Sales,680,Income
+2024-08-13,Store Sales,653,Income
+2024-08-13,Store Sales,718,Income
+2024-08-13,Store Sales,655,Income
+2024-08-14,Store Sales,949,Income
+2024-08-14,Store Sales,1097,Income
+2024-08-14,Store Sales,1612,Income
+2024-08-14,Store Sales,1519,Income
+2024-08-15,Store Sales,1388,Income
+2024-08-15,Store Sales,1262,Income
+2024-08-15,Store Sales,1461,Income
+2024-08-15,Store Sales,1275,Income
+2024-08-16,Store Sales,733,Income
+2024-08-16,Store Sales,1551,Income
+2024-08-16,Store Sales,708,Income
+2024-08-16,Store Sales,1576,Income
+2024-08-17,Store Sales,1013,Income
+2024-08-17,Store Sales,789,Income
+2024-08-17,Store Sales,2047,Income
+2024-08-17,Store Sales,1037,Income
+2024-08-17,Store Sales,1687,Income
+2024-08-18,Store Sales,1466,Income
+2024-08-18,Store Sales,1172,Income
+2024-08-18,Store Sales,769,Income
+2024-08-18,Store Sales,900,Income
+2024-08-18,Store Sales,1277,Income
+2024-08-19,Store Sales,1321,Income
+2024-08-19,Store Sales,656,Income
+2024-08-19,Store Sales,907,Income
+2024-08-19,Store Sales,693,Income
+2024-08-20,Store Sales,981,Income
+2024-08-20,Store Sales,436,Income
+2024-08-20,Store Sales,925,Income
+2024-08-20,Store Sales,634,Income
+2024-08-21,Store Sales,1422,Income
+2024-08-21,Store Sales,536,Income
+2024-08-21,Store Sales,1587,Income
+2024-08-21,Store Sales,821,Income
+2024-08-22,Store Sales,522,Income
+2024-08-22,Store Sales,1176,Income
+2024-08-22,Store Sales,757,Income
+2024-08-22,Store Sales,1520,Income
+2024-08-23,Store Sales,954,Income
+2024-08-23,Store Sales,513,Income
+2024-08-23,Store Sales,960,Income
+2024-08-23,Store Sales,1554,Income
+2024-08-24,Store Sales,1132,Income
+2024-08-24,Store Sales,968,Income
+2024-08-24,Store Sales,1838,Income
+2024-08-24,Store Sales,598,Income
+2024-08-24,Store Sales,1401,Income
+2024-08-25,Store Sales,948,Income
+2024-08-25,Store Sales,1501,Income
+2024-08-25,Store Sales,1761,Income
+2024-08-25,Store Sales,587,Income
+2024-08-25,Store Sales,1816,Income
+2024-08-26,Store Sales,1657,Income
+2024-08-26,Store Sales,1540,Income
+2024-08-26,Store Sales,614,Income
+2024-08-26,Store Sales,806,Income
+2024-08-27,Store Sales,873,Income
+2024-08-27,Store Sales,1437,Income
+2024-08-27,Store Sales,660,Income
+2024-08-27,Store Sales,1432,Income
+2024-08-28,Store Sales,1355,Income
+2024-08-28,Store Sales,1463,Income
+2024-08-28,Store Sales,1344,Income
+2024-08-28,Store Sales,1237,Income
+2024-08-29,Store Sales,439,Income
+2024-08-29,Store Sales,445,Income
+2024-08-29,Store Sales,529,Income
+2024-08-29,Store Sales,1271,Income
+2024-08-29,Special Promotion Sales,2616,Income
+2024-08-30,Store Sales,586,Income
+2024-08-30,Store Sales,1600,Income
+2024-08-30,Store Sales,1260,Income
+2024-08-30,Store Sales,1034,Income
+2024-08-31,Store Sales,1778,Income
+2024-08-31,Store Sales,1354,Income
+2024-08-31,Store Sales,1516,Income
+2024-08-31,Store Sales,1599,Income
+2024-08-31,Store Sales,993,Income
+2024-09-01,Store Sales,804,Income
+2024-09-01,Store Sales,1258,Income
+2024-09-01,Store Sales,1528,Income
+2024-09-02,Store Sales,574,Income
+2024-09-02,Store Sales,362,Income
+2024-09-02,Store Sales,622,Income
+2024-09-03,Store Sales,1158,Income
+2024-09-03,Store Sales,1193,Income
+2024-09-03,Store Sales,387,Income
+2024-09-04,Store Sales,870,Income
+2024-09-04,Store Sales,1058,Income
+2024-09-04,Store Sales,1130,Income
+2024-09-05,Store Sales,614,Income
+2024-09-05,Store Sales,509,Income
+2024-09-05,Store Sales,448,Income
+2024-09-06,Store Sales,1004,Income
+2024-09-06,Store Sales,547,Income
+2024-09-06,Store Sales,981,Income
+2024-09-06,Special Promotion Sales,2213,Income
+2024-09-07,Store Sales,1188,Income
+2024-09-07,Store Sales,396,Income
+2024-09-07,Store Sales,1259,Income
+2024-09-08,Store Sales,893,Income
+2024-09-08,Store Sales,1073,Income
+2024-09-08,Store Sales,712,Income
+2024-09-09,Store Sales,480,Income
+2024-09-09,Store Sales,1141,Income
+2024-09-09,Store Sales,535,Income
+2024-09-10,Store Sales,607,Income
+2024-09-10,Store Sales,1142,Income
+2024-09-10,Store Sales,811,Income
+2024-09-11,Store Sales,793,Income
+2024-09-11,Store Sales,968,Income
+2024-09-11,Store Sales,441,Income
+2024-09-12,Store Sales,831,Income
+2024-09-12,Store Sales,752,Income
+2024-09-12,Store Sales,628,Income
+2024-09-12,Special Promotion Sales,3080,Income
+2024-09-13,Store Sales,738,Income
+2024-09-13,Store Sales,519,Income
+2024-09-13,Store Sales,808,Income
+2024-09-14,Store Sales,556,Income
+2024-09-14,Store Sales,414,Income
+2024-09-14,Store Sales,605,Income
+2024-09-15,Store Sales,1443,Income
+2024-09-15,Store Sales,516,Income
+2024-09-15,Store Sales,1309,Income
+2024-09-16,Store Sales,747,Income
+2024-09-16,Store Sales,883,Income
+2024-09-16,Store Sales,1106,Income
+2024-09-17,Store Sales,716,Income
+2024-09-17,Store Sales,670,Income
+2024-09-17,Store Sales,768,Income
+2024-09-18,Store Sales,324,Income
+2024-09-18,Store Sales,1034,Income
+2024-09-18,Store Sales,887,Income
+2024-09-19,Store Sales,1055,Income
+2024-09-19,Store Sales,569,Income
+2024-09-19,Store Sales,877,Income
+2024-09-20,Store Sales,1159,Income
+2024-09-20,Store Sales,854,Income
+2024-09-20,Store Sales,1115,Income
+2024-09-21,Store Sales,950,Income
+2024-09-21,Store Sales,413,Income
+2024-09-21,Store Sales,921,Income
+2024-09-22,Store Sales,1448,Income
+2024-09-22,Store Sales,439,Income
+2024-09-22,Store Sales,1318,Income
+2024-09-23,Store Sales,488,Income
+2024-09-23,Store Sales,642,Income
+2024-09-23,Store Sales,444,Income
+2024-09-24,Store Sales,793,Income
+2024-09-24,Store Sales,343,Income
+2024-09-24,Store Sales,1167,Income
+2024-09-24,Special Promotion Sales,3025,Income
+2024-09-25,Store Sales,321,Income
+2024-09-25,Store Sales,667,Income
+2024-09-25,Store Sales,883,Income
+2024-09-26,Store Sales,530,Income
+2024-09-26,Store Sales,1172,Income
+2024-09-26,Store Sales,396,Income
+2024-09-27,Store Sales,1011,Income
+2024-09-27,Store Sales,730,Income
+2024-09-27,Store Sales,1107,Income
+2024-09-28,Store Sales,512,Income
+2024-09-28,Store Sales,800,Income
+2024-09-28,Store Sales,1073,Income
+2024-09-29,Store Sales,1446,Income
+2024-09-29,Store Sales,1500,Income
+2024-09-29,Store Sales,618,Income
+2024-09-30,Store Sales,1110,Income
+2024-09-30,Store Sales,563,Income
+2024-09-30,Store Sales,935,Income
+2024-09-30,Special Promotion Sales,2948,Income
+2024-10-01,Store Sales,1076,Income
+2024-10-01,Store Sales,935,Income
+2024-10-01,Store Sales,800,Income
+2024-10-02,Store Sales,320,Income
+2024-10-02,Store Sales,692,Income
+2024-10-02,Store Sales,831,Income
+2024-10-03,Store Sales,646,Income
+2024-10-03,Store Sales,783,Income
+2024-10-03,Store Sales,417,Income
+2024-10-04,Store Sales,917,Income
+2024-10-04,Store Sales,428,Income
+2024-10-04,Store Sales,866,Income
+2024-10-05,Store Sales,704,Income
+2024-10-05,Store Sales,543,Income
+2024-10-05,Store Sales,625,Income
+2024-10-06,Store Sales,1040,Income
+2024-10-06,Store Sales,1387,Income
+2024-10-06,Store Sales,672,Income
+2024-10-07,Store Sales,723,Income
+2024-10-07,Store Sales,1142,Income
+2024-10-07,Store Sales,687,Income
+2024-10-08,Store Sales,420,Income
+2024-10-08,Store Sales,328,Income
+2024-10-08,Store Sales,520,Income
+2024-10-09,Store Sales,1173,Income
+2024-10-09,Store Sales,844,Income
+2024-10-09,Store Sales,533,Income
+2024-10-10,Store Sales,811,Income
+2024-10-10,Store Sales,1109,Income
+2024-10-10,Store Sales,1021,Income
+2024-10-11,Store Sales,339,Income
+2024-10-11,Store Sales,625,Income
+2024-10-11,Store Sales,363,Income
+2024-10-12,Store Sales,1472,Income
+2024-10-12,Store Sales,1370,Income
+2024-10-12,Store Sales,577,Income
+2024-10-13,Store Sales,1011,Income
+2024-10-13,Store Sales,1220,Income
+2024-10-13,Store Sales,478,Income
+2024-10-14,Store Sales,778,Income
+2024-10-14,Store Sales,969,Income
+2024-10-14,Store Sales,906,Income
+2024-10-15,Store Sales,1031,Income
+2024-10-15,Store Sales,674,Income
+2024-10-15,Store Sales,754,Income
+2024-10-15,Special Promotion Sales,3631,Income
+2024-10-16,Store Sales,1141,Income
+2024-10-16,Store Sales,887,Income
+2024-10-16,Store Sales,1198,Income
+2024-10-17,Store Sales,350,Income
+2024-10-17,Store Sales,684,Income
+2024-10-17,Store Sales,1026,Income
+2024-10-18,Store Sales,1114,Income
+2024-10-18,Store Sales,813,Income
+2024-10-18,Store Sales,335,Income
+2024-10-19,Store Sales,1534,Income
+2024-10-19,Store Sales,1019,Income
+2024-10-19,Store Sales,915,Income
+2024-10-20,Store Sales,1105,Income
+2024-10-20,Store Sales,977,Income
+2024-10-20,Store Sales,1140,Income
+2024-10-21,Store Sales,440,Income
+2024-10-21,Store Sales,399,Income
+2024-10-21,Store Sales,950,Income
+2024-10-22,Store Sales,924,Income
+2024-10-22,Store Sales,862,Income
+2024-10-22,Store Sales,433,Income
+2024-10-23,Store Sales,1031,Income
+2024-10-23,Store Sales,851,Income
+2024-10-23,Store Sales,418,Income
+2024-10-24,Store Sales,759,Income
+2024-10-24,Store Sales,956,Income
+2024-10-24,Store Sales,454,Income
+2024-10-25,Store Sales,964,Income
+2024-10-25,Store Sales,938,Income
+2024-10-25,Store Sales,933,Income
+2024-10-26,Store Sales,985,Income
+2024-10-26,Store Sales,1211,Income
+2024-10-26,Store Sales,906,Income
+2024-10-27,Store Sales,1142,Income
+2024-10-27,Store Sales,1348,Income
+2024-10-27,Store Sales,1406,Income
+2024-10-28,Store Sales,1055,Income
+2024-10-28,Store Sales,950,Income
+2024-10-28,Store Sales,445,Income
+2024-10-29,Store Sales,545,Income
+2024-10-29,Store Sales,564,Income
+2024-10-29,Store Sales,885,Income
+2024-10-30,Store Sales,458,Income
+2024-10-30,Store Sales,524,Income
+2024-10-30,Store Sales,761,Income
+2024-10-31,Store Sales,696,Income
+2024-10-31,Store Sales,328,Income
+2024-10-31,Store Sales,407,Income
+2024-11-01,Store Sales,1114,Income
+2024-11-01,Store Sales,2136,Income
+2024-11-01,Store Sales,1387,Income
+2024-11-01,Store Sales,1040,Income
+2024-11-01,Store Sales,1056,Income
+2024-11-02,Store Sales,2117,Income
+2024-11-02,Store Sales,2281,Income
+2024-11-02,Store Sales,2377,Income
+2024-11-02,Store Sales,1371,Income
+2024-11-02,Store Sales,1722,Income
+2024-11-02,Store Sales,1836,Income
+2024-11-03,Store Sales,2187,Income
+2024-11-03,Store Sales,1516,Income
+2024-11-03,Store Sales,2318,Income
+2024-11-03,Store Sales,2515,Income
+2024-11-03,Store Sales,2035,Income
+2024-11-03,Store Sales,1544,Income
+2024-11-04,Store Sales,1396,Income
+2024-11-04,Store Sales,923,Income
+2024-11-04,Store Sales,693,Income
+2024-11-04,Store Sales,1301,Income
+2024-11-04,Store Sales,1270,Income
+2024-11-05,Store Sales,741,Income
+2024-11-05,Store Sales,1504,Income
+2024-11-05,Store Sales,1026,Income
+2024-11-05,Store Sales,1182,Income
+2024-11-05,Store Sales,1000,Income
+2024-11-06,Store Sales,594,Income
+2024-11-06,Store Sales,792,Income
+2024-11-06,Store Sales,1503,Income
+2024-11-06,Store Sales,747,Income
+2024-11-06,Store Sales,1535,Income
+2024-11-07,Store Sales,2062,Income
+2024-11-07,Store Sales,736,Income
+2024-11-07,Store Sales,592,Income
+2024-11-07,Store Sales,2023,Income
+2024-11-07,Store Sales,1571,Income
+2024-11-08,Store Sales,1179,Income
+2024-11-08,Store Sales,1011,Income
+2024-11-08,Store Sales,1501,Income
+2024-11-08,Store Sales,694,Income
+2024-11-08,Store Sales,1602,Income
+2024-11-09,Store Sales,2356,Income
+2024-11-09,Store Sales,1116,Income
+2024-11-09,Store Sales,1989,Income
+2024-11-09,Store Sales,2480,Income
+2024-11-09,Store Sales,917,Income
+2024-11-09,Store Sales,1984,Income
+2024-11-09,Special Promotion Sales,3557,Income
+2024-11-10,Store Sales,1415,Income
+2024-11-10,Store Sales,1172,Income
+2024-11-10,Store Sales,1996,Income
+2024-11-10,Store Sales,966,Income
+2024-11-10,Store Sales,1719,Income
+2024-11-10,Store Sales,716,Income
+2024-11-11,Store Sales,1281,Income
+2024-11-11,Store Sales,972,Income
+2024-11-11,Store Sales,1882,Income
+2024-11-11,Store Sales,1008,Income
+2024-11-11,Store Sales,1834,Income
+2024-11-12,Store Sales,1618,Income
+2024-11-12,Store Sales,2023,Income
+2024-11-12,Store Sales,1458,Income
+2024-11-12,Store Sales,2057,Income
+2024-11-12,Store Sales,601,Income
+2024-11-13,Store Sales,1186,Income
+2024-11-13,Store Sales,2066,Income
+2024-11-13,Store Sales,982,Income
+2024-11-13,Store Sales,1728,Income
+2024-11-13,Store Sales,1663,Income
+2024-11-14,Store Sales,1123,Income
+2024-11-14,Store Sales,2100,Income
+2024-11-14,Store Sales,1287,Income
+2024-11-14,Store Sales,1674,Income
+2024-11-14,Store Sales,648,Income
+2024-11-15,Store Sales,997,Income
+2024-11-15,Store Sales,1400,Income
+2024-11-15,Store Sales,1650,Income
+2024-11-15,Store Sales,1112,Income
+2024-11-15,Store Sales,1468,Income
+2024-11-16,Store Sales,1083,Income
+2024-11-16,Store Sales,1623,Income
+2024-11-16,Store Sales,1146,Income
+2024-11-16,Store Sales,2447,Income
+2024-11-16,Store Sales,1258,Income
+2024-11-16,Store Sales,2808,Income
+2024-11-16,Special Promotion Sales,2267,Income
+2024-11-17,Store Sales,2557,Income
+2024-11-17,Store Sales,2396,Income
+2024-11-17,Store Sales,2630,Income
+2024-11-17,Store Sales,1165,Income
+2024-11-17,Store Sales,1170,Income
+2024-11-17,Store Sales,1242,Income
+2024-11-18,Store Sales,1850,Income
+2024-11-18,Store Sales,939,Income
+2024-11-18,Store Sales,1360,Income
+2024-11-18,Store Sales,945,Income
+2024-11-18,Store Sales,873,Income
+2024-11-19,Store Sales,1175,Income
+2024-11-19,Store Sales,1116,Income
+2024-11-19,Store Sales,968,Income
+2024-11-19,Store Sales,2066,Income
+2024-11-19,Store Sales,1288,Income
+2024-11-19,Special Promotion Sales,2525,Income
+2024-11-20,Store Sales,1530,Income
+2024-11-20,Store Sales,1803,Income
+2024-11-20,Store Sales,932,Income
+2024-11-20,Store Sales,1080,Income
+2024-11-20,Store Sales,1135,Income
+2024-11-20,Special Promotion Sales,1939,Income
+2024-11-21,Store Sales,1663,Income
+2024-11-21,Store Sales,1719,Income
+2024-11-21,Store Sales,1285,Income
+2024-11-21,Store Sales,1656,Income
+2024-11-21,Store Sales,653,Income
+2024-11-22,Store Sales,999,Income
+2024-11-22,Store Sales,1735,Income
+2024-11-22,Store Sales,1926,Income
+2024-11-22,Store Sales,1598,Income
+2024-11-22,Store Sales,1929,Income
+2024-11-23,Store Sales,1144,Income
+2024-11-23,Store Sales,856,Income
+2024-11-23,Store Sales,2676,Income
+2024-11-23,Store Sales,2192,Income
+2024-11-23,Store Sales,1726,Income
+2024-11-23,Store Sales,1272,Income
+2024-11-24,Store Sales,1984,Income
+2024-11-24,Store Sales,1188,Income
+2024-11-24,Store Sales,2662,Income
+2024-11-24,Store Sales,1263,Income
+2024-11-24,Store Sales,1846,Income
+2024-11-24,Store Sales,1757,Income
+2024-11-25,Store Sales,1359,Income
+2024-11-25,Store Sales,592,Income
+2024-11-25,Store Sales,1670,Income
+2024-11-25,Store Sales,559,Income
+2024-11-25,Store Sales,1911,Income
+2024-11-26,Store Sales,1348,Income
+2024-11-26,Store Sales,1384,Income
+2024-11-26,Store Sales,984,Income
+2024-11-26,Store Sales,1287,Income
+2024-11-26,Store Sales,604,Income
+2024-11-27,Store Sales,2160,Income
+2024-11-27,Store Sales,1731,Income
+2024-11-27,Store Sales,739,Income
+2024-11-27,Store Sales,1310,Income
+2024-11-27,Store Sales,1794,Income
+2024-11-28,Store Sales,1029,Income
+2024-11-28,Store Sales,1126,Income
+2024-11-28,Store Sales,1312,Income
+2024-11-28,Store Sales,1296,Income
+2024-11-28,Store Sales,988,Income
+2024-11-29,Store Sales,833,Income
+2024-11-29,Store Sales,1999,Income
+2024-11-29,Store Sales,1056,Income
+2024-11-29,Store Sales,594,Income
+2024-11-29,Store Sales,2086,Income
+2024-11-30,Store Sales,762,Income
+2024-11-30,Store Sales,1478,Income
+2024-11-30,Store Sales,931,Income
+2024-11-30,Store Sales,2407,Income
+2024-11-30,Store Sales,2244,Income
+2024-11-30,Store Sales,1949,Income
+2024-12-01,Store Sales,2564,Income
+2024-12-01,Store Sales,1359,Income
+2024-12-01,Store Sales,2419,Income
+2024-12-01,Store Sales,1422,Income
+2024-12-01,Store Sales,1043,Income
+2024-12-01,Store Sales,1268,Income
+2024-12-02,Store Sales,1018,Income
+2024-12-02,Store Sales,1459,Income
+2024-12-02,Store Sales,2008,Income
+2024-12-02,Store Sales,2152,Income
+2024-12-02,Store Sales,2007,Income
+2024-12-03,Store Sales,770,Income
+2024-12-03,Store Sales,1940,Income
+2024-12-03,Store Sales,1233,Income
+2024-12-03,Store Sales,1301,Income
+2024-12-03,Store Sales,2061,Income
+2024-12-04,Store Sales,880,Income
+2024-12-04,Store Sales,655,Income
+2024-12-04,Store Sales,1654,Income
+2024-12-04,Store Sales,1251,Income
+2024-12-04,Store Sales,633,Income
+2024-12-05,Store Sales,1643,Income
+2024-12-05,Store Sales,1917,Income
+2024-12-05,Store Sales,1348,Income
+2024-12-05,Store Sales,1666,Income
+2024-12-05,Store Sales,1432,Income
+2024-12-06,Store Sales,941,Income
+2024-12-06,Store Sales,568,Income
+2024-12-06,Store Sales,1103,Income
+2024-12-06,Store Sales,2030,Income
+2024-12-06,Store Sales,1317,Income
+2024-12-07,Store Sales,2335,Income
+2024-12-07,Store Sales,1464,Income
+2024-12-07,Store Sales,2698,Income
+2024-12-07,Store Sales,769,Income
+2024-12-07,Store Sales,804,Income
+2024-12-07,Store Sales,1366,Income
+2024-12-08,Store Sales,966,Income
+2024-12-08,Store Sales,905,Income
+2024-12-08,Store Sales,2187,Income
+2024-12-08,Store Sales,1565,Income
+2024-12-08,Store Sales,2417,Income
+2024-12-08,Store Sales,1551,Income
+2024-12-09,Store Sales,1506,Income
+2024-12-09,Store Sales,1850,Income
+2024-12-09,Store Sales,1236,Income
+2024-12-09,Store Sales,1881,Income
+2024-12-09,Store Sales,1018,Income
+2024-12-10,Store Sales,1753,Income
+2024-12-10,Store Sales,1791,Income
+2024-12-10,Store Sales,637,Income
+2024-12-10,Store Sales,1843,Income
+2024-12-10,Store Sales,1236,Income
+2024-12-11,Store Sales,1117,Income
+2024-12-11,Store Sales,1771,Income
+2024-12-11,Store Sales,2070,Income
+2024-12-11,Store Sales,1026,Income
+2024-12-11,Store Sales,2046,Income
+2024-12-12,Store Sales,1452,Income
+2024-12-12,Store Sales,1510,Income
+2024-12-12,Store Sales,1877,Income
+2024-12-12,Store Sales,1857,Income
+2024-12-12,Store Sales,1594,Income
+2024-12-13,Store Sales,687,Income
+2024-12-13,Store Sales,1270,Income
+2024-12-13,Store Sales,1056,Income
+2024-12-13,Store Sales,2134,Income
+2024-12-13,Store Sales,2050,Income
+2024-12-14,Store Sales,1301,Income
+2024-12-14,Store Sales,2569,Income
+2024-12-14,Store Sales,1864,Income
+2024-12-14,Store Sales,2337,Income
+2024-12-14,Store Sales,1233,Income
+2024-12-14,Store Sales,2251,Income
+2024-12-14,Special Promotion Sales,1938,Income
+2024-12-15,Store Sales,1476,Income
+2024-12-15,Store Sales,2798,Income
+2024-12-15,Store Sales,1399,Income
+2024-12-15,Store Sales,1518,Income
+2024-12-15,Store Sales,1991,Income
+2024-12-15,Store Sales,987,Income
+2024-12-16,Store Sales,937,Income
+2024-12-16,Store Sales,640,Income
+2024-12-16,Store Sales,714,Income
+2024-12-16,Store Sales,678,Income
+2024-12-16,Store Sales,1971,Income
+2024-12-16,Special Promotion Sales,1130,Income
+2024-12-17,Store Sales,1074,Income
+2024-12-17,Store Sales,1458,Income
+2024-12-17,Store Sales,1722,Income
+2024-12-17,Store Sales,554,Income
+2024-12-17,Store Sales,995,Income
+2024-12-18,Store Sales,2127,Income
+2024-12-18,Store Sales,838,Income
+2024-12-18,Store Sales,1846,Income
+2024-12-18,Store Sales,712,Income
+2024-12-18,Store Sales,891,Income
+2024-12-19,Store Sales,1909,Income
+2024-12-19,Store Sales,894,Income
+2024-12-19,Store Sales,1315,Income
+2024-12-19,Store Sales,1011,Income
+2024-12-19,Store Sales,1180,Income
+2024-12-20,Store Sales,644,Income
+2024-12-20,Store Sales,1575,Income
+2024-12-20,Store Sales,1755,Income
+2024-12-20,Store Sales,1927,Income
+2024-12-20,Store Sales,727,Income
+2024-12-21,Store Sales,2290,Income
+2024-12-21,Store Sales,1696,Income
+2024-12-21,Store Sales,2089,Income
+2024-12-21,Store Sales,999,Income
+2024-12-21,Store Sales,2695,Income
+2024-12-21,Store Sales,2007,Income
+2024-12-22,Store Sales,1764,Income
+2024-12-22,Store Sales,809,Income
+2024-12-22,Store Sales,2410,Income
+2024-12-22,Store Sales,936,Income
+2024-12-22,Store Sales,2183,Income
+2024-12-22,Store Sales,2517,Income
+2024-12-23,Store Sales,1096,Income
+2024-12-23,Store Sales,1413,Income
+2024-12-23,Store Sales,1683,Income
+2024-12-23,Store Sales,696,Income
+2024-12-23,Store Sales,1641,Income
+2024-12-24,Store Sales,1623,Income
+2024-12-24,Store Sales,1746,Income
+2024-12-24,Store Sales,1103,Income
+2024-12-24,Store Sales,1841,Income
+2024-12-24,Store Sales,1038,Income
+2024-12-25,Store Sales,1227,Income
+2024-12-25,Store Sales,1526,Income
+2024-12-25,Store Sales,1627,Income
+2024-12-25,Store Sales,1353,Income
+2024-12-25,Store Sales,2023,Income
+2024-12-26,Store Sales,1099,Income
+2024-12-26,Store Sales,1051,Income
+2024-12-26,Store Sales,2138,Income
+2024-12-26,Store Sales,1459,Income
+2024-12-26,Store Sales,1891,Income
+2024-12-27,Store Sales,1540,Income
+2024-12-27,Store Sales,882,Income
+2024-12-27,Store Sales,1065,Income
+2024-12-27,Store Sales,1924,Income
+2024-12-27,Store Sales,689,Income
+2024-12-28,Store Sales,783,Income
+2024-12-28,Store Sales,1680,Income
+2024-12-28,Store Sales,1132,Income
+2024-12-28,Store Sales,1577,Income
+2024-12-28,Store Sales,1411,Income
+2024-12-28,Store Sales,1287,Income
+2024-12-29,Store Sales,2225,Income
+2024-12-29,Store Sales,1747,Income
+2024-12-29,Store Sales,1078,Income
+2024-12-29,Store Sales,971,Income
+2024-12-29,Store Sales,744,Income
+2024-12-29,Store Sales,2674,Income
+2024-12-30,Store Sales,856,Income
+2024-12-30,Store Sales,581,Income
+2024-12-30,Store Sales,2093,Income
+2024-12-30,Store Sales,590,Income
+2024-12-30,Store Sales,1981,Income
+2024-12-31,Store Sales,1573,Income
+2024-12-31,Store Sales,1812,Income
+2024-12-31,Store Sales,1234,Income
+2024-12-31,Store Sales,1362,Income
+2024-12-31,Store Sales,770,Income
+2025-01-01,Store Sales,498,Income
+2025-01-01,Store Sales,564,Income
+2025-01-02,Store Sales,262,Income
+2025-01-02,Store Sales,439,Income
+2025-01-03,Store Sales,495,Income
+2025-01-03,Store Sales,733,Income
+2025-01-04,Store Sales,372,Income
+2025-01-04,Store Sales,821,Income
+2025-01-05,Store Sales,883,Income
+2025-01-05,Store Sales,307,Income
+2025-01-06,Store Sales,705,Income
+2025-01-06,Store Sales,632,Income
+2025-01-07,Store Sales,404,Income
+2025-01-07,Store Sales,762,Income
+2025-01-07,Special Promotion Sales,1088,Income
+2025-01-08,Store Sales,789,Income
+2025-01-08,Store Sales,674,Income
+2025-01-09,Store Sales,517,Income
+2025-01-09,Store Sales,380,Income
+2025-01-10,Store Sales,575,Income
+2025-01-10,Store Sales,434,Income
+2025-01-11,Store Sales,577,Income
+2025-01-11,Store Sales,889,Income
+2025-01-12,Store Sales,847,Income
+2025-01-12,Store Sales,475,Income
+2025-01-13,Store Sales,467,Income
+2025-01-13,Store Sales,366,Income
+2025-01-14,Store Sales,597,Income
+2025-01-14,Store Sales,682,Income
+2025-01-15,Store Sales,513,Income
+2025-01-15,Store Sales,354,Income
+2025-01-16,Store Sales,822,Income
+2025-01-16,Store Sales,499,Income
+2025-01-17,Store Sales,647,Income
+2025-01-17,Store Sales,798,Income
+2025-01-18,Store Sales,527,Income
+2025-01-18,Store Sales,335,Income
+2025-01-19,Store Sales,867,Income
+2025-01-19,Store Sales,696,Income
+2025-01-20,Store Sales,218,Income
+2025-01-20,Store Sales,716,Income
+2025-01-21,Store Sales,443,Income
+2025-01-21,Store Sales,423,Income
+2025-01-22,Store Sales,395,Income
+2025-01-22,Store Sales,718,Income
+2025-01-23,Store Sales,368,Income
+2025-01-23,Store Sales,762,Income
+2025-01-24,Store Sales,840,Income
+2025-01-24,Store Sales,386,Income
+2025-01-25,Store Sales,458,Income
+2025-01-25,Store Sales,571,Income
+2025-01-26,Store Sales,686,Income
+2025-01-26,Store Sales,378,Income
+2025-01-27,Store Sales,719,Income
+2025-01-27,Store Sales,785,Income
+2025-01-28,Store Sales,604,Income
+2025-01-28,Store Sales,686,Income
+2025-01-29,Store Sales,227,Income
+2025-01-29,Store Sales,593,Income
+2025-01-30,Store Sales,265,Income
+2025-01-30,Store Sales,666,Income
+2025-01-31,Store Sales,765,Income
+2025-01-31,Store Sales,312,Income
+2025-02-01,Store Sales,725,Income
+2025-02-01,Store Sales,299,Income
+2025-02-02,Store Sales,436,Income
+2025-02-02,Store Sales,902,Income
+2025-02-03,Store Sales,722,Income
+2025-02-03,Store Sales,401,Income
+2025-02-04,Store Sales,622,Income
+2025-02-04,Store Sales,385,Income
+2025-02-05,Store Sales,590,Income
+2025-02-05,Store Sales,797,Income
+2025-02-06,Store Sales,656,Income
+2025-02-06,Store Sales,229,Income
+2025-02-07,Store Sales,315,Income
+2025-02-07,Store Sales,480,Income
+2025-02-08,Store Sales,975,Income
+2025-02-08,Store Sales,663,Income
+2025-02-09,Store Sales,700,Income
+2025-02-09,Store Sales,275,Income
+2025-02-10,Store Sales,627,Income
+2025-02-10,Store Sales,643,Income
+2025-02-11,Store Sales,677,Income
+2025-02-11,Store Sales,276,Income
+2025-02-12,Store Sales,717,Income
+2025-02-12,Store Sales,788,Income
+2025-02-13,Store Sales,249,Income
+2025-02-13,Store Sales,614,Income
+2025-02-14,Store Sales,233,Income
+2025-02-14,Store Sales,701,Income
+2025-02-14,Special Promotion Sales,2063,Income
+2025-02-15,Store Sales,347,Income
+2025-02-15,Store Sales,782,Income
+2025-02-16,Store Sales,694,Income
+2025-02-16,Store Sales,438,Income
+2025-02-17,Store Sales,339,Income
+2025-02-17,Store Sales,573,Income
+2025-02-18,Store Sales,367,Income
+2025-02-18,Store Sales,473,Income
+2025-02-19,Store Sales,597,Income
+2025-02-19,Store Sales,657,Income
+2025-02-20,Store Sales,495,Income
+2025-02-20,Store Sales,256,Income
+2025-02-21,Store Sales,381,Income
+2025-02-21,Store Sales,364,Income
+2025-02-22,Store Sales,943,Income
+2025-02-22,Store Sales,501,Income
+2025-02-23,Store Sales,687,Income
+2025-02-23,Store Sales,890,Income
+2025-02-24,Store Sales,571,Income
+2025-02-24,Store Sales,693,Income
+2025-02-25,Store Sales,389,Income
+2025-02-25,Store Sales,661,Income
+2025-02-26,Store Sales,776,Income
+2025-02-26,Store Sales,341,Income
+2025-02-27,Store Sales,253,Income
+2025-02-27,Store Sales,601,Income
+2025-02-28,Store Sales,741,Income
+2025-02-28,Store Sales,224,Income
+2025-03-01,Store Sales,481,Income
+2025-03-01,Store Sales,777,Income
+2025-03-01,Store Sales,773,Income
+2025-03-02,Store Sales,1166,Income
+2025-03-02,Store Sales,973,Income
+2025-03-02,Store Sales,1426,Income
+2025-03-03,Store Sales,677,Income
+2025-03-03,Store Sales,846,Income
+2025-03-03,Store Sales,885,Income
+2025-03-04,Store Sales,898,Income
+2025-03-04,Store Sales,515,Income
+2025-03-04,Store Sales,896,Income
+2025-03-05,Store Sales,745,Income
+2025-03-05,Store Sales,320,Income
+2025-03-05,Store Sales,768,Income
+2025-03-06,Store Sales,568,Income
+2025-03-06,Store Sales,691,Income
+2025-03-06,Store Sales,1034,Income
+2025-03-07,Store Sales,491,Income
+2025-03-07,Store Sales,1137,Income
+2025-03-07,Store Sales,1040,Income
+2025-03-08,Store Sales,930,Income
+2025-03-08,Store Sales,642,Income
+2025-03-08,Store Sales,551,Income
+2025-03-09,Store Sales,1523,Income
+2025-03-09,Store Sales,804,Income
+2025-03-09,Store Sales,1311,Income
+2025-03-10,Store Sales,377,Income
+2025-03-10,Store Sales,789,Income
+2025-03-10,Store Sales,462,Income
+2025-03-11,Store Sales,964,Income
+2025-03-11,Store Sales,725,Income
+2025-03-11,Store Sales,425,Income
+2025-03-12,Store Sales,382,Income
+2025-03-12,Store Sales,302,Income
+2025-03-12,Store Sales,481,Income
+2025-03-13,Store Sales,771,Income
+2025-03-13,Store Sales,440,Income
+2025-03-13,Store Sales,659,Income
+2025-03-14,Store Sales,470,Income
+2025-03-14,Store Sales,1123,Income
+2025-03-14,Store Sales,1167,Income
+2025-03-15,Store Sales,455,Income
+2025-03-15,Store Sales,1423,Income
+2025-03-15,Store Sales,436,Income
+2025-03-16,Store Sales,1333,Income
+2025-03-16,Store Sales,1387,Income
+2025-03-16,Store Sales,1374,Income
+2025-03-17,Store Sales,598,Income
+2025-03-17,Store Sales,1120,Income
+2025-03-17,Store Sales,987,Income
+2025-03-17,Special Promotion Sales,1773,Income
+2025-03-18,Store Sales,565,Income
+2025-03-18,Store Sales,1050,Income
+2025-03-18,Store Sales,403,Income
+2025-03-19,Store Sales,790,Income
+2025-03-19,Store Sales,460,Income
+2025-03-19,Store Sales,316,Income
+2025-03-20,Store Sales,666,Income
+2025-03-20,Store Sales,941,Income
+2025-03-20,Store Sales,660,Income
+2025-03-21,Store Sales,802,Income
+2025-03-21,Store Sales,1168,Income
+2025-03-21,Store Sales,385,Income
+2025-03-22,Store Sales,604,Income
+2025-03-22,Store Sales,854,Income
+2025-03-22,Store Sales,1017,Income
+2025-03-23,Store Sales,962,Income
+2025-03-23,Store Sales,1019,Income
+2025-03-23,Store Sales,1431,Income
+2025-03-24,Store Sales,818,Income
+2025-03-24,Store Sales,1043,Income
+2025-03-24,Store Sales,784,Income
+2025-03-25,Store Sales,937,Income
+2025-03-25,Store Sales,655,Income
+2025-03-25,Store Sales,414,Income
+2025-03-26,Store Sales,443,Income
+2025-03-26,Store Sales,1099,Income
+2025-03-26,Store Sales,981,Income
+2025-03-26,Special Promotion Sales,1996,Income
+2025-03-27,Store Sales,305,Income
+2025-03-27,Store Sales,566,Income
+2025-03-27,Store Sales,1195,Income
+2025-03-28,Store Sales,469,Income
+2025-03-28,Store Sales,818,Income
+2025-03-28,Store Sales,1003,Income
+2025-03-29,Store Sales,530,Income
+2025-03-29,Store Sales,1501,Income
+2025-03-29,Store Sales,423,Income
+2025-03-30,Store Sales,1231,Income
+2025-03-30,Store Sales,819,Income
+2025-03-30,Store Sales,1180,Income
+2025-03-31,Store Sales,557,Income
+2025-03-31,Store Sales,448,Income
+2025-03-31,Store Sales,886,Income
+2025-04-01,Store Sales,873,Income
+2025-04-01,Store Sales,488,Income
+2025-04-01,Store Sales,1185,Income
+2025-04-02,Store Sales,1056,Income
+2025-04-02,Store Sales,1106,Income
+2025-04-02,Store Sales,438,Income
+2025-04-03,Store Sales,916,Income
+2025-04-03,Store Sales,557,Income
+2025-04-03,Store Sales,909,Income
+2025-04-04,Store Sales,367,Income
+2025-04-04,Store Sales,985,Income
+2025-04-04,Store Sales,1083,Income
+2025-04-05,Store Sales,1492,Income
+2025-04-05,Store Sales,980,Income
+2025-04-05,Store Sales,1500,Income
+2025-04-06,Store Sales,633,Income
+2025-04-06,Store Sales,943,Income
+2025-04-06,Store Sales,647,Income
+2025-04-07,Store Sales,641,Income
+2025-04-07,Store Sales,977,Income
+2025-04-07,Store Sales,533,Income
+2025-04-08,Store Sales,972,Income
+2025-04-08,Store Sales,1052,Income
+2025-04-08,Store Sales,588,Income
+2025-04-09,Store Sales,391,Income
+2025-04-09,Store Sales,758,Income
+2025-04-09,Store Sales,807,Income
+2025-04-10,Store Sales,480,Income
+2025-04-10,Store Sales,637,Income
+2025-04-10,Store Sales,1147,Income
+2025-04-11,Store Sales,443,Income
+2025-04-11,Store Sales,539,Income
+2025-04-11,Store Sales,908,Income
+2025-04-12,Store Sales,734,Income
+2025-04-12,Store Sales,1327,Income
+2025-04-12,Store Sales,586,Income
+2024-04-19,Retail Staff Payroll,-5285,Payroll
+2024-05-03,Retail Staff Payroll,-6332,Payroll
+2024-05-17,Retail Staff Payroll,-5257,Payroll
+2024-05-31,Retail Staff Payroll,-5638,Payroll
+2024-06-14,Retail Staff Payroll,-5658,Payroll
+2024-06-28,Retail Staff Payroll,-6399,Payroll
+2024-07-05,Retail Staff Payroll,-6324,Payroll
+2024-07-19,Retail Staff Payroll,-6172,Payroll
+2024-08-02,Retail Staff Payroll,-6190,Payroll
+2024-08-16,Retail Staff Payroll,-5030,Payroll
+2024-08-30,Retail Staff Payroll,-5977,Payroll
+2024-09-06,Retail Staff Payroll,-5684,Payroll
+2024-09-20,Retail Staff Payroll,-5285,Payroll
+2024-10-04,Retail Staff Payroll,-5025,Payroll
+2024-10-18,Retail Staff Payroll,-5305,Payroll
+2024-11-01,Retail Staff Payroll,-8695,Payroll
+2024-11-15,Retail Staff Payroll,-9660,Payroll
+2024-11-29,Retail Staff Payroll,-7198,Payroll
+2024-12-06,Retail Staff Payroll,-8380,Payroll
+2024-12-20,Retail Staff Payroll,-8603,Payroll
+2025-01-03,Retail Staff Payroll,-6635,Payroll
+2025-01-17,Retail Staff Payroll,-5147,Payroll
+2025-01-31,Retail Staff Payroll,-5376,Payroll
+2025-02-14,Retail Staff Payroll,-5610,Payroll
+2025-02-28,Retail Staff Payroll,-5630,Payroll
+2025-03-14,Retail Staff Payroll,-5005,Payroll
+2025-03-28,Retail Staff Payroll,-5116,Payroll
+2025-04-04,Retail Staff Payroll,-5496,Payroll
+2024-04-17,Regular Inventory - Import Company,-1051,Inventory
+2024-05-01,Regular Inventory - Import Company,-1023,Inventory
+2024-05-08,Regular Inventory - Factory Direct,-1618,Inventory
+2024-05-10,Back-to-School Inventory Order - Brand Manufacturer,-13306,Inventory
+2024-05-15,Regular Inventory - Main Distributor,-1613,Inventory
+2024-05-22,Regular Inventory - Import Company,-912,Inventory
+2024-05-25,Back-to-School Inventory Order - Factory Direct,-12074,Inventory
+2024-05-29,Regular Inventory - Wholesale Supplier,-1289,Inventory
+2024-06-10,Back-to-School Inventory Order - Main Distributor,-8099,Inventory
+2024-06-19,Regular Inventory - Wholesale Supplier,-878,Inventory
+2024-07-03,Regular Inventory - Brand Manufacturer,-1687,Inventory
+2024-07-10,Regular Inventory - Brand Manufacturer,-1816,Inventory
+2024-07-17,Regular Inventory - Brand Manufacturer,-1698,Inventory
+2024-07-24,Regular Inventory - Local Producer,-1418,Inventory
+2024-07-25,Fall Inventory Order - Factory Direct,-5659,Inventory
+2024-07-31,Regular Inventory - Wholesale Supplier,-1786,Inventory
+2024-08-10,Fall Inventory Order - Local Producer,-10615,Inventory
+2024-08-21,Regular Inventory - Local Producer,-1646,Inventory
+2024-08-28,Regular Inventory - Factory Direct,-1088,Inventory
+2024-09-04,Regular Inventory - Import Company,-908,Inventory
+2024-09-10,Holiday Inventory Order - Import Company,-19429,Inventory
+2024-09-11,Regular Inventory - Main Distributor,-1725,Inventory
+2024-09-18,Regular Inventory - Brand Manufacturer,-1339,Inventory
+2024-09-25,Regular Inventory - Factory Direct,-888,Inventory
+2024-09-25,Holiday Inventory Order - Wholesale Supplier,-19508,Inventory
+2024-10-02,Regular Inventory - Wholesale Supplier,-1718,Inventory
+2024-10-09,Regular Inventory - Main Distributor,-1495,Inventory
+2024-10-10,Holiday Inventory Order - Import Company,-13329,Inventory
+2024-10-16,Regular Inventory - Factory Direct,-804,Inventory
+2024-10-23,Regular Inventory - Brand Manufacturer,-1134,Inventory
+2024-10-30,Regular Inventory - Factory Direct,-1382,Inventory
+2024-11-06,Regular Inventory - Brand Manufacturer,-1598,Inventory
+2024-11-13,Regular Inventory - Local Producer,-1255,Inventory
+2024-11-20,Regular Inventory - Factory Direct,-1359,Inventory
+2024-11-27,Regular Inventory - Main Distributor,-1326,Inventory
+2024-12-04,Regular Inventory - Factory Direct,-1964,Inventory
+2024-12-11,Regular Inventory - Import Company,-1358,Inventory
+2024-12-18,Regular Inventory - Wholesale Supplier,-1724,Inventory
+2024-12-25,Regular Inventory - Local Producer,-970,Inventory
+2025-01-08,Regular Inventory - Main Distributor,-926,Inventory
+2025-01-10,Spring Inventory Order - Wholesale Supplier,-9405,Inventory
+2025-01-25,Spring Inventory Order - Import Company,-6385,Inventory
+2025-01-29,Regular Inventory - Factory Direct,-1294,Inventory
+2025-02-05,Regular Inventory - Import Company,-1413,Inventory
+2025-02-10,Spring Inventory Order - Factory Direct,-9438,Inventory
+2025-02-12,Regular Inventory - Factory Direct,-1023,Inventory
+2025-02-19,Regular Inventory - Main Distributor,-1881,Inventory
+2025-02-26,Regular Inventory - Import Company,-1046,Inventory
+2025-03-05,Regular Inventory - Import Company,-1386,Inventory
+2025-03-10,Summer Inventory Order - Factory Direct,-13105,Inventory
+2025-03-12,Regular Inventory - Wholesale Supplier,-979,Inventory
+2025-03-19,Regular Inventory - Brand Manufacturer,-1324,Inventory
+2025-03-26,Regular Inventory - Import Company,-1081,Inventory
+2025-04-02,Regular Inventory - Import Company,-1404,Inventory
+2025-04-09,Regular Inventory - Main Distributor,-1769,Inventory
+2025-04-10,Summer Inventory Order - Wholesale Supplier,-12846,Inventory
+2024-05-01,Store Rent,-4566,Rent
+2024-05-01,Electricity,-617,Utilities
+2024-05-01,Water,-180,Utilities
+2024-05-01,Internet and Phone,-264,Utilities
+2024-05-01,Store Insurance,-338,Insurance
+2024-05-01,POS System Subscription,-292,Services
+2024-05-01,Security System,-312,Services
+2024-05-01,Cleaning Service,-250,Services
+2024-05-01,Local Advertising,-906,Marketing
+2024-05-01,Social Media Marketing,-360,Marketing
+2024-05-01,Shipping Costs,-736,Shipping
+2024-06-01,Store Rent,-4329,Rent
+2024-06-01,Electricity,-598,Utilities
+2024-06-01,Water,-181,Utilities
+2024-06-01,Internet and Phone,-313,Utilities
+2024-06-01,Store Insurance,-391,Insurance
+2024-06-01,POS System Subscription,-250,Services
+2024-06-01,Security System,-306,Services
+2024-06-01,Cleaning Service,-265,Services
+2024-06-01,Local Advertising,-803,Marketing
+2024-06-01,Social Media Marketing,-312,Marketing
+2024-06-01,Shipping Costs,-668,Shipping
+2024-07-01,Store Rent,-4426,Rent
+2024-07-01,Electricity,-525,Utilities
+2024-07-01,Water,-179,Utilities
+2024-07-01,Internet and Phone,-314,Utilities
+2024-07-01,Store Insurance,-347,Insurance
+2024-07-01,POS System Subscription,-289,Services
+2024-07-01,Security System,-278,Services
+2024-07-01,Cleaning Service,-258,Services
+2024-07-01,Local Advertising,-834,Marketing
+2024-07-01,Social Media Marketing,-298,Marketing
+2024-07-01,Shipping Costs,-705,Shipping
+2024-08-01,Store Rent,-4986,Rent
+2024-08-01,Electricity,-564,Utilities
+2024-08-01,Water,-168,Utilities
+2024-08-01,Internet and Phone,-298,Utilities
+2024-08-01,Store Insurance,-385,Insurance
+2024-08-01,POS System Subscription,-259,Services
+2024-08-01,Security System,-266,Services
+2024-08-01,Cleaning Service,-267,Services
+2024-08-01,Local Advertising,-946,Marketing
+2024-08-01,Social Media Marketing,-327,Marketing
+2024-08-01,Shipping Costs,-630,Shipping
+2024-09-01,Store Rent,-4946,Rent
+2024-09-01,Electricity,-576,Utilities
+2024-09-01,Water,-150,Utilities
+2024-09-01,Internet and Phone,-307,Utilities
+2024-09-01,Store Insurance,-394,Insurance
+2024-09-01,POS System Subscription,-299,Services
+2024-09-01,Security System,-298,Services
+2024-09-01,Cleaning Service,-256,Services
+2024-09-01,Local Advertising,-865,Marketing
+2024-09-01,Social Media Marketing,-339,Marketing
+2024-09-01,Shipping Costs,-656,Shipping
+2024-10-01,Store Rent,-5064,Rent
+2024-10-01,Electricity,-544,Utilities
+2024-10-01,Water,-169,Utilities
+2024-10-01,Internet and Phone,-317,Utilities
+2024-10-01,Store Insurance,-349,Insurance
+2024-10-01,POS System Subscription,-277,Services
+2024-10-01,Security System,-271,Services
+2024-10-01,Cleaning Service,-231,Services
+2024-10-01,Local Advertising,-1504,Marketing
+2024-10-01,Social Media Marketing,-514,Marketing
+2024-10-01,Shipping Costs,-751,Shipping
+2024-11-01,Store Rent,-4838,Rent
+2024-11-01,Electricity,-554,Utilities
+2024-11-01,Water,-173,Utilities
+2024-11-01,Internet and Phone,-287,Utilities
+2024-11-01,Store Insurance,-392,Insurance
+2024-11-01,POS System Subscription,-263,Services
+2024-11-01,Security System,-265,Services
+2024-11-01,Cleaning Service,-261,Services
+2024-11-01,Local Advertising,-1390,Marketing
+2024-11-01,Social Media Marketing,-548,Marketing
+2024-11-01,Shipping Costs,-646,Shipping
+2024-12-01,Store Rent,-4954,Rent
+2024-12-01,Electricity,-581,Utilities
+2024-12-01,Water,-172,Utilities
+2024-12-01,Internet and Phone,-278,Utilities
+2024-12-01,Store Insurance,-383,Insurance
+2024-12-01,POS System Subscription,-299,Services
+2024-12-01,Security System,-295,Services
+2024-12-01,Cleaning Service,-271,Services
+2024-12-01,Local Advertising,-1458,Marketing
+2024-12-01,Social Media Marketing,-617,Marketing
+2024-12-01,Shipping Costs,-662,Shipping
+2025-01-01,Store Rent,-4423,Rent
+2025-01-01,Electricity,-535,Utilities
+2025-01-01,Water,-162,Utilities
+2025-01-01,Internet and Phone,-309,Utilities
+2025-01-01,Store Insurance,-344,Insurance
+2025-01-01,POS System Subscription,-250,Services
+2025-01-01,Security System,-304,Services
+2025-01-01,Cleaning Service,-268,Services
+2025-01-01,Local Advertising,-896,Marketing
+2025-01-01,Social Media Marketing,-357,Marketing
+2025-01-01,Shipping Costs,-703,Shipping
+2025-02-01,Store Rent,-4921,Rent
+2025-02-01,Electricity,-608,Utilities
+2025-02-01,Water,-151,Utilities
+2025-02-01,Internet and Phone,-281,Utilities
+2025-02-01,Store Insurance,-380,Insurance
+2025-02-01,POS System Subscription,-290,Services
+2025-02-01,Security System,-283,Services
+2025-02-01,Cleaning Service,-240,Services
+2025-02-01,Local Advertising,-968,Marketing
+2025-02-01,Social Media Marketing,-345,Marketing
+2025-02-01,Shipping Costs,-723,Shipping
+2025-03-01,Store Rent,-4385,Rent
+2025-03-01,Electricity,-586,Utilities
+2025-03-01,Water,-159,Utilities
+2025-03-01,Internet and Phone,-278,Utilities
+2025-03-01,Store Insurance,-388,Insurance
+2025-03-01,POS System Subscription,-278,Services
+2025-03-01,Security System,-320,Services
+2025-03-01,Cleaning Service,-231,Services
+2025-03-01,Local Advertising,-833,Marketing
+2025-03-01,Social Media Marketing,-304,Marketing
+2025-03-01,Shipping Costs,-707,Shipping
+2025-04-01,Store Rent,-4620,Rent
+2025-04-01,Electricity,-567,Utilities
+2025-04-01,Water,-156,Utilities
+2025-04-01,Internet and Phone,-294,Utilities
+2025-04-01,Store Insurance,-350,Insurance
+2025-04-01,POS System Subscription,-270,Services
+2025-04-01,Security System,-287,Services
+2025-04-01,Cleaning Service,-244,Services
+2025-04-01,Local Advertising,-880,Marketing
+2025-04-01,Social Media Marketing,-352,Marketing
+2025-04-01,Shipping Costs,-702,Shipping
+2025-01-10,Display Equipment,-3817,Fixtures
+2024-11-17,Security System Upgrade,-2510,Equipment
+2025-01-30,Display Equipment,-3817,Fixtures
+2024-07-22,POS Hardware Upgrade,-1947,Equipment
+2024-06-06,Summer Sale Campaign,-2947,Marketing
+2024-08-05,Back-to-School Campaign,-4925,Marketing
+2024-11-08,Black Friday Campaign,-5101,Marketing
+2024-12-08,Holiday Marketing Campaign,-4400,Marketing

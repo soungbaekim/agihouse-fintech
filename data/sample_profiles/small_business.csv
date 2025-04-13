@@ -1,174 +1,175 @@
 date,description,amount,category
-2024-04-24,Phone Bill,-66.39,Utilities
-2024-04-27,Verizon,-218.89,Utilities
-2024-05-04,Electric Company,-42.88,Utilities
-2024-05-18,Duke Energy,-50.4,Utilities
-2024-06-03,Water Service,-201.79,Utilities
-2024-06-04,Duke Energy,-46.47,Utilities
-2024-06-06,Dish Network,-258.24,Utilities
-2024-06-17,Comcast,-172.35,Utilities
-2024-06-23,PG&E,-286.74,Utilities
-2024-07-05,Phone Bill,-136.97,Utilities
-2024-07-29,PG&E,-166.57,Utilities
-2024-08-21,Cox Communications,-139.4,Utilities
-2024-09-12,ConEd,-142.76,Utilities
-2024-10-06,Waste Management,-155.67,Utilities
-2024-10-07,Internet Provider,-125.69,Utilities
-2024-10-19,Gas Bill,-165.76,Utilities
-2024-12-18,PG&E,-67.81,Utilities
-2024-12-20,Water Service,-200.1,Utilities
-2025-01-10,Internet Provider,-236.11,Utilities
-2025-01-14,Comcast,-47.4,Utilities
-2025-01-27,Dish Network,-260.24,Utilities
-2025-02-09,Comcast,-234.01,Utilities
-2025-02-14,Cox Communications,-130.66,Utilities
-2025-02-14,Xfinity,-46.71,Utilities
-2025-03-17,T-Mobile,-183.51,Utilities
-2025-03-27,Xfinity,-108.92,Utilities
-2025-04-06,Xfinity,-108.44,Utilities
-2025-04-07,Spectrum,-77.28,Utilities
-2025-04-04,Transfer to Savings,-0.0,Savings
-2024-04-28,Employee Payroll,-10186,Payroll
-2024-05-28,Employee Payroll,-8889,Payroll
-2024-06-28,Employee Payroll,-11673,Payroll
-2024-07-28,Employee Payroll,-8214,Payroll
-2024-08-28,Employee Payroll,-8365,Payroll
-2024-08-30,Employee Payroll,-10417,Payroll
-2024-09-28,Employee Payroll,-11612,Payroll
-2024-10-28,Employee Payroll,-9281,Payroll
-2024-11-15,Employee Payroll,-8241,Payroll
-2024-11-28,Employee Payroll,-9983,Payroll
-2024-12-28,Employee Payroll,-11455,Payroll
-2025-01-28,Employee Payroll,-9728,Payroll
-2025-02-28,Employee Payroll,-8509,Payroll
-2025-03-28,Employee Payroll,-10741,Payroll
-2024-04-15,Quarterly Business Tax Payment,-6131,Taxes
-2024-07-15,Quarterly Business Tax Payment,-6388,Taxes
-2024-10-15,Quarterly Business Tax Payment,-5303,Taxes
-2025-01-15,Quarterly Business Tax Payment,-5829,Taxes
-2024-05-01,Business Rent,-4264,Rent
-2024-05-01,Business Insurance,-649,Insurance
-2024-05-01,Internet and Phone,-273,Utilities
-2024-05-01,Electricity,-323,Utilities
-2024-05-01,Accounting Services,-586,Services
-2024-05-01,Cleaning Service,-266,Services
-2024-05-01,Office Supplies,-157,Supplies
-2024-05-01,Marketing Services,-1461,Marketing
-2024-06-01,Business Rent,-4161,Rent
-2024-06-01,Business Insurance,-616,Insurance
-2024-06-01,Internet and Phone,-312,Utilities
-2024-06-01,Electricity,-337,Utilities
-2024-06-01,Accounting Services,-652,Services
-2024-06-01,Cleaning Service,-276,Services
-2024-06-01,Office Supplies,-163,Supplies
-2024-06-01,Marketing Services,-1347,Marketing
-2024-07-01,Business Rent,-4026,Rent
-2024-07-01,Business Insurance,-636,Insurance
-2024-07-01,Internet and Phone,-268,Utilities
-2024-07-01,Electricity,-333,Utilities
-2024-07-01,Accounting Services,-636,Services
-2024-07-01,Cleaning Service,-239,Services
-2024-07-01,Office Supplies,-161,Supplies
-2024-07-01,Marketing Services,-1402,Marketing
-2024-08-01,Business Rent,-3630,Rent
-2024-08-01,Business Insurance,-576,Insurance
-2024-08-01,Internet and Phone,-292,Utilities
-2024-08-01,Electricity,-290,Utilities
-2024-08-01,Accounting Services,-610,Services
-2024-08-01,Cleaning Service,-257,Services
-2024-08-01,Office Supplies,-162,Supplies
-2024-08-01,Marketing Services,-1389,Marketing
-2024-09-01,Business Rent,-4233,Rent
-2024-09-01,Business Insurance,-627,Insurance
-2024-09-01,Internet and Phone,-269,Utilities
-2024-09-01,Electricity,-329,Utilities
-2024-09-01,Accounting Services,-635,Services
-2024-09-01,Cleaning Service,-258,Services
-2024-09-01,Office Supplies,-158,Supplies
-2024-09-01,Marketing Services,-1507,Marketing
-2024-10-01,Business Rent,-3756,Rent
-2024-10-01,Business Insurance,-615,Insurance
-2024-10-01,Internet and Phone,-315,Utilities
-2024-10-01,Electricity,-319,Utilities
-2024-10-01,Accounting Services,-598,Services
-2024-10-01,Cleaning Service,-258,Services
-2024-10-01,Office Supplies,-179,Supplies
-2024-10-01,Marketing Services,-1481,Marketing
-2024-11-01,Business Rent,-3820,Rent
-2024-11-01,Business Insurance,-624,Insurance
-2024-11-01,Internet and Phone,-314,Utilities
-2024-11-01,Electricity,-342,Utilities
-2024-11-01,Accounting Services,-607,Services
-2024-11-01,Cleaning Service,-264,Services
-2024-11-01,Office Supplies,-154,Supplies
-2024-11-01,Marketing Services,-1358,Marketing
-2024-12-01,Business Rent,-4038,Rent
-2024-12-01,Business Insurance,-615,Insurance
-2024-12-01,Internet and Phone,-302,Utilities
-2024-12-01,Electricity,-322,Utilities
-2024-12-01,Accounting Services,-635,Services
-2024-12-01,Cleaning Service,-282,Services
-2024-12-01,Office Supplies,-152,Supplies
-2024-12-01,Marketing Services,-1367,Marketing
-2025-01-01,Business Rent,-3612,Rent
-2025-01-01,Business Insurance,-541,Insurance
-2025-01-01,Internet and Phone,-276,Utilities
-2025-01-01,Electricity,-315,Utilities
-2025-01-01,Accounting Services,-711,Services
-2025-01-01,Cleaning Service,-241,Services
-2025-01-01,Office Supplies,-183,Supplies
-2025-01-01,Marketing Services,-1403,Marketing
-2025-02-01,Business Rent,-3850,Rent
-2025-02-01,Business Insurance,-616,Insurance
-2025-02-01,Internet and Phone,-308,Utilities
-2025-02-01,Electricity,-339,Utilities
-2025-02-01,Accounting Services,-688,Services
-2025-02-01,Cleaning Service,-253,Services
-2025-02-01,Office Supplies,-169,Supplies
-2025-02-01,Marketing Services,-1454,Marketing
-2025-03-01,Business Rent,-4201,Rent
-2025-03-01,Business Insurance,-637,Insurance
-2025-03-01,Internet and Phone,-268,Utilities
-2025-03-01,Electricity,-281,Utilities
-2025-03-01,Accounting Services,-593,Services
-2025-03-01,Cleaning Service,-247,Services
-2025-03-01,Office Supplies,-184,Supplies
-2025-03-01,Marketing Services,-1397,Marketing
-2025-04-01,Business Rent,-3600,Rent
-2025-04-01,Business Insurance,-573,Insurance
-2025-04-01,Internet and Phone,-323,Utilities
-2025-04-01,Electricity,-281,Utilities
-2025-04-01,Accounting Services,-681,Services
-2025-04-01,Cleaning Service,-245,Services
-2025-04-01,Office Supplies,-179,Supplies
-2025-04-01,Marketing Services,-1342,Marketing
-2024-11-22,Inventory Purchase - Local Producer E,-2050,Inventory
-2025-01-27,Inventory Purchase - Distributor C,-2914,Inventory
-2024-12-06,Inventory Purchase - Manufacturer B,-3095,Inventory
-2024-06-29,Inventory Purchase - Import Company D,-2478,Inventory
-2024-08-03,Inventory Purchase - Wholesale Supplier A,-3706,Inventory
-2025-03-31,Inventory Purchase - Manufacturer B,-2223,Inventory
-2025-01-28,Inventory Purchase - Import Company D,-4878,Inventory
-2025-01-30,Inventory Purchase - Wholesale Supplier A,-4613,Inventory
-2024-08-03,Inventory Purchase - Manufacturer B,-3173,Inventory
-2024-05-09,Inventory Purchase - Local Producer E,-2296,Inventory
-2024-11-04,Inventory Purchase - Distributor C,-1396,Inventory
-2025-03-11,Inventory Purchase - Import Company D,-2238,Inventory
-2024-10-12,Inventory Purchase - Manufacturer B,-2805,Inventory
-2024-12-25,Inventory Purchase - Distributor C,-4807,Inventory
-2024-10-03,Inventory Purchase - Import Company D,-3891,Inventory
-2024-09-27,Inventory Purchase - Manufacturer B,-1740,Inventory
-2024-07-10,Inventory Purchase - Import Company D,-3500,Inventory
-2025-02-14,Inventory Purchase - Import Company D,-1937,Inventory
-2024-07-01,Inventory Purchase - Import Company D,-2070,Inventory
-2025-02-16,Inventory Purchase - Manufacturer B,-1715,Inventory
-2025-03-06,Inventory Purchase - Import Company D,-4452,Inventory
-2025-02-12,Inventory Purchase - Import Company D,-4320,Inventory
-2024-05-03,Inventory Purchase - Distributor C,-1692,Inventory
-2024-06-20,Inventory Purchase - Wholesale Supplier A,-4246,Inventory
-2024-05-31,Inventory Purchase - Manufacturer B,-2872,Inventory
-2024-09-25,Inventory Purchase - Distributor C,-3130,Inventory
-2024-11-17,Inventory Purchase - Import Company D,-3294,Inventory
+2024-05-02,Electric Company,-123.75,Utilities
+2024-06-12,Solar City,-100.91,Utilities
+2024-06-29,Comcast,-203.02,Utilities
+2024-07-01,Duke Energy,-67.72,Utilities
+2024-07-08,PG&E,-61.51,Utilities
+2024-07-23,Spectrum,-255.05,Utilities
+2024-07-25,Electric Company,-101.32,Utilities
+2024-08-12,Electric Company,-88.45,Utilities
+2024-08-16,PG&E,-266.01,Utilities
+2024-08-26,Duke Energy,-157.8,Utilities
+2024-08-27,Water Service,-126.35,Utilities
+2024-09-16,Solar City,-193.99,Utilities
+2024-09-24,Phone Bill,-271.86,Utilities
+2024-10-15,Spectrum,-260.66,Utilities
+2024-10-23,Cox Communications,-146.15,Utilities
+2024-11-03,Gas Bill,-126.69,Utilities
+2024-11-19,AT&T,-82.65,Utilities
+2024-12-29,Phone Bill,-56.66,Utilities
+2025-01-05,Solar City,-88.47,Utilities
+2025-01-25,AT&T,-204.35,Utilities
+2025-02-05,Comcast,-244.21,Utilities
+2025-02-10,Solar City,-222.38,Utilities
+2025-03-04,Gas Bill,-123.07,Utilities
+2025-03-08,Phone Bill,-257.91,Utilities
+2025-03-13,Xfinity,-217.24,Utilities
+2025-03-24,DirecTV,-229.81,Utilities
+2025-03-30,ConEd,-111.62,Utilities
+2025-04-11,Electric Company,-129.73,Utilities
+2025-03-24,Transfer to Savings,-0.0,Savings
+2024-04-28,Employee Payroll,-8823,Payroll
+2024-05-28,Employee Payroll,-10389,Payroll
+2024-06-28,Employee Payroll,-11131,Payroll
+2024-07-28,Employee Payroll,-11481,Payroll
+2024-08-28,Employee Payroll,-8029,Payroll
+2024-08-30,Employee Payroll,-9640,Payroll
+2024-09-28,Employee Payroll,-9482,Payroll
+2024-10-28,Employee Payroll,-11731,Payroll
+2024-11-15,Employee Payroll,-8182,Payroll
+2024-11-28,Employee Payroll,-11079,Payroll
+2024-12-28,Employee Payroll,-9102,Payroll
+2025-01-28,Employee Payroll,-8552,Payroll
+2025-02-28,Employee Payroll,-8596,Payroll
+2025-03-28,Employee Payroll,-9884,Payroll
+2024-04-15,Quarterly Business Tax Payment,-6336,Taxes
+2024-07-15,Quarterly Business Tax Payment,-6262,Taxes
+2024-10-15,Quarterly Business Tax Payment,-6719,Taxes
+2025-01-15,Quarterly Business Tax Payment,-6280,Taxes
+2024-05-01,Business Rent,-2466,Rent
+2024-05-01,Business Insurance,-489,Insurance
+2024-05-01,Internet and Phone,-179,Utilities
+2024-05-01,Electricity,-264,Utilities
+2024-05-01,Accounting Services,-440,Services
+2024-05-01,Cleaning Service,-215,Services
+2024-05-01,Office Supplies,-242,Supplies
+2024-05-01,Marketing Services,-1257,Marketing
+2024-06-01,Business Rent,-2662,Rent
+2024-06-01,Business Insurance,-475,Insurance
+2024-06-01,Internet and Phone,-167,Utilities
+2024-06-01,Electricity,-268,Utilities
+2024-06-01,Accounting Services,-445,Services
+2024-06-01,Cleaning Service,-240,Services
+2024-06-01,Office Supplies,-247,Supplies
+2024-06-01,Marketing Services,-1315,Marketing
+2024-07-01,Business Rent,-2870,Rent
+2024-07-01,Business Insurance,-498,Insurance
+2024-07-01,Internet and Phone,-199,Utilities
+2024-07-01,Electricity,-277,Utilities
+2024-07-01,Accounting Services,-481,Services
+2024-07-01,Cleaning Service,-217,Services
+2024-07-01,Office Supplies,-252,Supplies
+2024-07-01,Marketing Services,-1248,Marketing
+2024-08-01,Business Rent,-2427,Rent
+2024-08-01,Business Insurance,-477,Insurance
+2024-08-01,Internet and Phone,-195,Utilities
+2024-08-01,Electricity,-232,Utilities
+2024-08-01,Accounting Services,-478,Services
+2024-08-01,Cleaning Service,-234,Services
+2024-08-01,Office Supplies,-250,Supplies
+2024-08-01,Marketing Services,-1206,Marketing
+2024-09-01,Business Rent,-2523,Rent
+2024-09-01,Business Insurance,-467,Insurance
+2024-09-01,Internet and Phone,-195,Utilities
+2024-09-01,Electricity,-268,Utilities
+2024-09-01,Accounting Services,-432,Services
+2024-09-01,Cleaning Service,-199,Services
+2024-09-01,Office Supplies,-241,Supplies
+2024-09-01,Marketing Services,-1230,Marketing
+2024-10-01,Business Rent,-2710,Rent
+2024-10-01,Business Insurance,-570,Insurance
+2024-10-01,Internet and Phone,-184,Utilities
+2024-10-01,Electricity,-259,Utilities
+2024-10-01,Accounting Services,-495,Services
+2024-10-01,Cleaning Service,-242,Services
+2024-10-01,Office Supplies,-250,Supplies
+2024-10-01,Marketing Services,-1355,Marketing
+2024-11-01,Business Rent,-2445,Rent
+2024-11-01,Business Insurance,-514,Insurance
+2024-11-01,Internet and Phone,-167,Utilities
+2024-11-01,Electricity,-230,Utilities
+2024-11-01,Accounting Services,-452,Services
+2024-11-01,Cleaning Service,-239,Services
+2024-11-01,Office Supplies,-208,Supplies
+2024-11-01,Marketing Services,-1353,Marketing
+2024-12-01,Business Rent,-2378,Rent
+2024-12-01,Business Insurance,-506,Insurance
+2024-12-01,Internet and Phone,-199,Utilities
+2024-12-01,Electricity,-234,Utilities
+2024-12-01,Accounting Services,-510,Services
+2024-12-01,Cleaning Service,-219,Services
+2024-12-01,Office Supplies,-222,Supplies
+2024-12-01,Marketing Services,-1243,Marketing
+2025-01-01,Business Rent,-2661,Rent
+2025-01-01,Business Insurance,-515,Insurance
+2025-01-01,Internet and Phone,-176,Utilities
+2025-01-01,Electricity,-254,Utilities
+2025-01-01,Accounting Services,-447,Services
+2025-01-01,Cleaning Service,-223,Services
+2025-01-01,Office Supplies,-215,Supplies
+2025-01-01,Marketing Services,-1245,Marketing
+2025-02-01,Business Rent,-2844,Rent
+2025-02-01,Business Insurance,-502,Insurance
+2025-02-01,Internet and Phone,-192,Utilities
+2025-02-01,Electricity,-264,Utilities
+2025-02-01,Accounting Services,-465,Services
+2025-02-01,Cleaning Service,-241,Services
+2025-02-01,Office Supplies,-251,Supplies
+2025-02-01,Marketing Services,-1129,Marketing
+2025-03-01,Business Rent,-2469,Rent
+2025-03-01,Business Insurance,-482,Insurance
+2025-03-01,Internet and Phone,-185,Utilities
+2025-03-01,Electricity,-254,Utilities
+2025-03-01,Accounting Services,-454,Services
+2025-03-01,Cleaning Service,-215,Services
+2025-03-01,Office Supplies,-224,Supplies
+2025-03-01,Marketing Services,-1339,Marketing
+2025-04-01,Business Rent,-2374,Rent
+2025-04-01,Business Insurance,-493,Insurance
+2025-04-01,Internet and Phone,-171,Utilities
+2025-04-01,Electricity,-242,Utilities
+2025-04-01,Accounting Services,-502,Services
+2025-04-01,Cleaning Service,-221,Services
+2025-04-01,Office Supplies,-213,Supplies
+2025-04-01,Marketing Services,-1358,Marketing
+2025-01-23,Inventory Purchase - Wholesale Supplier A,-3304,Inventory
+2024-08-04,Inventory Purchase - Distributor C,-2145,Inventory
+2024-05-03,Inventory Purchase - Local Producer E,-2424,Inventory
+2024-05-22,Inventory Purchase - Distributor C,-3477,Inventory
+2024-10-10,Inventory Purchase - Wholesale Supplier A,-2912,Inventory
+2024-05-28,Inventory Purchase - Manufacturer B,-1506,Inventory
+2024-06-21,Inventory Purchase - Wholesale Supplier A,-2253,Inventory
+2024-11-29,Inventory Purchase - Import Company D,-1519,Inventory
+2024-08-07,Inventory Purchase - Manufacturer B,-2151,Inventory
+2024-08-04,Inventory Purchase - Import Company D,-2953,Inventory
+2024-07-14,Inventory Purchase - Wholesale Supplier A,-1863,Inventory
+2024-09-06,Inventory Purchase - Import Company D,-4982,Inventory
+2024-11-08,Inventory Purchase - Local Producer E,-2588,Inventory
+2024-10-31,Inventory Purchase - Local Producer E,-1010,Inventory
+2025-04-01,Inventory Purchase - Distributor C,-4597,Inventory
+2024-11-10,Inventory Purchase - Import Company D,-2889,Inventory
+2024-08-30,Inventory Purchase - Manufacturer B,-4793,Inventory
+2024-08-27,Inventory Purchase - Manufacturer B,-4564,Inventory
+2025-03-27,Inventory Purchase - Local Producer E,-3348,Inventory
+2024-08-04,Inventory Purchase - Wholesale Supplier A,-1440,Inventory
+2024-10-04,Inventory Purchase - Local Producer E,-2118,Inventory
+2024-11-17,Inventory Purchase - Wholesale Supplier A,-1239,Inventory
+2024-10-27,Inventory Purchase - Local Producer E,-3977,Inventory
+2024-08-16,Inventory Purchase - Wholesale Supplier A,-1467,Inventory
+2024-05-29,Inventory Purchase - Local Producer E,-3951,Inventory
+2024-11-29,Inventory Purchase - Local Producer E,-1585,Inventory
+2024-08-27,Inventory Purchase - Distributor C,-2666,Inventory
+2025-03-18,Inventory Purchase - Distributor C,-3927,Inventory
 2024-04-12,Employer Payroll,4500,Income
 2024-04-26,Employer Payroll,4500,Income
 2024-05-10,Employer Payroll,4500,Income

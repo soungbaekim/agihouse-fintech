@@ -1,13 +1,49 @@
-# Finance Analyzer
+<div align="center">
+
+# 🌊 VIBECODED 🌊
+
+</div>
+
+<div align="center">
+<h1>✨ Finance Analyzer ✨</h1>
+<h3>Elevate your financial intelligence</h3>
+
+![Vibecoded Badge](https://img.shields.io/badge/VIBECODED-✓-blueviolet?style=for-the-badge)
+![Built With Love](https://img.shields.io/badge/Built_With-❤️-red?style=for-the-badge)
+![Financial Freedom](https://img.shields.io/badge/Financial-Freedom-success?style=for-the-badge)
 
 A smart banking statement parser and financial advisor that helps you analyze your spending habits, categorize transactions, and receive personalized savings recommendations.
+</div>
 
-## Features
+## 📱 Screenshots
+
+<div align="center">
+
+### Dashboard Overview
+![Dashboard Overview](/screenshots/dashboard.png)
+*The main dashboard provides a comprehensive view of your financial health*
+
+### Transaction Analysis
+![Transaction Analysis](/screenshots/transactions.png)
+*Detailed breakdown of your spending patterns and transaction history*
+
+### Personalized Recommendations
+![Recommendations](/screenshots/recommendations.png)
+*AI-powered recommendations to optimize your finances*
+
+### AI Financial Assistant
+![AI Assistant](/screenshots/ai_chat.png)
+*Intelligent chat assistant to answer your financial questions*
+
+</div>
+
+## ✨ Features
 
 - **Statement Parsing**: Support for various bank statement formats (PDF, CSV, Excel)
 - **Spending Analysis**: Categorize and visualize your spending patterns
 - **Savings Recommendations**: Get personalized suggestions to reduce expenses
 - **Investment Ideas**: Receive basic investment recommendations based on your savings potential
+- **AI-Powered Chat**: Get personalized financial advice through natural language
 
 ## Getting Started
 

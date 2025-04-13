@@ -1,407 +1,651 @@
 date,description,amount,category
-2024-04-17,Dunkin' Donuts,-68.31,Dining
-2024-04-17,LastPass,-20.57,Subscriptions
-2024-04-18,AT&T,-274.4,Utilities
-2024-04-20,401(k) Contribution,-791.22,Investments
-2024-04-20,Investment Contribution,-1983.35,Investments
-2024-04-21,McDonald's,-50.71,Dining
-2024-04-21,Starbucks,-19.97,Dining
-2024-04-21,McDonald's,-50.77,Dining
-2024-04-23,Taco Bell,-26.5,Dining
-2024-04-24,Netflix,-84.38,Entertainment
-2024-04-24,Airline Tickets,-110.32,Transportation
-2024-04-25,H-E-B,-197.59,Groceries
-2024-04-25,ShopRite,-84.99,Groceries
-2024-04-25,Wealthfront,-1288.02,Investments
-2024-04-26,New York Times,-9.38,Subscriptions
-2024-04-28,In-N-Out Burger,-40.58,Dining
-2024-04-28,eBay,-165.12,Shopping
-2024-04-30,Burger King,-43.33,Dining
-2024-05-01,United Airlines,-909.87,Travel
-2024-05-03,Workout Classes,-23.51,Fitness
-2024-05-03,United Airlines,-1289.69,Travel
-2024-05-04,LA Fitness,-170.42,Fitness
-2024-05-06,Amazon Prime,-121.78,Entertainment
-2024-05-06,Morgan Stanley,-1452.07,Investments
-2024-05-07,Aldi,-65.81,Groceries
-2024-05-07,Investment Contribution,-1904.64,Investments
-2024-05-08,In-N-Out Burger,-52.39,Dining
-2024-05-08,Southwest Airlines,-464.09,Travel
-2024-05-09,Midas,-230.17,Transportation
-2024-05-09,Planet Fitness,-122.54,Fitness
-2024-05-10,Kroger,-51.05,Groceries
-2024-05-11,Peacock,-143.18,Entertainment
-2024-05-11,Dish Network,-57.58,Utilities
-2024-05-12,Lowe's,-262.46,Shopping
-2024-05-12,Stock Purchase,-1413.24,Investments
-2024-05-12,TD Ameritrade,-1873.48,Investments
-2024-05-13,Publix,-152.09,Groceries
-2024-05-14,ConEd,-106.52,Utilities
-2024-05-15,Old Navy,-43.55,Shopping
-2024-05-18,Panera Bread,-43.37,Dining
-2024-05-19,Safeway,-120.5,Groceries
-2024-05-20,Netflix,-101.33,Entertainment
-2024-05-22,Macy's,-216.13,Shopping
-2024-05-23,Marshalls,-196.43,Shopping
-2024-05-24,TJ Maxx,-104.26,Shopping
-2024-05-26,Lowe's,-82.91,Shopping
-2024-05-27,Parking,-94.94,Transportation
-2024-05-27,Jiffy Lube,-19.29,Transportation
-2024-05-27,Gym Membership,-77.84,Fitness
-2024-05-30,Duke Energy,-242.48,Utilities
-2024-05-31,Michaels,-284.89,Shopping
-2024-06-01,Parking,-77.74,Transportation
-2024-06-02,Walmart,-49.35,Shopping
-2024-06-02,Supplement Store,-19.04,Fitness
-2024-06-03,Exxon,-64.93,Transportation
-2024-06-04,Old Navy,-181.67,Shopping
-2024-06-04,Disney+,-42.09,Entertainment
-2024-06-07,Bed Bath & Beyond,-291.44,Shopping
-2024-06-09,Chipotle,-13.78,Dining
-2024-06-10,Rental Insurance,-2480.6,Housing
-2024-06-11,Investment Contribution,-840.07,Investments
-2024-06-12,Aldi,-19.8,Groceries
-2024-06-12,Starbucks,-15.56,Dining
-2024-06-17,Home Depot,-214.88,Shopping
-2024-06-17,LA Fitness,-195.14,Fitness
-2024-06-18,TJ Maxx,-204.98,Shopping
-2024-06-19,Robinhood,-1550.44,Investments
-2024-06-20,Target,-258.09,Shopping
-2024-06-22,Starbucks,-58.26,Dining
-2024-06-24,Newegg,-98.65,Shopping
-2024-06-25,Chick-fil-A,-23.91,Dining
-2024-06-25,Bond Purchase,-879.69,Investments
-2024-06-26,Kroger,-159.58,Groceries
-2024-06-26,KFC,-23.19,Dining
-2024-06-28,Sprouts,-122.17,Groceries
-2024-06-28,McDonald's,-48.63,Dining
-2024-06-29,Disney+,-57.96,Entertainment
-2024-06-30,Sephora,-188.19,Shopping
-2024-07-01,Live Nation,-112.14,Entertainment
-2024-07-03,Michaels,-164.67,Shopping
-2024-07-03,Property Tax,-2558.24,Housing
-2024-07-04,Safeway,-184.1,Groceries
-2024-07-05,ETF Purchase,-1501.31,Investments
-2024-07-06,Taco Bell,-53.01,Dining
-2024-07-07,Aldi,-183.28,Groceries
-2024-07-07,Car Repair,-166.98,Transportation
-2024-07-08,Wealthfront,-355.51,Investments
-2024-07-09,Macy's,-28.02,Shopping
-2024-07-09,Old Navy,-65.38,Shopping
-2024-07-09,Robinhood,-998.86,Investments
-2024-07-10,E*TRADE,-363.56,Investments
-2024-07-12,Starbucks,-59.39,Dining
-2024-07-12,American Airlines,-967.38,Travel
-2024-07-13,Midas,-123.86,Transportation
-2024-07-14,Panda Express,-55.53,Dining
-2024-07-14,Home Depot,-217.99,Shopping
-2024-07-15,Sprouts,-156.01,Groceries
-2024-07-15,Security Deposit,-2276.72,Housing
-2024-07-17,ShopRite,-75.26,Groceries
-2024-07-19,Home Depot,-275.83,Shopping
-2024-07-19,Mutual Fund,-1717.75,Investments
-2024-07-22,Albertsons,-101.9,Groceries
-2024-07-23,Marshalls,-152.91,Shopping
-2024-07-25,Dunkin' Donuts,-50.5,Dining
-2024-07-25,Hotels.com,-1460.75,Travel
-2024-07-27,Pizza Hut,-59.44,Dining
-2024-07-29,Acorns,-1693.53,Investments
-2024-07-30,Taco Bell,-71.01,Dining
-2024-07-31,Wayfair,-166.88,Shopping
-2024-08-02,Panda Express,-65.53,Dining
-2024-08-02,Security Deposit,-3229.45,Housing
-2024-08-05,Subway,-25.54,Dining
-2024-08-05,McDonald's,-42.1,Dining
-2024-08-05,Amazon,-173.95,Shopping
-2024-08-05,Personal Trainer,-36.04,Fitness
-2024-08-07,Travel Agency,-389.1,Travel
-2024-08-08,Hulu,-133.29,Entertainment
-2024-08-09,Moving Service,-2482.26,Housing
-2024-08-10,Storage Unit,-1220.21,Housing
-2024-08-11,Sprouts,-76.86,Groceries
-2024-08-11,Pep Boys,-95.36,Transportation
-2024-08-12,Panda Express,-41.27,Dining
-2024-08-12,Avis,-154.37,Transportation
-2024-08-13,Etsy,-39.58,Shopping
-2024-08-16,Tidal,-117.6,Entertainment
-2024-08-18,Adobe Creative Cloud,-32.22,Subscriptions
-2024-08-19,Home Depot,-216.13,Shopping
-2024-08-21,Chipotle,-69.31,Dining
-2024-08-22,In-N-Out Burger,-26.72,Dining
-2024-08-23,Peacock,-16.7,Entertainment
-2024-08-24,Aldi,-164.8,Groceries
-2024-08-24,Audible,-40.27,Subscriptions
-2024-08-24,Vacation Rental,-252.13,Travel
-2024-08-24,Travel Insurance,-1441.85,Travel
-2024-08-25,Apple Store,-268.11,Shopping
-2024-08-25,Home Insurance,-1687.01,Housing
-2024-08-25,Morgan Stanley,-997.75,Investments
-2024-08-26,Albertsons,-113.19,Groceries
-2024-08-27,ShopRite,-118.71,Groceries
-2024-08-27,Expedia,-504.43,Travel
-2024-08-27,Travelocity,-1282.49,Travel
-2024-08-31,Sprouts,-92.84,Groceries
-2024-08-31,Steam,-137.44,Entertainment
-2024-09-01,Burger King,-50.57,Dining
-2024-09-02,Dunkin' Donuts,-28.32,Dining
-2024-09-03,Starbucks,-55.33,Dining
-2024-09-03,Bowling Alley,-134.93,Entertainment
-2024-09-08,Bond Purchase,-1035.54,Investments
-2024-09-08,Retirement Contribution,-1445.82,Investments
-2024-09-12,Domino's Pizza,-60.97,Dining
-2024-09-12,Dunkin' Donuts,-13.75,Dining
-2024-09-12,Cleaning Service,-1269.08,Housing
-2024-09-13,Peloton,-123.76,Fitness
-2024-09-13,Resort Fees,-1490.91,Travel
-2024-09-13,Airbnb,-430.94,Travel
-2024-09-14,Morgan Stanley,-1956.81,Investments
-2024-09-15,Sports League Fees,-182.49,Fitness
-2024-09-16,Taco Bell,-30.51,Dining
-2024-09-16,Home Depot,-207.45,Shopping
-2024-09-17,American Airlines,-936.15,Travel
-2024-09-17,Delta Airlines,-290.23,Travel
-2024-09-17,American Airlines,-616.62,Travel
-2024-09-22,Costco,-43.11,Groceries
-2024-09-22,Gap,-199.6,Shopping
-2024-09-23,Starbucks,-48.09,Dining
-2024-09-23,Apple TV+,-11.07,Entertainment
-2024-09-24,Panda Express,-65.61,Dining
-2024-09-24,Xbox Game Pass,-41.06,Subscriptions
-2024-09-24,Grammarly,-23.78,Subscriptions
-2024-09-25,BP,-60.82,Transportation
-2024-09-25,Charles Schwab,-860.36,Investments
-2024-09-28,Etsy,-35.62,Shopping
-2024-09-28,Google One,-17.06,Subscriptions
-2024-09-28,Stock Purchase,-232.56,Investments
-2024-10-01,Hertz,-116.7,Transportation
-2024-10-02,eBay,-122.74,Shopping
-2024-10-02,Netflix,-124.24,Entertainment
-2024-10-02,401(k) Contribution,-1913.33,Investments
-2024-10-03,Subway,-8.5,Dining
-2024-10-03,Hulu,-116.66,Entertainment
-2024-10-05,Exxon,-247.54,Transportation
-2024-10-07,Home Warranty,-2527.71,Housing
-2024-10-08,Target,-287.85,Shopping
-2024-10-08,Airline Tickets,-43.04,Transportation
-2024-10-08,American Airlines,-1606.69,Travel
-2024-10-09,Marshalls,-25.41,Shopping
-2024-10-09,Spectrum,-105.52,Utilities
-2024-10-11,Aldi,-15.42,Groceries
-2024-10-11,Chipotle,-71.73,Dining
-2024-10-11,Michaels,-264.43,Shopping
-2024-10-11,Midas,-65.85,Transportation
-2024-10-12,Workout Classes,-110.65,Fitness
-2024-10-12,Southwest Airlines,-737.91,Travel
-2024-10-12,IRA Contribution,-887.09,Investments
-2024-10-13,Walmart,-175.15,Shopping
-2024-10-13,Property Tax,-2209.7,Housing
-2024-10-13,Resort Fees,-338.4,Travel
-2024-10-15,Sports League Fees,-151.54,Fitness
-2024-10-16,Taco Bell,-32.31,Dining
-2024-10-16,Sports League Fees,-15.87,Fitness
-2024-10-19,Exxon,-211.93,Transportation
-2024-10-20,Local Restaurant,-68.34,Dining
-2024-10-20,Sephora,-63.72,Shopping
-2024-10-21,Morgan Stanley,-780.02,Investments
-2024-10-22,AutoZone,-33.51,Transportation
-2024-10-23,Amazon,-23.51,Shopping
-2024-10-24,Starbucks,-58.11,Dining
-2024-10-25,Five Guys,-61.0,Dining
-2024-10-25,Panera Bread,-15.09,Dining
-2024-10-26,Taco Bell,-55.58,Dining
-2024-10-27,Amazon Prime,-139.11,Entertainment
-2024-10-28,Taxi Service,-151.38,Transportation
-2024-10-28,Mutual Fund,-768.75,Investments
-2024-10-29,Grammarly,-28.68,Subscriptions
-2024-10-30,Hulu,-35.83,Entertainment
-2024-10-30,American Airlines,-1522.55,Travel
-2024-11-01,Marshalls,-88.39,Shopping
-2024-11-01,Acorns,-516.24,Investments
-2024-11-02,Southwest Airlines,-1673.92,Travel
-2024-11-03,Apple TV+,-48.83,Entertainment
-2024-11-03,Cruise Line,-1144.24,Travel
-2024-11-04,Wendy's,-29.54,Dining
-2024-11-04,Nike,-198.8,Fitness
-2024-11-05,Dave & Buster's,-85.58,Entertainment
-2024-11-11,Bowling Alley,-15.23,Entertainment
-2024-11-11,Airbnb,-683.22,Travel
-2024-11-13,Old Navy,-30.01,Shopping
-2024-11-13,Kohl's,-151.08,Shopping
-2024-11-14,Travel Agency,-1490.39,Travel
-2024-11-14,Travel Insurance,-1943.92,Travel
-2024-11-16,Marriott,-1004.49,Travel
-2024-11-17,Target,-164.69,Shopping
-2024-11-17,Enterprise Rent-A-Car,-8.69,Transportation
-2024-11-17,Amtrak,-163.08,Transportation
-2024-11-19,Chevron,-154.1,Transportation
-2024-11-21,Travelocity,-1222.53,Travel
-2024-11-21,Mutual Fund,-1922.77,Investments
-2024-11-22,Spotify,-48.95,Entertainment
-2024-11-24,Medium,-29.32,Subscriptions
-2024-11-24,Vacation Rental,-1700.72,Travel
-2024-11-25,Vacation Rental,-834.57,Travel
-2024-11-28,Pest Control,-1183.78,Housing
-2024-12-01,Marriott,-1923.15,Travel
-2024-12-03,Apple Music,-27.81,Entertainment
-2024-12-03,Phone Bill,-277.17,Utilities
-2024-12-04,Costco,-192.55,Groceries
-2024-12-05,Concert Tickets,-83.9,Entertainment
-2024-12-05,Travel Insurance,-538.93,Travel
-2024-12-06,Cruise Line,-457.53,Travel
-2024-12-09,Dropbox,-41.82,Subscriptions
-2024-12-09,Kayak,-1394.3,Travel
-2024-12-09,Vanguard,-483.39,Investments
-2024-12-12,Hotels.com,-172.86,Travel
-2024-12-12,Stock Purchase,-133.13,Investments
-2024-12-14,Chick-fil-A,-29.05,Dining
-2024-12-14,Disney+,-75.32,Entertainment
-2024-12-15,Coinbase,-1046.24,Investments
-2024-12-16,Applebee's,-12.41,Dining
-2024-12-16,Concert Tickets,-12.79,Entertainment
-2024-12-16,Sports League Fees,-181.19,Fitness
-2024-12-17,Under Armour,-36.77,Fitness
-2024-12-18,eBay,-140.9,Shopping
-2024-12-19,Bed Bath & Beyond,-52.87,Shopping
-2024-12-21,Airbnb,-1414.82,Travel
-2024-12-22,Apple Store,-34.11,Shopping
-2024-12-23,Meijer,-199.89,Groceries
-2024-12-23,Olive Garden,-8.16,Dining
-2024-12-23,Vacation Rental,-1847.63,Travel
-2024-12-25,Safeway,-197.95,Groceries
-2024-12-25,Car Wash,-99.32,Transportation
-2024-12-25,PlayStation Plus,-15.84,Subscriptions
-2024-12-26,KFC,-60.48,Dining
-2024-12-26,Spectrum,-46.52,Utilities
-2024-12-27,Five Guys,-33.71,Dining
-2024-12-27,Amazon Prime,-131.19,Entertainment
-2024-12-27,Jiffy Lube,-78.74,Transportation
-2024-12-27,HOA Fees,-3115.64,Housing
-2024-12-28,Amazon Prime,-104.19,Entertainment
-2024-12-29,Best Buy,-63.08,Shopping
-2024-12-29,Bowling Alley,-120.04,Entertainment
-2024-12-29,Storage Unit,-1469.11,Housing
-2024-12-30,Investment Contribution,-1014.06,Investments
-2025-01-01,Booking.com,-191.2,Travel
-2025-01-03,VRBO,-1659.43,Travel
-2025-01-05,Airline Tickets,-92.69,Transportation
-2025-01-10,Subway,-16.12,Dining
-2025-01-10,Newegg,-86.47,Shopping
-2025-01-10,Ticketmaster,-11.77,Entertainment
-2025-01-11,Public Transit,-142.05,Transportation
-2025-01-13,Furniture Rental,-1326.53,Housing
-2025-01-13,Bond Purchase,-190.15,Investments
-2025-01-14,Marriott,-1251.41,Travel
-2025-01-17,Delta Airlines,-1488.23,Travel
-2025-01-17,Mutual Fund,-1039.39,Investments
-2025-01-19,Aldi,-193.11,Groceries
-2025-01-19,Waste Management,-82.68,Utilities
-2025-01-20,H-E-B,-124.67,Groceries
-2025-01-21,Target,-20.61,Shopping
-2025-01-23,Home Depot,-21.72,Shopping
-2025-01-27,Xbox Game Pass,-21.73,Subscriptions
-2025-01-27,Charles Schwab,-861.46,Investments
-2025-01-28,Amazon,-160.34,Shopping
-2025-01-28,Gap,-109.83,Shopping
-2025-01-28,Lowe's,-270.83,Shopping
-2025-01-28,Spotify,-48.09,Entertainment
-2025-01-30,United Airlines,-523.09,Travel
-2025-01-31,Vacation Rental,-745.63,Travel
-2025-02-01,Chevron,-219.08,Transportation
-2025-02-02,Merrill Lynch,-1993.13,Investments
-2025-02-05,Best Buy,-192.22,Shopping
-2025-02-05,Wall Street Journal,-44.72,Subscriptions
-2025-02-05,Booking.com,-728.04,Travel
-2025-02-05,Hotels.com,-1531.63,Travel
-2025-02-06,Costco,-163.12,Groceries
-2025-02-06,Home Depot,-228.92,Shopping
-2025-02-07,Public Transit,-239.37,Transportation
-2025-02-10,Travel Insurance,-458.28,Travel
-2025-02-11,Amazon Prime,-9.85,Subscriptions
-2025-02-13,Starbucks,-72.81,Dining
-2025-02-13,Paramount+,-145.05,Entertainment
-2025-02-13,Amazon Prime,-66.87,Entertainment
-2025-02-14,YouTube Premium,-95.83,Entertainment
-2025-02-15,Whole Foods,-83.34,Groceries
-2025-02-15,PG&E,-43.1,Utilities
-2025-02-16,Kroger,-155.11,Groceries
-2025-02-16,Paramount+,-61.93,Entertainment
-2025-02-16,Under Armour,-119.44,Fitness
-2025-02-17,Apple TV+,-47.45,Entertainment
-2025-02-19,Pizza Hut,-45.86,Dining
-2025-02-23,Home Depot,-32.94,Shopping
-2025-02-23,AMC Theaters,-68.17,Entertainment
-2025-02-24,ShopRite,-67.46,Groceries
-2025-02-24,Expedia,-585.35,Travel
-2025-02-24,Bond Purchase,-1560.03,Investments
-2025-02-25,Sephora,-194.55,Shopping
-2025-02-25,Adidas,-44.47,Fitness
-2025-02-26,Supplement Store,-175.0,Fitness
-2025-02-27,Domino's Pizza,-27.41,Dining
-2025-02-27,Target,-251.64,Shopping
-2025-02-28,Taco Bell,-50.19,Dining
-2025-02-28,Fitness Equipment,-158.63,Fitness
-2025-03-01,Subway,-12.84,Dining
-2025-03-01,Kohl's,-113.45,Shopping
-2025-03-05,Dunkin' Donuts,-25.41,Dining
-2025-03-07,Car Wash,-54.67,Transportation
-2025-03-07,Booking.com,-250.06,Travel
-2025-03-08,Panera Bread,-64.96,Dining
-2025-03-09,Nordstrom,-286.39,Shopping
-2025-03-10,Five Guys,-32.92,Dining
-2025-03-10,Old Navy,-98.75,Shopping
-2025-03-15,Albertsons,-164.23,Groceries
-2025-03-15,Ticketmaster,-81.0,Entertainment
-2025-03-15,Marriott,-690.95,Travel
-2025-03-16,Cruise Line,-822.54,Travel
-2025-03-20,Home Insurance,-1903.0,Housing
-2025-03-21,Starbucks,-29.5,Dining
-2025-03-21,Fidelity,-1107.54,Investments
-2025-03-22,Parking,-159.39,Transportation
-2025-03-23,Panda Express,-60.78,Dining
-2025-03-24,Chevron,-54.35,Transportation
-2025-03-25,Lyft,-76.73,Transportation
-2025-03-25,Water Service,-156.13,Utilities
-2025-03-25,Cleaning Service,-2890.41,Housing
-2025-03-25,LA Fitness,-111.2,Fitness
-2025-03-26,Phone Bill,-42.73,Utilities
-2025-03-27,Bowling Alley,-51.1,Entertainment
-2025-03-27,PlayStation Plus,-41.19,Subscriptions
-2025-03-30,iCloud Storage,-35.58,Subscriptions
-2025-03-31,Chevron,-26.56,Transportation
-2025-03-31,Apartment Management,-2816.81,Housing
-2025-04-01,401(k) Contribution,-1271.68,Investments
-2025-04-02,Albertsons,-134.55,Groceries
-2025-04-06,Apartment Management,-2714.86,Housing
-2025-04-07,Lowe's,-286.2,Shopping
-2025-04-08,Betterment,-1902.75,Investments
-2025-04-09,Lawn Service,-1080.99,Housing
-2025-04-10,Hulu,-99.59,Entertainment
-2025-04-12,Tidal,-88.63,Entertainment
-2025-03-21,Transfer to Savings,-0.0,Savings
-2024-04-12,Employer Payroll,15000,Income
-2024-04-26,Employer Payroll,15000,Income
-2024-05-10,Employer Payroll,15000,Income
-2024-05-24,Employer Payroll,15000,Income
-2024-06-07,Employer Payroll,15000,Income
-2024-06-21,Employer Payroll,15000,Income
-2024-07-05,Employer Payroll,15000,Income
-2024-07-19,Employer Payroll,15000,Income
-2024-08-02,Employer Payroll,15000,Income
-2024-08-16,Employer Payroll,15000,Income
-2024-08-30,Employer Payroll,15000,Income
-2024-09-13,Employer Payroll,15000,Income
-2024-09-27,Employer Payroll,15000,Income
-2024-10-11,Employer Payroll,15000,Income
-2024-10-25,Employer Payroll,15000,Income
-2024-11-08,Employer Payroll,15000,Income
-2024-11-22,Employer Payroll,15000,Income
-2024-12-06,Employer Payroll,15000,Income
-2024-12-20,Employer Payroll,15000,Income
-2025-01-03,Employer Payroll,15000,Income
-2025-01-17,Employer Payroll,15000,Income
-2025-01-31,Employer Payroll,15000,Income
-2025-02-14,Employer Payroll,15000,Income
-2025-02-28,Employer Payroll,15000,Income
-2025-03-14,Employer Payroll,15000,Income
-2025-03-28,Employer Payroll,15000,Income
-2025-04-11,Employer Payroll,15000,Income
+2024-04-17,Hertz,-17.41,Transportation
+2024-04-18,Food Lion,-89.87,Groceries
+2024-04-18,KFC,-39.03,Dining
+2024-04-18,Exxon,-214.63,Transportation
+2024-04-18,Gym Membership,-112.77,Fitness
+2024-04-19,Aldi,-87.13,Groceries
+2024-04-20,Marshalls,-299.03,Shopping
+2024-04-20,Home Warranty,-1516.76,Housing
+2024-04-21,Publix,-38.12,Groceries
+2024-04-21,McDonald's,-11.81,Dining
+2024-04-21,Macy's,-238.05,Shopping
+2024-04-21,Furniture Rental,-2258.91,Housing
+2024-04-22,Five Guys,-29.49,Dining
+2024-04-23,Robinhood,-572.68,Investments
+2024-04-24,Airline Tickets,-52.55,Transportation
+2024-04-24,Booking.com,-1222.59,Travel
+2024-04-25,Applebee's,-33.1,Dining
+2024-04-25,Stock Purchase,-1075.87,Investments
+2024-04-26,Olive Garden,-33.34,Dining
+2024-04-26,Charles Schwab,-1738.43,Investments
+2024-04-27,IKEA,-37.88,Shopping
+2024-04-27,Pest Control,-3401.04,Housing
+2024-04-27,Hilton,-1218.62,Travel
+2024-04-29,Acorns,-1793.68,Investments
+2024-04-30,Lawn Service,-1253.15,Housing
+2024-05-01,Gap,-16.79,Shopping
+2024-05-02,Supplement Store,-170.07,Fitness
+2024-05-02,Workout Classes,-141.6,Fitness
+2024-05-02,Acorns,-788.11,Investments
+2024-05-03,Vacation Rental,-625.26,Travel
+2024-05-04,Lululemon,-46.92,Fitness
+2024-05-05,McDonald's,-28.95,Dining
+2024-05-06,Kroger,-59.63,Groceries
+2024-05-06,Morgan Stanley,-668.23,Investments
+2024-05-07,Netflix,-68.46,Entertainment
+2024-05-07,Avis,-128.19,Transportation
+2024-05-09,Pizza Hut,-44.79,Dining
+2024-05-10,Mutual Fund,-270.53,Investments
+2024-05-11,Panera Bread,-8.51,Dining
+2024-05-11,Substack,-12.18,Subscriptions
+2024-05-12,Storage Unit,-1978.23,Housing
+2024-05-13,Ulta Beauty,-65.28,Shopping
+2024-05-13,ETF Purchase,-252.76,Investments
+2024-05-14,Investment Contribution,-1731.81,Investments
+2024-05-15,Save-A-Lot,-131.35,Groceries
+2024-05-15,Ticketmaster,-79.35,Entertainment
+2024-05-15,Investment Contribution,-1275.07,Investments
+2024-05-17,H-E-B,-103.46,Groceries
+2024-05-17,Pizza Hut,-69.65,Dining
+2024-05-18,Resort Fees,-1247.02,Travel
+2024-05-19,Peacock,-24.66,Entertainment
+2024-05-19,American Airlines,-809.78,Travel
+2024-05-20,Save-A-Lot,-94.1,Groceries
+2024-05-20,Wegmans,-133.09,Groceries
+2024-05-20,Amazon,-256.96,Shopping
+2024-05-20,Vacation Rental,-277.81,Travel
+2024-05-21,In-N-Out Burger,-66.75,Dining
+2024-05-22,Burger King,-8.47,Dining
+2024-05-22,TJ Maxx,-122.41,Shopping
+2024-05-22,Equinox,-18.92,Fitness
+2024-05-23,Wendy's,-48.37,Dining
+2024-05-23,Marshalls,-223.73,Shopping
+2024-05-24,Apple Store,-49.49,Shopping
+2024-05-24,Marriott,-491.28,Travel
+2024-05-25,Sports League Fees,-187.91,Fitness
+2024-05-28,Amazon Prime,-13.21,Entertainment
+2024-05-28,Mutual Fund,-609.47,Investments
+2024-05-29,Subway,-29.07,Dining
+2024-05-29,YouTube Premium,-109.21,Entertainment
+2024-05-31,Apple Music,-104.55,Entertainment
+2024-05-31,Patreon,-21.08,Subscriptions
+2024-05-31,Airbnb,-1233.01,Travel
+2024-06-01,Publix,-187.4,Groceries
+2024-06-01,Moving Service,-1502.46,Housing
+2024-06-02,Tidal,-83.21,Entertainment
+2024-06-03,Concert Tickets,-129.38,Entertainment
+2024-06-03,HBO Max,-69.13,Entertainment
+2024-06-03,AutoZone,-48.3,Transportation
+2024-06-04,HOA Fees,-2511.01,Housing
+2024-06-04,Resort Fees,-181.42,Travel
+2024-06-05,Planet Fitness,-139.82,Fitness
+2024-06-07,Gap,-234.35,Shopping
+2024-06-08,Starbucks,-56.46,Dining
+2024-06-08,Hobby Lobby,-271.0,Shopping
+2024-06-09,Disney+,-72.82,Entertainment
+2024-06-09,Under Armour,-173.14,Fitness
+2024-06-09,Airbnb,-952.49,Travel
+2024-06-10,Wendy's,-44.06,Dining
+2024-06-10,Gas Bill,-149.88,Utilities
+2024-06-11,Equinox,-28.76,Fitness
+2024-06-11,American Airlines,-1226.66,Travel
+2024-06-12,Target,-242.42,Shopping
+2024-06-12,Old Navy,-139.17,Shopping
+2024-06-12,Investment Contribution,-579.9,Investments
+2024-06-12,401(k) Contribution,-1671.39,Investments
+2024-06-13,Sprouts,-61.14,Groceries
+2024-06-13,Sephora,-15.14,Shopping
+2024-06-13,Regal Cinemas,-138.9,Entertainment
+2024-06-13,Expedia,-1455.86,Travel
+2024-06-14,Ticketmaster,-38.26,Entertainment
+2024-06-15,Sprouts,-120.86,Groceries
+2024-06-17,Personal Trainer,-99.36,Fitness
+2024-06-19,Chick-fil-A,-12.82,Dining
+2024-06-19,Best Buy,-89.82,Shopping
+2024-06-19,Medium,-17.85,Subscriptions
+2024-06-19,American Airlines,-1326.1,Travel
+2024-06-20,Comcast,-187.42,Utilities
+2024-06-21,Aldi,-56.35,Groceries
+2024-06-21,Under Armour,-154.1,Fitness
+2024-06-21,Airbnb,-951.46,Travel
+2024-06-22,Marshalls,-216.93,Shopping
+2024-06-22,Athleta,-99.46,Fitness
+2024-06-23,Panda Express,-36.48,Dining
+2024-06-23,Grammarly,-8.79,Subscriptions
+2024-06-23,Cruise Line,-1211.23,Travel
+2024-06-23,Morgan Stanley,-960.43,Investments
+2024-06-25,401(k) Contribution,-352.94,Investments
+2024-06-26,Waste Management,-270.34,Utilities
+2024-06-26,Athleta,-120.63,Fitness
+2024-06-27,Electric Company,-182.98,Utilities
+2024-06-29,Marshalls,-245.72,Shopping
+2024-06-30,Old Navy,-113.67,Shopping
+2024-06-30,Retirement Contribution,-1040.86,Investments
+2024-07-01,Bowling Alley,-134.58,Entertainment
+2024-07-02,Nordstrom,-168.18,Shopping
+2024-07-02,Hotels.com,-379.18,Travel
+2024-07-04,DirecTV,-131.65,Utilities
+2024-07-04,Athleta,-100.8,Fitness
+2024-07-05,Save-A-Lot,-101.61,Groceries
+2024-07-05,Moving Service,-1878.08,Housing
+2024-07-06,Apple TV+,-51.14,Entertainment
+2024-07-06,Vanguard,-902.41,Investments
+2024-07-07,Burger King,-9.23,Dining
+2024-07-07,Tidal,-70.6,Entertainment
+2024-07-07,Fitness Equipment,-55.36,Fitness
+2024-07-07,Lululemon,-113.51,Fitness
+2024-07-08,Peacock,-94.35,Entertainment
+2024-07-09,Disney+,-18.16,Entertainment
+2024-07-10,Marshalls,-239.04,Shopping
+2024-07-10,Regal Cinemas,-107.09,Entertainment
+2024-07-10,Retirement Contribution,-584.39,Investments
+2024-07-11,Five Guys,-23.07,Dining
+2024-07-11,American Airlines,-143.69,Travel
+2024-07-11,ETF Purchase,-1131.42,Investments
+2024-07-12,Dunkin' Donuts,-21.32,Dining
+2024-07-12,Pest Control,-2415.1,Housing
+2024-07-13,Panda Express,-59.04,Dining
+2024-07-13,Lululemon,-39.18,Fitness
+2024-07-14,Subway,-15.1,Dining
+2024-07-14,KFC,-19.59,Dining
+2024-07-15,Robinhood,-659.17,Investments
+2024-07-16,McDonald's,-64.29,Dining
+2024-07-18,Aldi,-178.93,Groceries
+2024-07-18,Walmart,-80.31,Shopping
+2024-07-18,Retirement Contribution,-1887.81,Investments
+2024-07-18,Merrill Lynch,-378.43,Investments
+2024-07-19,Furniture Rental,-1597.9,Housing
+2024-07-20,Hilton,-1282.51,Travel
+2024-07-21,Ulta Beauty,-12.14,Shopping
+2024-07-21,Delta Airlines,-1694.58,Travel
+2024-07-22,401(k) Contribution,-1664.3,Investments
+2024-07-23,Safeway,-169.25,Groceries
+2024-07-23,United Airlines,-1960.46,Travel
+2024-07-24,Five Guys,-57.9,Dining
+2024-07-25,Parking,-24.36,Transportation
+2024-07-27,ETF Purchase,-258.51,Investments
+2024-07-29,Workout Classes,-36.26,Fitness
+2024-07-29,Travelocity,-1726.12,Travel
+2024-07-29,Acorns,-1726.34,Investments
+2024-07-30,Panera Bread,-55.07,Dining
+2024-07-30,Walmart,-147.04,Shopping
+2024-07-30,Cleaning Service,-1139.5,Housing
+2024-07-31,Domino's Pizza,-8.86,Dining
+2024-08-02,Bed Bath & Beyond,-25.5,Shopping
+2024-08-03,Morgan Stanley,-1100.71,Investments
+2024-08-04,In-N-Out Burger,-34.35,Dining
+2024-08-04,Planet Fitness,-15.43,Fitness
+2024-08-04,Athleta,-142.2,Fitness
+2024-08-05,Uber,-136.71,Transportation
+2024-08-06,Applebee's,-40.18,Dining
+2024-08-06,Marshalls,-275.25,Shopping
+2024-08-07,Ticketmaster,-88.54,Entertainment
+2024-08-07,Workout Classes,-155.52,Fitness
+2024-08-08,NordVPN,-20.04,Subscriptions
+2024-08-09,United Airlines,-1400.33,Travel
+2024-08-11,Airline Tickets,-18.89,Transportation
+2024-08-11,Avis,-203.42,Transportation
+2024-08-11,Airbnb,-1989.29,Travel
+2024-08-12,Olive Garden,-10.45,Dining
+2024-08-12,Vanguard,-398.92,Investments
+2024-08-13,Sephora,-233.83,Shopping
+2024-08-14,H-E-B,-32.57,Groceries
+2024-08-15,Wegmans,-75.62,Groceries
+2024-08-16,Property Tax,-2551.28,Housing
+2024-08-17,Wegmans,-106.63,Groceries
+2024-08-17,Mortgage,-986.37,Housing
+2024-08-17,Travel Insurance,-300.16,Travel
+2024-08-18,Macy's,-30.81,Shopping
+2024-08-19,Planet Fitness,-189.54,Fitness
+2024-08-19,Travel Agency,-710.39,Travel
+2024-08-19,Merrill Lynch,-1722.9,Investments
+2024-08-19,Acorns,-1509.74,Investments
+2024-08-20,Macy's,-181.85,Shopping
+2024-08-20,Marriott,-1373.68,Travel
+2024-08-21,Applebee's,-51.02,Dining
+2024-08-23,Panera Bread,-67.74,Dining
+2024-08-24,Hotels.com,-1658.57,Travel
+2024-08-24,Bond Purchase,-1728.25,Investments
+2024-08-25,Regal Cinemas,-141.39,Entertainment
+2024-08-27,Kohl's,-239.88,Shopping
+2024-08-27,American Airlines,-146.28,Travel
+2024-08-28,Newegg,-184.89,Shopping
+2024-08-28,Vacation Rental,-855.88,Travel
+2024-08-28,Acorns,-353.17,Investments
+2024-08-29,Delta Airlines,-430.0,Travel
+2024-08-30,Vacation Rental,-1492.62,Travel
+2024-08-31,Wegmans,-112.34,Groceries
+2024-08-31,Whole Foods,-120.94,Groceries
+2024-08-31,Costco,-88.29,Groceries
+2024-09-01,Expedia,-1203.98,Travel
+2024-09-02,IRA Contribution,-1200.29,Investments
+2024-09-03,Kroger,-130.4,Groceries
+2024-09-03,Subway,-70.32,Dining
+2024-09-05,Aldi,-53.93,Groceries
+2024-09-05,Ulta Beauty,-110.86,Shopping
+2024-09-05,Movie Theater,-81.64,Entertainment
+2024-09-06,Bed Bath & Beyond,-269.36,Shopping
+2024-09-07,Tidal,-20.5,Entertainment
+2024-09-07,Hotels.com,-1313.15,Travel
+2024-09-08,Apple Store,-49.79,Shopping
+2024-09-08,United Airlines,-875.47,Travel
+2024-09-09,Olive Garden,-55.6,Dining
+2024-09-10,Chick-fil-A,-71.57,Dining
+2024-09-10,TJ Maxx,-10.24,Shopping
+2024-09-10,Rent Payment,-827.44,Housing
+2024-09-11,KFC,-65.45,Dining
+2024-09-11,Electric Company,-214.35,Utilities
+2024-09-11,Hotels.com,-1279.75,Travel
+2024-09-12,In-N-Out Burger,-18.7,Dining
+2024-09-12,Taco Bell,-74.56,Dining
+2024-09-12,Hilton,-1964.0,Travel
+2024-09-13,Booking.com,-967.88,Travel
+2024-09-13,Travel Agency,-783.71,Travel
+2024-09-14,Merrill Lynch,-1896.68,Investments
+2024-09-14,Coinbase,-604.65,Investments
+2024-09-15,Amazon,-115.39,Shopping
+2024-09-15,401(k) Contribution,-240.64,Investments
+2024-09-16,ConEd,-243.65,Utilities
+2024-09-19,TJ Maxx,-242.8,Shopping
+2024-09-19,YouTube Premium,-25.58,Entertainment
+2024-09-19,Airline Tickets,-245.57,Transportation
+2024-09-19,HOA Fees,-3339.78,Housing
+2024-09-20,Phone Bill,-283.93,Utilities
+2024-09-21,Home Depot,-33.43,Shopping
+2024-09-21,Movie Theater,-56.6,Entertainment
+2024-09-21,Parking,-91.01,Transportation
+2024-09-22,Albertsons,-26.17,Groceries
+2024-09-22,Cruise Line,-1412.78,Travel
+2024-09-23,Adidas,-112.8,Fitness
+2024-09-24,Burger King,-71.5,Dining
+2024-09-24,Sephora,-169.56,Shopping
+2024-09-24,Avis,-106.71,Transportation
+2024-09-24,IRA Contribution,-1566.54,Investments
+2024-09-25,Adidas,-113.17,Fitness
+2024-09-26,Sprouts,-178.71,Groceries
+2024-09-26,Nike,-167.78,Fitness
+2024-09-26,Booking.com,-1027.62,Travel
+2024-09-27,HBO Max,-135.69,Entertainment
+2024-09-27,Travel Insurance,-748.71,Travel
+2024-09-28,Pest Control,-3086.08,Housing
+2024-09-29,Chick-fil-A,-72.31,Dining
+2024-09-30,Albertsons,-94.78,Groceries
+2024-09-30,Merrill Lynch,-1446.02,Investments
+2024-10-01,IKEA,-38.49,Shopping
+2024-10-01,Kohl's,-89.97,Shopping
+2024-10-01,YouTube Premium,-97.78,Entertainment
+2024-10-01,Enterprise Rent-A-Car,-217.66,Transportation
+2024-10-01,Grammarly,-22.79,Subscriptions
+2024-10-02,Hobby Lobby,-259.86,Shopping
+2024-10-03,Under Armour,-171.57,Fitness
+2024-10-03,Robinhood,-1658.21,Investments
+2024-10-04,Chipotle,-54.37,Dining
+2024-10-04,Chick-fil-A,-15.67,Dining
+2024-10-04,Apple TV+,-144.48,Entertainment
+2024-10-04,Public Transit,-73.4,Transportation
+2024-10-05,Duke Energy,-196.57,Utilities
+2024-10-05,E*TRADE,-1000.43,Investments
+2024-10-05,ETF Purchase,-1269.72,Investments
+2024-10-06,Vacation Rental,-691.64,Travel
+2024-10-07,Mutual Fund,-1263.48,Investments
+2024-10-08,American Airlines,-1596.84,Travel
+2024-10-09,Starbucks,-29.05,Dining
+2024-10-10,Panera Bread,-11.08,Dining
+2024-10-10,Apple Music,-127.11,Entertainment
+2024-10-10,Uber,-218.46,Transportation
+2024-10-11,Apple Store,-108.46,Shopping
+2024-10-11,Cruise Line,-1861.6,Travel
+2024-10-13,Wendy's,-20.52,Dining
+2024-10-13,Applebee's,-49.36,Dining
+2024-10-13,Panda Express,-16.98,Dining
+2024-10-13,TJ Maxx,-144.85,Shopping
+2024-10-14,Panera Bread,-52.09,Dining
+2024-10-14,YouTube Premium,-117.01,Entertainment
+2024-10-14,Concert Tickets,-16.99,Entertainment
+2024-10-14,Cruise Line,-1966.5,Travel
+2024-10-15,Food Lion,-87.21,Groceries
+2024-10-15,Sephora,-146.2,Shopping
+2024-10-15,Apple Music,-72.35,Entertainment
+2024-10-15,Chevron,-129.68,Transportation
+2024-10-16,Kohl's,-78.3,Shopping
+2024-10-17,Travel Agency,-286.34,Travel
+2024-10-18,Marshalls,-236.21,Shopping
+2024-10-18,Comcast,-57.34,Utilities
+2024-10-18,Travelocity,-188.47,Travel
+2024-10-18,Betterment,-185.17,Investments
+2024-10-19,Starbucks,-26.32,Dining
+2024-10-19,Ulta Beauty,-40.75,Shopping
+2024-10-20,Panera Bread,-69.31,Dining
+2024-10-20,PlayStation Plus,-8.71,Subscriptions
+2024-10-20,New York Times,-9.51,Subscriptions
+2024-10-21,Gap,-264.79,Shopping
+2024-10-21,Expedia,-415.12,Travel
+2024-10-21,Vacation Rental,-1236.09,Travel
+2024-10-22,Subway,-49.75,Dining
+2024-10-22,Five Guys,-62.87,Dining
+2024-10-22,Vacation Rental,-1909.74,Travel
+2024-10-22,American Airlines,-1513.33,Travel
+2024-10-23,Uber,-130.84,Transportation
+2024-10-23,Vacation Rental,-154.95,Travel
+2024-10-24,Home Depot,-230.8,Shopping
+2024-10-24,Exxon,-66.92,Transportation
+2024-10-24,Robinhood,-1483.52,Investments
+2024-10-25,Kayak,-1483.23,Travel
+2024-10-25,401(k) Contribution,-321.27,Investments
+2024-10-26,Bowling Alley,-27.7,Entertainment
+2024-10-26,Tidal,-132.28,Entertainment
+2024-10-26,Steam,-102.11,Entertainment
+2024-10-27,Pizza Hut,-66.14,Dining
+2024-10-27,Regal Cinemas,-130.28,Entertainment
+2024-10-28,Public Transit,-167.32,Transportation
+2024-10-28,Investment Contribution,-1246.17,Investments
+2024-10-29,United Airlines,-412.63,Travel
+2024-10-29,TD Ameritrade,-213.16,Investments
+2024-10-30,Costco,-138.53,Groceries
+2024-10-30,Starbucks,-43.37,Dining
+2024-10-30,Marshalls,-121.27,Shopping
+2024-10-30,Morgan Stanley,-1412.22,Investments
+2024-11-03,Local Restaurant,-37.07,Dining
+2024-11-03,Lawn Service,-1556.88,Housing
+2024-11-03,ETF Purchase,-1288.93,Investments
+2024-11-04,Travel Insurance,-1230.4,Travel
+2024-11-05,Kayak,-172.79,Travel
+2024-11-06,IKEA,-112.42,Shopping
+2024-11-06,Adidas,-58.03,Fitness
+2024-11-06,Airbnb,-266.97,Travel
+2024-11-07,Macy's,-69.22,Shopping
+2024-11-07,Lowe's,-186.61,Shopping
+2024-11-07,Water Service,-264.65,Utilities
+2024-11-07,Home Warranty,-2742.31,Housing
+2024-11-07,Resort Fees,-220.8,Travel
+2024-11-08,YouTube Premium,-147.22,Entertainment
+2024-11-09,Amtrak,-111.81,Transportation
+2024-11-10,Meijer,-183.39,Groceries
+2024-11-10,Walmart,-260.34,Shopping
+2024-11-11,Target,-183.24,Shopping
+2024-11-11,T-Mobile,-299.73,Utilities
+2024-11-11,Cruise Line,-282.07,Travel
+2024-11-11,IRA Contribution,-974.49,Investments
+2024-11-12,AutoZone,-106.31,Transportation
+2024-11-13,Subway,-63.07,Dining
+2024-11-13,Paramount+,-20.54,Entertainment
+2024-11-14,Five Guys,-69.91,Dining
+2024-11-14,Etsy,-218.6,Shopping
+2024-11-14,Kayak,-1638.38,Travel
+2024-11-14,Hilton,-655.67,Travel
+2024-11-14,VRBO,-1442.87,Travel
+2024-11-14,Investment Contribution,-696.3,Investments
+2024-11-16,Pizza Hut,-24.4,Dining
+2024-11-16,Wayfair,-117.45,Shopping
+2024-11-16,Apple TV+,-47.16,Entertainment
+2024-11-16,Audible,-49.85,Subscriptions
+2024-11-16,Stock Purchase,-1425.49,Investments
+2024-11-17,Olive Garden,-18.43,Dining
+2024-11-17,Spotify,-72.58,Entertainment
+2024-11-18,Ticketmaster,-121.13,Entertainment
+2024-11-19,Marriott,-1944.8,Travel
+2024-11-20,Taco Bell,-47.7,Dining
+2024-11-20,Expedia,-1423.44,Travel
+2024-11-20,ETF Purchase,-144.04,Investments
+2024-11-21,Domino's Pizza,-34.96,Dining
+2024-11-21,Apple TV+,-85.98,Entertainment
+2024-11-22,Pizza Hut,-55.11,Dining
+2024-11-22,VRBO,-1038.07,Travel
+2024-11-22,Kayak,-1633.22,Travel
+2024-11-22,Fidelity,-528.05,Investments
+2024-11-23,H-E-B,-168.07,Groceries
+2024-11-23,Applebee's,-53.44,Dining
+2024-11-23,Uber,-246.59,Transportation
+2024-11-23,Kindle Unlimited,-26.77,Subscriptions
+2024-11-23,American Airlines,-1830.45,Travel
+2024-11-24,Chipotle,-56.59,Dining
+2024-11-25,Kroger,-163.01,Groceries
+2024-11-25,Starbucks,-10.47,Dining
+2024-11-26,AMC Theaters,-125.53,Entertainment
+2024-11-26,Chevron,-211.35,Transportation
+2024-11-28,Furniture Rental,-1763.88,Housing
+2024-11-28,ETF Purchase,-1461.45,Investments
+2024-11-29,Disney+,-45.35,Entertainment
+2024-11-29,TD Ameritrade,-272.07,Investments
+2024-11-30,Wegmans,-97.7,Groceries
+2024-11-30,Chick-fil-A,-19.31,Dining
+2024-11-30,LastPass,-17.82,Subscriptions
+2024-11-30,Airbnb,-725.08,Travel
+2024-12-01,IKEA,-31.02,Shopping
+2024-12-01,Investment Contribution,-1203.13,Investments
+2024-12-03,Movie Theater,-59.31,Entertainment
+2024-12-03,Fidelity,-1987.83,Investments
+2024-12-05,ShopRite,-171.1,Groceries
+2024-12-05,Local Restaurant,-42.7,Dining
+2024-12-05,BP,-29.29,Transportation
+2024-12-06,Aldi,-152.27,Groceries
+2024-12-06,Stock Purchase,-1961.48,Investments
+2024-12-07,Amazon,-115.02,Shopping
+2024-12-09,McDonald's,-32.41,Dining
+2024-12-10,Local Restaurant,-32.02,Dining
+2024-12-10,Nordstrom,-233.17,Shopping
+2024-12-11,Lawn Service,-2234.98,Housing
+2024-12-12,Bed Bath & Beyond,-179.65,Shopping
+2024-12-12,American Airlines,-1629.09,Travel
+2024-12-12,United Airlines,-252.54,Travel
+2024-12-12,ETF Purchase,-1778.12,Investments
+2024-12-13,KFC,-12.13,Dining
+2024-12-13,Adobe Creative Cloud,-46.28,Subscriptions
+2024-12-13,401(k) Contribution,-1097.61,Investments
+2024-12-16,Sephora,-18.51,Shopping
+2024-12-17,Amazon,-268.71,Shopping
+2024-12-17,Dave & Buster's,-12.75,Entertainment
+2024-12-17,LA Fitness,-158.67,Fitness
+2024-12-18,Food Lion,-165.58,Groceries
+2024-12-18,Save-A-Lot,-165.17,Groceries
+2024-12-18,Target,-286.22,Shopping
+2024-12-19,Wendy's,-27.93,Dining
+2024-12-19,Dunkin' Donuts,-54.67,Dining
+2024-12-20,Panera Bread,-9.57,Dining
+2024-12-20,401(k) Contribution,-518.98,Investments
+2024-12-23,Stock Purchase,-597.25,Investments
+2024-12-24,Marshalls,-145.56,Shopping
+2024-12-24,Google One,-26.06,Subscriptions
+2024-12-24,Vacation Rental,-1402.3,Travel
+2024-12-24,Fidelity,-1816.08,Investments
+2024-12-25,Home Depot,-173.35,Shopping
+2024-12-25,Apple Music,-120.96,Entertainment
+2024-12-25,Amazon Prime,-25.85,Subscriptions
+2024-12-25,Marriott,-1967.51,Travel
+2024-12-26,Applebee's,-27.86,Dining
+2024-12-26,Nordstrom,-240.16,Shopping
+2024-12-26,Wall Street Journal,-8.99,Subscriptions
+2024-12-26,Travel Agency,-786.22,Travel
+2024-12-27,Lululemon,-174.67,Fitness
+2024-12-30,Robinhood,-318.66,Investments
+2024-12-31,Five Guys,-42.0,Dining
+2024-12-31,In-N-Out Burger,-19.25,Dining
+2024-12-31,Mortgage,-3265.18,Housing
+2025-01-01,Pizza Hut,-50.71,Dining
+2025-01-01,Chipotle,-61.9,Dining
+2025-01-01,Michaels,-178.15,Shopping
+2025-01-02,Subway,-61.12,Dining
+2025-01-02,Booking.com,-1365.41,Travel
+2025-01-03,Sephora,-54.21,Shopping
+2025-01-03,Sephora,-155.22,Shopping
+2025-01-03,Avis,-105.72,Transportation
+2025-01-03,Internet Provider,-172.12,Utilities
+2025-01-04,Tidal,-59.04,Entertainment
+2025-01-06,Macy's,-49.03,Shopping
+2025-01-06,Robinhood,-341.59,Investments
+2025-01-08,Kohl's,-239.3,Shopping
+2025-01-08,Kohl's,-237.5,Shopping
+2025-01-08,BP,-197.25,Transportation
+2025-01-09,Disney+,-76.73,Entertainment
+2025-01-09,Delta Airlines,-623.58,Travel
+2025-01-09,401(k) Contribution,-729.45,Investments
+2025-01-10,Live Nation,-51.22,Entertainment
+2025-01-10,Exxon,-97.29,Transportation
+2025-01-11,Movie Theater,-13.84,Entertainment
+2025-01-12,Costco,-174.37,Groceries
+2025-01-12,Cruise Line,-1135.79,Travel
+2025-01-13,Five Guys,-20.64,Dining
+2025-01-13,IKEA,-86.05,Shopping
+2025-01-14,Old Navy,-226.28,Shopping
+2025-01-14,Wealthfront,-1386.12,Investments
+2025-01-15,Newegg,-200.17,Shopping
+2025-01-15,Delta Airlines,-1508.53,Travel
+2025-01-16,Jiffy Lube,-235.26,Transportation
+2025-01-16,Peloton,-159.44,Fitness
+2025-01-17,Tidal,-121.12,Entertainment
+2025-01-18,Apple Music,-13.55,Entertainment
+2025-01-19,Sephora,-203.91,Shopping
+2025-01-19,Chevron,-155.75,Transportation
+2025-01-19,Rent Payment,-1908.94,Housing
+2025-01-20,Chick-fil-A,-25.8,Dining
+2025-01-20,Local Restaurant,-17.58,Dining
+2025-01-20,Panda Express,-44.38,Dining
+2025-01-20,Acorns,-1324.75,Investments
+2025-01-21,Wendy's,-69.28,Dining
+2025-01-22,Newegg,-102.33,Shopping
+2025-01-23,Airline Tickets,-202.83,Transportation
+2025-01-24,Apartment Management,-1862.38,Housing
+2025-01-25,Chipotle,-26.85,Dining
+2025-01-25,Amazon,-96.52,Shopping
+2025-01-25,Apple TV+,-136.87,Entertainment
+2025-01-25,Public Transit,-160.79,Transportation
+2025-01-25,Hilton,-202.36,Travel
+2025-01-26,Dropbox,-35.99,Subscriptions
+2025-01-27,Hilton,-1322.57,Travel
+2025-01-27,Acorns,-161.12,Investments
+2025-01-28,Panera Bread,-67.44,Dining
+2025-01-28,E*TRADE,-266.82,Investments
+2025-01-29,Concert Tickets,-84.19,Entertainment
+2025-01-29,Car Wash,-53.91,Transportation
+2025-01-29,TD Ameritrade,-476.7,Investments
+2025-01-30,McDonald's,-66.25,Dining
+2025-01-30,Wall Street Journal,-39.06,Subscriptions
+2025-01-31,In-N-Out Burger,-24.27,Dining
+2025-01-31,Etsy,-176.97,Shopping
+2025-01-31,Booking.com,-1096.02,Travel
+2025-02-01,Food Lion,-49.82,Groceries
+2025-02-01,Car Wash,-136.12,Transportation
+2025-02-01,Cruise Line,-1493.99,Travel
+2025-02-01,Kayak,-1694.92,Travel
+2025-02-02,Hotels.com,-920.71,Travel
+2025-02-02,Charles Schwab,-1951.18,Investments
+2025-02-03,Retirement Contribution,-1348.44,Investments
+2025-02-05,Starbucks,-49.84,Dining
+2025-02-05,Marshalls,-262.74,Shopping
+2025-02-05,Regal Cinemas,-22.31,Entertainment
+2025-02-07,Dunkin' Donuts,-46.24,Dining
+2025-02-07,Mutual Fund,-1412.97,Investments
+2025-02-08,Macy's,-268.56,Shopping
+2025-02-08,Verizon,-248.21,Utilities
+2025-02-08,American Airlines,-627.24,Travel
+2025-02-09,Lowe's,-142.0,Shopping
+2025-02-09,Spotify,-111.4,Entertainment
+2025-02-10,Domino's Pizza,-66.22,Dining
+2025-02-11,Bed Bath & Beyond,-184.27,Shopping
+2025-02-12,McDonald's,-66.49,Dining
+2025-02-12,Bed Bath & Beyond,-206.24,Shopping
+2025-02-13,Exxon,-130.97,Transportation
+2025-02-13,VRBO,-1046.9,Travel
+2025-02-13,Wealthfront,-831.82,Investments
+2025-02-14,Hotels.com,-389.23,Travel
+2025-02-15,Shell,-135.81,Transportation
+2025-02-16,Wayfair,-275.93,Shopping
+2025-02-16,Rent Payment,-2370.23,Housing
+2025-02-17,LastPass,-38.93,Subscriptions
+2025-02-17,Morgan Stanley,-1922.44,Investments
+2025-02-18,Dropbox,-8.26,Subscriptions
+2025-02-19,Robinhood,-961.49,Investments
+2025-02-20,eBay,-270.44,Shopping
+2025-02-20,United Airlines,-794.4,Travel
+2025-02-22,eBay,-114.81,Shopping
+2025-02-22,AMC Theaters,-73.29,Entertainment
+2025-02-24,Dave & Buster's,-112.6,Entertainment
+2025-02-24,Lululemon,-144.35,Fitness
+2025-02-24,Wealthfront,-1899.59,Investments
+2025-02-26,Netflix,-23.18,Entertainment
+2025-02-26,Car Repair,-44.67,Transportation
+2025-02-26,Delta Airlines,-527.59,Travel
+2025-02-27,Best Buy,-167.48,Shopping
+2025-02-27,Medium,-11.09,Subscriptions
+2025-02-28,Marshalls,-164.92,Shopping
+2025-02-28,Merrill Lynch,-672.32,Investments
+2025-03-01,Steam,-23.26,Entertainment
+2025-03-02,Kroger,-35.7,Groceries
+2025-03-02,Nike,-147.35,Fitness
+2025-03-02,United Airlines,-255.64,Travel
+2025-03-03,Peloton,-104.43,Fitness
+2025-03-04,Sephora,-270.99,Shopping
+2025-03-04,Mortgage,-2440.57,Housing
+2025-03-05,Sephora,-40.7,Shopping
+2025-03-06,Taxi Service,-131.41,Transportation
+2025-03-06,Home Insurance,-2214.85,Housing
+2025-03-06,Airbnb,-726.93,Travel
+2025-03-08,Trader Joe's,-136.42,Groceries
+2025-03-09,Nordstrom,-35.44,Shopping
+2025-03-09,Old Navy,-90.7,Shopping
+2025-03-09,Gap,-250.97,Shopping
+2025-03-09,Mutual Fund,-853.46,Investments
+2025-03-09,Fidelity,-1408.58,Investments
+2025-03-09,Merrill Lynch,-652.33,Investments
+2025-03-10,Apple Store,-148.41,Shopping
+2025-03-11,Expedia,-931.38,Travel
+2025-03-12,Travel Insurance,-1435.11,Travel
+2025-03-13,AMC Theaters,-38.82,Entertainment
+2025-03-16,Applebee's,-66.09,Dining
+2025-03-17,In-N-Out Burger,-69.33,Dining
+2025-03-17,Southwest Airlines,-781.99,Travel
+2025-03-18,Marshalls,-25.39,Shopping
+2025-03-19,Marriott,-108.12,Travel
+2025-03-19,Cruise Line,-1603.18,Travel
+2025-03-20,Save-A-Lot,-168.5,Groceries
+2025-03-21,Wegmans,-41.74,Groceries
+2025-03-21,Delta Airlines,-547.65,Travel
+2025-03-22,Apple Music,-26.65,Entertainment
+2025-03-22,Charles Schwab,-1034.26,Investments
+2025-03-23,Concert Tickets,-40.06,Entertainment
+2025-03-25,Enterprise Rent-A-Car,-249.71,Transportation
+2025-03-25,Apartment Management,-1457.06,Housing
+2025-03-25,PlayStation Plus,-47.0,Subscriptions
+2025-03-27,In-N-Out Burger,-41.82,Dining
+2025-03-27,Personal Trainer,-148.24,Fitness
+2025-03-28,United Airlines,-993.91,Travel
+2025-03-28,Hilton,-557.14,Travel
+2025-03-29,Five Guys,-29.43,Dining
+2025-03-29,Starbucks,-24.21,Dining
+2025-03-29,Travel Agency,-902.81,Travel
+2025-03-29,E*TRADE,-414.22,Investments
+2025-03-30,Olive Garden,-18.57,Dining
+2025-03-30,Travel Insurance,-125.69,Travel
+2025-03-31,Toll Roads,-118.3,Transportation
+2025-03-31,American Airlines,-1502.26,Travel
+2025-04-01,Paramount+,-38.99,Entertainment
+2025-04-02,United Airlines,-860.65,Travel
+2025-04-03,Save-A-Lot,-88.94,Groceries
+2025-04-03,Enterprise Rent-A-Car,-182.69,Transportation
+2025-04-04,Shell,-54.1,Transportation
+2025-04-06,HOA Fees,-2173.34,Housing
+2025-04-06,VRBO,-1858.3,Travel
+2025-04-06,Hilton,-1469.93,Travel
+2025-04-07,Avis,-129.8,Transportation
+2025-04-09,Personal Trainer,-21.68,Fitness
+2025-04-09,Planet Fitness,-113.13,Fitness
+2025-04-09,Cruise Line,-1976.05,Travel
+2025-04-10,Nordstrom,-299.98,Shopping
+2025-04-10,Betterment,-997.81,Investments
+2025-04-11,Domino's Pizza,-54.17,Dining
+2025-04-11,Newegg,-47.84,Shopping
+2025-04-11,Dropbox,-13.75,Subscriptions
+2025-04-12,Avis,-69.57,Transportation
+2025-04-12,Expedia,-883.69,Travel
+2025-03-16,Transfer to Savings,-0.0,Savings
+2024-06-19,Stock Sale - Google,20821,Income
+2024-09-20,Stock Sale - Microsoft,15040,Income
+2024-12-13,Stock Sale - Google,20162,Income
+2024-12-15,Annual Performance Bonus,67254,Income
+2025-02-24,Fine Dining - Michelin Star Restaurant,-621,Dining
+2024-07-25,Designer Apparel Purchase,-1800,Shopping
+2025-03-16,Luxury Watch Purchase,-7451,Shopping
+2024-06-23,First Class Airfare,-5042,Travel
+2024-07-16,Luxury Hotel Stay,-3141,Travel
+2024-11-14,Private Golf Club Membership,-2124,Entertainment

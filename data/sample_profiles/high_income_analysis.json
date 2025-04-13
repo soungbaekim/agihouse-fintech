@@ -1,296 +1,297 @@
 {
   "analysis": {
-    "income": 114934.0,
-    "expenses": 313696.63,
-    "net_cash_flow": -198762.63,
-    "savings_rate": -172.94,
+    "income": 123277.0,
+    "expenses": 318458.91,
+    "net_cash_flow": -195181.90999999997,
+    "savings_rate": -158.33,
     "spending_by_category": {
-      "Shopping": 24501.9,
-      "Entertainment": 8394.07,
-      "Travel": 121618.98999999995,
-      "Investments": 81921.01,
-      "Transportation": 5690.29,
-      "Dining": 4655.58,
-      "Groceries": 4626.53,
-      "Housing": 55560.670000000006,
-      "Fitness": 3725.57,
-      "Subscriptions": 614.8100000000001,
-      "Utilities": 2387.21
+      "Transportation": 5589.330000000001,
+      "Groceries": 4820.189999999999,
+      "Dining": 4685.879999999999,
+      "Fitness": 4136.570000000001,
+      "Shopping": 24821.64,
+      "Housing": 58233.68999999999,
+      "Investments": 87514.22,
+      "Travel": 118263.19999999997,
+      "Entertainment": 6974.72,
+      "Subscriptions": 516.6500000000001,
+      "Utilities": 2902.8199999999997
     },
     "top_spending_categories": [
       {
         "category": "Travel",
-        "amount": 121618.98999999995
+        "amount": 118263.19999999997
       },
       {
         "category": "Investments",
-        "amount": 81921.01
+        "amount": 87514.22
       },
       {
         "category": "Housing",
-        "amount": 55560.670000000006
+        "amount": 58233.68999999999
       },
       {
         "category": "Shopping",
-        "amount": 24501.9
+        "amount": 24821.64
       },
       {
         "category": "Entertainment",
-        "amount": 8394.07
+        "amount": 6974.72
       }
     ],
     "monthly_spending": {
       "2024-04": {
-        "Shopping": 857.78,
-        "Entertainment": 331.16,
-        "Travel": 7301.819999999999,
-        "Investments": 439.72,
-        "Transportation": 155.26,
-        "Dining": 129.63,
-        "Groceries": 319.07
+        "Transportation": 284.59,
+        "Groceries": 215.12,
+        "Dining": 146.77,
+        "Fitness": 112.77,
+        "Shopping": 574.9599999999999,
+        "Housing": 8429.86,
+        "Investments": 5180.66,
+        "Travel": 2441.21
       },
       "2024-05": {
-        "Dining": 566.62,
-        "Entertainment": 446.53,
-        "Housing": 9588.99,
-        "Groceries": 210.81,
-        "Travel": 9448.78,
-        "Shopping": 1389.0,
-        "Fitness": 625.56,
-        "Transportation": 278.46000000000004,
-        "Investments": 8416.58,
-        "Subscriptions": 27.75,
-        "Utilities": 411.64
+        "Shopping": 734.66,
+        "Fitness": 565.42,
+        "Investments": 5595.9800000000005,
+        "Travel": 4684.16,
+        "Dining": 304.56,
+        "Groceries": 521.63,
+        "Entertainment": 399.44,
+        "Transportation": 128.19,
+        "Subscriptions": 33.26,
+        "Housing": 1978.23
       },
       "2024-06": {
-        "Transportation": 674.23,
-        "Dining": 602.6,
-        "Travel": 14944.86,
-        "Utilities": 242.28,
-        "Investments": 4249.38,
-        "Groceries": 473.15000000000003,
-        "Shopping": 1261.4499999999998,
-        "Fitness": 45.07,
-        "Entertainment": 259.85,
-        "Housing": 5809.969999999999,
-        "Subscriptions": 22.67
+        "Groceries": 425.75000000000006,
+        "Housing": 4013.4700000000003,
+        "Entertainment": 531.6999999999999,
+        "Transportation": 48.3,
+        "Travel": 12347.220000000001,
+        "Fitness": 815.27,
+        "Shopping": 1568.22,
+        "Dining": 149.82,
+        "Utilities": 790.6199999999999,
+        "Investments": 4605.5199999999995,
+        "Subscriptions": 26.64
       },
       "2024-07": {
-        "Travel": 8679.56,
-        "Shopping": 1237.09,
-        "Entertainment": 516.54,
-        "Investments": 6903.500000000001,
-        "Transportation": 241.13,
-        "Dining": 318.71,
-        "Fitness": 286.71,
-        "Housing": 2956.08,
-        "Subscriptions": 13.96,
-        "Utilities": 117.9
+        "Entertainment": 475.9200000000001,
+        "Shopping": 2446.71,
+        "Travel": 10327.54,
+        "Utilities": 131.65,
+        "Fitness": 345.11,
+        "Groceries": 449.79,
+        "Housing": 7030.58,
+        "Investments": 9192.78,
+        "Dining": 333.46999999999997,
+        "Transportation": 24.36
       },
       "2024-08": {
-        "Shopping": 979.54,
-        "Dining": 343.3200000000001,
-        "Investments": 3980.23,
-        "Groceries": 428.56999999999994,
-        "Travel": 11406.52,
-        "Entertainment": 272.81,
-        "Transportation": 791.9,
-        "Housing": 5529.45,
-        "Fitness": 446.44000000000005,
-        "Subscriptions": 28.18
+        "Shopping": 1172.01,
+        "Investments": 6813.6900000000005,
+        "Dining": 203.74,
+        "Fitness": 502.68999999999994,
+        "Transportation": 359.02,
+        "Entertainment": 229.93,
+        "Subscriptions": 20.04,
+        "Travel": 10357.2,
+        "Groceries": 536.39,
+        "Housing": 3537.65
       },
       "2024-09": {
-        "Shopping": 881.87,
-        "Groceries": 761.7800000000001,
-        "Dining": 402.0,
-        "Transportation": 690.16,
-        "Entertainment": 4288.86,
-        "Subscriptions": 52.0,
-        "Travel": 8303.51,
-        "Utilities": 236.36,
-        "Fitness": 78.71,
-        "Investments": 7420.2300000000005
+        "Travel": 11577.05,
+        "Investments": 6954.82,
+        "Groceries": 483.99,
+        "Dining": 500.01,
+        "Shopping": 1001.4300000000001,
+        "Entertainment": 320.01,
+        "Housing": 7253.3,
+        "Utilities": 741.9300000000001,
+        "Transportation": 443.28999999999996,
+        "Fitness": 393.75
       },
       "2024-10": {
-        "Shopping": 1866.33,
-        "Investments": 10571.259999999998,
-        "Groceries": 171.95000000000002,
-        "Dining": 381.70000000000005,
-        "Travel": 7936.09,
-        "Entertainment": 244.5,
-        "Fitness": 283.05,
-        "Transportation": 340.44,
-        "Utilities": 158.11,
-        "Housing": 883.21
+        "Shopping": 1759.9499999999998,
+        "Entertainment": 968.09,
+        "Transportation": 1004.28,
+        "Subscriptions": 41.01,
+        "Fitness": 171.57,
+        "Investments": 10053.35,
+        "Dining": 566.88,
+        "Utilities": 253.91,
+        "Travel": 13716.48,
+        "Groceries": 225.74
       },
       "2024-11": {
-        "Shopping": 8398.51,
-        "Entertainment": 550.3000000000001,
-        "Groceries": 499.91,
-        "Housing": 2922.8199999999997,
-        "Investments": 10932.68,
-        "Travel": 6923.76,
-        "Utilities": 229.21,
-        "Fitness": 237.26,
-        "Transportation": 919.93,
-        "Subscriptions": 47.86,
-        "Dining": 175.79
+        "Dining": 490.4600000000001,
+        "Housing": 6063.070000000001,
+        "Investments": 6790.82,
+        "Travel": 14505.01,
+        "Shopping": 1147.8799999999999,
+        "Fitness": 58.03,
+        "Utilities": 564.38,
+        "Entertainment": 2789.49,
+        "Transportation": 676.0600000000001,
+        "Groceries": 612.1700000000001,
+        "Subscriptions": 94.44
       },
       "2024-12": {
-        "Transportation": 280.6,
-        "Dining": 220.26999999999998,
-        "Fitness": 173.13,
-        "Entertainment": 253.46,
-        "Subscriptions": 57.85,
-        "Groceries": 520.39,
-        "Investments": 9301.84,
-        "Shopping": 692.0999999999999,
-        "Travel": 8359.93,
-        "Housing": 2136.1,
-        "Utilities": 358.66
+        "Shopping": 1691.37,
+        "Investments": 11279.14,
+        "Entertainment": 193.01999999999998,
+        "Groceries": 654.12,
+        "Dining": 300.54,
+        "Transportation": 29.29,
+        "Housing": 5500.16,
+        "Travel": 6037.66,
+        "Subscriptions": 107.17999999999999,
+        "Fitness": 333.34
       },
       "2025-01": {
-        "Dining": 525.98,
-        "Shopping": 1200.3199999999997,
-        "Travel": 6445.82,
-        "Housing": 6135.72,
-        "Fitness": 258.89,
-        "Investments": 9436.07,
-        "Entertainment": 111.91,
-        "Transportation": 49.89,
-        "Subscriptions": 124.39,
-        "Groceries": 289.07,
-        "Utilities": 287.44
+        "Dining": 536.22,
+        "Shopping": 2005.64,
+        "Travel": 7254.26,
+        "Transportation": 1208.8000000000002,
+        "Utilities": 172.12,
+        "Entertainment": 556.5600000000001,
+        "Investments": 4686.549999999999,
+        "Groceries": 174.37,
+        "Fitness": 159.44,
+        "Housing": 3771.32,
+        "Subscriptions": 75.05000000000001
       },
       "2025-02": {
-        "Dining": 426.41,
-        "Shopping": 1486.8000000000002,
-        "Fitness": 548.04,
-        "Travel": 9316.490000000002,
-        "Transportation": 549.8,
-        "Groceries": 550.18,
-        "Housing": 12204.56,
-        "Subscriptions": 124.75000000000001,
-        "Investments": 4998.97,
-        "Entertainment": 329.75000000000006,
-        "Utilities": 167.47
+        "Groceries": 49.82,
+        "Transportation": 447.57000000000005,
+        "Travel": 7494.98,
+        "Investments": 11000.25,
+        "Dining": 849.79,
+        "Shopping": 2057.39,
+        "Entertainment": 342.78000000000003,
+        "Utilities": 248.21,
+        "Housing": 2370.23,
+        "Subscriptions": 58.28,
+        "Fitness": 144.35
       },
       "2025-03": {
-        "Fitness": 742.71,
-        "Groceries": 296.76,
-        "Transportation": 539.5699999999999,
-        "Investments": 3633.94,
-        "Subscriptions": 115.4,
-        "Dining": 418.92999999999995,
-        "Utilities": 178.14,
-        "Travel": 10659.099999999999,
-        "Entertainment": 619.06,
-        "Shopping": 3802.88
+        "Entertainment": 128.79,
+        "Groceries": 382.36,
+        "Fitness": 400.02,
+        "Travel": 10471.81,
+        "Shopping": 8313.6,
+        "Housing": 6112.48,
+        "Transportation": 499.42,
+        "Investments": 4362.85,
+        "Dining": 249.45000000000002,
+        "Subscriptions": 47.0
       },
       "2025-04": {
-        "Housing": 7393.77,
-        "Travel": 11892.75,
-        "Shopping": 448.23,
-        "Dining": 143.62,
-        "Transportation": 178.92,
-        "Investments": 1636.6100000000001,
-        "Groceries": 104.89,
-        "Entertainment": 169.34
+        "Entertainment": 38.99,
+        "Travel": 7048.620000000001,
+        "Groceries": 88.94,
+        "Transportation": 436.16,
+        "Housing": 2173.34,
+        "Fitness": 134.81,
+        "Shopping": 347.82000000000005,
+        "Investments": 997.81,
+        "Dining": 54.17,
+        "Subscriptions": 13.75
       }
     },
     "top_merchants": [
       {
-        "merchant": "VRBO",
-        "amount": 12988.41
+        "merchant": "Cruise Line",
+        "amount": 12943.19
       },
       {
-        "merchant": "Vacation Rental",
-        "amount": 12949.189999999999
+        "merchant": "American Airlines",
+        "amount": 12351.720000000001
       },
       {
-        "merchant": "Vanguard",
-        "amount": 10566.62
-      },
-      {
-        "merchant": "Delta Airlines",
-        "amount": 10396.45
-      },
-      {
-        "merchant": "Travelocity",
-        "amount": 8844.519999999999
-      },
-      {
-        "merchant": "Marriott",
-        "amount": 8783.599999999999
-      },
-      {
-        "merchant": "Cleaning Service",
-        "amount": 8517.36
-      },
-      {
-        "merchant": "Resort Fees",
-        "amount": 8457.720000000001
-      },
-      {
-        "merchant": "Mutual Fund",
-        "amount": 7640.63
+        "merchant": "Pest Control",
+        "amount": 8902.22
       },
       {
         "merchant": "Hilton",
-        "amount": 7615.139999999999
+        "amount": 8672.8
+      },
+      {
+        "merchant": "Vacation Rental",
+        "amount": 8646.289999999999
+      },
+      {
+        "merchant": "HOA Fees",
+        "amount": 8024.130000000001
+      },
+      {
+        "merchant": "United Airlines",
+        "amount": 7806.03
+      },
+      {
+        "merchant": "Acorns",
+        "amount": 7656.91
+      },
+      {
+        "merchant": "ETF Purchase",
+        "amount": 7584.95
+      },
+      {
+        "merchant": "Luxury Watch Purchase",
+        "amount": 7451
       }
     ],
-    "total_potential_savings": 10475.85
+    "total_potential_savings": 10141.98
   },
   "recommendations": {
     "savings": [
       {
         "category": "dining",
-        "description": "You spent $4655.58 on dining out. Consider cooking more meals at home.",
-        "potential_savings": 1163.89
+        "description": "You spent $4685.88 on dining out. Consider cooking more meals at home.",
+        "potential_savings": 1171.47
       },
       {
         "category": "entertainment",
-        "description": "You have multiple streaming subscriptions totaling $8394.07. Consider consolidating services.",
-        "potential_savings": 2518.22
+        "description": "You have multiple streaming subscriptions totaling $6974.72. Consider consolidating services.",
+        "potential_savings": 2092.42
       },
       {
         "category": "shopping",
-        "description": "Your shopping expenses of $24501.9 could be reduced with a 24-hour rule for purchases.",
-        "potential_savings": 4900.38
+        "description": "Your shopping expenses of $24821.64 could be reduced with a 24-hour rule for purchases.",
+        "potential_savings": 4964.33
       },
       {
         "category": "transportation",
-        "description": "You spent $5690.29 on transportation. Consider carpooling or public transit.",
-        "potential_savings": 853.54
+        "description": "You spent $5589.33 on transportation. Consider carpooling or public transit.",
+        "potential_savings": 838.4
       },
       {
         "category": "groceries",
-        "description": "Your grocery spending of $4626.53 could be reduced with store brands and sales.",
-        "potential_savings": 555.18
+        "description": "Your grocery spending of $4820.19 could be reduced with store brands and sales.",
+        "potential_savings": 578.42
       },
       {
         "category": "subscriptions",
-        "description": "You spent $614.81 on subscriptions. Review and cancel unused services.",
-        "potential_savings": 245.92
+        "description": "You spent $516.65 on subscriptions. Review and cancel unused services.",
+        "potential_savings": 206.66
       },
       {
         "category": "utilities",
-        "description": "Your utility bills total $2387.21. Consider energy-efficient appliances.",
-        "potential_savings": 238.72
+        "description": "Your utility bills total $2902.82. Consider energy-efficient appliances.",
+        "potential_savings": 290.28
       }
     ],
     "investment": [
       {
         "title": "Emergency Fund",
-        "description": "Build an emergency fund covering 3-6 months of expenses ($78424.16 to $156848.32).",
+        "description": "Build an emergency fund covering 3-6 months of expenses ($79614.73 to $159229.45).",
         "priority": "High",
         "risk_level": "Very Low",
         "potential_return": "3-4% APY"
       },
       {
         "title": "Retirement Contributions",
-        "description": "Increase your 401(k) contributions to at least capture the full employer match ($1436.67 monthly).",
+        "description": "Increase your 401(k) contributions to at least capture the full employer match ($1540.96 monthly).",
         "priority": "High",
         "risk_level": "Medium",
         "potential_return": "7-10% annually (long-term)"

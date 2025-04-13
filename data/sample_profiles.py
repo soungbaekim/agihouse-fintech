@@ -693,7 +693,7 @@ def generate_small_business_profile() -> Dict[str, Any]:
     """
     # Customize category frequencies for small business
     category_frequencies = {
-        'Revenue': 0.20,  # Business revenue
+        'Income': 0.20,  # Business revenue (using Income category for consistency)
         'Rent': 0.04,     # Business rent
         'Utilities': 0.04,
         'Supplies': 0.10,
@@ -716,10 +716,8 @@ def generate_small_business_profile() -> Dict[str, Any]:
         savings_rate=0.12  # Business profit margin
     )
     
-    # Convert 'Income' category to 'Revenue' for business
-    for t in transactions:
-        if t['category'] == 'Income':
-            t['category'] = 'Revenue'
+    # Keep 'Income' category for proper income tracking
+    # No longer converting Income to Revenue for consistency
     
     # Add specific business transactions
     start_date = datetime.date.today() - datetime.timedelta(days=365)
@@ -809,8 +807,7 @@ def generate_tech_startup_profile() -> Dict[str, Any]:
     """
     # Customize category frequencies for tech startup
     category_frequencies = {
-        'Revenue': 0.15,        # Early revenue streams
-        'Funding': 0.10,        # Investment rounds
+        'Income': 0.25,        # Combined revenue streams and funding (for proper income tracking)
         'Rent': 0.05,           # Office space
         'Utilities': 0.03,
         'Supplies': 0.05,
@@ -834,10 +831,8 @@ def generate_tech_startup_profile() -> Dict[str, Any]:
         savings_rate=0.05  # Startups typically operate at a loss or slim margins
     )
     
-    # Convert 'Income' category to 'Revenue' for business
-    for t in transactions:
-        if t['category'] == 'Income':
-            t['category'] = 'Revenue'
+    # Keep 'Income' category for proper income tracking
+    # No longer converting Income to Revenue for consistency
     
     # Add specific startup transactions
     start_date = datetime.date.today() - datetime.timedelta(days=365)
@@ -989,7 +984,7 @@ def generate_restaurant_business_profile() -> Dict[str, Any]:
     """
     # Customize category frequencies for restaurant business
     category_frequencies = {
-        'Revenue': 0.30,        # Daily food & beverage sales
+        'Income': 0.30,        # Daily food & beverage sales (using Income for consistency)
         'Food Inventory': 0.18,  # Food ingredients
         'Beverage Inventory': 0.10, # Drinks inventory
         'Rent': 0.05,          # Restaurant space
@@ -1012,10 +1007,8 @@ def generate_restaurant_business_profile() -> Dict[str, Any]:
         savings_rate=0.08       # Restaurant profit margins
     )
     
-    # Convert 'Income' category to 'Revenue' for business
-    for t in transactions:
-        if t['category'] == 'Income':
-            t['category'] = 'Revenue'
+    # Keep 'Income' category for proper income tracking
+    # No longer converting Income to Revenue for consistency
     
     # Add specific restaurant transactions
     start_date = datetime.date.today() - datetime.timedelta(days=365)
@@ -1190,7 +1183,7 @@ def generate_retail_store_profile() -> Dict[str, Any]:
     """
     # Customize category frequencies for retail store
     category_frequencies = {
-        'Revenue': 0.30,        # Sales revenue
+        'Income': 0.30,        # Sales revenue (using Income for consistency)
         'Inventory': 0.25,      # Product inventory
         'Rent': 0.05,          # Store location rent
         'Utilities': 0.03,      # Utilities
@@ -1213,10 +1206,8 @@ def generate_retail_store_profile() -> Dict[str, Any]:
         savings_rate=0.10       # Retail profit margins
     )
     
-    # Convert 'Income' category to 'Revenue' for business
-    for t in transactions:
-        if t['category'] == 'Income':
-            t['category'] = 'Revenue'
+    # Keep 'Income' category for proper income tracking
+    # No longer converting Income to Revenue for consistency
     
     # Add specific retail transactions
     start_date = datetime.date.today() - datetime.timedelta(days=365)

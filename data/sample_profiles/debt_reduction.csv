@@ -1,398 +1,397 @@
 date,description,amount,category
-2024-04-17,Bank of America,-670.65,Debt Payments
-2024-04-17,Car Loan Payment,-901.02,Debt Payments
-2024-04-21,Personal Loan Payment,-996.77,Debt Payments
-2024-04-22,Whole Foods,-188.33,Groceries
-2024-04-22,Parking,-176.11,Transportation
-2024-04-22,Citibank,-260.23,Debt Payments
-2024-04-23,Educational Software,-832.01,Education
-2024-04-28,Shell,-104.72,Transportation
-2024-04-30,Wells Fargo,-309.69,Debt Payments
-2024-05-01,Aetna,-368.55,Healthcare
-2024-05-03,Sprouts,-122.13,Groceries
-2024-05-05,Personal Loan Payment,-371.89,Debt Payments
-2024-05-05,Wells Fargo,-422.19,Debt Payments
-2024-05-06,Bank of America,-303.52,Debt Payments
-2024-05-07,Public Transit,-218.39,Transportation
-2024-05-10,Dave & Buster's,-128.35,Entertainment
-2024-05-11,Midas,-118.8,Transportation
-2024-05-12,Save-A-Lot,-121.28,Groceries
-2024-05-13,Whole Foods,-59.62,Groceries
-2024-05-15,Cox Communications,-201.26,Utilities
-2024-05-16,In-N-Out Burger,-31.22,Dining
-2024-05-16,Avis,-21.08,Transportation
-2024-05-19,Taco Bell,-26.54,Dining
-2024-05-19,Tuition Payment,-533.46,Education
-2024-05-19,Debt Consolidation,-547.41,Debt Payments
-2024-05-20,Save-A-Lot,-37.96,Groceries
-2024-05-21,UnitedHealthcare,-497.23,Healthcare
-2024-05-21,FedLoan Servicing,-947.7,Debt Payments
-2024-05-21,Bank of America,-987.15,Debt Payments
-2024-05-25,Panda Express,-8.66,Dining
-2024-05-27,AT&T,-214.69,Utilities
-2024-05-28,Wendy's,-35.8,Dining
-2024-05-28,Pep Boys,-214.64,Transportation
-2024-05-28,Navient,-919.98,Debt Payments
-2024-05-29,Car Repair,-79.92,Transportation
-2024-05-31,Great Lakes,-976.7,Debt Payments
-2024-06-01,Subway,-15.68,Dining
-2024-06-02,Sprouts,-115.32,Groceries
-2024-06-02,Dunkin' Donuts,-14.38,Dining
-2024-06-03,ShopRite,-77.6,Groceries
-2024-06-03,Pep Boys,-232.12,Transportation
-2024-06-05,H-E-B,-34.9,Groceries
-2024-06-05,Publix,-196.5,Groceries
-2024-06-08,Medical Debt Payment,-258.5,Debt Payments
-2024-06-08,Medical Debt Payment,-818.15,Debt Payments
-2024-06-09,Toll Roads,-50.12,Transportation
-2024-06-11,Food Lion,-174.42,Groceries
-2024-06-12,Electric Company,-65.42,Utilities
-2024-06-14,Chase,-390.09,Debt Payments
-2024-06-15,Gap,-100.26,Shopping
-2024-06-16,Sephora,-11.51,Shopping
-2024-06-16,Khan Academy,-731.28,Education
-2024-06-16,Personal Loan Payment,-612.18,Debt Payments
-2024-06-16,Mortgage Payment,-212.74,Debt Payments
-2024-06-17,Panda Express,-65.3,Dining
-2024-06-17,Cleaning Service,-918.77,Housing
-2024-06-18,Car Loan Payment,-747.04,Debt Payments
-2024-06-19,Cox Communications,-299.71,Utilities
-2024-06-19,Laboratory Services,-231.7,Healthcare
-2024-06-20,Waste Management,-76.32,Utilities
-2024-06-21,Student Loans,-724.17,Education
-2024-06-21,Medical Debt Payment,-713.87,Debt Payments
-2024-06-22,Burger King,-73.46,Dining
-2024-06-22,Amazon,-31.81,Shopping
-2024-06-22,Mortgage Payment,-531.04,Debt Payments
-2024-06-22,Citibank,-719.37,Debt Payments
-2024-06-23,Subway,-36.43,Dining
-2024-06-23,Discover,-420.85,Debt Payments
-2024-06-24,Whole Foods,-134.2,Groceries
-2024-06-24,AT&T,-206.56,Utilities
-2024-06-24,Chase,-855.31,Debt Payments
-2024-06-25,Disney+,-141.12,Entertainment
-2024-06-28,CVS,-298.38,Healthcare
-2024-06-29,Whole Foods,-66.79,Groceries
-2024-06-29,Credit Card Payment,-521.54,Debt Payments
-2024-06-30,Hulu,-99.89,Entertainment
-2024-07-04,Food Lion,-92.2,Groceries
-2024-07-04,Student Loan Payment,-702.17,Debt Payments
-2024-07-05,Safeway,-21.96,Groceries
-2024-07-05,Old Navy,-71.94,Shopping
-2024-07-06,Pest Control,-3445.51,Housing
-2024-07-06,Medical Debt Payment,-438.41,Debt Payments
-2024-07-07,Whole Foods,-195.94,Groceries
-2024-07-08,Chick-fil-A,-64.85,Dining
-2024-07-08,Comcast,-141.46,Utilities
-2024-07-09,Save-A-Lot,-92.95,Groceries
-2024-07-09,Credit Card Payment,-324.13,Debt Payments
-2024-07-10,Walmart,-225.27,Shopping
-2024-07-10,CVS,-287.24,Healthcare
-2024-07-10,Bank of America,-842.37,Debt Payments
-2024-07-11,Home Warranty,-3132.9,Housing
-2024-07-13,Wendy's,-26.36,Dining
-2024-07-13,Bank of America,-767.67,Debt Payments
-2024-07-14,Water Service,-64.77,Utilities
-2024-07-14,Debt Consolidation,-472.62,Debt Payments
-2024-07-15,Line of Credit Payment,-744.8,Debt Payments
-2024-07-16,In-N-Out Burger,-45.75,Dining
-2024-07-16,Walgreens,-93.21,Healthcare
-2024-07-17,In-N-Out Burger,-27.88,Dining
-2024-07-18,Car Loan Payment,-671.04,Debt Payments
-2024-07-20,Tutoring Services,-257.3,Education
-2024-07-20,Debt Consolidation,-383.21,Debt Payments
-2024-07-21,Publix,-172.44,Groceries
-2024-07-21,Kroger,-89.11,Groceries
-2024-07-21,Pharmacy,-141.08,Healthcare
-2024-07-22,ShopRite,-35.01,Groceries
-2024-07-22,Enterprise Rent-A-Car,-211.44,Transportation
-2024-07-23,Food Lion,-113.46,Groceries
-2024-07-23,Albertsons,-67.81,Groceries
-2024-07-23,Burger King,-49.25,Dining
-2024-07-24,Duke Energy,-76.74,Utilities
-2024-07-24,Navient,-911.93,Debt Payments
-2024-07-25,HOA Fees,-980.72,Housing
-2024-07-26,Avis,-120.03,Transportation
-2024-07-27,FedLoan Servicing,-140.57,Debt Payments
-2024-07-29,Wells Fargo,-193.11,Debt Payments
-2024-07-31,Exxon,-134.17,Transportation
-2024-07-31,Aetna,-389.26,Healthcare
-2024-07-31,Great Lakes,-385.14,Debt Payments
-2024-07-31,Wells Fargo,-173.92,Debt Payments
-2024-08-01,YouTube Premium,-60.95,Entertainment
-2024-08-01,Solar City,-277.25,Utilities
-2024-08-01,Pest Control,-1766.84,Housing
-2024-08-01,Furniture Rental,-2547.34,Housing
-2024-08-01,Medical Debt Payment,-386.81,Debt Payments
-2024-08-01,Student Loan Payment,-844.01,Debt Payments
-2024-08-02,TJ Maxx,-43.14,Shopping
-2024-08-02,Udemy,-487.4,Education
-2024-08-02,Capital One,-998.0,Debt Payments
-2024-08-02,Wells Fargo,-583.09,Debt Payments
-2024-08-03,Starbucks,-21.78,Dining
-2024-08-03,Best Buy,-289.01,Shopping
-2024-08-05,Meijer,-119.28,Groceries
-2024-08-09,Jiffy Lube,-200.91,Transportation
-2024-08-09,Pep Boys,-227.59,Transportation
-2024-08-10,Urgent Care,-314.55,Healthcare
-2024-08-11,Amazon Prime,-127.12,Entertainment
-2024-08-12,Kohl's,-166.42,Shopping
-2024-08-12,Cigna,-74.09,Healthcare
-2024-08-14,Enterprise Rent-A-Car,-133.48,Transportation
-2024-08-14,Nelnet,-113.81,Debt Payments
-2024-08-17,Spotify,-78.56,Entertainment
-2024-08-18,Car Repair,-193.33,Transportation
-2024-08-21,H-E-B,-45.97,Groceries
-2024-08-21,Personal Loan Payment,-441.06,Debt Payments
-2024-08-21,Mortgage Payment,-866.36,Debt Payments
-2024-08-23,Citibank,-584.55,Debt Payments
-2024-08-26,Sprouts,-25.85,Groceries
-2024-08-26,Discover,-412.17,Debt Payments
-2024-08-28,Newegg,-184.16,Shopping
-2024-08-28,Capital One,-857.8,Debt Payments
-2024-08-29,Cleaning Service,-1271.58,Housing
-2024-08-29,Nelnet,-180.14,Debt Payments
-2024-08-29,Medical Debt Payment,-718.84,Debt Payments
-2024-08-30,Home Insurance,-3239.09,Housing
-2024-08-30,Navient,-996.48,Debt Payments
-2024-08-31,Credit Card Payment,-586.24,Debt Payments
-2024-09-01,Save-A-Lot,-111.95,Groceries
-2024-09-01,FedLoan Servicing,-947.0,Debt Payments
-2024-09-02,Student Loan Payment,-181.77,Debt Payments
-2024-09-03,Pizza Hut,-34.72,Dining
-2024-09-03,Car Wash,-41.01,Transportation
-2024-09-05,Gas Station,-208.84,Transportation
-2024-09-06,Kroger,-51.89,Groceries
-2024-09-07,Physical Therapy,-63.16,Healthcare
-2024-09-07,Personal Loan Payment,-811.19,Debt Payments
-2024-09-07,Debt Consolidation,-580.23,Debt Payments
-2024-09-08,YouTube Premium,-146.51,Entertainment
-2024-09-10,Line of Credit Payment,-113.24,Debt Payments
-2024-09-11,Kroger,-159.38,Groceries
-2024-09-11,AMC Theaters,-63.13,Entertainment
-2024-09-11,Rite Aid,-420.01,Healthcare
-2024-09-11,Personal Loan Payment,-970.52,Debt Payments
-2024-09-12,Shell,-56.54,Transportation
-2024-09-12,Discover,-648.09,Debt Payments
-2024-09-13,Wegmans,-121.42,Groceries
-2024-09-13,Electric Company,-233.73,Utilities
-2024-09-14,Macy's,-169.21,Shopping
-2024-09-18,Doctor's Office,-410.92,Healthcare
-2024-09-19,Duke Energy,-122.8,Utilities
-2024-09-19,Mortgage Payment,-335.45,Debt Payments
-2024-09-20,Safeway,-31.05,Groceries
-2024-09-23,Furniture Rental,-1241.68,Housing
-2024-09-23,Vision Care,-387.02,Healthcare
-2024-09-25,IKEA,-57.76,Shopping
-2024-09-26,Pizza Hut,-24.12,Dining
-2024-09-27,Xfinity,-180.41,Utilities
-2024-09-27,Blue Cross,-36.33,Healthcare
-2024-09-28,Costco,-192.17,Groceries
-2024-09-28,Amazon Prime,-127.83,Entertainment
-2024-10-01,Storage Unit,-3311.36,Housing
-2024-10-01,Capital One,-474.38,Debt Payments
-2024-10-03,Property Tax,-1998.3,Housing
-2024-10-05,Skillshare,-695.62,Education
-2024-10-05,FedLoan Servicing,-893.13,Debt Payments
-2024-10-07,HBO Max,-103.51,Entertainment
-2024-10-07,Wells Fargo,-770.89,Debt Payments
-2024-10-08,Comcast,-200.47,Utilities
-2024-10-08,Educational Software,-318.94,Education
-2024-10-09,Public Transit,-161.93,Transportation
-2024-10-11,Lawn Service,-2658.5,Housing
-2024-10-11,Moving Service,-2903.04,Housing
-2024-10-11,Car Loan Payment,-125.16,Debt Payments
-2024-10-13,Gas Station,-213.5,Transportation
-2024-10-14,Paramount+,-94.29,Entertainment
-2024-10-14,Kindle Unlimited,-28.32,Subscriptions
-2024-10-17,Ulta Beauty,-167.13,Shopping
-2024-10-18,Waste Management,-295.33,Utilities
-2024-10-21,Mortgage Payment,-145.53,Debt Payments
-2024-10-23,Online Courses,-868.37,Education
-2024-10-23,McGraw-Hill,-226.14,Education
-2024-10-25,Pizza Hut,-61.66,Dining
-2024-10-25,Midas,-27.82,Transportation
-2024-10-25,Debt Consolidation,-241.0,Debt Payments
-2024-10-27,Bank of America,-893.47,Debt Payments
-2024-10-28,Capital One,-613.26,Debt Payments
-2024-10-28,FedLoan Servicing,-563.41,Debt Payments
-2024-10-31,Taco Bell,-62.56,Dining
-2024-10-31,Movie Theater,-145.5,Entertainment
-2024-10-31,Tutoring Services,-277.23,Education
-2024-11-01,Kroger,-81.43,Groceries
-2024-11-02,Food Lion,-27.12,Groceries
-2024-11-03,Citibank,-613.96,Debt Payments
-2024-11-06,Hertz,-84.9,Transportation
-2024-11-06,Coursera,-724.38,Education
-2024-11-07,Panda Express,-42.89,Dining
-2024-11-07,Medical Debt Payment,-945.48,Debt Payments
-2024-11-08,Etsy,-75.62,Shopping
-2024-11-09,Chegg,-170.33,Education
-2024-11-10,Taxi Service,-132.26,Transportation
-2024-11-11,Toll Roads,-233.63,Transportation
-2024-11-12,Line of Credit Payment,-854.49,Debt Payments
-2024-11-13,Great Lakes,-809.15,Debt Payments
-2024-11-13,Line of Credit Payment,-354.34,Debt Payments
-2024-11-15,Paramount+,-97.76,Entertainment
-2024-11-16,Dunkin' Donuts,-58.12,Dining
-2024-11-16,Chase,-630.7,Debt Payments
-2024-11-17,Debt Consolidation,-358.7,Debt Payments
-2024-11-19,Aetna,-264.59,Healthcare
-2024-11-21,Citibank,-553.11,Debt Payments
-2024-11-25,Chase,-422.7,Debt Payments
-2024-11-25,Nelnet,-947.32,Debt Payments
-2024-11-26,Gap,-188.11,Shopping
-2024-11-28,Chase,-420.51,Debt Payments
-2024-11-29,Credit Card Payment,-455.58,Debt Payments
-2024-12-02,Trader Joe's,-53.99,Groceries
-2024-12-02,Kaiser Permanente,-294.21,Healthcare
-2024-12-02,Citibank,-515.65,Debt Payments
-2024-12-05,Kohl's,-152.34,Shopping
-2024-12-05,Apple Music,-130.62,Entertainment
-2024-12-06,Safeway,-108.05,Groceries
-2024-12-06,Capital One,-524.88,Debt Payments
-2024-12-06,Debt Consolidation,-450.7,Debt Payments
-2024-12-08,Student Loan Payment,-737.5,Debt Payments
-2024-12-08,Line of Credit Payment,-877.39,Debt Payments
-2024-12-09,Citibank,-534.66,Debt Payments
-2024-12-09,Student Loan Payment,-280.57,Debt Payments
-2024-12-14,Student Loan Payment,-364.68,Debt Payments
-2024-12-17,Save-A-Lot,-127.15,Groceries
-2024-12-17,Regal Cinemas,-60.86,Entertainment
-2024-12-20,Capital One,-592.18,Debt Payments
-2024-12-22,Student Loan Payment,-465.83,Debt Payments
-2024-12-23,T-Mobile,-88.86,Utilities
-2024-12-23,Nelnet,-929.61,Debt Payments
-2024-12-26,Five Guys,-53.16,Dining
-2024-12-27,Panera Bread,-32.32,Dining
-2024-12-27,Student Loan Payment,-635.93,Debt Payments
-2024-12-28,Exxon,-114.71,Transportation
-2024-12-31,Target,-170.79,Shopping
-2024-12-31,Avis,-27.38,Transportation
-2025-01-01,Doctor's Office,-383.25,Healthcare
-2025-01-02,Navient,-130.98,Debt Payments
-2025-01-02,FedLoan Servicing,-856.28,Debt Payments
-2025-01-03,Panda Express,-20.74,Dining
-2025-01-05,Citibank,-669.06,Debt Payments
-2025-01-06,Storage Unit,-1169.82,Housing
-2025-01-09,Pest Control,-2029.11,Housing
-2025-01-09,Navient,-796.17,Debt Payments
-2025-01-12,Airline Tickets,-141.85,Transportation
-2025-01-15,BP,-207.5,Transportation
-2025-01-15,Car Loan Payment,-480.53,Debt Payments
-2025-01-17,Lyft,-63.52,Transportation
-2025-01-18,Trader Joe's,-117.7,Groceries
-2025-01-19,Paramount+,-59.76,Entertainment
-2025-01-20,ConEd,-279.78,Utilities
-2025-01-20,Mental Health Services,-449.14,Healthcare
-2025-01-23,Citibank,-814.64,Debt Payments
-2025-01-24,Mortgage Payment,-190.5,Debt Payments
-2025-01-25,Mortgage Payment,-131.41,Debt Payments
-2025-01-26,Hospital,-225.4,Healthcare
-2025-01-27,Moving Service,-941.5,Housing
-2025-01-28,Walmart,-240.23,Shopping
-2025-01-29,Regal Cinemas,-58.45,Entertainment
-2025-01-29,Gas Station,-74.06,Transportation
-2025-01-30,ShopRite,-98.57,Groceries
-2025-01-31,H-E-B,-166.57,Groceries
-2025-02-01,Storage Unit,-2919.72,Housing
-2025-02-01,UnitedHealthcare,-130.42,Healthcare
-2025-02-01,Chase,-551.99,Debt Payments
-2025-02-03,Kaiser Permanente,-193.54,Healthcare
-2025-02-04,Kroger,-126.09,Groceries
-2025-02-05,T-Mobile,-152.84,Utilities
-2025-02-07,HOA Fees,-1146.94,Housing
-2025-02-07,Adobe Creative Cloud,-33.82,Subscriptions
-2025-02-08,Car Loan Payment,-741.52,Debt Payments
-2025-02-09,Pharmacy,-99.29,Healthcare
-2025-02-09,Educational Software,-880.72,Education
-2025-02-10,Discover,-131.43,Debt Payments
-2025-02-10,Nelnet,-335.99,Debt Payments
-2025-02-12,Sephora,-152.46,Shopping
-2025-02-14,Navient,-312.16,Debt Payments
-2025-02-14,Bank of America,-317.98,Debt Payments
-2025-02-16,Albertsons,-100.2,Groceries
-2025-02-16,McGraw-Hill,-492.71,Education
-2025-02-18,Property Tax,-3264.1,Housing
-2025-02-19,Publix,-125.1,Groceries
-2025-02-19,Car Loan Payment,-287.91,Debt Payments
-2025-02-20,Medical Debt Payment,-686.9,Debt Payments
-2025-02-20,Navient,-565.5,Debt Payments
-2025-02-20,Chase,-688.66,Debt Payments
-2025-02-21,Albertsons,-140.11,Groceries
-2025-02-21,Mortgage Payment,-951.03,Debt Payments
-2025-02-21,Capital One,-275.32,Debt Payments
-2025-02-22,Line of Credit Payment,-335.76,Debt Payments
-2025-02-22,Wells Fargo,-525.32,Debt Payments
-2025-02-24,AMC Theaters,-92.41,Entertainment
-2025-02-24,Chevron,-103.54,Transportation
-2025-02-24,Wells Fargo,-736.76,Debt Payments
-2025-02-25,Albertsons,-21.91,Groceries
-2025-02-25,Chipotle,-58.52,Dining
-2025-02-26,ShopRite,-136.89,Groceries
-2025-02-26,Credit Card Payment,-205.01,Debt Payments
-2025-02-26,Student Loan Payment,-892.48,Debt Payments
-2025-02-28,Meijer,-74.45,Groceries
-2025-03-02,Walmart,-146.54,Shopping
-2025-03-02,Medical Debt Payment,-849.1,Debt Payments
-2025-03-02,Chase,-769.96,Debt Payments
-2025-03-03,Waste Management,-127.54,Utilities
-2025-03-03,Capital One,-906.7,Debt Payments
-2025-03-04,Skillshare,-605.31,Education
-2025-03-05,Debt Consolidation,-168.29,Debt Payments
-2025-03-08,Security Deposit,-2261.9,Housing
-2025-03-09,Navient,-199.09,Debt Payments
-2025-03-10,T-Mobile,-200.95,Utilities
-2025-03-10,Adobe Creative Cloud,-5.41,Subscriptions
-2025-03-11,Internet Provider,-160.17,Utilities
-2025-03-11,HOA Fees,-3354.43,Housing
-2025-03-12,Albertsons,-167.4,Groceries
-2025-03-12,KFC,-29.83,Dining
-2025-03-12,Medical Debt Payment,-286.25,Debt Payments
-2025-03-14,Google One,-8.2,Subscriptions
-2025-03-14,Capital One,-877.48,Debt Payments
-2025-03-15,Kroger,-152.7,Groceries
-2025-03-15,Sephora,-76.37,Shopping
-2025-03-15,FedLoan Servicing,-156.99,Debt Payments
-2025-03-16,Discover,-325.91,Debt Payments
-2025-03-17,Save-A-Lot,-65.02,Groceries
-2025-03-17,Domino's Pizza,-49.93,Dining
-2025-03-17,Chase,-624.14,Debt Payments
-2025-03-18,Jiffy Lube,-202.1,Transportation
-2025-03-18,Credit Card Payment,-512.38,Debt Payments
-2025-03-19,McDonald's,-39.08,Dining
-2025-03-19,Pearson,-652.17,Education
-2025-03-22,Costco,-37.77,Groceries
-2025-03-22,Michaels,-139.59,Shopping
-2025-03-23,Five Guys,-48.59,Dining
-2025-03-23,Ulta Beauty,-38.49,Shopping
-2025-03-24,Panera Bread,-45.37,Dining
-2025-03-24,Taxi Service,-152.06,Transportation
-2025-03-25,Meijer,-167.52,Groceries
-2025-03-25,Mortgage Payment,-600.91,Debt Payments
-2025-03-28,Enterprise Rent-A-Car,-65.67,Transportation
-2025-03-29,Dropbox,-18.29,Subscriptions
-2025-03-30,Kroger,-35.71,Groceries
-2025-03-30,Student Loan Payment,-107.27,Debt Payments
-2025-04-01,Kroger,-155.43,Groceries
-2025-04-01,In-N-Out Burger,-22.8,Dining
-2025-04-01,Dunkin' Donuts,-59.02,Dining
-2025-04-02,Gap,-138.42,Shopping
-2025-04-02,Furniture Rental,-2557.23,Housing
-2025-04-03,Trader Joe's,-122.01,Groceries
-2025-04-03,Amtrak,-58.34,Transportation
-2025-04-04,Citibank,-385.16,Debt Payments
-2025-04-05,Cox Communications,-88.55,Utilities
-2025-04-05,edX,-75.03,Education
-2025-04-06,Kroger,-30.94,Groceries
-2025-04-06,Hulu,-98.25,Entertainment
-2025-04-07,Citibank,-215.41,Debt Payments
-2025-04-09,Educational Software,-293.91,Education
-2025-04-11,Line of Credit Payment,-213.34,Debt Payments
-2025-04-12,Aldi,-38.82,Groceries
-2025-04-12,Toll Roads,-16.24,Transportation
-2025-04-12,Car Loan Payment,-578.75,Debt Payments
-2025-04-01,Transfer to Savings,-0.0,Savings
+2024-04-17,Debt Consolidation,-724.2,Debt Payments
+2024-04-20,Trader Joe's,-58.21,Groceries
+2024-04-21,Whole Foods,-16.82,Groceries
+2024-04-21,Meijer,-100.1,Groceries
+2024-04-24,edX,-180.06,Education
+2024-04-25,Chevron,-13.91,Transportation
+2024-04-25,FedLoan Servicing,-312.05,Debt Payments
+2024-04-26,Food Lion,-56.62,Groceries
+2024-04-26,Concert Tickets,-70.48,Entertainment
+2024-04-26,Storage Unit,-1211.86,Housing
+2024-04-26,Bank of America,-413.73,Debt Payments
+2024-04-26,Chase,-575.75,Debt Payments
+2024-05-02,Medical Debt Payment,-844.47,Debt Payments
+2024-05-03,In-N-Out Burger,-53.92,Dining
+2024-05-05,AMC Theaters,-69.48,Entertainment
+2024-05-06,Domino's Pizza,-33.29,Dining
+2024-05-06,Solar City,-41.45,Utilities
+2024-05-08,Aetna,-73.87,Healthcare
+2024-05-08,FedLoan Servicing,-322.2,Debt Payments
+2024-05-10,Safeway,-41.78,Groceries
+2024-05-10,Mortgage Payment,-380.59,Debt Payments
+2024-05-11,Apartment Management,-1644.72,Housing
+2024-05-12,Parking,-110.7,Transportation
+2024-05-12,Discover,-853.66,Debt Payments
+2024-05-19,Furniture Rental,-2879.74,Housing
+2024-05-22,Sprouts,-130.01,Groceries
+2024-05-24,Safeway,-181.06,Groceries
+2024-05-24,Walgreens,-338.91,Healthcare
+2024-05-25,Nelnet,-475.22,Debt Payments
+2024-05-26,Publix,-27.26,Groceries
+2024-05-27,Chase,-854.42,Debt Payments
+2024-05-28,HBO Max,-55.88,Entertainment
+2024-05-29,Student Loan Payment,-789.0,Debt Payments
+2024-05-30,Subway,-69.61,Dining
+2024-05-30,Starbucks,-17.52,Dining
+2024-05-31,Student Loan Payment,-747.29,Debt Payments
+2024-06-01,Gas Station,-163.21,Transportation
+2024-06-01,FedLoan Servicing,-111.76,Debt Payments
+2024-06-03,McDonald's,-50.69,Dining
+2024-06-04,Walmart,-177.96,Shopping
+2024-06-04,Duke Energy,-161.25,Utilities
+2024-06-05,Applebee's,-57.41,Dining
+2024-06-06,Online Courses,-673.33,Education
+2024-06-08,Student Loan Payment,-158.75,Debt Payments
+2024-06-09,Debt Consolidation,-791.11,Debt Payments
+2024-06-09,FedLoan Servicing,-792.77,Debt Payments
+2024-06-11,YouTube Premium,-46.46,Entertainment
+2024-06-11,Lawn Service,-2622.31,Housing
+2024-06-11,Citibank,-431.22,Debt Payments
+2024-06-13,Wells Fargo,-820.64,Debt Payments
+2024-06-14,Wells Fargo,-898.96,Debt Payments
+2024-06-15,Electric Company,-152.63,Utilities
+2024-06-19,Personal Loan Payment,-965.08,Debt Payments
+2024-06-19,Medical Debt Payment,-306.04,Debt Payments
+2024-06-20,McDonald's,-48.19,Dining
+2024-06-22,Tutoring Services,-79.29,Education
+2024-06-23,Blue Cross,-271.34,Healthcare
+2024-06-23,Discover,-516.87,Debt Payments
+2024-06-24,Public Transit,-94.56,Transportation
+2024-06-25,Cigna,-29.64,Healthcare
+2024-06-27,Mental Health Services,-87.43,Healthcare
+2024-06-29,Toll Roads,-129.57,Transportation
+2024-06-30,BP,-113.38,Transportation
+2024-07-02,Bank of America,-204.5,Debt Payments
+2024-07-03,Publix,-97.17,Groceries
+2024-07-03,Michaels,-199.06,Shopping
+2024-07-03,Amazon Prime,-69.17,Entertainment
+2024-07-03,Lawn Service,-2554.44,Housing
+2024-07-03,Bank of America,-174.97,Debt Payments
+2024-07-04,Khan Academy,-373.09,Education
+2024-07-06,Starbucks,-20.58,Dining
+2024-07-06,Debt Consolidation,-267.44,Debt Payments
+2024-07-08,Old Navy,-189.48,Shopping
+2024-07-10,Capital One,-105.32,Debt Payments
+2024-07-11,Meijer,-122.07,Groceries
+2024-07-11,Starbucks,-64.6,Dining
+2024-07-11,Enterprise Rent-A-Car,-88.22,Transportation
+2024-07-15,Phone Bill,-202.86,Utilities
+2024-07-15,Online Courses,-387.61,Education
+2024-07-16,FedLoan Servicing,-996.59,Debt Payments
+2024-07-17,Meijer,-98.03,Groceries
+2024-07-19,iCloud Storage,-14.98,Subscriptions
+2024-07-20,Waste Management,-177.88,Utilities
+2024-07-22,Taxi Service,-76.98,Transportation
+2024-07-23,Olive Garden,-27.73,Dining
+2024-07-24,Sprouts,-180.1,Groceries
+2024-07-24,MasterClass,-595.9,Education
+2024-07-28,Kroger,-148.54,Groceries
+2024-07-29,Hobby Lobby,-264.04,Shopping
+2024-07-30,Cox Communications,-50.87,Utilities
+2024-08-02,Exxon,-197.47,Transportation
+2024-08-02,Gas Bill,-218.76,Utilities
+2024-08-02,Discover,-733.53,Debt Payments
+2024-08-03,Michaels,-54.79,Shopping
+2024-08-03,Laboratory Services,-273.84,Healthcare
+2024-08-03,Great Lakes,-899.77,Debt Payments
+2024-08-04,Home Warranty,-1077.2,Housing
+2024-08-05,Subway,-49.41,Dining
+2024-08-05,Personal Loan Payment,-323.34,Debt Payments
+2024-08-07,Health Insurance,-117.21,Healthcare
+2024-08-08,Aldi,-139.38,Groceries
+2024-08-11,Discover,-486.54,Debt Payments
+2024-08-13,Medical Debt Payment,-594.1,Debt Payments
+2024-08-15,Nordstrom,-195.63,Shopping
+2024-08-16,Uber,-40.21,Transportation
+2024-08-16,Water Service,-132.21,Utilities
+2024-08-17,Spectrum,-88.38,Utilities
+2024-08-17,Chase,-468.38,Debt Payments
+2024-08-19,Apple Music,-71.71,Entertainment
+2024-08-20,Personal Loan Payment,-134.83,Debt Payments
+2024-08-21,Regal Cinemas,-17.74,Entertainment
+2024-08-21,Chase,-751.93,Debt Payments
+2024-08-22,Burger King,-21.94,Dining
+2024-08-22,Lowe's,-79.56,Shopping
+2024-08-25,Wegmans,-124.78,Groceries
+2024-08-25,Whole Foods,-16.98,Groceries
+2024-08-25,Kohl's,-202.44,Shopping
+2024-08-25,Airline Tickets,-85.78,Transportation
+2024-08-25,Debt Consolidation,-723.63,Debt Payments
+2024-08-25,Chase,-338.73,Debt Payments
+2024-08-27,Sprouts,-129.26,Groceries
+2024-08-27,Cox Communications,-93.37,Utilities
+2024-08-28,Food Lion,-182.04,Groceries
+2024-08-28,Hulu,-65.13,Entertainment
+2024-08-28,Citibank,-316.24,Debt Payments
+2024-08-29,Food Lion,-176.6,Groceries
+2024-08-29,Bowling Alley,-146.06,Entertainment
+2024-08-29,Mortgage Payment,-325.36,Debt Payments
+2024-08-31,Food Lion,-186.51,Groceries
+2024-09-03,Olive Garden,-13.74,Dining
+2024-09-03,Car Repair,-154.83,Transportation
+2024-09-03,Personal Loan Payment,-998.12,Debt Payments
+2024-09-04,H-E-B,-89.22,Groceries
+2024-09-05,Walgreens,-357.81,Healthcare
+2024-09-06,Discover,-270.31,Debt Payments
+2024-09-08,Urgent Care,-369.01,Healthcare
+2024-09-09,Wells Fargo,-998.9,Debt Payments
+2024-09-10,Wendy's,-40.61,Dining
+2024-09-10,Toll Roads,-83.1,Transportation
+2024-09-10,Cigna,-255.29,Healthcare
+2024-09-10,Amazon Prime,-5.86,Subscriptions
+2024-09-10,Debt Consolidation,-471.57,Debt Payments
+2024-09-13,McDonald's,-59.43,Dining
+2024-09-13,Medical Debt Payment,-272.03,Debt Payments
+2024-09-14,Khan Academy,-727.81,Education
+2024-09-15,Lyft,-41.31,Transportation
+2024-09-15,Great Lakes,-970.75,Debt Payments
+2024-09-15,Discover,-274.28,Debt Payments
+2024-09-16,Sprouts,-129.44,Groceries
+2024-09-16,Regal Cinemas,-26.14,Entertainment
+2024-09-20,AT&T,-87.06,Utilities
+2024-09-20,Great Lakes,-218.48,Debt Payments
+2024-09-21,Costco,-33.79,Groceries
+2024-09-22,Property Tax,-2900.59,Housing
+2024-09-25,Wells Fargo,-930.13,Debt Payments
+2024-09-26,Line of Credit Payment,-447.03,Debt Payments
+2024-09-28,Spotify,-119.54,Entertainment
+2024-09-28,Microsoft 365,-7.2,Subscriptions
+2024-09-29,Credit Card Payment,-558.28,Debt Payments
+2024-10-01,Pharmacy,-287.35,Healthcare
+2024-10-04,Publix,-108.49,Groceries
+2024-10-04,Storage Unit,-3495.32,Housing
+2024-10-05,Shell,-6.47,Transportation
+2024-10-05,Mortgage Payment,-136.57,Debt Payments
+2024-10-05,Student Loan Payment,-920.85,Debt Payments
+2024-10-06,Adobe Creative Cloud,-48.36,Subscriptions
+2024-10-08,Whole Foods,-97.99,Groceries
+2024-10-09,Gap,-131.77,Shopping
+2024-10-09,Capital One,-204.96,Debt Payments
+2024-10-09,Capital One,-374.15,Debt Payments
+2024-10-11,Chevron,-209.29,Transportation
+2024-10-11,Debt Consolidation,-855.07,Debt Payments
+2024-10-11,Credit Card Payment,-584.47,Debt Payments
+2024-10-12,Uber,-109.73,Transportation
+2024-10-13,Line of Credit Payment,-399.42,Debt Payments
+2024-10-14,Rite Aid,-368.31,Healthcare
+2024-10-15,Food Lion,-132.91,Groceries
+2024-10-16,Mortgage Payment,-786.21,Debt Payments
+2024-10-16,Discover,-750.92,Debt Payments
+2024-10-17,Save-A-Lot,-57.82,Groceries
+2024-10-17,Nelnet,-446.19,Debt Payments
+2024-10-18,Movie Theater,-84.98,Entertainment
+2024-10-18,Credit Card Payment,-802.11,Debt Payments
+2024-10-20,Security Deposit,-3210.6,Housing
+2024-10-20,Online Courses,-242.3,Education
+2024-10-21,Home Warranty,-1753.16,Housing
+2024-10-22,Car Wash,-142.3,Transportation
+2024-10-28,Pizza Hut,-55.95,Dining
+2024-10-28,Jiffy Lube,-141.69,Transportation
+2024-10-28,Urgent Care,-419.28,Healthcare
+2024-10-29,Line of Credit Payment,-886.99,Debt Payments
+2024-10-30,Rite Aid,-312.95,Healthcare
+2024-10-31,Navient,-318.63,Debt Payments
+2024-11-01,Whole Foods,-39.57,Groceries
+2024-11-01,Student Loan Payment,-549.81,Debt Payments
+2024-11-02,Debt Consolidation,-569.67,Debt Payments
+2024-11-03,Nelnet,-131.25,Debt Payments
+2024-11-04,Car Loan Payment,-535.86,Debt Payments
+2024-11-04,Debt Consolidation,-981.94,Debt Payments
+2024-11-05,Costco,-80.92,Groceries
+2024-11-05,AMC Theaters,-145.28,Entertainment
+2024-11-06,Chegg,-358.19,Education
+2024-11-07,Comcast,-50.26,Utilities
+2024-11-08,In-N-Out Burger,-61.97,Dining
+2024-11-08,Great Lakes,-226.84,Debt Payments
+2024-11-11,ConEd,-83.27,Utilities
+2024-11-11,Debt Consolidation,-444.94,Debt Payments
+2024-11-11,Line of Credit Payment,-429.24,Debt Payments
+2024-11-12,Property Tax,-2951.37,Housing
+2024-11-12,Cigna,-384.29,Healthcare
+2024-11-13,Gas Bill,-52.7,Utilities
+2024-11-13,HOA Fees,-826.57,Housing
+2024-11-13,Chase,-238.87,Debt Payments
+2024-11-13,Mortgage Payment,-151.43,Debt Payments
+2024-11-15,ShopRite,-41.18,Groceries
+2024-11-17,YouTube Premium,-114.61,Entertainment
+2024-11-18,Urgent Care,-383.94,Healthcare
+2024-11-20,Five Guys,-18.81,Dining
+2024-11-20,Jiffy Lube,-78.61,Transportation
+2024-11-21,Pep Boys,-112.47,Transportation
+2024-11-22,Pearson,-654.89,Education
+2024-11-22,Medical Debt Payment,-366.57,Debt Payments
+2024-11-23,IKEA,-157.6,Shopping
+2024-11-23,Netflix,-34.59,Entertainment
+2024-11-23,Duke Energy,-293.64,Utilities
+2024-11-25,Credit Card Payment,-930.5,Debt Payments
+2024-11-25,Chase,-476.77,Debt Payments
+2024-11-26,Local Restaurant,-48.21,Dining
+2024-11-27,Kindle Unlimited,-34.15,Subscriptions
+2024-11-27,Citibank,-391.78,Debt Payments
+2024-11-28,Capital One,-575.73,Debt Payments
+2024-11-28,Great Lakes,-803.87,Debt Payments
+2024-11-30,Security Deposit,-3078.0,Housing
+2024-11-30,Pearson,-203.36,Education
+2024-11-30,Debt Consolidation,-217.65,Debt Payments
+2024-11-30,Bank of America,-843.29,Debt Payments
+2024-12-02,Applebee's,-46.3,Dining
+2024-12-03,Car Wash,-117.67,Transportation
+2024-12-03,Phone Bill,-282.44,Utilities
+2024-12-04,Publix,-130.35,Groceries
+2024-12-04,Save-A-Lot,-134.24,Groceries
+2024-12-04,Wayfair,-116.82,Shopping
+2024-12-04,Enterprise Rent-A-Car,-48.96,Transportation
+2024-12-04,Nelnet,-285.6,Debt Payments
+2024-12-06,Taco Bell,-44.72,Dining
+2024-12-06,Ulta Beauty,-149.03,Shopping
+2024-12-07,Capital One,-810.29,Debt Payments
+2024-12-08,Wegmans,-63.73,Groceries
+2024-12-09,Whole Foods,-133.34,Groceries
+2024-12-10,MasterClass,-491.91,Education
+2024-12-10,Line of Credit Payment,-913.19,Debt Payments
+2024-12-11,Save-A-Lot,-84.52,Groceries
+2024-12-11,Debt Consolidation,-626.55,Debt Payments
+2024-12-12,Food Lion,-71.22,Groceries
+2024-12-12,Kroger,-125.18,Groceries
+2024-12-12,Exxon,-192.01,Transportation
+2024-12-13,Line of Credit Payment,-955.9,Debt Payments
+2024-12-14,Food Lion,-180.09,Groceries
+2024-12-14,Chase,-659.64,Debt Payments
+2024-12-15,Sprouts,-52.79,Groceries
+2024-12-15,HOA Fees,-2346.16,Housing
+2024-12-15,Hospital,-55.57,Healthcare
+2024-12-16,Best Buy,-139.66,Shopping
+2024-12-17,Save-A-Lot,-178.66,Groceries
+2024-12-17,Great Lakes,-154.63,Debt Payments
+2024-12-20,Hertz,-75.57,Transportation
+2024-12-20,Chase,-648.42,Debt Payments
+2024-12-20,Mortgage Payment,-562.3,Debt Payments
+2024-12-21,Applebee's,-26.36,Dining
+2024-12-21,Target,-107.09,Shopping
+2024-12-21,Debt Consolidation,-346.02,Debt Payments
+2024-12-22,Citibank,-219.57,Debt Payments
+2024-12-23,Chase,-270.07,Debt Payments
+2024-12-24,Michaels,-171.38,Shopping
+2024-12-24,School Supplies,-602.04,Education
+2024-12-25,Credit Card Payment,-461.48,Debt Payments
+2024-12-26,Sprouts,-90.72,Groceries
+2024-12-26,Netflix,-139.75,Entertainment
+2024-12-27,Sprouts,-184.03,Groceries
+2024-12-27,FedLoan Servicing,-354.41,Debt Payments
+2024-12-27,Personal Loan Payment,-545.22,Debt Payments
+2024-12-29,Concert Tickets,-110.73,Entertainment
+2024-12-29,Pharmacy,-284.65,Healthcare
+2024-12-30,Amtrak,-166.06,Transportation
+2024-12-31,Mortgage Payment,-345.71,Debt Payments
+2024-12-31,Great Lakes,-652.54,Debt Payments
+2025-01-01,Discover,-320.73,Debt Payments
+2025-01-02,Home Insurance,-1892.0,Housing
+2025-01-04,Disney+,-69.8,Entertainment
+2025-01-07,Concert Tickets,-48.56,Entertainment
+2025-01-07,BP,-180.31,Transportation
+2025-01-09,Duke Energy,-212.85,Utilities
+2025-01-10,Internet Provider,-231.97,Utilities
+2025-01-11,Student Loan Payment,-214.87,Debt Payments
+2025-01-11,Chase,-369.3,Debt Payments
+2025-01-12,Food Lion,-116.7,Groceries
+2025-01-12,Discover,-901.54,Debt Payments
+2025-01-13,Debt Consolidation,-888.01,Debt Payments
+2025-01-14,Amtrak,-67.58,Transportation
+2025-01-14,Debt Consolidation,-151.6,Debt Payments
+2025-01-17,Kohl's,-13.32,Shopping
+2025-01-17,Medical Debt Payment,-367.91,Debt Payments
+2025-01-19,Airline Tickets,-196.84,Transportation
+2025-01-20,ShopRite,-197.8,Groceries
+2025-01-21,Pep Boys,-224.49,Transportation
+2025-01-22,Enterprise Rent-A-Car,-137.38,Transportation
+2025-01-22,AT&T,-137.43,Utilities
+2025-01-23,Food Lion,-94.1,Groceries
+2025-01-23,Nelnet,-497.11,Debt Payments
+2025-01-24,Panda Express,-38.91,Dining
+2025-01-24,Midas,-217.59,Transportation
+2025-01-24,Rite Aid,-180.94,Healthcare
+2025-01-24,Navient,-339.09,Debt Payments
+2025-01-25,Albertsons,-16.92,Groceries
+2025-01-25,McDonald's,-34.21,Dining
+2025-01-25,FedLoan Servicing,-379.08,Debt Payments
+2025-01-26,Great Lakes,-566.73,Debt Payments
+2025-01-27,Skillshare,-944.41,Education
+2025-01-29,Phone Bill,-120.36,Utilities
+2025-01-30,Sephora,-180.9,Shopping
+2025-01-30,Avis,-176.35,Transportation
+2025-02-01,T-Mobile,-55.77,Utilities
+2025-02-02,Burger King,-67.83,Dining
+2025-02-02,In-N-Out Burger,-44.79,Dining
+2025-02-03,HOA Fees,-2385.77,Housing
+2025-02-04,Car Repair,-28.58,Transportation
+2025-02-05,Debt Consolidation,-535.77,Debt Payments
+2025-02-06,Doctor's Office,-165.54,Healthcare
+2025-02-06,Mortgage Payment,-883.9,Debt Payments
+2025-02-07,Coursera,-443.27,Education
+2025-02-08,Ulta Beauty,-115.5,Shopping
+2025-02-08,Rite Aid,-416.76,Healthcare
+2025-02-09,Student Loan Payment,-761.35,Debt Payments
+2025-02-11,edX,-690.88,Education
+2025-02-11,Student Loan Payment,-164.55,Debt Payments
+2025-02-12,ConEd,-115.39,Utilities
+2025-02-18,Nelnet,-138.2,Debt Payments
+2025-02-20,Wegmans,-107.66,Groceries
+2025-02-22,Car Loan Payment,-388.61,Debt Payments
+2025-02-24,Great Lakes,-507.22,Debt Payments
+2025-02-28,Local Restaurant,-65.69,Dining
+2025-02-28,Wells Fargo,-868.53,Debt Payments
+2025-03-01,Wayfair,-51.45,Shopping
+2025-03-02,ShopRite,-186.2,Groceries
+2025-03-04,Macy's,-47.2,Shopping
+2025-03-05,Discover,-153.05,Debt Payments
+2025-03-05,Navient,-668.48,Debt Payments
+2025-03-06,Line of Credit Payment,-280.63,Debt Payments
+2025-03-10,Citibank,-609.41,Debt Payments
+2025-03-11,Ulta Beauty,-61.19,Shopping
+2025-03-12,Avis,-19.07,Transportation
+2025-03-13,Line of Credit Payment,-907.7,Debt Payments
+2025-03-13,Citibank,-463.78,Debt Payments
+2025-03-14,Debt Consolidation,-944.36,Debt Payments
+2025-03-16,HOA Fees,-2684.1,Housing
+2025-03-17,Publix,-23.73,Groceries
+2025-03-18,Midas,-11.12,Transportation
+2025-03-20,Apartment Management,-1070.8,Housing
+2025-03-20,Furniture Rental,-2021.09,Housing
+2025-03-23,Mortgage Payment,-139.66,Debt Payments
+2025-03-24,Walmart,-84.78,Shopping
+2025-03-24,Hospital,-236.12,Healthcare
+2025-03-25,Lawn Service,-1146.14,Housing
+2025-03-25,Urgent Care,-491.03,Healthcare
+2025-03-26,Aldi,-144.55,Groceries
+2025-03-26,Olive Garden,-14.23,Dining
+2025-03-26,Textbooks,-948.81,Education
+2025-03-27,Pizza Hut,-8.06,Dining
+2025-03-27,Local Restaurant,-65.94,Dining
+2025-03-28,Whole Foods,-100.08,Groceries
+2025-03-28,Medical Debt Payment,-505.06,Debt Payments
+2025-03-29,Local Restaurant,-36.68,Dining
+2025-03-29,Car Loan Payment,-765.52,Debt Payments
+2025-03-30,Mortgage,-840.88,Housing
+2025-03-31,McGraw-Hill,-581.16,Education
+2025-03-31,Mortgage Payment,-950.9,Debt Payments
+2025-04-01,Sprouts,-83.72,Groceries
+2025-04-01,Albertsons,-199.26,Groceries
+2025-04-02,Nelnet,-564.46,Debt Payments
+2025-04-03,Debt Consolidation,-918.68,Debt Payments
+2025-04-05,Shell,-41.7,Transportation
+2025-04-05,Chegg,-595.32,Education
+2025-04-05,Student Loan Payment,-110.28,Debt Payments
+2025-04-08,Line of Credit Payment,-811.79,Debt Payments
+2025-04-10,Food Lion,-197.44,Groceries
+2025-04-11,Meijer,-125.95,Groceries
+2025-04-11,Chick-fil-A,-29.24,Dining
+2025-04-11,TJ Maxx,-15.9,Shopping
+2025-04-11,Line of Credit Payment,-972.88,Debt Payments
+2025-04-11,FedLoan Servicing,-297.29,Debt Payments
+2025-04-11,Personal Loan Payment,-922.9,Debt Payments
+2025-04-12,Personal Loan Payment,-727.73,Debt Payments
+2025-04-08,Transfer to Savings,-0.0,Savings
 2024-04-12,Credit Card Payment - Citi,-450,Debt Payments
 2024-04-15,Personal Loan Payment,-350,Debt Payments
 2024-04-21,Student Loan Payment,-280,Debt Payments

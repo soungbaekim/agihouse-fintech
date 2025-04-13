@@ -1,220 +1,218 @@
 {
   "analysis": {
     "income": 121500.0,
-    "expenses": 338028.16,
-    "net_cash_flow": -216528.15999999997,
-    "savings_rate": -178.21,
+    "expenses": 312336.34,
+    "net_cash_flow": -190836.34000000003,
+    "savings_rate": -157.07,
     "spending_by_category": {
-      "Utilities": 11409.16,
-      "Payroll": 137294,
-      "Taxes": 23651,
-      "Rent": 47191,
-      "Insurance": 7325,
-      "Services": 10718,
-      "Supplies": 2001,
-      "Marketing": 16908,
-      "Inventory": 81531
+      "Utilities": 9774.34,
+      "Payroll": 136101,
+      "Taxes": 25597,
+      "Rent": 30829,
+      "Insurance": 5988,
+      "Services": 8306,
+      "Supplies": 2815,
+      "Marketing": 15278,
+      "Inventory": 77648
     },
     "top_spending_categories": [
       {
         "category": "Payroll",
-        "amount": 137294
+        "amount": 136101
       },
       {
         "category": "Inventory",
-        "amount": 81531
+        "amount": 77648
       },
       {
         "category": "Rent",
-        "amount": 47191
+        "amount": 30829
       },
       {
         "category": "Taxes",
-        "amount": 23651
+        "amount": 25597
       },
       {
         "category": "Marketing",
-        "amount": 16908
+        "amount": 15278
       }
     ],
     "monthly_spending": {
-      "2024-04": {
-        "Utilities": 285.28,
-        "Payroll": 10186,
-        "Taxes": 6131
-      },
       "2024-05": {
-        "Utilities": 689.28,
-        "Payroll": 8889,
-        "Rent": 4264,
-        "Insurance": 649,
-        "Services": 852,
-        "Supplies": 157,
-        "Marketing": 1461,
-        "Inventory": 6860
+        "Utilities": 566.75,
+        "Payroll": 10389,
+        "Rent": 2466,
+        "Insurance": 489,
+        "Services": 655,
+        "Supplies": 242,
+        "Marketing": 1257,
+        "Inventory": 11358
       },
       "2024-06": {
-        "Utilities": 1614.5900000000001,
-        "Payroll": 11673,
-        "Rent": 4161,
-        "Insurance": 616,
-        "Services": 928,
-        "Supplies": 163,
-        "Marketing": 1347,
-        "Inventory": 6724
+        "Utilities": 738.9300000000001,
+        "Payroll": 11131,
+        "Rent": 2662,
+        "Insurance": 475,
+        "Services": 685,
+        "Supplies": 247,
+        "Marketing": 1315,
+        "Inventory": 2253
       },
       "2024-07": {
-        "Utilities": 904.54,
-        "Payroll": 8214,
-        "Taxes": 6388,
-        "Rent": 4026,
-        "Insurance": 636,
-        "Services": 875,
-        "Supplies": 161,
-        "Marketing": 1402,
-        "Inventory": 5570
+        "Utilities": 961.5999999999999,
+        "Payroll": 11481,
+        "Taxes": 6262,
+        "Rent": 2870,
+        "Insurance": 498,
+        "Services": 698,
+        "Supplies": 252,
+        "Marketing": 1248,
+        "Inventory": 1863
       },
       "2024-08": {
-        "Utilities": 721.4,
-        "Payroll": 18782,
-        "Rent": 3630,
-        "Insurance": 576,
-        "Services": 867,
-        "Supplies": 162,
-        "Marketing": 1389,
-        "Inventory": 6879
+        "Utilities": 1065.6100000000001,
+        "Payroll": 17669,
+        "Rent": 2427,
+        "Insurance": 477,
+        "Services": 712,
+        "Supplies": 250,
+        "Marketing": 1206,
+        "Inventory": 22179
       },
       "2024-09": {
-        "Utilities": 740.76,
-        "Payroll": 11612,
-        "Rent": 4233,
-        "Insurance": 627,
-        "Services": 893,
-        "Supplies": 158,
-        "Marketing": 1507,
-        "Inventory": 4870
+        "Utilities": 928.85,
+        "Payroll": 9482,
+        "Rent": 2523,
+        "Insurance": 467,
+        "Services": 631,
+        "Supplies": 241,
+        "Marketing": 1230,
+        "Inventory": 4982
       },
       "2024-10": {
-        "Utilities": 1081.12,
-        "Payroll": 9281,
-        "Taxes": 5303,
-        "Rent": 3756,
-        "Insurance": 615,
-        "Services": 856,
-        "Supplies": 179,
-        "Marketing": 1481,
-        "Inventory": 6696
-      },
-      "2024-12": {
-        "Utilities": 891.91,
-        "Payroll": 11455,
-        "Rent": 4038,
-        "Insurance": 615,
-        "Services": 917,
-        "Supplies": 152,
-        "Marketing": 1367,
-        "Inventory": 7902
-      },
-      "2025-01": {
-        "Utilities": 1134.75,
-        "Payroll": 9728,
-        "Taxes": 5829,
-        "Rent": 3612,
-        "Insurance": 541,
-        "Services": 952,
-        "Supplies": 183,
-        "Marketing": 1403,
-        "Inventory": 12405
-      },
-      "2025-02": {
-        "Utilities": 1058.3799999999999,
-        "Payroll": 8509,
-        "Rent": 3850,
-        "Insurance": 616,
-        "Services": 941,
-        "Supplies": 169,
-        "Marketing": 1454,
-        "Inventory": 7972
-      },
-      "2025-03": {
-        "Utilities": 841.4300000000001,
-        "Payroll": 10741,
-        "Rent": 4201,
-        "Insurance": 637,
-        "Services": 840,
-        "Supplies": 184,
-        "Marketing": 1397,
-        "Inventory": 8913
-      },
-      "2025-04": {
-        "Utilities": 789.72,
-        "Rent": 3600,
-        "Insurance": 573,
-        "Services": 926,
-        "Supplies": 179,
-        "Marketing": 1342
+        "Utilities": 849.8100000000001,
+        "Payroll": 11731,
+        "Taxes": 6719,
+        "Rent": 2710,
+        "Insurance": 570,
+        "Services": 737,
+        "Supplies": 250,
+        "Marketing": 1355,
+        "Inventory": 10017
       },
       "2024-11": {
-        "Payroll": 18224,
-        "Rent": 3820,
-        "Insurance": 624,
-        "Utilities": 656,
-        "Services": 871,
-        "Supplies": 154,
+        "Utilities": 606.34,
+        "Payroll": 19261,
+        "Rent": 2445,
+        "Insurance": 514,
+        "Services": 691,
+        "Supplies": 208,
+        "Marketing": 1353,
+        "Inventory": 9820
+      },
+      "2024-12": {
+        "Utilities": 489.65999999999997,
+        "Payroll": 9102,
+        "Rent": 2378,
+        "Insurance": 506,
+        "Services": 729,
+        "Supplies": 222,
+        "Marketing": 1243
+      },
+      "2025-01": {
+        "Utilities": 722.8199999999999,
+        "Payroll": 8552,
+        "Taxes": 6280,
+        "Rent": 2661,
+        "Insurance": 515,
+        "Services": 670,
+        "Supplies": 215,
+        "Marketing": 1245,
+        "Inventory": 3304
+      },
+      "2025-02": {
+        "Utilities": 922.59,
+        "Payroll": 8596,
+        "Rent": 2844,
+        "Insurance": 502,
+        "Services": 706,
+        "Supplies": 251,
+        "Marketing": 1129
+      },
+      "2025-03": {
+        "Utilities": 1378.65,
+        "Payroll": 9884,
+        "Rent": 2469,
+        "Insurance": 482,
+        "Services": 669,
+        "Supplies": 224,
+        "Marketing": 1339,
+        "Inventory": 7275
+      },
+      "2025-04": {
+        "Utilities": 542.73,
+        "Rent": 2374,
+        "Insurance": 493,
+        "Services": 723,
+        "Supplies": 213,
         "Marketing": 1358,
-        "Inventory": 6740
+        "Inventory": 4597
+      },
+      "2024-04": {
+        "Payroll": 8823,
+        "Taxes": 6336
       }
     },
     "top_merchants": [
       {
         "merchant": "Employee Payroll",
-        "amount": 137294
+        "amount": 136101
       },
       {
         "merchant": "Business Rent",
-        "amount": 47191
-      },
-      {
-        "merchant": "Inventory Purchase - Import Company D",
-        "amount": 33058
+        "amount": 30829
       },
       {
         "merchant": "Quarterly Business Tax Payment",
-        "amount": 23651
+        "amount": 25597
       },
       {
-        "merchant": "Inventory Purchase - Manufacturer B",
-        "amount": 17623
-      },
-      {
-        "merchant": "Marketing Services",
-        "amount": 16908
+        "merchant": "Inventory Purchase - Local Producer E",
+        "amount": 21001
       },
       {
         "merchant": "Inventory Purchase - Distributor C",
-        "amount": 13939
+        "amount": 16812
+      },
+      {
+        "merchant": "Marketing Services",
+        "amount": 15278
       },
       {
         "merchant": "Inventory Purchase - Wholesale Supplier A",
-        "amount": 12565
+        "amount": 14478
       },
       {
-        "merchant": "Accounting Services",
-        "amount": 7632
+        "merchant": "Inventory Purchase - Manufacturer B",
+        "amount": 13014
+      },
+      {
+        "merchant": "Inventory Purchase - Import Company D",
+        "amount": 12343
       },
       {
         "merchant": "Business Insurance",
-        "amount": 7325
+        "amount": 5988
       }
     ],
-    "total_potential_savings": 1250.92
+    "total_potential_savings": 1087.4299999999998
   },
   "recommendations": {
     "savings": [
       {
         "category": "utilities",
-        "description": "Your utility bills total $11409.16. Consider energy-efficient appliances.",
-        "potential_savings": 1140.92
+        "description": "Your utility bills total $9774.34. Consider energy-efficient appliances.",
+        "potential_savings": 977.43
       },
       {
         "category": "dining",
@@ -230,7 +228,7 @@
     "investment": [
       {
         "title": "Emergency Fund",
-        "description": "Build an emergency fund covering 3-6 months of expenses ($84507.04 to $169014.08).",
+        "description": "Build an emergency fund covering 3-6 months of expenses ($78084.08 to $156168.17).",
         "priority": "High",
         "risk_level": "Very Low",
         "potential_return": "3-4% APY"
