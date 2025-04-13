@@ -60,169 +60,196 @@ class OpenAIChatService:
         Keep your responses focused on financial matters and avoid giving advice outside your expertise.
         """
     
-    def prepare_financial_context(self, financial_data: Dict[str, Any]) -> str:
+    def _format_financial_data(self, financial_data: Dict[str, Any]) -> str:
         """
-        Prepare the financial context to be sent to the AI
+        Format financial data for the AI in a structured way
         
         Args:
-            financial_data: Dictionary containing user's financial data
-            
+            financial_data (Dict[str, Any]): User's financial data
+        
         Returns:
-            String representation of the financial data
+            str: Formatted financial data as context
         """
-        # Extract key financial metrics
-        income = financial_data.get('analysis_data', {}).get('income', 0)
-        expenses = financial_data.get('analysis_data', {}).get('expenses', 0)
-        net_cash_flow = financial_data.get('analysis_data', {}).get('net_cash_flow', 0)
-        savings_rate = financial_data.get('analysis_data', {}).get('savings_rate', 0)
-        
-        # Get spending by category
-        spending_by_category = financial_data.get('chart_data', {}).get('spending_by_category', {})
-        
-        # Get top merchants
-        top_merchants = financial_data.get('chart_data', {}).get('top_merchants', [])
-        
-        # Get recommendations
-        savings_recommendations = financial_data.get('recommendations', {}).get('savings', [])
-        investment_recommendations = financial_data.get('recommendations', {}).get('investments', [])
-        
-        # Get transactions data
-        transactions = financial_data.get('transactions', [])
-        
-        # Get page context if available
-        page_context = financial_data.get('page_context', {})
-        current_page = page_context.get('page', '')
-        current_view = page_context.get('data', {}).get('view', '')
-        current_category = page_context.get('data', {}).get('category', '')
-        
-        # Format the context
-        context = f"""
-        FINANCIAL SUMMARY:
-        - Total Income: ${income:,.2f}
-        - Total Expenses: ${expenses:,.2f}
-        - Net Cash Flow: ${net_cash_flow:,.2f}
-        - Savings Rate: {savings_rate:.1f}%
-        
-        SPENDING BY CATEGORY:
-        {json.dumps(spending_by_category, indent=2)}
-        
-        TOP MERCHANTS:
-        {json.dumps(top_merchants, indent=2)}
-        
-        CURRENT RECOMMENDATIONS:
-        Savings Opportunities:
-        {json.dumps(savings_recommendations, indent=2)}
-        
-        Investment Suggestions:
-        {json.dumps(investment_recommendations, indent=2)}
-        """
-        
-        # Add transactions data (limited to most relevant ones for better context)
-        transaction_sample_size = 15  # Limit to prevent token overflow
-        
-        # Get transactions by category if user is viewing a specific category
-        if current_category:
-            category_transactions = [t for t in transactions if t.get('category') == current_category]
-            if category_transactions:
-                # Sort by amount (descending) and take top transactions
-                sorted_transactions = sorted(category_transactions, key=lambda t: float(t.get('amount', 0)), reverse=True)
-                transaction_sample = sorted_transactions[:transaction_sample_size]
-                context += f"""
+        try:
+            context = "USER FINANCIAL DATA SUMMARY:\n\n"
+            
+            # Add basic financial metrics
+            income = financial_data.get('income', 0)
+            expenses = financial_data.get('expenses', 0)
+            net_cash_flow = financial_data.get('net_cash_flow', 0)
+            savings_rate = financial_data.get('savings_rate', 0)
+            
+            context += f"Income: ${income:.2f}\n"
+            context += f"Expenses: ${expenses:.2f}\n"
+            context += f"Net Cash Flow: ${net_cash_flow:.2f}\n"
+            context += f"Savings Rate: {savings_rate:.1f}%\n\n"
+            
+            # Add top spending categories
+            top_categories = financial_data.get('top_categories', [])
+            if top_categories:
+                context += "TOP SPENDING CATEGORIES:\n"
+                for category in top_categories:
+                    context += f"- {category['category'].title()}: ${float(category['amount']):.2f}\n"
+                context += "\n"
+            
+            # Add potential savings information
+            total_savings_potential = financial_data.get('total_savings_potential', 0)
+            if total_savings_potential:
+                context += f"Potential Monthly Savings: ${float(total_savings_potential):.2f}\n\n"
+            
+            # Add transaction data and insights
+            transactions = financial_data.get('transactions', [])
+            if transactions:
+                # Calculate spending patterns
+                monthly_totals = {}
+                category_totals = {}
+                merchants = {}
                 
-                TRANSACTIONS IN CATEGORY '{current_category.upper()}':
-                {json.dumps(transaction_sample, indent=2)}
-                """
-        # Otherwise, just include the most significant transactions overall
-        elif transactions:
-            # Sort by amount (descending) and take top transactions
-            sorted_transactions = sorted(transactions, key=lambda t: abs(float(t.get('amount', 0))), reverse=True)
-            transaction_sample = sorted_transactions[:transaction_sample_size]
-            context += f"""
+                for tx in transactions:
+                    # Extract transaction details
+                    date = tx.get('date', 'N/A')
+                    if isinstance(date, str) and len(date) >= 7:
+                        month_year = date[:7]  # Format: YYYY-MM
+                    else:
+                        month_year = 'unknown'
+                        
+                    amount = float(tx.get('amount', 0))
+                    category = tx.get('category', 'uncategorized').lower()
+                    description = tx.get('description', 'N/A')
+                    
+                    # Skip income transactions for certain calculations
+                    if amount < 0 or category == 'income':
+                        continue
+                        
+                    # Update monthly totals
+                    if month_year not in monthly_totals:
+                        monthly_totals[month_year] = 0
+                    monthly_totals[month_year] += amount
+                    
+                    # Update category totals
+                    if category not in category_totals:
+                        category_totals[category] = 0
+                    category_totals[category] += amount
+                    
+                    # Update merchant data
+                    if description not in merchants:
+                        merchants[description] = 0
+                    merchants[description] += amount
+                
+                # Add spending trends
+                if monthly_totals:
+                    context += "MONTHLY SPENDING TRENDS:\n"
+                    for month, total in sorted(monthly_totals.items()):
+                        context += f"- {month}: ${total:.2f}\n"
+                    context += "\n"
+                
+                # Add top merchants
+                if merchants:
+                    top_merchants = sorted(merchants.items(), key=lambda x: x[1], reverse=True)[:10]
+                    context += "TOP MERCHANTS BY SPENDING:\n"
+                    for merchant, amount in top_merchants:
+                        context += f"- {merchant}: ${amount:.2f}\n"
+                    context += "\n"
+                
+                # Add sample transactions (most recent 5 transactions)
+                sample_size = min(5, len(transactions))
+                sample_transactions = sorted(transactions, key=lambda x: x.get('date', ''), reverse=True)[:sample_size]
+                
+                context += f"RECENT TRANSACTIONS (showing {sample_size} of {len(transactions)}):\n"
+                for tx in sample_transactions:
+                    date = tx.get('date', 'N/A')
+                    description = tx.get('description', 'N/A')
+                    amount = float(tx.get('amount', 0))
+                    category = tx.get('category', 'uncategorized')
+                    
+                    context += f"- {date}: {description} | ${amount:.2f} | {category}\n"
+                context += "\n"
+                
+                # Add recurring expenses detection
+                recurring = self._detect_recurring_expenses(transactions)
+                if recurring:
+                    context += "POTENTIAL RECURRING EXPENSES:\n"
+                    for item, amount in recurring.items():
+                        context += f"- {item}: ${amount:.2f} per month\n"
+                    context += "\n"
             
-            SIGNIFICANT TRANSACTIONS:
-            {json.dumps(transaction_sample, indent=2)}
-            """
+            return context
+        except Exception as e:
+            print(f"Error formatting financial data: {str(e)}")
+            return "Error: Unable to format financial data properly."
+    
+    def _detect_recurring_expenses(self, transactions: List[Dict[str, Any]]) -> Dict[str, float]:
+        """
+        Detect recurring expenses from transaction data
         
-        # Add context-specific information based on current view
-        if current_view == 'transactions' or 'transactions' in current_page:
-            context += """
-            
-            CURRENT VIEW: Transactions
-            The user is currently viewing their transaction history. You can provide insights about spending patterns,
-            unusual transactions, or suggestions for categorizing transactions better.
-            """
-        elif current_view == 'recommendations' or 'recommendations' in current_page:
-            context += """
-            
-            CURRENT VIEW: Recommendations
-            The user is currently viewing savings and investment recommendations. You can provide more detailed
-            explanations about these recommendations, how they were calculated, or additional personalized advice.
-            """
-        elif current_view == 'category' or 'category' in current_page:
-            # Find the specific category data
-            category_data = {}
-            if current_category and current_category in spending_by_category:
-                category_data = spending_by_category[current_category]
-            
-            context += f"""
-            
-            CURRENT VIEW: Category Details - {current_category}
-            The user is currently viewing details for the {current_category} spending category.
-            Category data: {json.dumps(category_data, indent=2)}
-            You can provide specific insights about this category, such as how their spending compares to
-            typical benchmarks, or strategies to optimize spending in this category.
-            """
+        Args:
+            transactions (List[Dict[str, Any]]): List of transactions
         
-        return context
+        Returns:
+            Dict[str, float]: Recurring expenses with their monthly amounts
+        """
+        # Implement recurring expense detection logic here
+        # For now, return an empty dictionary
+        return {}
     
     def get_chat_response(self, 
                          user_message: str, 
-                         financial_data: Dict[str, Any],
-                         conversation_history: Optional[List[Dict[str, str]]] = None) -> str:
+                         financial_data: Dict[str, Any], 
+                         conversation_history: Optional[List[Dict[str, str]]] = None, 
+                         initial_analysis: bool = False) -> str:
         """
-        Get a response from the OpenAI API based on the user's message and financial data
+        Get response from OpenAI chat completion API
         
         Args:
-            user_message: The user's message
-            financial_data: Dictionary containing user's financial data
-            conversation_history: Optional list of previous messages
-            
+            user_message (str): User's message
+            financial_data (Dict[str, Any]): User's financial data
+            conversation_history (Optional[List[Dict[str, str]]]): Previous conversation history
+            initial_analysis (bool): Whether this is the initial analysis request
+        
         Returns:
-            The AI's response
+            str: AI response message
         """
-        # Prepare the financial context
-        financial_context = self.prepare_financial_context(financial_data)
-        
-        # Initialize messages with system message
-        messages = [
-            {"role": "system", "content": self.system_message}
-        ]
-        
-        # Add financial context as a system message
-        messages.append({
-            "role": "system", 
-            "content": f"Here is the user's current financial data:\n{financial_context}"
-        })
-        
-        # Add conversation history if provided
-        if conversation_history:
-            messages.extend(conversation_history)
-        
-        # Add the user's current message
-        messages.append({"role": "user", "content": user_message})
-        
         try:
-            # Call the OpenAI API
+            # Format financial data for context
+            financial_context = self._format_financial_data(financial_data)
+            
+            # Prepare messages
+            messages = [
+                {"role": "system", "content": self.system_message}
+            ]
+            
+            # Add financial context
+            messages.append({"role": "system", "content": financial_context})
+            
+            # Add conversation history if available
+            if conversation_history:
+                messages.extend(conversation_history)
+            
+            # For initial analysis, provide a specific prompt to guide the AI
+            if initial_analysis:
+                analysis_prompt = (
+                    "Based on the financial data provided, please:"
+                    "\n1. Give a brief overview of the user's financial health"
+                    "\n2. Identify 2-3 key areas where they could improve their finances"
+                    "\n3. Provide 2-3 specific, actionable recommendations tailored to their spending patterns"
+                    "\n4. Highlight any unusual transactions or concerning patterns"
+                    "\n\nKeep your response friendly, constructive, and personalized to their specific situation."
+                )
+                messages.append({"role": "user", "content": analysis_prompt})
+            else:
+                # Add user message for normal conversation
+                messages.append({"role": "user", "content": user_message})
+            
+            # Call the OpenAI API with function calling abilities
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
+                max_tokens=1500,
                 temperature=0.7,
-                max_tokens=1000
             )
             
-            # Extract and return the response text
             return response.choices[0].message.content
-        
         except Exception as e:
-            # Handle API errors
-            return f"Sorry, I encountered an error: {str(e)}"
+            # Log the error
+            print(f"Error in OpenAI chat response: {str(e)}")
+            raise

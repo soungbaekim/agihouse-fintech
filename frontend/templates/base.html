@@ -41,11 +41,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('recommendations') }}">Recommendations</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('chat') }}">
-                            <i class="fas fa-robot me-1"></i>AI Chat
-                        </a>
-                    </li>
+                    <!-- Chat functionality moved directly into recommendations page -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('clear_session') }}">New Analysis</a>
                     </li>
@@ -108,9 +104,6 @@
     
     {% block scripts %}{% endblock %}
     
-    <!-- Include AI Chat Widget on all pages if AI chat is available -->
-    {% if config['AI_CHAT_AVAILABLE'] %}
-        {% include 'partials/chat_widget.html' %}
-    {% endif %}
+    <!-- AI Chat removed from base template and integrated into recommendations page -->
 </body>
 </html>

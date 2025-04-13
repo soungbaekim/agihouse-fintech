@@ -1,0 +1,437 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Analyzer - AI Recommendations{% endblock %}
+
+{% block head_extra %}
+<style>
+    /* Chat interface styling */
+    .chat-container {
+        height: 65vh;
+        overflow-y: auto;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .chat-message {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .chat-message.user {
+        justify-content: flex-end;
+    }
+    
+    .chat-bubble {
+        max-width: 80%;
+        padding: 12px 16px;
+        border-radius: 18px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .chat-message.user .chat-bubble {
+        background-color: #007bff;
+        color: white;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .chat-message.ai .chat-bubble {
+        background-color: #f1f3f5;
+        color: #343a40;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .chat-bubble p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .chat-bubble p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .typing-indicator {
+        display: flex;
+        align-items: center;
+    }
+    
+    .typing-indicator span {
+        height: 8px;
+        width: 8px;
+        background-color: #343a40;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 3px;
+        animation: typing 1s infinite;
+    }
+    
+    .typing-indicator span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .typing-indicator span:nth-child(3) {
+        animation-delay: 0.4s;
+        margin-right: 0;
+    }
+    
+    @keyframes typing {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+    }
+    
+    .financial-snapshot-card {
+        transition: all 0.3s ease;
+    }
+    
+    .financial-snapshot-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .suggestion-chip {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        user-select: none;
+    }
+    
+    .suggestion-chip:hover {
+        background-color: #007bff;
+        color: white;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-5 mb-3">
+            <i class="fas fa-robot text-primary me-2"></i>
+            AI Financial Advisor
+        </h1>
+        <p class="lead">
+            Chat with our AI to receive personalized financial insights and recommendations based on your data.
+        </p>
+    </div>
+</div>
+
+<!-- Main Content Area -->
+<div class="row">
+    <!-- Financial Snapshot Side Panel -->
+    <div class="col-md-4 mb-4">
+        <div class="financial-snapshot-card card shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Your Financial Snapshot</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Income</span>
+                        <span class="badge bg-success rounded-pill">{{ analysis.income|usd }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Expenses</span>
+                        <span class="badge bg-danger rounded-pill">{{ analysis.expenses|usd }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Net Cash Flow</span>
+                        <span class="badge {% if analysis.net_cash_flow >= 0 %}bg-success{% else %}bg-danger{% endif %} rounded-pill">
+                            {{ analysis.net_cash_flow|usd }}
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Savings Rate</span>
+                        <span class="badge {% if analysis.savings_rate >= 20 %}bg-success{% elif analysis.savings_rate >= 10 %}bg-warning{% else %}bg-danger{% endif %} rounded-pill">
+                            {{ '{:.1f}'.format(analysis.savings_rate) }}%
+                        </span>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <h6 class="mb-3">Top Spending Categories</h6>
+                <div class="mb-3">
+                    {% for category in analysis.top_categories[:5] %}
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>{{ category.category|title }}</span>
+                        <span class="badge bg-primary rounded-pill">{{ category.amount|usd }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Ask About</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <h6 class="mb-2">Financial Goals</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-piggy-bank me-1"></i> Emergency Fund
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-home me-1"></i> Saving for Home
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-graduation-cap me-1"></i> College Planning
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-umbrella me-1"></i> Retirement Planning
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <h6 class="mb-2">Recommendations</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-chart-pie me-1"></i> Spending Optimization
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-chart-line me-1"></i> Investment Advice
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-money-bill-wave me-1"></i> Debt Reduction
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-wallet me-1"></i> Budget Improvement
+                        </span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6 class="mb-2">Analysis</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-search-dollar me-1"></i> Analyze My Spending
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-exclamation-circle me-1"></i> Find Unusual Expenses
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-repeat me-1"></i> Identify Subscriptions
+                        </span>
+                        <span class="suggestion-chip badge rounded-pill bg-light text-dark px-3 py-2">
+                            <i class="fas fa-percentage me-1"></i> Income Distribution
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AI Chat Interface -->
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-comments me-2"></i> Financial Conversation
+                </h5>
+                <button id="clearChat" class="btn btn-sm btn-outline-light">
+                    <i class="fas fa-trash me-1"></i> Clear Chat
+                </button>
+            </div>
+            <div class="card-body">
+                <!-- Chat Messages Container -->
+                <div id="chatMessages" class="chat-container">
+                    <div class="chat-message ai">
+                        <div class="chat-bubble">
+                            <p>Hello! I'm your AI financial advisor. I've analyzed your financial data and I'm ready to provide personalized recommendations and answer your questions.</p>
+                            <p>Based on your spending patterns, income, and financial goals, I can help you optimize your finances and achieve your objectives. What would you like to discuss today?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chat Input -->
+                <form id="chatForm" class="d-flex">
+                    <input type="text" id="userMessage" class="form-control me-2" placeholder="Ask me anything about your finances..." required>
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Action Buttons -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <a href="{{ url_for('analyze') }}" class="btn btn-outline-primary w-100 p-3">
+            <i class="fas fa-chart-pie me-2"></i>Back to Dashboard
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a href="{{ url_for('clear_session') }}" class="btn btn-outline-secondary w-100 p-3">
+            <i class="fas fa-redo me-2"></i>Start New Analysis
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const socket = io();
+        const chatForm = document.getElementById('chatForm');
+        const userMessageInput = document.getElementById('userMessage');
+        const chatMessages = document.getElementById('chatMessages');
+        const clearChatButton = document.getElementById('clearChat');
+        const suggestionChips = document.querySelectorAll('.suggestion-chip');
+        
+        // Handle user message submission
+        chatForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const message = userMessageInput.value.trim();
+            if (message) {
+                addUserMessage(message);
+                userMessageInput.value = '';
+                addTypingIndicator();
+                
+                // Send message to server
+                socket.emit('send_message', { message: message });
+            }
+        });
+        
+        // Handle suggestion chips
+        suggestionChips.forEach(chip => {
+            chip.addEventListener('click', function() {
+                const message = this.textContent.trim();
+                addUserMessage(message);
+                addTypingIndicator();
+                
+                // Send message to server
+                socket.emit('send_message', { message: message });
+            });
+        });
+        
+        // Handle received AI message
+        socket.on('receive_message', function(data) {
+            removeTypingIndicator();
+            addAIMessage(data.message);
+        });
+        
+        // Handle errors
+        socket.on('error_message', function(data) {
+            removeTypingIndicator();
+            addErrorMessage(data.error);
+        });
+        
+        // Clear chat button
+        clearChatButton.addEventListener('click', function() {
+            fetch('/api/clear_chat', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        chatMessages.innerHTML = '';
+                        addAIMessage("Hello! I'm your AI financial advisor. I've analyzed your financial data and I'm ready to provide personalized recommendations and answer your questions. Based on your spending patterns, income, and financial goals, I can help you optimize your finances and achieve your objectives. What would you like to discuss today?");
+                    }
+                });
+        });
+        
+        // Function to add user message to chat
+        function addUserMessage(message) {
+            const div = document.createElement('div');
+            div.className = 'chat-message user';
+            div.innerHTML = `
+                <div class="chat-bubble">
+                    <p>${escapeHtml(message)}</p>
+                </div>
+            `;
+            chatMessages.appendChild(div);
+            scrollToBottom();
+        }
+        
+        // Function to add AI message to chat
+        function addAIMessage(message) {
+            const div = document.createElement('div');
+            div.className = 'chat-message ai';
+            div.innerHTML = `
+                <div class="chat-bubble">
+                    ${formatMessage(message)}
+                </div>
+            `;
+            chatMessages.appendChild(div);
+            scrollToBottom();
+        }
+        
+        // Function to add error message to chat
+        function addErrorMessage(error) {
+            const div = document.createElement('div');
+            div.className = 'chat-message ai';
+            div.innerHTML = `
+                <div class="chat-bubble bg-danger text-white">
+                    <p><i class="fas fa-exclamation-triangle me-2"></i>${escapeHtml(error)}</p>
+                </div>
+            `;
+            chatMessages.appendChild(div);
+            scrollToBottom();
+        }
+        
+        // Function to add typing indicator
+        function addTypingIndicator() {
+            removeTypingIndicator();
+            const div = document.createElement('div');
+            div.className = 'chat-message ai typing-message';
+            div.innerHTML = `
+                <div class="chat-bubble">
+                    <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            `;
+            chatMessages.appendChild(div);
+            scrollToBottom();
+        }
+        
+        // Function to remove typing indicator
+        function removeTypingIndicator() {
+            const typingMessage = chatMessages.querySelector('.typing-message');
+            if (typingMessage) {
+                typingMessage.remove();
+            }
+        }
+        
+        // Function to scroll to bottom of chat container
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Function to escape HTML
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // Function to format message (convert URLs to links and line breaks to paragraphs)
+        function formatMessage(message) {
+            // Convert URLs to links
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            let formattedMessage = message.replace(urlRegex, '<a href="$1" target="_blank" class="text-primary">$1</a>');
+            
+            // Convert line breaks to paragraphs
+            return formattedMessage.split('\n').map(line => `<p>${line}</p>`).join('');
+        }
+        
+        // Initialize by requesting an initial AI analysis
+        window.addEventListener('load', function() {
+            // Add typing indicator
+            addTypingIndicator();
+            
+            // Request AI analysis of financial data
+            socket.emit('send_message', {
+                message: "Analyze my financial data and provide personalized recommendations.",
+                initial_analysis: true
+            });
+        });
+    });
+</script>
+{% endblock %}

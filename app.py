@@ -10,11 +10,24 @@ import json
 import argparse
 import datetime
 from pathlib import Path
-from flask import Flask, render_template, request, redirect, url_for, jsonify, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session
+from flask_session import Session
 from werkzeug.utils import secure_filename
-from flask_socketio import SocketIO
-
-# Import core modules
+from flask_socketio import SocketIO, emit
+import os
+import json
+import uuid
+import tempfile
+from datetime import datetime
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from flask_apscheduler import APScheduler
+import logging
 from parsers.parser_factory import ParserFactory
 from analysis.spending_analyzer import SpendingAnalyzer
 from recommendations.savings_recommender import SavingsRecommender
@@ -22,12 +35,30 @@ from recommendations.investment_recommender import InvestmentRecommender
 
 # Create Flask app
 app = Flask(__name__, 
-            template_folder='frontend/templates',
-            static_folder='frontend/static')
-app.secret_key = os.urandom(24)  # For flash messages and sessions
-app.config['UPLOAD_FOLDER'] = 'uploads'
+            static_folder='./frontend/static',
+            template_folder='./frontend/templates')
+
+# Configure app
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-key-for-testing')
+app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uploads')
+app.config['ALLOWED_EXTENSIONS'] = {'csv', 'pdf', 'xlsx', 'xls'}
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max upload size
-app.config['ALLOWED_EXTENSIONS'] = {'csv', 'xlsx', 'xls', 'pdf'}
+app.config['AI_CHAT_AVAILABLE'] = True  # Enable AI chat feature
+
+# Configure Flask-Session to use server-side sessions
+app.config['SESSION_TYPE'] = 'filesystem'
+app.config['SESSION_FILE_DIR'] = os.path.join(tempfile.gettempdir(), 'fintech_sessions')
+app.config['SESSION_PERMANENT'] = False
+app.config['SESSION_USE_SIGNER'] = True
+Session(app)
+
+# Initialize Socket.IO
+socketio = SocketIO(app, cors_allowed_origins="*", manage_session=False)
+
+# Configure logging
+logging.basicConfig(level=logging.INFO,
+                   format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger('fintech')
 
 # Custom Jinja2 filters
 @app.template_filter('usd')
@@ -36,9 +67,6 @@ def format_usd(value):
     if isinstance(value, (int, float)):
         return "${:,.2f}".format(value)
     return value
-
-# Initialize SocketIO
-socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
@@ -223,13 +251,359 @@ def transactions():
 @app.route('/recommendations')
 def recommendations():
     """Display recommendations"""
-    if 'recommendations' not in session:
-        flash('No recommendation data available')
-        return redirect(url_for('index'))
+    print("Recommendation route accessed. Session keys:", list(session.keys()))
     
-    return render_template('recommendations.html', 
-                          recommendations=session['recommendations'],
-                          analysis=session['analysis_data'])
+    # NOTE: We need to display the regular recommendations page directly without redirecting
+    # to avoid redirection loops. The user can choose to go to AI recommendations from here.
+    
+    # CASE 1: Check if we have the recommendations data directly available
+    if all(key in session for key in ['analysis_data', 'recommendations', 'transactions']):
+        print("All required data found in session - rendering recommendations directly")
+        return render_template('recommendations.html',
+                            recommendations=session['recommendations'],
+                            analysis=session['analysis_data'],
+                            ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
+    
+    # CASE 2: We have an active sample profile
+    if 'active_profile' in session:
+        profile_name = session['active_profile']
+        print(f"Active profile found: {profile_name}")
+        
+        # Check if we already have transactions loaded for this profile
+        if 'transactions' in session:
+            # Regenerate all data for this profile to ensure consistency
+            try:
+                print(f"Regenerating data for profile: {profile_name}")
+                profile_data = get_sample_profile(profile_name)
+                
+                # Store transactions and other data in session
+                session['transactions'] = profile_data['transactions']
+                session['analysis_data'] = profile_data['analysis']
+                session['chart_data'] = profile_data['chart_data']
+                session['recommendations'] = profile_data['recommendations']
+                
+                return render_template('recommendations.html',
+                                    recommendations=session['recommendations'],
+                                    analysis=session['analysis_data'],
+                                    ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
+            except Exception as e:
+                print(f"Error loading sample profile: {e}")
+                flash(f'Error loading sample profile: {str(e)}')
+                return redirect(url_for('index'))
+        else:
+            # If we have a profile name but no data, need to reload the profile
+            print(f"Redirecting to use_sample_profile with profile: {profile_name}")
+            return redirect(url_for('use_sample_profile', profile_name=profile_name))
+    
+    # CASE 3: We have transactions but not the other data needed
+    if 'transactions' in session and not all(key in session for key in ['analysis_data', 'recommendations']):
+        print("Transactions found but missing analysis or recommendations - regenerating")
+        try:
+            # Process the transactions to generate recommendations
+            transactions = session['transactions']
+            
+            # Analyze spending
+            spending_analysis = analyzer.analyze(transactions)
+            
+            # Generate recommendations
+            savings_recommendations = savings_recommender.recommend(spending_analysis)
+            investment_recommendations = investment_recommender.recommend(
+                spending_analysis, savings_recommendations
+            )
+            
+            # Store analysis data in session
+            session['analysis_data'] = {
+                'transaction_count': len(transactions),
+                'income': spending_analysis['income'],
+                'expenses': spending_analysis['expenses'],
+                'net_cash_flow': spending_analysis['net_cash_flow'],
+                'savings_rate': spending_analysis['savings_rate'],
+                'top_categories': spending_analysis['top_spending_categories'],
+                'total_potential_savings': savings_recommendations['total_potential_savings']
+            }
+            
+            # Store recommendations in session
+            session['recommendations'] = {
+                'savings': savings_recommendations['recommendations'],
+                'investment': investment_recommendations['recommendations']
+            }
+            
+            # Prepare chart data
+            spending_by_category = spending_analysis['spending_by_category']
+            monthly_spending = spending_analysis['monthly_spending']
+            
+            # Convert data for JSON serialization
+            for month, data in monthly_spending.items():
+                for category, amount in data.items():
+                    monthly_spending[month][category] = float(amount)
+            
+            for category, amount in spending_by_category.items():
+                spending_by_category[category] = float(amount)
+            
+            # Store chart data in session
+            session['chart_data'] = {
+                'spending_by_category': spending_by_category,
+                'monthly_spending': monthly_spending,
+                'top_merchants': [
+                    {'merchant': item['merchant'], 'amount': float(item['amount'])}
+                    for item in spending_analysis['top_merchants']
+                ]
+            }
+            
+            return render_template('recommendations.html',
+                                recommendations=session['recommendations'],
+                                analysis=session['analysis_data'],
+                                ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
+        except Exception as e:
+            print(f"Error regenerating recommendations: {e}")
+            flash('Error generating recommendations. Please try again.')
+            return redirect(url_for('index'))
+    
+    # CASE 4: We have a file path but no processed data yet
+    if 'file_path' in session:
+        print("File path found but no processed data - processing file")
+        try:
+            # Process the file
+            file_path = session['file_path']
+            
+            # Parse the statement
+            statement_parser = parser_factory.get_parser(file_path)
+            transactions = statement_parser.parse(file_path)
+            
+            # Store transactions in session
+            session['transactions'] = transactions
+            
+            # Instead of redirecting, we'll process the transactions right here
+            # to avoid a redirect loop
+            print("Processing transactions immediately to avoid redirect")
+            
+            # Process the transactions to generate recommendations
+            # Analyze spending
+            spending_analysis = analyzer.analyze(transactions)
+            
+            # Generate recommendations
+            savings_recommendations = savings_recommender.recommend(spending_analysis)
+            investment_recommendations = investment_recommender.recommend(
+                spending_analysis, savings_recommendations
+            )
+            
+            # Store analysis data in session
+            session['analysis_data'] = {
+                'transaction_count': len(transactions),
+                'income': spending_analysis['income'],
+                'expenses': spending_analysis['expenses'],
+                'net_cash_flow': spending_analysis['net_cash_flow'],
+                'savings_rate': spending_analysis['savings_rate'],
+                'top_categories': spending_analysis['top_spending_categories'],
+                'total_potential_savings': savings_recommendations['total_potential_savings']
+            }
+            
+            # Store recommendations in session
+            session['recommendations'] = {
+                'savings': savings_recommendations['recommendations'],
+                'investment': investment_recommendations['recommendations']
+            }
+            
+            # Prepare chart data
+            spending_by_category = spending_analysis['spending_by_category']
+            monthly_spending = spending_analysis['monthly_spending']
+            
+            # Convert data for JSON serialization
+            for month, data in monthly_spending.items():
+                for category, amount in data.items():
+                    monthly_spending[month][category] = float(amount)
+            
+            for category, amount in spending_by_category.items():
+                spending_by_category[category] = float(amount)
+            
+            # Store chart data in session
+            session['chart_data'] = {
+                'spending_by_category': spending_by_category,
+                'monthly_spending': monthly_spending,
+                'top_merchants': [
+                    {'merchant': item['merchant'], 'amount': float(item['amount'])}
+                    for item in spending_analysis['top_merchants']
+                ]
+            }
+            
+            # Mark the session as modified
+            session.modified = True
+            
+            # Now render the template directly instead of redirecting
+            return render_template('recommendations.html',
+                                recommendations=session['recommendations'],
+                                analysis=session['analysis_data'],
+                                ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
+        except Exception as e:
+            print(f"Error processing file: {e}")
+            flash(f'Error processing file: {str(e)}')
+            return redirect(url_for('index'))
+    
+    # CASE 5: No data available at all
+    print("No data available - redirecting to index")
+    flash('No recommendation data available. Please upload a statement or use a sample profile.')
+    return redirect(url_for('index'))
+    
+    
+@app.route('/ai-recommendations')
+def ai_recommendations():
+    """Display AI-powered recommendations"""
+    print("========== AI RECOMMENDATIONS ROUTE ==========")
+    print("AI Recommendations route accessed. Session keys:", list(session.keys()))
+    
+    # Debug session contents
+    for key in session.keys():
+        if key in ['transactions', 'analysis_data', 'recommendations', 'active_profile']:
+            if key == 'transactions':
+                print(f"Session contains {len(session[key])} transactions")
+            else:
+                print(f"Session contains {key} with data: {session[key]}")
+    
+    if not app.config.get('AI_CHAT_AVAILABLE', False):
+        flash('AI recommendations are not available.')
+        return redirect(url_for('recommendations'))
+    
+    # CASE 1: Check if we have the required data available
+    if all(key in session for key in ['analysis_data', 'transactions']):
+        print("All required data found in session - rendering AI recommendations directly")
+        return render_template('ai_recommendations.html',
+                             analysis=session['analysis_data'],
+                             transactions=session['transactions'])
+    
+    # CASE 2: We have an active sample profile but missing data
+    if 'active_profile' in session:
+        profile_name = session['active_profile']
+        print(f"Active profile found: {profile_name}, but missing required data")
+        
+        try:
+            print(f"Regenerating data for profile: {profile_name}")
+            profile_data = get_sample_profile(profile_name)
+            
+            if not profile_data or not isinstance(profile_data, dict):
+                print(f"Error: Invalid profile data for {profile_name}")
+                flash(f'Error loading profile: Invalid profile data format', 'danger')
+                return redirect(url_for('index'))
+                
+            # Important: Make sure we have all the required data
+            if not all(key in profile_data for key in ['transactions', 'analysis', 'recommendations']):
+                print(f"Error: Missing required data in profile: {[key for key in ['transactions', 'analysis', 'recommendations'] if key not in profile_data]}")
+                flash('Error loading profile: Missing required data', 'danger')
+                return redirect(url_for('index'))
+            
+            # Fresh clean of session data
+            for key in ['transactions', 'analysis_data', 'chart_data', 'recommendations']:
+                if key in session:
+                    session.pop(key, None)
+            
+            # Store transactions with clean copy
+            session['transactions'] = []
+            for t in profile_data['transactions']:
+                trans = {
+                    'description': t.get('description', 'Unknown transaction'),
+                    'amount': float(t.get('amount', 0)),
+                    'category': t.get('category', 'Uncategorized'),
+                    'date': str(t.get('date', ''))
+                }
+                session['transactions'].append(trans)
+            
+            # Store analysis data with clean fields
+            analysis = profile_data['analysis']
+            session['analysis_data'] = {
+                'transaction_count': len(session['transactions']),
+                'income': float(analysis.get('income', 0)),
+                'expenses': float(analysis.get('expenses', 0)),
+                'net_cash_flow': float(analysis.get('net_cash_flow', 0)),
+                'savings_rate': float(analysis.get('savings_rate', 0)),
+                'top_categories': analysis.get('top_spending_categories', []) 
+                                 if 'top_spending_categories' in analysis 
+                                 else analysis.get('top_categories', []),
+                'total_potential_savings': float(analysis.get('total_potential_savings', 0))
+            }
+            
+            # Build proper chart data structure
+            session['chart_data'] = {
+                'spending_by_category': analysis.get('spending_by_category', {}),
+                'monthly_spending': analysis.get('monthly_spending', {}),
+                'top_merchants': analysis.get('top_merchants', [])
+            }
+            
+            # Store recommendations
+            if isinstance(profile_data['recommendations'], dict):
+                session['recommendations'] = profile_data['recommendations']
+            else:
+                session['recommendations'] = {'savings': [], 'investment': []}
+                
+            # Explicitly mark the session as modified
+            session.modified = True
+            
+            print("Successfully regenerated profile data. Session now contains:", list(session.keys()))
+            return render_template('ai_recommendations.html',
+                                 analysis=session['analysis_data'],
+                                 transactions=session['transactions'])
+        except Exception as e:
+            print(f"Error loading sample profile for AI recommendations: {e}")
+            import traceback
+            traceback.print_exc()
+            flash(f'Error loading sample profile: {str(e)}', 'danger')
+            return redirect(url_for('index'))
+    
+    # CASE 3: We have transactions but no analysis
+    if 'transactions' in session and 'analysis_data' not in session:
+        print("Transactions found but missing analysis - regenerating for AI recommendations")
+        try:
+            # Process the transactions
+            transactions = session['transactions']
+            
+            # Analyze spending
+            spending_analysis = analyzer.analyze(transactions)
+            
+            # Generate recommendations
+            savings_recommendations = savings_recommender.recommend(spending_analysis)
+            
+            # Store analysis data in session
+            session['analysis_data'] = {
+                'transaction_count': len(transactions),
+                'income': spending_analysis['income'],
+                'expenses': spending_analysis['expenses'],
+                'net_cash_flow': spending_analysis['net_cash_flow'],
+                'savings_rate': spending_analysis['savings_rate'],
+                'top_categories': spending_analysis['top_spending_categories'],
+                'total_potential_savings': savings_recommendations['total_potential_savings']
+            }
+            
+            return render_template('ai_recommendations.html',
+                                 analysis=session['analysis_data'],
+                                 transactions=session['transactions'])
+        except Exception as e:
+            print(f"Error regenerating analysis for AI recommendations: {e}")
+            flash('Error generating recommendations. Please try again.')
+            return redirect(url_for('index'))
+    
+    # CASE 4: We have a file path but no processed data yet
+    if 'file_path' in session:
+        print("File path found but no processed data - processing file for AI recommendations")
+        try:
+            # Process the file
+            file_path = session['file_path']
+            
+            # Parse the statement
+            statement_parser = parser_factory.get_parser(file_path)
+            transactions = statement_parser.parse(file_path)
+            
+            # Store transactions in session
+            session['transactions'] = transactions
+            
+            # Now that we have transactions, redirect back to recommendations
+            return redirect(url_for('ai_recommendations'))
+        except Exception as e:
+            print(f"Error processing file for AI recommendations: {e}")
+            flash(f'Error processing file: {str(e)}')
+            return redirect(url_for('index'))
+    
+    # CASE 5: No data available at all
+    print("No data available for AI recommendations - redirecting to index")
+    flash('No financial data available. Please upload a statement or use a sample profile.')
+    return redirect(url_for('index'))
 
 @app.route('/category/<category>')
 def category_details(category):
@@ -424,15 +798,21 @@ def use_sample_profile(profile_name):
         flash(f'Profile {profile_name} not found', 'warning')
         return redirect(url_for('index'))
     
-    # Clear any existing session data
-    session.pop('file_path', None)
-    
-    # Store profile data in session
+    # Check if we have all the required data in the profile
+    required_keys = ['transactions', 'analysis', 'recommendations']
+    missing_keys = [key for key in required_keys if key not in profile_data]
+    if missing_keys:
+        print(f"Error: Missing required data in profile: {missing_keys}")
+        flash('Error processing profile data: Missing required data', 'danger')
+        return redirect(url_for('index'))
+        
+    # Note: chart_data is derived from analysis, not required directly
+        
     try:
-        # Clear any existing data
-        for key in ['transactions', 'analysis_data', 'chart_data', 'recommendations', 'file_path']:
-            if key in session:
-                session.pop(key, None)
+        # Clear any existing session data
+        for key in ['transactions', 'analysis_data', 'chart_data', 'recommendations', 
+                    'file_path', 'active_profile']:
+            session.pop(key, None)
                 
         # Ensure we have a proper list of transactions
         if not isinstance(profile_data.get('transactions', []), list):
@@ -440,7 +820,7 @@ def use_sample_profile(profile_name):
             flash('Error processing profile data', 'danger')
             return redirect(url_for('index'))
             
-        # Store transactions
+        # Deep copy the transactions to ensure they are all valid
         session['transactions'] = []
         for t in profile_data['transactions']:
             trans = {
@@ -462,35 +842,89 @@ def use_sample_profile(profile_name):
         
         print(f"Stored {len(session['transactions'])} transactions in session")
             
-        # Store analysis data
-        session['analysis_data'] = profile_data['analysis']
-        print(f"Stored analysis data in session: {list(profile_data['analysis'].keys())}")
+        # Store analysis data (ensure all required fields are present)
+        analysis = profile_data['analysis']
+        required_analysis_fields = ['income', 'expenses', 'net_cash_flow', 'savings_rate', 
+                                  'top_categories', 'top_spending_categories', 
+                                  'spending_by_category', 'monthly_spending', 'top_merchants']
         
-        # Prepare chart data
+        for field in required_analysis_fields:
+            if field not in analysis:
+                print(f"Warning: Missing analysis field: {field}. Adding default value.")
+                if field in ['income', 'expenses', 'net_cash_flow', 'savings_rate']:
+                    analysis[field] = 0.0
+                elif field in ['top_categories', 'top_spending_categories', 'top_merchants']:
+                    analysis[field] = []
+                elif field in ['spending_by_category', 'monthly_spending']:
+                    analysis[field] = {}
+        
+        # Convert numeric values to ensure they're serializable
+        for field in ['income', 'expenses', 'net_cash_flow', 'savings_rate']:
+            if field in analysis:
+                analysis[field] = float(analysis[field])
+        
+        session['analysis_data'] = {
+            'transaction_count': len(session['transactions']),
+            'income': analysis['income'],
+            'expenses': analysis['expenses'],
+            'net_cash_flow': analysis['net_cash_flow'],
+            'savings_rate': analysis['savings_rate'],
+            'top_categories': analysis['top_spending_categories'] if 'top_spending_categories' in analysis else analysis['top_categories'],
+            'total_potential_savings': profile_data['recommendations'].get('total_potential_savings', 0.0) 
+                                        if isinstance(profile_data['recommendations'], dict) else 0.0
+        }
+        
+        print(f"Stored analysis data in session: {list(session['analysis_data'].keys())}")
+        
+        # Prepare chart data (ensure all values are Python native types)
+        spending_by_category = analysis['spending_by_category']
+        monthly_spending = analysis['monthly_spending']
+        
+        # Convert data for JSON serialization
+        for month, data in monthly_spending.items():
+            for category, amount in data.items():
+                monthly_spending[month][category] = float(amount)
+        
+        for category, amount in spending_by_category.items():
+            spending_by_category[category] = float(amount)
+        
+        # Build the chart data correctly
         session['chart_data'] = {
-            'spending_by_category': profile_data['analysis']['spending_by_category'],
-            'monthly_spending': profile_data['analysis']['monthly_spending'],
-            'top_merchants': profile_data['analysis']['top_merchants']
+            'spending_by_category': spending_by_category,
+            'monthly_spending': monthly_spending,
+            'top_merchants': [
+                {'merchant': item['merchant'], 'amount': float(item['amount'])}
+                for item in analysis['top_merchants']
+            ]
         }
         print("Stored chart data in session")
         
-        # Store recommendations
-        session['recommendations'] = profile_data['recommendations']
+        # Store recommendations (ensuring proper format)
+        if isinstance(profile_data['recommendations'], dict):
+            recs = profile_data['recommendations']
+            session['recommendations'] = {
+                'savings': recs.get('savings', []) if isinstance(recs.get('savings'), list) else [],
+                'investment': recs.get('investment', []) if isinstance(recs.get('investment'), list) else []
+            }
+        else:
+            # If the recommendations aren't in the right format, create an empty structure
+            session['recommendations'] = {'savings': [], 'investment': []}
+            
         print("Stored recommendations in session")
         
-        # Mark this as an active profile
+        # Set active profile
         session['active_profile'] = profile_name
-        print(f"Set active profile to: {profile_name}")
+        print(f"Set active profile to {profile_name}")
         
-        # Store the session data
+        # Mark the session as modified
         session.modified = True
         
-        print(f"Successfully stored profile data in session. Session keys: {list(session.keys())}")
+        # Redirect directly to recommendations instead of analyze
+        return redirect(url_for('recommendations'))
     except Exception as e:
-        print(f"Error storing profile data in session: {str(e)}")
-        flash(f'Error processing profile: {str(e)}', 'danger')
+        print(f"Error storing profile data in session: {e}")
+        flash(f'Error loading profile: {str(e)}', 'danger')
         return redirect(url_for('index'))
-    
     # Flash a message about the selected profile
     profile_descriptions = get_profile_descriptions()
     if profile_name in profile_descriptions:
@@ -581,6 +1015,133 @@ def load_profile_from_file(profile_name):
         'analysis': data['analysis'],
         'recommendations': data['recommendations']
     }
+
+# Socket.IO chat handlers
+@socketio.on('connect')
+def handle_connect():
+    print('Client connected')
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
+
+@socketio.on('send_message')
+def handle_message(data):
+    logger.info("========== SOCKET.IO MESSAGE HANDLER ==========")
+    logger.info(f"Received message from client")
+    
+    # Safe access to session data
+    session_keys = list(session.keys()) if hasattr(session, 'keys') else []
+    logger.info(f"Session contains keys: {session_keys}")
+    
+    try:
+        user_message = data.get('message', '')
+        initial_analysis = data.get('initial_analysis', False)
+        logger.info(f"Message: '{user_message[:50]}...' (Initial analysis: {initial_analysis})")
+        
+        # Simplified approach: Just access the required data directly
+        # Don't try to reload missing data here - that should be handled at the route level
+        
+        # Create financial data dictionary with safe defaults
+        financial_data = {
+            'income': 0.0,
+            'expenses': 0.0,
+            'net_cash_flow': 0.0,
+            'savings_rate': 0.0,
+            'top_categories': [],
+            'transactions': []
+        }
+        
+        # Add analysis data if available
+        if 'analysis_data' in session:
+            analysis = session['analysis_data']
+            financial_data.update({
+                'income': float(analysis.get('income', 0.0)),
+                'expenses': float(analysis.get('expenses', 0.0)),
+                'net_cash_flow': float(analysis.get('net_cash_flow', 0.0)),
+                'savings_rate': float(analysis.get('savings_rate', 0.0)),
+                'top_categories': analysis.get('top_categories', [])
+            })
+        
+        # Add transactions if available
+        if 'transactions' in session:
+            # Take only essential transaction data to reduce size
+            financial_data['transactions'] = [
+                {
+                    'date': t.get('date', ''),
+                    'description': t.get('description', ''),
+                    'amount': float(t.get('amount', 0.0)),
+                    'category': t.get('category', 'Uncategorized')
+                } for t in session.get('transactions', [])[:100]  # Limit to 100 transactions
+            ]
+        
+        # Add chart data if available
+        if 'chart_data' in session:
+            chart_data = session['chart_data']
+            financial_data['spending_by_category'] = chart_data.get('spending_by_category', {})
+            financial_data['top_merchants'] = chart_data.get('top_merchants', [])
+        
+        # Add recommendations if available
+        if 'recommendations' in session:
+            recs = session['recommendations']
+            financial_data['savings_recommendations'] = recs.get('savings', [])
+            financial_data['investment_recommendations'] = recs.get('investment', [])
+        
+        logger.info(f"Prepared financial data with {len(financial_data.get('transactions', []))} transactions")
+        
+        # Get conversation history (as a smaller list to avoid cookie size issues)
+        conversation_history = session.get('conversation_history', [])
+        # Keep only the last 6 messages to avoid excessive context size
+        if len(conversation_history) > 6:
+            conversation_history = conversation_history[-6:]
+        
+        # Get response from AI
+        try:
+            ai_response = chat_service.get_chat_response(
+                user_message=user_message,
+                financial_data=financial_data,
+                conversation_history=conversation_history,
+                initial_analysis=initial_analysis
+            )
+            logger.info("Successfully received AI response")
+            
+            # Store conversation (with size limits)
+            if 'conversation_history' not in session:
+                session['conversation_history'] = []
+                
+            # Add new messages
+            session['conversation_history'].append({'role': 'user', 'content': user_message})
+            session['conversation_history'].append({'role': 'assistant', 'content': ai_response})
+            
+            # Prune conversation history if too long
+            if len(session['conversation_history']) > 10:  
+                # Keep only the most recent 10 messages
+                session['conversation_history'] = session['conversation_history'][-10:]
+                
+            # Save session
+            session.modified = True
+            
+            # Send response to client
+            emit('receive_message', {'message': ai_response})
+            
+        except Exception as ai_error:
+            logger.error(f"Error getting AI response: {str(ai_error)}")
+            import traceback
+            logger.error(traceback.format_exc())
+            emit('error_message', {'error': "I couldn't generate a response. There might be an issue with the AI service."})
+            
+    except Exception as e:
+        logger.error(f"Error in chat handling: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        emit('error_message', {'error': "Sorry, I encountered an error processing your message. Please try again."})
+
+@app.route('/api/clear_chat', methods=['POST'])
+def clear_chat():
+    """Clear the chat conversation history"""
+    if 'conversation_history' in session:
+        session.pop('conversation_history')
+    return jsonify({'success': True})
 
 if __name__ == '__main__':
     # Parse command line arguments
