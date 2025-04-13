@@ -29,6 +29,14 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max upload size
 app.config['ALLOWED_EXTENSIONS'] = {'csv', 'xlsx', 'xls', 'pdf'}
 
+# Custom Jinja2 filters
+@app.template_filter('usd')
+def format_usd(value):
+    """Format a number as USD with commas for thousands"""
+    if isinstance(value, (int, float)):
+        return "${:,.2f}".format(value)
+    return value
+
 # Initialize SocketIO
 socketio = SocketIO(app, cors_allowed_origins="*")
 

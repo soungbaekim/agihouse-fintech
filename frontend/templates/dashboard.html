@@ -39,7 +39,7 @@
         <div class="card stat-card h-100 border-primary">
             <div class="card-body text-center">
                 <h6 class="text-muted">Total Income</h6>
-                <h2 class="display-6">${{ "%.2f"|format(analysis.income) }}</h2>
+                <h2 class="display-6">{{ analysis.income|usd }}</h2>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
         <div class="card stat-card h-100 border-danger">
             <div class="card-body text-center">
                 <h6 class="text-muted">Total Expenses</h6>
-                <h2 class="display-6">${{ "%.2f"|format(analysis.expenses) }}</h2>
+                <h2 class="display-6">{{ analysis.expenses|usd }}</h2>
             </div>
         </div>
     </div>
@@ -56,7 +56,7 @@
             <div class="card-body text-center">
                 <h6 class="text-muted">Net Cash Flow</h6>
                 <h2 class="display-6 {% if analysis.net_cash_flow >= 0 %}text-success{% else %}text-danger{% endif %}">
-                    ${{ "%.2f"|format(analysis.net_cash_flow) }}
+                    {{ analysis.net_cash_flow|usd }}
                 </h2>
             </div>
         </div>
@@ -99,7 +99,7 @@
                             <span class="category-badge bg-{{ loop.index0 % 6 + 1 }}"></span>
                             {{ category.category|title }}
                         </div>
-                        <span class="badge bg-primary rounded-pill">${{ "%.2f"|format(category.amount) }}</span>
+                        <span class="badge bg-primary rounded-pill">{{ category.amount|usd }}</span>
                     </a>
                     {% endfor %}
                 </div>
@@ -154,12 +154,12 @@
             <div class="card-body">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
-                        <div class="display-1 text-success">${{ "%.2f"|format(analysis.total_potential_savings) }}</div>
+                        <div class="display-1 text-success">{{ analysis.total_potential_savings|usd }}</div>
                         <p class="lead">Potential Monthly Savings</p>
                     </div>
                     <div class="col-md-6">
-                        <p>Based on your spending patterns, we've identified opportunities to save up to <strong>${{ "%.2f"|format(analysis.total_potential_savings) }}</strong> per month.</p>
-                        <p>This could amount to <strong>${{ "%.2f"|format(analysis.total_potential_savings * 12) }}</strong> per year in savings!</p>
+                        <p>Based on your spending patterns, we've identified opportunities to save up to <strong>{{ analysis.total_potential_savings|usd }}</strong> per month.</p>
+                        <p>This could amount to <strong>{{ (analysis.total_potential_savings * 12)|usd }}</strong> per year in savings!</p>
                         <a href="{{ url_for('recommendations') }}" class="btn btn-primary mt-3">
                             <i class="fas fa-lightbulb me-2"></i>View Detailed Recommendations
                         </a>

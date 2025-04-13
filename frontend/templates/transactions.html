@@ -131,7 +131,7 @@
                                     <span class="badge bg-{{ loop.index0 % 6 + 1 }}">{{ t.category|title }}</span>
                                 </td>
                                 <td class="{% if t.amount < 0 %}expense{% else %}income{% endif %}">
-                                    ${{ "%.2f"|format(t.amount|abs) }}
+                                    {{ (t.amount|abs)|usd }}
                                     {% if t.amount < 0 %}
                                     <i class="fas fa-arrow-down text-danger"></i>
                                     {% else %}

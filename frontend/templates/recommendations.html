@@ -67,13 +67,13 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
-                                <div class="display-4 text-success">${{ "%.2f"|format(analysis.total_potential_savings) }}</div>
+                                <div class="display-4 text-success">{{ analysis.total_potential_savings|usd }}</div>
                                 <p class="lead">Potential Monthly Savings</p>
                             </div>
                             <div class="col-md-6">
                                 <h4>Your Savings Potential</h4>
-                                <p>Based on your spending patterns, we've identified opportunities to save up to <strong>${{ "%.2f"|format(analysis.total_potential_savings) }}</strong> per month.</p>
-                                <p>This could amount to <strong>${{ "%.2f"|format(analysis.total_potential_savings * 12) }}</strong> per year in savings!</p>
+                                <p>Based on your spending patterns, we've identified opportunities to save up to <strong>{{ analysis.total_potential_savings|usd }}</strong> per month.</p>
+                                <p>This could amount to <strong>{{ (analysis.total_potential_savings * 12)|usd }}</strong> per year in savings!</p>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                 <div class="card recommendation-card h-100" data-bs-toggle="modal" data-bs-target="#detailModal" data-recommendation-id="savings-{{ loop.index0 }}">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="mb-0">{{ recommendation.category|title }}</h5>
-                        <span class="badge bg-success">Save ${{ "%.2f"|format(recommendation.potential_savings) }}</span>
+                        <span class="badge bg-success">Save {{ recommendation.potential_savings|usd }}</span>
                     </div>
                     <div class="card-body">
                         <p>{{ recommendation.description }}</p>
