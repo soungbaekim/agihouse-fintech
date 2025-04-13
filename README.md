@@ -36,6 +36,12 @@ A smart banking statement parser and financial advisor that helps you analyze yo
 *Personalized suggestions to reduce expenses and increase savings*
 ![AI-Powered Recommendations & Chat](/screenshots/recommendation_2.png)
 *The recommendation page with AI chat interface for personalized financial advice*
+![Recommendation Popup](/screenshots/recommendation_popup.png)
+*Detailed view of a specific financial recommendation with actionable insights*
+
+### Transactions
+![Transaction Details](/screenshots/transaction.png)
+*Detailed view of transaction history with filtering and categorization options*
 
 </div>
 
