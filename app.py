@@ -148,7 +148,8 @@ def analyze():
                                    transactions=session['transactions'],
                                    analysis=session['analysis_data'],
                                    chart_data=session['chart_data'],
-                                   recommendations=session['recommendations'])
+                                   recommendations=session['recommendations'],
+                                   ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
     
     # Next, check if we have a file to analyze
     elif 'file_path' in session:
@@ -231,7 +232,10 @@ def analyze():
         
         return render_template('dashboard.html', 
                               analysis=session['analysis_data'],
-                              chart_data=session['chart_data'])
+                              chart_data=session['chart_data'],
+                              recommendations=session['recommendations'],
+                              transactions=session['transactions'],
+                              ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
     
     except Exception as e:
         flash(f'Error analyzing data: {str(e)}')
@@ -246,7 +250,8 @@ def transactions():
     
     return render_template('transactions.html', 
                           transactions=session['transactions'],
-                          analysis=session['analysis_data'])
+                          analysis=session['analysis_data'],
+                          ai_chat_available=app.config.get('AI_CHAT_AVAILABLE', False))
 
 @app.route('/recommendations')
 def recommendations():
