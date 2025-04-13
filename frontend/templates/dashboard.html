@@ -255,21 +255,74 @@
                     <i class="fas fa-user-tie me-2"></i> AI Financial Expert
                 </h5>
                 <button id="clearChat" class="btn btn-sm btn-outline-light">
-                    <i class="fas fa-trash-alt me-1"></i> Clear Chat
+                    <i class="fas fa-trash me-1"></i> Clear Chat
                 </button>
             </div>
-            <div class="card-body" style="max-height: 400px; overflow-y: auto;">
-                <div id="chatMessages" class="chat-messages">
-                    <!-- Messages will be added here dynamically -->
-                </div>
-            </div>
-            <div class="card-footer bg-light">
-                <form id="chatForm" class="d-flex">
-                    <input type="text" id="chatInput" class="form-control me-2" placeholder="Ask about your finances..." required>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
+            <div class="card-body">
+                {% if ai_chat_available %}
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-4">
+                                <h5>Financial Goals</h5>
+                                <div class="list-group">
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-piggy-bank me-2"></i> Building an Emergency Fund
+                                    </button>
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-home me-2"></i> Saving for a Home
+                                    </button>
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-graduation-cap me-2"></i> College Planning
+                                    </button>
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-umbrella me-2"></i> Retirement Planning
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Ask About</h5>
+                                <div class="list-group">
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-chart-pie me-2"></i> Spending Optimization
+                                    </button>
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-chart-line me-2"></i> Investment Strategies
+                                    </button>
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-money-bill-wave me-2"></i> Debt Management
+                                    </button>
+                                    <button class="list-group-item list-group-item-action suggestion-btn">
+                                        <i class="fas fa-wallet me-2"></i> Budget Improvement
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="chatMessages" class="chat-messages mb-3" style="height: 300px; overflow-y: auto;">
+                                <div class="chat-message assistant">
+                                    <div class="chat-bubble">
+                                        <p>Hello! I'm your AI financial expert. Based on your financial data, I can provide personalized advice to help you improve your financial health. What specific aspect of your finances would you like to discuss today?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-input">
+                                <form id="chatForm" class="d-flex">
+                                    <input type="text" id="userMessage" class="form-control me-2" placeholder="Ask about your finances..." required>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="alert alert-warning">
+                        <h5><i class="fas fa-exclamation-triangle me-2"></i> AI Financial Expert Not Available</h5>
+                        <p>The AI chat service is not available. Please make sure you have set up the required API keys in your .env file.</p>
+                        <p>Check the README.md file for instructions on how to set up the AI chat service.</p>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -445,164 +498,164 @@
         // AI Chat Functionality
         const socket = io();
         const chatForm = document.getElementById('chatForm');
-        const chatInput = document.getElementById('chatInput');
+        const userMessageInput = document.getElementById('userMessage');
         const chatMessages = document.getElementById('chatMessages');
-        const clearChatBtn = document.getElementById('clearChat');
+        const clearChatButton = document.getElementById('clearChat');
+        const suggestionButtons = document.querySelectorAll('.suggestion-btn');
+
+        // Financial data context to provide to the AI
+        const financialData = {
+            income: {{ analysis.income|tojson }},
+            expenses: {{ analysis.expenses|tojson }},
+            net_cash_flow: {{ analysis.net_cash_flow|tojson }},
+            savings_rate: {{ analysis.savings_rate|tojson }},
+            top_categories: {{ analysis.top_categories|tojson }}
+        };
         
-        // Send initial analysis request when chat is loaded
-        socket.emit('chat_message', {
-            message: 'initial_analysis',
-            is_initial_analysis: true
-        });
-        addTypingIndicator();
-        
-        // Handle chat form submission
+        // Set up chat form submission
         if (chatForm) {
             chatForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                const message = chatInput.value.trim();
+                const message = userMessageInput.value.trim();
                 if (message) {
-                    // Add user message to chat
                     addUserMessage(message);
-                    
-                    // Clear input field
-                    chatInput.value = '';
-                    
-                    // Add typing indicator
+                    userMessageInput.value = '';
                     addTypingIndicator();
                     
-                    // Send message to server
-                    socket.emit('chat_message', {
+                    socket.emit('send_message', {
                         message: message,
-                        is_initial_analysis: false
+                        context: {
+                            page: 'dashboard',
+                            financial_data: financialData
+                        }
                     });
                 }
             });
         }
         
-        // Handle clear chat button
-        if (clearChatBtn) {
-            clearChatBtn.addEventListener('click', function() {
-                chatMessages.innerHTML = '';
-                socket.emit('clear_chat');
+        // Handle suggestion buttons
+        suggestionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const message = this.textContent.trim();
+                addUserMessage(message);
+                addTypingIndicator();
                 
-                // After clearing, send initial analysis request
-                setTimeout(() => {
-                    socket.emit('chat_message', {
-                        message: 'initial_analysis',
-                        is_initial_analysis: true
-                    });
-                    addTypingIndicator();
-                }, 500);
+                socket.emit('send_message', {
+                    message: message,
+                    context: {
+                        page: 'dashboard',
+                        financial_data: financialData
+                    }
+                });
             });
-        }
+        });
         
-        // Handle incoming chat messages
-        socket.on('chat_response', function(data) {
+        // Handle chat message response
+        socket.on('receive_message', function(data) {
             removeTypingIndicator();
-            addAssistantMessage(data.response);
+            addAssistantMessage(data.message);
         });
         
         // Handle errors
-        socket.on('chat_error', function(data) {
+        socket.on('error_message', function(data) {
             removeTypingIndicator();
             addErrorMessage(data.error);
         });
         
-        socket.on('connect', function() {
-            console.log('Connected to server');
-        });
-        
-        socket.on('disconnect', function() {
-            console.log('Disconnected from server');
-            addErrorMessage('Disconnected from server. Please refresh the page.');
-        });
+        // Clear chat button
+        if (clearChatButton) {
+            clearChatButton.addEventListener('click', function() {
+                fetch('/api/clear_chat', { method: 'POST' })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            chatMessages.innerHTML = '';
+                            // Add welcome message
+                            addAssistantMessage("Hello! I'm your AI financial expert. Based on your financial data, I can provide personalized advice to help you improve your financial health. What specific aspect of your finances would you like to discuss today?");
+                        }
+                    });
+            });
+        }
     });
     
     // Helper functions for chat UI
     function addUserMessage(message) {
-        const chatMessages = document.getElementById('chatMessages');
-        const messageDiv = document.createElement('div');
-        messageDiv.className = 'chat-message user';
-        messageDiv.innerHTML = `
+        const div = document.createElement('div');
+        div.className = 'chat-message user';
+        div.innerHTML = `
             <div class="chat-bubble">
-                ${escapeHtml(message)}
+                <p>${escapeHtml(message)}</p>
             </div>
         `;
-        chatMessages.appendChild(messageDiv);
+        chatMessages.appendChild(div);
         scrollToBottom();
     }
     
     function addAssistantMessage(message) {
-        const chatMessages = document.getElementById('chatMessages');
-        const messageDiv = document.createElement('div');
-        messageDiv.className = 'chat-message assistant';
-        messageDiv.innerHTML = `
+        const div = document.createElement('div');
+        div.className = 'chat-message assistant';
+        div.innerHTML = `
             <div class="chat-bubble">
                 ${formatMessage(message)}
             </div>
         `;
-        chatMessages.appendChild(messageDiv);
+        chatMessages.appendChild(div);
         scrollToBottom();
     }
     
     function addErrorMessage(error) {
-        const chatMessages = document.getElementById('chatMessages');
-        const messageDiv = document.createElement('div');
-        messageDiv.className = 'chat-message error';
-        messageDiv.innerHTML = `
+        const div = document.createElement('div');
+        div.className = 'chat-message error';
+        div.innerHTML = `
             <div class="chat-bubble bg-danger text-white">
-                <i class="fas fa-exclamation-triangle me-2"></i>${escapeHtml(error)}
+                <p><i class="fas fa-exclamation-triangle me-2"></i>${escapeHtml(error)}</p>
             </div>
         `;
-        chatMessages.appendChild(messageDiv);
+        chatMessages.appendChild(div);
         scrollToBottom();
     }
     
     function addTypingIndicator() {
         removeTypingIndicator(); // Remove any existing indicator
-        const chatMessages = document.getElementById('chatMessages');
-        const indicatorDiv = document.createElement('div');
-        indicatorDiv.className = 'chat-message assistant typing-indicator-container';
-        indicatorDiv.innerHTML = `
+        const div = document.createElement('div');
+        div.className = 'chat-message assistant typing-message';
+        div.innerHTML = `
             <div class="chat-bubble">
                 <div class="typing-indicator">
-                    <span></span><span></span><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         `;
-        indicatorDiv.id = 'typingIndicator';
-        chatMessages.appendChild(indicatorDiv);
+        chatMessages.appendChild(div);
         scrollToBottom();
     }
     
     function removeTypingIndicator() {
-        const indicator = document.getElementById('typingIndicator');
-        if (indicator) {
-            indicator.remove();
+        const typingMessage = chatMessages.querySelector('.typing-message');
+        if (typingMessage) {
+            typingMessage.remove();
         }
     }
     
     function scrollToBottom() {
-        const chatContainer = document.getElementById('chatMessages').parentElement;
-        chatContainer.scrollTop = chatContainer.scrollHeight;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     }
     
     function escapeHtml(text) {
-        return text.replace(/&/g, '&amp;')
-                   .replace(/</g, '&lt;')
-                   .replace(/>/g, '&gt;')
-                   .replace(/"/g, '&quot;')
-                   .replace(/'/g, '&#039;');
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
     
     function formatMessage(message) {
-        // Handle markdown-style formatting
-        return message.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                      .replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>')
-                      .replace(/`(.*?)`/g, '<code>$1</code>')
-                      .replace(/\n/g, '<br>');
+        // Convert URLs to links
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        const formattedMessage = message.replace(urlRegex, '<a href="$1" target="_blank">$1</a>');
+        
+        // Convert line breaks to <p> tags
+        return formattedMessage.split('\n').map(line => `<p>${line}</p>`).join('');
     }
     
     // Handle window resize
