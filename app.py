@@ -1234,10 +1234,13 @@ if __name__ == '__main__':
     # Import AI chat service
     try:
         from ai_chat.chat_factory import ChatServiceFactory
+        # Create a global chat service instance
+        chat_service = ChatServiceFactory.get_chat_service()
         app.config['AI_CHAT_AVAILABLE'] = True
-    except ImportError:
+        print("AI Chat service successfully initialized")
+    except Exception as e:
         app.config['AI_CHAT_AVAILABLE'] = False
-        print("AI Chat service not available. Please install required packages.")
+        print(f"AI Chat service not available: {str(e)}")
     
     # Add chat route
     @app.route('/chat')
